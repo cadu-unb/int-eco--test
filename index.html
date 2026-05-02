@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SABER UnB — Economia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════ TELA 1: ABERTURA ══════════════ -->
+  <div id="screen-welcome" class="screen active">
+    <div class="welcome-bg">
+      <div class="bg-circle c1"></div>
+      <div class="bg-circle c2"></div>
+      <div class="bg-circle c3"></div>
+    </div>
+    <div class="welcome-content">
+      <div class="logo-badge">
+        <span class="logo-dot"></span>
+        <span class="logo-label">UnB · Economia</span>
+      </div>
+      <h1 class="hero-title">
+        Olá,<br>
+        <span class="hero-name">jogador(a)!</span>
+      </h1>
+      <p class="hero-subtitle">Teste seus conhecimentos em <strong>Introdução à Economia</strong> com questões baseadas no livro do Mankiw.</p>
+
+      <button class="btn-primary btn-start" id="btn-start">
+        <span>Começar</span>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <details class="disclaimer-card" id="disclaimer">
+        <summary class="disclaimer-toggle">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.8"/><path d="M10 9v5M10 6.5v.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Sobre esta aplicação
+        </summary>
+        <div class="disclaimer-body">
+          <p>Esta aplicação é um projeto <strong>educacional, comunitário e sem fins lucrativos</strong>, desenvolvido para auxiliar estudantes no estudo de Economia.</p>
+          <p>As questões são baseadas na obra:</p>
+          <div class="ref-block">
+            <p><strong>Autor:</strong> Mankiw, N. Gregory</p>
+            <p><strong>Título:</strong> Introdução à Economia</p>
+            <p><strong>Edição:</strong> 10. ed. — Porto Alegre: Bookman, 2025</p>
+            <p><strong>ISBN:</strong> 9788582606773</p>
+          </div>
+          <p class="disclaimer-note">Por que alguns produtos ficam mais caros de repente? O que influencia os salários? Como as decisões políticas afetam sua vida financeira? Este livro responde essas e muitas outras perguntas de forma clara e acessível.</p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- ══════════════ TELA 2: CONFIGURAÇÃO ══════════════ -->
+  <div id="screen-config" class="screen">
+    <div class="screen-header">
+      <button class="btn-back" id="btn-back-config">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="header-brand">
+        <span class="brand-saber">SABER</span>
+        <span class="brand-unb">UnB</span>
+      </div>
+    </div>
+
+    <div class="config-body">
+      <h2 class="config-title">Configurar<br><span>sua prova</span></h2>
+
+      <!-- Filtro de Prova -->
+      <section class="config-section">
+        <label class="section-label">Filtro de Prova</label>
+        <div class="toggle-group" id="toggle-provas">
+          <button class="toggle-btn active" data-prova="1">Prova 1</button>
+          <button class="toggle-btn" data-prova="2" id="btn-prova2">Prova 2</button>
+        </div>
+      </section>
+
+      <!-- Seleção de Capítulos -->
+      <section class="config-section">
+        <div class="section-label-row">
+          <label class="section-label">Capítulos</label>
+          <div class="select-actions">
+            <button class="link-btn" id="btn-select-all">Todos</button>
+            <span>·</span>
+            <button class="link-btn" id="btn-clear-all">Nenhum</button>
+          </div>
+        </div>
+        <div class="chapters-grid" id="chapters-grid">
+          <!-- Preenchido via JS -->
+        </div>
+      </section>
+
+      <!-- Quantidade -->
+      <section class="config-section">
+        <div class="section-label-row">
+          <label class="section-label" for="qty-range">Quantidade de questões</label>
+          <span class="qty-display" id="qty-display">10</span>
+        </div>
+        <div class="range-wrapper">
+          <span class="range-limit">5</span>
+          <input type="range" id="qty-range" min="5" max="20" value="10" />
+          <span class="range-limit">20</span>
+        </div>
+      </section>
+
+      <div class="config-footer">
+        <p class="config-info" id="config-info">Selecione ao menos um capítulo.</p>
+        <button class="btn-primary" id="btn-start-quiz" disabled>
+          <span>Iniciar Questionário</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ TELA 3: QUESTIONÁRIO ══════════════ -->
+  <div id="screen-quiz" class="screen">
+    <div class="quiz-header">
+      <div class="quiz-meta">
+        <span class="quiz-chapter-tag" id="quiz-chapter-tag">Cap. —</span>
+        <span class="quiz-counter" id="quiz-counter">1 / 10</span>
+      </div>
+      <div class="progress-bar-wrap">
+        <div class="progress-bar-fill" id="progress-bar"></div>
+      </div>
+    </div>
+
+    <div class="quiz-body">
+      <p class="question-command" id="question-command">Carregando...</p>
+      <ul class="alternatives-list" id="alternatives-list">
+        <!-- Preenchido via JS -->
+      </ul>
+    </div>
+
+    <div class="quiz-footer">
+      <button class="btn-secondary" id="btn-prev-q" disabled>
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Anterior
+      </button>
+      <button class="btn-primary" id="btn-next-q" disabled>
+        Próxima
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════ TELA 4: RESULTADOS ══════════════ -->
+  <div id="screen-results" class="screen">
+    <div class="screen-header results-header">
+      <div class="header-brand">
+        <span class="brand-saber">SABER</span>
+        <span class="brand-unb">UnB</span>
+      </div>
+    </div>
+
+    <div class="results-hero">
+      <div class="score-ring" id="score-ring">
+        <svg viewBox="0 0 120 120">
+          <circle class="ring-bg" cx="60" cy="60" r="50"/>
+          <circle class="ring-fill" id="ring-fill" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314"/>
+        </svg>
+        <div class="score-text">
+          <span class="score-pct" id="score-pct">0%</span>
+          <span class="score-label">acertos</span>
+        </div>
+      </div>
+      <p class="score-message" id="score-message">Bom trabalho!</p>
+    </div>
+
+    <div class="results-summary" id="results-summary">
+      <!-- Preenchido via JS -->
+    </div>
+
+    <div class="results-actions">
+      <button class="btn-secondary" id="btn-retry">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10a6 6 0 1 1 1.5 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 14v-4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Refazer
+      </button>
+      <button class="btn-primary" id="btn-new-quiz">
+        Nova prova
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ══════════════ LOADER ══════════════ -->
+  <div id="loader" class="loader-overlay">
+    <div class="loader-spinner"></div>
+    <p>Carregando questões…</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
