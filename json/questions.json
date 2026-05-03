@@ -1,213 +1,213 @@
 {
-    "1": {
-        "name": "Dez princípios de economia",
-        "questions": {
-            "1": {
-                "command": "A economia é melhor definida como o estudo de",
-                "alternatives": [
-                    "como a sociedade administra seus recursos escassos.",
-                    "como administrar uma empresa da maneira mais lucrativa.",
-                    "como prever inflação, desemprego e preços de ações.",
-                    "como o governo pode proteger as pessoas do interesse próprio descontrolado."
-                ],
-                "answer": "a",
-                "justification": "A economia estuda a alocação de recursos limitados para satisfazer necessidades humanas ilimitadas. O conceito central é a escassez, que exige que escolhas sejam feitas sobre o que produzir, como produzir e para quem produzir."
-            },
-            "2": {
-                "command": "O custo de oportunidade de uma ida ao cinema é",
-                "alternatives": [
-                    "o preço do ingresso.",
-                    "o preço do ingresso mais o custo do refrigerante e da pipoca comprados no cinema.",
-                    "o gasto financeiro total necessário para ir ao cinema mais o valor do seu tempo.",
-                    "zero, desde que você goste do filme e o considere um bom uso do seu tempo e dinheiro."
-                ],
-                "answer": "c",
-                "justification": "O custo de oportunidade compreende tudo aquilo de que se abre mão para obter algo. No caso do cinema, além do desembolso financeiro (ingresso e consumo), deve-se considerar o valor do tempo despendido, que poderia ser utilizado em outra atividade produtiva ou de lazer."
-            },
-            "3": {
-                "command": "Uma mudança marginal é aquela que",
-                "alternatives": [
-                    "nao é importante para as políticas públicas.",
-                    "altera de modo crescente um plano existente.",
-                    "torna um resultado ineficiente.",
-                    "nao influencia os incentivos."
-                ],
-                "answer": "b",
-                "justification": "Em economia, o termo 'marginal' refere-se a ajustes incrementais na borda de um plano de ação. Decisores racionais tomam decisões comparando benefícios marginais e custos marginais de uma pequena alteração adicional."
-            },
-            "4": {
-                "command": "Porque as pessoas respondem a incentivos,",
-                "alternatives": [
-                    "os formuladores de políticas públicas podem Obter resultados diferentes ao mudar as punições ou recompensas.",
-                    "as políticas podem ter consequências inesperadas.",
-                    "a sociedade enfrenta um trade-off entre eficiência e igualdade.",
-                    "Todas as alternativas estão corretas"
-                ],
-                "answer": "d",
-                "justification": "Os incentivos são fundamentais na análise econômica. Mudanças em custos e benefícios alteram o comportamento dos agentes (a), muitas vezes gerando efeitos secundários não previstos (b). Além disso, políticas de redistribuição de renda (igualdade) podem reduzir o incentivo ao trabalho, afetando a eficiência (c)."
-            },
-            "5": {
-                "command": "O comércio internacional beneficia um país quando",
-                "alternatives": [
-                    "a receita da venda no exterior supera os gastos provenientes de compras no exterior.",
-                    "seus parceiros comerciais passam por uma redução no bem-estar.",
-                    "todos os países se especializam em fazer o que fazem de melhor.",
-                    "não há perda de empregos domésticos por conta do comércio."
-                ],
-                "answer": "c",
-                "justification": "O comércio permite que os países se especializem em atividades onde possuem vantagem comparativa. Isso aumenta a produtividade global e permite que todos os países consumam uma maior variedade de bens a custos menores do que se fossem autossuficientes."
-            },
-            "6": {
-                "command": "A “mão invisível” de Adam Smith refere-se",
-                "alternatives": [
-                    "aos métodos sutis e geralmente ocultos que as empresas usam para lucrar à custa do consumidor.",
-                    "à capacidade dos mercados competitivos de alcançar os resultados desejados, apesar do interesse próprio dos participantes do mercado.",
-                    "à capacidade da regulamentação governamental de beneficiar os consumidores, mesmo quando eles não estão cientes dessas regulamentações.",
-                    "à maneira com que os produtores ou consumidores de mercados não regulamentados impõem custos a observadores inocentes."
-                ],
-                "answer": "b",
-                "justification": "O conceito descreve como a interação de compradores e vendedores no mercado, movidos pelo interesse próprio, é guiada pelos preços para promover, sem intenção direta, o bem-estar econômico geral e a alocação eficiente de recursos."
-            },
-            "7": {
-                "command": "O governo pode intervir em uma economia para",
-                "alternatives": [
-                    "proteger direitos de propriedade.",
-                    "corrigir uma falha de mercado derivada de externalidades.",
-                    "obter uma distribuição de renda mais igualitária.",
-                    "Todas as alternativas acima"
-                ],
-                "answer": "d",
-                "justification": "A intervenção estatal é necessária para garantir as regras do jogo (direitos de propriedade), para mitigar ineficiências como poluição ou poder de mercado (falhas de mercado) e para promover objetivos sociais de equidade que o mercado sozinho não atende."
-            },
-            "8": {
-                "command": "O principal motivo para alguns países terem um padrão de vida médio mais elevado do que outros é que",
-                "alternatives": [
-                    "os países mais ricos exploraram os mais pobres.",
-                    "os governos de alguns países emitiram mais dinheiro.",
-                    "alguns países têm leis mais fortes para proteger os direitos dos trabalhadores.",
-                    "alguns países têm níveis mais elevados de produtividade."
-                ],
-                "answer": "d",
-                "justification": "A produtividade, definida como a quantidade de bens e serviços produzidos por unidade de insumo de trabalho, é o determinante fundamental do padrão de vida. Países onde os trabalhadores produzem mais por hora desfrutam de rendas mais altas."
-            },
-            "9": {
-                "command": "Se um país apresenta inflação elevada e persistente, a explicação mais provável é que",
-                "alternatives": [
-                    "o governo está emitindo quantidades excessivas de moeda.",
-                    "os sindicatos estão negociando salários excessivamente altos.",
-                    "o governo está impondo níveis excessivos de tributação.",
-                    "as empresas estão usando seu poder de mercado para impor aumentos de preços excessivos."
-                ],
-                "answer": "a",
-                "justification": "A causa primária da inflação persistente é o crescimento excessivo da oferta de moeda. Quando o Banco Central emite moeda em ritmo superior ao crescimento da produção de bens e serviços, o valor da moeda cai, elevando o nível geral de preços."
-            },
-            "10": {
-                "command": "Se um governo usa as ferramentas da política monetária para reduzir a demanda por bens e serviços, o resultado provável é ________ inflação e ________ desemprego em curto prazo.",
-                "alternatives": [
-                    "menor; menor",
-                    "menor; maior",
-                    "maior; maior",
-                    "maior; menor"
-                ],
-                "answer": "b",
-                "justification": "De acordo com a Curva de Phillips de curto prazo, existe um trade-off entre inflação e desemprego. Ao reduzir a demanda agregada para conter a inflação, a produção cai e o desemprego tende a aumentar temporariamente antes que os preços e salários se ajustem."
-            }
-        }
-    },
-    "2": {
-        "name": "Pensando como um economista",
-        "questions": {
-            "1": {
-                "command": "Um modelo econômico é",
-                "alternatives": [
-                    "uma máquina mecânica que replica o funcionamento da economia.",
-                    "uma descrição detalhada e realista da economia.",
-                    "uma representação simplificada de algum aspecto da economia.",
-                    "um programa de computador que prevê o futuro da economia."
-                ],
-                "answer": "c",
-                "justification": "Modelos econômicos são simplificações da realidade que omitem detalhes irrelevantes para focar no que é essencial para entender o comportamento humano ou o funcionamento do mercado. Eles são construídos com premissas para facilitar a compreensão de fenômenos complexos."
-            },
-            "2": {
-                "command": "O diagrama do fluxo circular ilustra que, nos mercados de fatores de produção,",
-                "alternatives": [
-                    "as famílias são vendedoras e as empresas são compradoras.",
-                    "as famílias são compradoras e as empresas são vendedoras.",
-                    "famílias e empresas são compradoras.",
-                    "famílias e empresas são vendedoras."
-                ],
-                "answer": "a",
-                "justification": "No diagrama do fluxo circular, as famílias possuem e vendem os fatores de produção (trabalho, terra e capital) para as empresas, que os utilizam para produzir bens e serviços. Em troca, as empresas pagam salários, aluguéis e lucros às famílias."
-            },
-            "3": {
-                "command": "Um ponto dentro da fronteira de possibilidades de produção é",
-                "alternatives": [
-                    "eficiente, mas não viável.",
-                    "viável, mas não eficiente.",
-                    "eficiente e viável.",
-                    "nem eficiente nem viável."
-                ],
-                "answer": "b",
-                "justification": "Um ponto dentro da fronteira é viável porque a economia tem recursos para alcançá-lo, mas é ineficiente porque não está utilizando todos os recursos disponíveis da melhor forma possível, sendo possível aumentar a produção de um bem sem reduzir a do outro."
-            },
-            "4": {
-                "command": "Todos os tópicos abaixo fazem parte do estudo da microeconomia, EXCETO",
-                "alternatives": [
-                    "o impacto dos impostos dos cigarros sobre o comportamento de tabagismo dos adolescentes.",
-                    "o papel do poder de mercado da Microsoft na precificação do software.",
-                    "a eficácia de programas de combate à pobreza para reduzir o número de pessoas em situação de rua.",
-                    "a influência do déficit orçamentário do governo sobre o crescimento econômico."
-                ],
-                "answer": "d",
-                "justification": "A microeconomia foca na tomada de decisão de famílias e empresas em mercados específicos. O estudo de variáveis agregadas como déficit orçamentário e crescimento econômico nacional é o escopo da macroeconomia."
-            },
-            "5": {
-                "command": "Qual das alternativas a seguir é uma declaração positiva, não normativa?",
-                "alternatives": [
-                    "A lei X reduzirá a renda nacional.",
-                    "A lei X é uma boa legislação.",
-                    "O Congresso deve aprovar a lei X.",
-                    "O Presidente deve vetar a lei X."
-                ],
-                "answer": "a",
-                "justification": "Declarações positivas buscam descrever o mundo como ele é, sendo testáveis com dados. Declarações normativas envolvem juízos de valor sobre como o mundo deveria ser, geralmente usando palavras como 'deve' ou 'bom'."
-            },
-            "6": {
-                "command": "Qual órgão governamental normalmente conta com o conselho de economistas?",
-                "alternatives": [
-                    "Departamento do Tesouro",
-                    "Departamento de Gestão e Orçamento",
-                    "Departamento de Justiça",
-                    "Todas as alternativas anteriores"
-                ],
-                "answer": "d",
-                "justification": "Economistas atuam em diversos níveis do governo: no Tesouro para política tributária, no Orçamento para análise de gastos e no Judiciário/Justiça para avaliar questões de concorrência e leis antitruste."
-            },
-            "7": {
-                "command": "Os economistas podem discordar por conta de diferentes",
-                "alternatives": [
-                    "palpites a respeito da validade de teorias alternativas.",
-                    "julgamentos sobre a magnitude dos principais parâmetros.",
-                    "filosofias políticas relacionadas aos objetivos das políticas públicas.",
-                    "Todas as alternativas anteriores"
-                ],
-                "answer": "d",
-                "justification": "A divergência científica ocorre por dúvidas sobre a validade de teorias (a), por estimativas diferentes de como uma variável afeta outra (b) ou por valores éticos e políticos distintos sobre o que é prioridade para a sociedade (c)."
-            },
-            "8": {
-                "command": "A maioria dos economistas acredita que as tarifas são",
-                "alternatives": [
-                    "uma boa forma de promover o crescimento econômico doméstico.",
-                    "uma forma ruim de aumentar o bem-estar econômico geral.",
-                    "uma resposta muitas vezes necessária para a concorrência estrangeira.",
-                    "uma maneira eficiente de aumentar a receita do governo."
-                ],
-                "answer": "b",
-                "justification": "Existe um consenso quase universal entre economistas de que barreiras ao comércio, como tarifas e quotas de importação, reduzem a eficiência econômica e o bem-estar total, pois impedem os ganhos da especialização e aumentam os preços para os consumidores."
-            }
-        }
-    },
+  "1": {
+    "name": "Dez princípios de economia",
+    "questions": {
+      "1": {
+        "command": "A economia é melhor definida como o estudo de",
+        "alternatives": [
+          "como a sociedade administra seus recursos escassos.",
+          "como administrar uma empresa da maneira mais lucrativa.",
+          "como prever inflação, desemprego e preços de ações.",
+          "como o governo pode proteger as pessoas do interesse próprio descontrolado."
+        ],
+        "answer": "a",
+        "justification": "A economia estuda a alocação de recursos limitados para satisfazer necessidades humanas ilimitadas. O conceito central é a escassez, que exige que escolhas sejam feitas sobre o que produzir, como produzir e para quem produzir."
+      },
+      "2": {
+        "command": "O custo de oportunidade de uma ida ao cinema é",
+        "alternatives": [
+          "o preço do ingresso.",
+          "o preço do ingresso mais o custo do refrigerante e da pipoca comprados no cinema.",
+          "o gasto financeiro total necessário para ir ao cinema mais o valor do seu tempo.",
+          "zero, desde que você goste do filme e o considere um bom uso do seu tempo e dinheiro."
+        ],
+        "answer": "c",
+        "justification": "O custo de oportunidade compreende tudo aquilo de que se abre mão para obter algo. No caso do cinema, além do desembolso financeiro (ingresso e consumo), deve-se considerar o valor do tempo despendido, que poderia ser utilizado em outra atividade produtiva ou de lazer."
+      },
       "3": {
+        "command": "Uma mudança marginal é aquela que",
+        "alternatives": [
+          "nao é importante para as políticas públicas.",
+          "altera de modo crescente um plano existente.",
+          "torna um resultado ineficiente.",
+          "nao influencia os incentivos."
+        ],
+        "answer": "b",
+        "justification": "Em economia, o termo 'marginal' refere-se a ajustes incrementais na borda de um plano de ação. Decisores racionais tomam decisões comparando benefícios marginais e custos marginais de uma pequena alteração adicional."
+      },
+      "4": {
+        "command": "Porque as pessoas respondem a incentivos,",
+        "alternatives": [
+          "os formuladores de políticas públicas podem Obter resultados diferentes ao mudar as punições ou recompensas.",
+          "as políticas podem ter consequências inesperadas.",
+          "a sociedade enfrenta um trade-off entre eficiência e igualdade.",
+          "Todas as alternativas estão corretas"
+        ],
+        "answer": "d",
+        "justification": "Os incentivos são fundamentais na análise econômica. Mudanças em custos e benefícios alteram o comportamento dos agentes (a), muitas vezes gerando efeitos secundários não previstos (b). Além disso, políticas de redistribuição de renda (igualdade) podem reduzir o incentivo ao trabalho, afetando a eficiência (c)."
+      },
+      "5": {
+        "command": "O comércio internacional beneficia um país quando",
+        "alternatives": [
+          "a receita da venda no exterior supera os gastos provenientes de compras no exterior.",
+          "seus parceiros comerciais passam por uma redução no bem-estar.",
+          "todos os países se especializam em fazer o que fazem de melhor.",
+          "não há perda de empregos domésticos por conta do comércio."
+        ],
+        "answer": "c",
+        "justification": "O comércio permite que os países se especializem em atividades onde possuem vantagem comparativa. Isso aumenta a produtividade global e permite que todos os países consumam uma maior variedade de bens a custos menores do que se fossem autossuficientes."
+      },
+      "6": {
+        "command": "A “mão invisível” de Adam Smith refere-se",
+        "alternatives": [
+          "aos métodos sutis e geralmente ocultos que as empresas usam para lucrar à custa do consumidor.",
+          "à capacidade dos mercados competitivos de alcançar os resultados desejados, apesar do interesse próprio dos participantes do mercado.",
+          "à capacidade da regulamentação governamental de beneficiar os consumidores, mesmo quando eles não estão cientes dessas regulamentações.",
+          "à maneira com que os produtores ou consumidores de mercados não regulamentados impõem custos a observadores inocentes."
+        ],
+        "answer": "b",
+        "justification": "O conceito descreve como a interação de compradores e vendedores no mercado, movidos pelo interesse próprio, é guiada pelos preços para promover, sem intenção direta, o bem-estar econômico geral e a alocação eficiente de recursos."
+      },
+      "7": {
+        "command": "O governo pode intervir em uma economia para",
+        "alternatives": [
+          "proteger direitos de propriedade.",
+          "corrigir uma falha de mercado derivada de externalidades.",
+          "obter uma distribuição de renda mais igualitária.",
+          "Todas as alternativas acima"
+        ],
+        "answer": "d",
+        "justification": "A intervenção estatal é necessária para garantir as regras do jogo (direitos de propriedade), para mitigar ineficiências como poluição ou poder de mercado (falhas de mercado) e para promover objetivos sociais de equidade que o mercado sozinho não atende."
+      },
+      "8": {
+        "command": "O principal motivo para alguns países terem um padrão de vida médio mais elevado do que outros é que",
+        "alternatives": [
+          "os países mais ricos exploraram os mais pobres.",
+          "os governos de alguns países emitiram mais dinheiro.",
+          "alguns países têm leis mais fortes para proteger os direitos dos trabalhadores.",
+          "alguns países têm níveis mais elevados de produtividade."
+        ],
+        "answer": "d",
+        "justification": "A produtividade, definida como a quantidade de bens e serviços produzidos por unidade de insumo de trabalho, é o determinante fundamental do padrão de vida. Países onde os trabalhadores produzem mais por hora desfrutam de rendas mais altas."
+      },
+      "9": {
+        "command": "Se um país apresenta inflação elevada e persistente, a explicação mais provável é que",
+        "alternatives": [
+          "o governo está emitindo quantidades excessivas de moeda.",
+          "os sindicatos estão negociando salários excessivamente altos.",
+          "o governo está impondo níveis excessivos de tributação.",
+          "as empresas estão usando seu poder de mercado para impor aumentos de preços excessivos."
+        ],
+        "answer": "a",
+        "justification": "A causa primária da inflação persistente é o crescimento excessivo da oferta de moeda. Quando o Banco Central emite moeda em ritmo superior ao crescimento da produção de bens e serviços, o valor da moeda cai, elevando o nível geral de preços."
+      },
+      "10": {
+        "command": "Se um governo usa as ferramentas da política monetária para reduzir a demanda por bens e serviços, o resultado provável é ________ inflação e ________ desemprego em curto prazo.",
+        "alternatives": [
+          "menor; menor",
+          "menor; maior",
+          "maior; maior",
+          "maior; menor"
+        ],
+        "answer": "b",
+        "justification": "De acordo com a Curva de Phillips de curto prazo, existe um trade-off entre inflação e desemprego. Ao reduzir a demanda agregada para conter a inflação, a produção cai e o desemprego tende a aumentar temporariamente antes que os preços e salários se ajustem."
+      }
+    }
+  },
+  "2": {
+    "name": "Pensando como um economista",
+    "questions": {
+      "1": {
+        "command": "Um modelo econômico é",
+        "alternatives": [
+          "uma máquina mecânica que replica o funcionamento da economia.",
+          "uma descrição detalhada e realista da economia.",
+          "uma representação simplificada de algum aspecto da economia.",
+          "um programa de computador que prevê o futuro da economia."
+        ],
+        "answer": "c",
+        "justification": "Modelos econômicos são simplificações da realidade que omitem detalhes irrelevantes para focar no que é essencial para entender o comportamento humano ou o funcionamento do mercado. Eles são construídos com premissas para facilitar a compreensão de fenômenos complexos."
+      },
+      "2": {
+        "command": "O diagrama do fluxo circular ilustra que, nos mercados de fatores de produção,",
+        "alternatives": [
+          "as famílias são vendedoras e as empresas são compradoras.",
+          "as famílias são compradoras e as empresas são vendedoras.",
+          "famílias e empresas são compradoras.",
+          "famílias e empresas são vendedoras."
+        ],
+        "answer": "a",
+        "justification": "No diagrama do fluxo circular, as famílias possuem e vendem os fatores de produção (trabalho, terra e capital) para as empresas, que os utilizam para produzir bens e serviços. Em troca, as empresas pagam salários, aluguéis e lucros às famílias."
+      },
+      "3": {
+        "command": "Um ponto dentro da fronteira de possibilidades de produção é",
+        "alternatives": [
+          "eficiente, mas não viável.",
+          "viável, mas não eficiente.",
+          "eficiente e viável.",
+          "nem eficiente nem viável."
+        ],
+        "answer": "b",
+        "justification": "Um ponto dentro da fronteira é viável porque a economia tem recursos para alcançá-lo, mas é ineficiente porque não está utilizando todos os recursos disponíveis da melhor forma possível, sendo possível aumentar a produção de um bem sem reduzir a do outro."
+      },
+      "4": {
+        "command": "Todos os tópicos abaixo fazem parte do estudo da microeconomia, EXCETO",
+        "alternatives": [
+          "o impacto dos impostos dos cigarros sobre o comportamento de tabagismo dos adolescentes.",
+          "o papel do poder de mercado da Microsoft na precificação do software.",
+          "a eficácia de programas de combate à pobreza para reduzir o número de pessoas em situação de rua.",
+          "a influência do déficit orçamentário do governo sobre o crescimento econômico."
+        ],
+        "answer": "d",
+        "justification": "A microeconomia foca na tomada de decisão de famílias e empresas em mercados específicos. O estudo de variáveis agregadas como déficit orçamentário e crescimento econômico nacional é o escopo da macroeconomia."
+      },
+      "5": {
+        "command": "Qual das alternativas a seguir é uma declaração positiva, não normativa?",
+        "alternatives": [
+          "A lei X reduzirá a renda nacional.",
+          "A lei X é uma boa legislação.",
+          "O Congresso deve aprovar a lei X.",
+          "O Presidente deve vetar a lei X."
+        ],
+        "answer": "a",
+        "justification": "Declarações positivas buscam descrever o mundo como ele é, sendo testáveis com dados. Declarações normativas envolvem juízos de valor sobre como o mundo deveria ser, geralmente usando palavras como 'deve' ou 'bom'."
+      },
+      "6": {
+        "command": "Qual órgão governamental normalmente conta com o conselho de economistas?",
+        "alternatives": [
+          "Departamento do Tesouro",
+          "Departamento de Gestão e Orçamento",
+          "Departamento de Justiça",
+          "Todas as alternativas anteriores"
+        ],
+        "answer": "d",
+        "justification": "Economistas atuam em diversos níveis do governo: no Tesouro para política tributária, no Orçamento para análise de gastos e no Judiciário/Justiça para avaliar questões de concorrência e leis antitruste."
+      },
+      "7": {
+        "command": "Os economistas podem discordar por conta de diferentes",
+        "alternatives": [
+          "palpites a respeito da validade de teorias alternativas.",
+          "julgamentos sobre a magnitude dos principais parâmetros.",
+          "filosofias políticas relacionadas aos objetivos das políticas públicas.",
+          "Todas as alternativas anteriores"
+        ],
+        "answer": "d",
+        "justification": "A divergência científica ocorre por dúvidas sobre a validade de teorias (a), por estimativas diferentes de como uma variável afeta outra (b) ou por valores éticos e políticos distintos sobre o que é prioridade para a sociedade (c)."
+      },
+      "8": {
+        "command": "A maioria dos economistas acredita que as tarifas são",
+        "alternatives": [
+          "uma boa forma de promover o crescimento econômico doméstico.",
+          "uma forma ruim de aumentar o bem-estar econômico geral.",
+          "uma resposta muitas vezes necessária para a concorrência estrangeira.",
+          "uma maneira eficiente de aumentar a receita do governo."
+        ],
+        "answer": "b",
+        "justification": "Existe um consenso quase universal entre economistas de que barreiras ao comércio, como tarifas e quotas de importação, reduzem a eficiência econômica e o bem-estar total, pois impedem os ganhos da especialização e aumentam os preços para os consumidores."
+      }
+    }
+  },
+  "3": {
     "name": "Interdependência e Ganhos Comerciais",
     "questions": {
       "1": {
@@ -219,7 +219,7 @@
           "as mesmas quantidades de carne e batata que o outro."
         ],
         "answer": "b",
-        "justification": "Sem o comércio, um indivíduo é autossuficiente, o que significa que sua fronteira de possibilidades de consumo coincide com sua fronteira de possibilidades de produção ($FPP$). Para maximizar o bem-estar sem trocas, consome-se exatamente o que se produz, situando-se sobre a curva da $FPP$[cite: 3]."
+        "justification": "Sem o comércio, um indivíduo é autossuficiente, o que significa que sua fronteira de possibilidades de consumo coincide com sua fronteira de possibilidades de produção ($FPP$). Para maximizar o bem-estar sem trocas, consome-se exatamente o que se produz, situando-se sobre a curva da $FPP$."
       },
       "2": {
         "command": "Depois que Felipe e Rosana fecham o negócio, cada um deles consome",
@@ -230,7 +230,7 @@
           "as mesmas quantidades de carne e batata que o outro."
         ],
         "answer": "c",
-        "justification": "O comércio permite que os indivíduos se especializem em atividades onde possuem vantagem comparativa. Através da troca, é possível alcançar combinações de consumo que seriam impossíveis de produzir isoladamente, situando o consumo final em um ponto além da $FPP$ original[cite: 3]."
+        "justification": "O comércio permite que os indivíduos se especializem em atividades onde possuem vantagem comparativa. Através da troca, é possível alcançar combinações de consumo que seriam impossíveis de produzir isoladamente, situando o consumo final em um ponto além da $FPP$ original."
       },
       "3": {
         "command": "Em 1 hora, Mateo consegue lavar dois carros ou aparar um gramado, e Sophia consegue lavar três carros ou aparar um gramado. Quem tem a vantagem absoluta na lavagem dos carros? E no corte do gramado?",
@@ -241,7 +241,7 @@
           "Sophia na lavagem, nenhum deles no gramado"
         ],
         "answer": "d",
-        "justification": "A vantagem absoluta compara a produtividade. Sophia lava mais carros que Mateo (3 vs 2) no mesmo tempo, possuindo vantagem absoluta nessa tarefa. No gramado, ambos produzem a mesma quantidade (1), portanto, ninguém possui vantagem absoluta sobre o outro nesta atividade específica[cite: 3]."
+        "justification": "A vantagem absoluta compara a produtividade. Sophia lava mais carros que Mateo (3 vs 2) no mesmo tempo, possuindo vantagem absoluta nessa tarefa. No gramado, ambos produzem a mesma quantidade (1), portanto, ninguém possui vantagem absoluta sobre o outro nesta atividade específica."
       },
       "4": {
         "command": "Entre Mateo e Sophia, quem tem a vantagem comparativa na lavagem dos carros? E no corte do gramado?",
@@ -252,7 +252,7 @@
           "Sophia na lavagem, nenhum deles no gramado"
         ],
         "answer": "b",
-        "justification": "A vantagem comparativa baseia-se no custo de oportunidade. Para Sophia, lavar 1 carro custa $1/3$ de gramado; para Mateo, custa $1/2$. Como $1/3 < 1/2$, Sophia tem vantagem nos carros. Consequentemente, Mateo tem vantagem no gramado, pois seu custo de oportunidade (2 carros) é menor que o de Sophia (3 carros)[cite: 3]."
+        "justification": "A vantagem comparativa baseia-se no custo de oportunidade. Para Sophia, lavar 1 carro custa $1/3$ de gramado; para Mateo, custa $1/2$. Como $1/3 < 1/2$, Sophia tem vantagem nos carros. Consequentemente, Mateo tem vantagem no gramado, pois seu custo de oportunidade (2 carros) é menor que o de Sophia (3 carros)."
       },
       "5": {
         "command": "Quando Mateo e Sophia produzem de forma eficiente e fazem um acordo mutuamente benéfico com base na vantagem comparativa,",
@@ -263,7 +263,7 @@
           "Mateo e Sophia apararam mais grama."
         ],
         "answer": "a",
-        "justification": "Ganhos comerciais surgem da especialização na atividade de menor custo de oportunidade. Como Mateo tem vantagem comparativa em aparar grama e Sophia em lavar carros, o acordo ideal prevê que cada um foque na sua respectiva área de eficiência relativa[cite: 3]."
+        "justification": "Ganhos comerciais surgem da especialização na atividade de menor custo de oportunidade. Como Mateo tem vantagem comparativa em aparar grama e Sophia em lavar carros, o acordo ideal prevê que cada um foque na sua respectiva área de eficiência relativa."
       },
       "6": {
         "command": "Os bens normalmente importados por um país são aqueles para os quais",
@@ -274,7 +274,7 @@
           "outros países têm uma vantagem comparativa."
         ],
         "answer": "d",
-        "justification": "Um país importa bens cuja produção doméstica exigiria renunciar a uma grande quantidade de outros bens (alto custo de oportunidade). Portanto, ele compra de parceiros comerciais que possuam a vantagem comparativa, ou seja, que consigam produzir tais bens a um custo relativo menor[cite: 3]."
+        "justification": "Um país importa bens cuja produção doméstica exigiria renunciar a uma grande quantidade de outros bens (alto custo de oportunidade). Portanto, ele compra de parceiros comerciais que possuam a vantagem comparativa, ou seja, que consigam produzir tais bens a um custo relativo menor."
       },
       "7": {
         "command": "Suponha que, nos Estados Unidos, a produção de uma aeronave leve 10.000 horas de trabalho e a produção de uma camisa leve 2 horas de trabalho. Na China, a produção de uma aeronave leva 40.000 horas de trabalho, enquanto a de uma camisa leva 4 horas. O que esses países vão comercializar?",
@@ -285,7 +285,7 @@
           "Não há ganhos comerciais nessa situação."
         ],
         "answer": "b",
-        "justification": "Nos EUA, o custo de uma aeronave é 5.000 camisas. Na China, é 10.000 camisas. Os EUA têm vantagem comparativa em aeronaves. Inversamente, o custo de uma camisa nos EUA é $1/5000$ de aeronave, enquanto na China é $1/10000$. A China tem vantagem comparativa em camisas[cite: 3]."
+        "justification": "Nos EUA, o custo de uma aeronave é 5.000 camisas. Na China, é 10.000 camisas. Os EUA têm vantagem comparativa em aeronaves. Inversamente, o custo de uma camisa nos EUA é $1/5000$ de aeronave, enquanto na China é $1/10000$. A China tem vantagem comparativa em camisas."
       },
       "8": {
         "command": "Kayla faz o jantar em 30 minutos e lava as roupas em 20 minutos. Sua colega de quarto leva o dobro do tempo para realizar cada tarefa. Como elas deveriam alocar as tarefas?",
@@ -296,11 +296,11 @@
           "Não há ganhos comerciais nessa situação."
         ],
         "answer": "d",
-        "justification": "Embora Kayla tenha vantagem absoluta em ambas as tarefas, a vantagem comparativa depende de custos de oportunidade distintos. Como a colega leva exatamente o dobro do tempo para ambas ($60$ min e $40$ min), os custos de oportunidade são idênticos ($1,5$ lavagens por jantar). Sem diferença nos custos relativos, não há incentivo econômico para a troca[cite: 3]."
+        "justification": "Embora Kayla tenha vantagem absoluta em ambas as tarefas, a vantagem comparativa depende de custos de oportunidade distintos. Como a colega leva exatamente o dobro do tempo para ambas ($60$ min e $40$ min), os custos de oportunidade são idênticos ($1,5$ lavagens por jantar). Sem diferença nos custos relativos, não há incentivo econômico para a troca."
       }
     }
   },
-    "4": {
+  "4": {
     "name": "As forças de mercado da oferta e da demanda",
     "questions": {
       "1": {
@@ -312,7 +312,7 @@
           "um local onde o único fornecedor de um bem oferece seu produto."
         ],
         "answer": "c",
-        "justification": "Em economia, um mercado não precisa ser um local físico. Ele é definido pela interação entre o grupo de compradores (que determinam a demanda) e o grupo de vendedores (que determinam a oferta) de um produto específico[cite: 4]."
+        "justification": "Em economia, um mercado não precisa ser um local físico. Ele é definido pela interação entre o grupo de compradores (que determinam a demanda) e o grupo de vendedores (que determinam a oferta) de um produto específico."
       },
       "2": {
         "command": "Em um mercado perfeitamente competitivo,",
@@ -323,7 +323,7 @@
           "um vendedor conseguiu superar seus rivais, por isso não resta mais nenhum outro vendedor."
         ],
         "answer": "b",
-        "justification": "Em mercados perfeitamente competitivos, os bens são homogêneos e há tantos compradores e vendedores que nenhum tem poder individual para influenciar o preço. Portanto, todos são 'tomadores de preços'[cite: 4]."
+        "justification": "Em mercados perfeitamente competitivos, os bens são homogêneos e há tantos compradores e vendedores que nenhum tem poder individual para influenciar o preço. Portanto, todos são 'tomadores de preços'."
       },
       "3": {
         "command": "O mercado de qual produto se adequa melhor à definição de um mercado perfeitamente competitivo?",
@@ -334,7 +334,7 @@
           "sistemas operacionais de computadores"
         ],
         "answer": "a",
-        "justification": "O mercado de ovos (commodity agrícola) possui muitos produtores e produtos quase idênticos, aproximando-se da concorrência perfeita. Água da torneira costuma ser monopólio, enquanto filmes e sistemas operacionais possuem alta diferenciação de produto[cite: 4]."
+        "justification": "O mercado de ovos (commodity agrícola) possui muitos produtores e produtos quase idênticos, aproximando-se da concorrência perfeita. Água da torneira costuma ser monopólio, enquanto filmes e sistemas operacionais possuem alta diferenciação de produto."
       },
       "4": {
         "command": "Qual das mudanças a seguir NÃO desloca a curva de demanda por hambúrgueres?",
@@ -345,7 +345,7 @@
           "a renda dos consumidores de hambúrguer"
         ],
         "answer": "b",
-        "justification": "Uma alteração no preço do próprio bem não desloca a curva de demanda; ela causa apenas um movimento ao longo da curva existente, alterando a 'quantidade demandada'. Deslocamentos da curva são causados por fatores externos como renda ou preços de bens relacionados[cite: 4]."
+        "justification": "Uma alteração no preço do próprio bem não desloca a curva de demanda; ela causa apenas um movimento ao longo da curva existente, alterando a 'quantidade demandada'. Deslocamentos da curva são causados por fatores externos como renda ou preços de bens relacionados."
       },
       "5": {
         "command": "Entre as alternativas abaixo, qual mudança deslocaria a curva de demanda por pizza para a direita?",
@@ -356,7 +356,7 @@
           "uma redução no preço da pizza"
         ],
         "answer": "a",
-        "justification": "Quando o preço de um bem substituto (hambúrguer) sobe, os consumidores migram para a alternativa (pizza), aumentando a demanda por esta última em todos os níveis de preço[cite: 4]."
+        "justification": "Quando o preço de um bem substituto (hambúrguer) sobe, os consumidores migram para a alternativa (pizza), aumentando a demanda por esta última em todos os níveis de preço."
       },
       "6": {
         "command": "Se o macarrão é um bem inferior, a curva de demanda se desloca para a ________ quando ________ aumenta.",
@@ -367,7 +367,7 @@
           "esquerda; a renda dos consumidores"
         ],
         "answer": "d",
-        "justification": "Bens inferiores têm uma relação inversa com a renda. Se a renda aumenta, o consumidor passa a adquirir bens de melhor qualidade, reduzindo a demanda pelo bem inferior (deslocamento para a esquerda)[cite: 4]."
+        "justification": "Bens inferiores têm uma relação inversa com a renda. Se a renda aumenta, o consumidor passa a adquirir bens de melhor qualidade, reduzindo a demanda pelo bem inferior (deslocamento para a esquerda)."
       },
       "7": {
         "command": "Qual evento moveria os fornecedores de pizza ao longo de uma determinada curva de oferta?",
@@ -378,7 +378,7 @@
           "um incêndio que destruiu uma pizzaria famosa"
         ],
         "answer": "a",
-        "justification": "Movimentos ao longo da curva de oferta são provocados exclusivamente por mudanças no preço do próprio bem. Alterações em custos de insumos ou número de vendedores deslocariam a curva inteira[cite: 4]."
+        "justification": "Movimentos ao longo da curva de oferta são provocados exclusivamente por mudanças no preço do próprio bem. Alterações em custos de insumos ou número de vendedores deslocariam a curva inteira."
       },
       "8": {
         "command": "Qual evento deslocaria a curva de oferta de pizza para a direita?",
@@ -389,7 +389,7 @@
           "um incêndio que destruiu uma pizzaria famosa"
         ],
         "answer": "c",
-        "justification": "Uma redução no preço de um insumo (queijo) torna a produção mais barata e lucrativa, incentivando os produtores a ofertar uma quantidade maior de pizza para qualquer preço dado, deslocando a curva de oferta para a direita[cite: 4]."
+        "justification": "Uma redução no preço de um insumo (queijo) torna a produção mais barata e lucrativa, incentivando os produtores a ofertar uma quantidade maior de pizza para qualquer preço dado, deslocando a curva de oferta para a direita."
       },
       "9": {
         "command": "Ingressos para o cinema e assinaturas de serviços de streaming são substitutos. Se o preço do streaming aumentar, o que acontecerá no mercado de ingressos para o cinema?",
@@ -400,7 +400,7 @@
           "A curva de demanda se deslocará para a direita."
         ],
         "answer": "d",
-        "justification": "Se o streaming (substituto) fica mais caro, a demanda por cinema aumenta, pois os consumidores buscam a alternativa agora relativamente mais barata[cite: 4]."
+        "justification": "Se o streaming (substituto) fica mais caro, a demanda por cinema aumenta, pois os consumidores buscam a alternativa agora relativamente mais barata."
       },
       "10": {
         "command": "A descoberta de uma grande reserva de petróleo deslocará a curva de ________ de gasolina, gerando um preço de equilíbrio mais ________.",
@@ -411,7 +411,7 @@
           "demanda; baixo"
         ],
         "answer": "b",
-        "justification": "O aumento na disponibilidade de matéria-prima (petróleo) aumenta a oferta de gasolina. No gráfico de oferta e demanda, um aumento da oferta (deslocamento para a direita) resulta em uma queda no preço de equilíbrio[cite: 4]."
+        "justification": "O aumento na disponibilidade de matéria-prima (petróleo) aumenta a oferta de gasolina. No gráfico de oferta e demanda, um aumento da oferta (deslocamento para a direita) resulta em uma queda no preço de equilíbrio."
       },
       "11": {
         "command": "Se a economia entrar em recessão e a renda cair, o que acontecerá nos mercados de bens inferiores?",
@@ -422,7 +422,7 @@
           "Os preços diminuirão, e as quantidades aumentarão."
         ],
         "answer": "a",
-        "justification": "Em uma recessão (queda de renda), a demanda por bens inferiores aumenta. O deslocamento da curva de demanda para a direita eleva tanto o preço quanto a quantidade de equilíbrio[cite: 4]."
+        "justification": "Em uma recessão (queda de renda), a demanda por bens inferiores aumenta. O deslocamento da curva de demanda para a direita eleva tanto o preço quanto a quantidade de equilíbrio."
       },
       "12": {
         "command": "Que acontecimento poderia provocar um aumento no preço de equilíbrio da feijoada e uma redução na quantidade de equilíbrio de feijoada vendida?",
@@ -433,7 +433,7 @@
           "um aumento na renda dos consumidores, já que a feijoada é um bem normal"
         ],
         "answer": "c",
-        "justification": "Um aumento no preço do insumo reduz a oferta (deslocamento para a esquerda). Isso resulta em um novo equilíbrio com preço mais alto e quantidade vendida menor[cite: 4]."
+        "justification": "Um aumento no preço do insumo reduz a oferta (deslocamento para a esquerda). Isso resulta em um novo equilíbrio com preço mais alto e quantidade vendida menor."
       },
       "13": {
         "command": "Um aumento na __________ causará um movimento ao longo de uma determinada curva de oferta, chamado de mudança da __________.",
@@ -444,11 +444,11 @@
           "demanda; quantidade ofertada"
         ],
         "answer": "d",
-        "justification": "Quando a demanda aumenta, o preço sobe. Esse preço mais alto incentiva os produtores a aumentar a produção, gerando um movimento ao longo da curva de oferta preexistente, o que é tecnicamente chamado de aumento na quantidade ofertada[cite: 4]."
+        "justification": "Quando a demanda aumenta, o preço sobe. Esse preço mais alto incentiva os produtores a aumentar a produção, gerando um movimento ao longo da curva de oferta preexistente, o que é tecnicamente chamado de aumento na quantidade ofertada."
       }
     }
   },
-    "5": {
+  "5": {
     "name": "Elasticidade e sua aplicação",
     "questions": {
       "1": {
@@ -460,7 +460,7 @@
           "a resposta em longo prazo estiver sendo medida."
         ],
         "answer": "a",
-        "justification": "Bens necessários tendem a ter demanda inelástica (baixa elasticidade) porque os consumidores não podem abrir mão facilmente de seu consumo, mesmo quando o preço aumenta. Em contraste, bens de luxo, bens com muitos substitutos ou mercados restritos tendem a ser mais elásticos[cite: 5]."
+        "justification": "Bens necessários tendem a ter demanda inelástica (baixa elasticidade) porque os consumidores não podem abrir mão facilmente de seu consumo, mesmo quando o preço aumenta. Em contraste, bens de luxo, bens com muitos substitutos ou mercados restritos tendem a ser mais elásticos."
       },
       "2": {
         "command": "Um aumento no preço de um bem reduz o valor total que os consumidores gastam com ele se a elasticidade- ________ da demanda for ________ que 1.",
@@ -471,7 +471,7 @@
           "preço; maior"
         ],
         "answer": "d",
-        "justification": "Quando a demanda é elástica (elasticidade-preço $> 1$), a queda percentual na quantidade demandada é maior do que o aumento percentual no preço. Como resultado, a receita total (Preço $\\times$ Quantidade) diminui[cite: 5]."
+        "justification": "Quando a demanda é elástica (elasticidade-preço $> 1$), a queda percentual na quantidade demandada é maior do que o aumento percentual no preço. Como resultado, a receita total (Preço $\\times$ Quantidade) diminui."
       },
       "3": {
         "command": "Uma curva de demanda linear com inclinação descendente",
@@ -482,7 +482,7 @@
           "é inelástica em alguns pontos e elástica em outros."
         ],
         "answer": "d",
-        "justification": "Embora a inclinação de uma curva de demanda linear seja constante, a elasticidade não é. Em pontos com preços altos e quantidades baixas, a demanda é elástica; em pontos com preços baixos e quantidades altas, a demanda é inelástica[cite: 5]."
+        "justification": "Embora a inclinação de uma curva de demanda linear seja constante, a elasticidade não é. Em pontos com preços altos e quantidades baixas, a demanda é elástica; em pontos com preços baixos e quantidades altas, a demanda é inelástica."
       },
       "4": {
         "command": "Os cidadãos de Rohan gastam uma parcela maior de sua renda em alimentos do que os cidadãos de Gondor. Isso pode acontecer porque",
@@ -493,7 +493,7 @@
           "Rohan tem renda mais baixa, e a elasticidade-renda da demanda é 1,5."
         ],
         "answer": "c",
-        "justification": "Alimentos são bens necessários com elasticidade-renda menor que 1 (Lei de Engel). Se a renda cai, o gasto com alimentação não cai na mesma proporção, fazendo com que o peso dos alimentos no orçamento total aumente para populações de baixa renda[cite: 5]."
+        "justification": "Alimentos são bens necessários com elasticidade-renda menor que 1 (Lei de Engel). Se a renda cai, o gasto com alimentação não cai na mesma proporção, fazendo com que o peso dos alimentos no orçamento total aumente para populações de baixa renda."
       },
       "5": {
         "command": "O preço de um bem aumenta de $16 para $24, e a quantidade ofertada sobe de 90 para 110 unidades. Calculada a partir do método do ponto médio, qual é a elasticidade-preço da oferta?",
@@ -504,7 +504,7 @@
           "5"
         ],
         "answer": "b",
-        "justification": "Pelo método do ponto médio: Variação % na Qtd = $(110-90) / 100 = 20\\%$; Variação % no Preço = $(24-16) / 20 = 40\\%$. Elasticidade = $20\\% / 40\\% = 0,5$ ou $1/2$[cite: 5]."
+        "justification": "Pelo método do ponto médio: Variação % na Qtd = $(110-90) / 100 = 20\\%$; Variação % no Preço = $(24-16) / 20 = 40\\%$. Elasticidade = $20\\% / 40\\% = 0,5$ ou $1/2$."
       },
       "6": {
         "command": "Se a elasticidade-preço da oferta for zero, a curva de oferta",
@@ -515,7 +515,7 @@
           "será praticamente horizontal em quantidades baixas, mas mais inclinada em quantidades maiores."
         ],
         "answer": "c",
-        "justification": "Elasticidade zero significa que a oferta é perfeitamente inelástica. Independentemente do preço, a quantidade ofertada permanece a mesma, o que é representado graficamente por uma linha vertical[cite: 5]."
+        "justification": "Elasticidade zero significa que a oferta é perfeitamente inelástica. Independentemente do preço, a quantidade ofertada permanece a mesma, o que é representado graficamente por uma linha vertical."
       },
       "7": {
         "command": "A capacidade de uma empresa entrar e sair de um mercado ao longo do tempo indica que, em longo prazo,",
@@ -526,7 +526,7 @@
           "a curva de oferta é menos elástica."
         ],
         "answer": "c",
-        "justification": "No longo prazo, as empresas têm flexibilidade para construir novas fábricas ou encerrar operações. Essa capacidade de resposta às mudanças de preço torna a oferta muito mais elástica do que no curto prazo[cite: 5]."
+        "justification": "No longo prazo, as empresas têm flexibilidade para construir novas fábricas ou encerrar operações. Essa capacidade de resposta às mudanças de preço torna a oferta muito mais elástica do que no curto prazo."
       },
       "8": {
         "command": "Um aumento na oferta de grãos reduzirá a receita total recebida pelos produtores de grãos se",
@@ -537,7 +537,7 @@
           "a curva de demanda for elástica."
         ],
         "answer": "c",
-        "justification": "Um aumento na oferta reduz o preço. Se a demanda for inelástica, a queda percentual no preço será maior do que o aumento percentual na quantidade vendida, resultando em uma queda na receita total dos produtores[cite: 5]."
+        "justification": "Um aumento na oferta reduz o preço. Se a demanda for inelástica, a queda percentual no preço será maior do que o aumento percentual na quantidade vendida, resultando em uma queda na receita total dos produtores."
       },
       "9": {
         "command": "Em mercados competitivos, fazendeiros adotam novas tecnologias que, com o tempo, acabarão reduzindo sua receita, porque",
@@ -548,7 +548,7 @@
           "os consumidores pressionam os fazendeiros a reduzir os preços."
         ],
         "answer": "a",
-        "justification": "Como cada fazendeiro é um tomador de preços, ele adota a tecnologia para aumentar sua produção individual. No entanto, quando todos fazem o mesmo, a oferta agregada aumenta significativamente, derrubando o preço em um mercado de demanda inelástica[cite: 5]."
+        "justification": "Como cada fazendeiro é um tomador de preços, ele adota a tecnologia para aumentar sua produção individual. No entanto, quando todos fazem o mesmo, a oferta agregada aumenta significativamente, derrubando o preço em um mercado de demanda inelástica."
       },
       "10": {
         "command": "Como a curva de demanda por petróleo é ________ elástica em longo prazo, a redução da oferta de petróleo promovida pela Opep teve um impacto ________ sobre o preço em longo prazo do que em curto prazo.",
@@ -559,7 +559,7 @@
           "mais; maior"
         ],
         "answer": "c",
-        "justification": "No curto prazo, a demanda por petróleo é inelástica, pois os consumidores não mudam hábitos rapidamente. No longo prazo, a demanda torna-se mais elástica (substituição de veículos, eficiência energética), o que amortece o impacto de cortes na oferta sobre os preços[cite: 5]."
+        "justification": "No curto prazo, a demanda por petróleo é inelástica, pois os consumidores não mudam hábitos rapidamente. No longo prazo, a demanda torna-se mais elástica (substituição de veículos, eficiência energética), o que amortece o impacto de cortes na oferta sobre os preços."
       },
       "11": {
         "command": "Ao longo do tempo, os avanços tecnológicos aumentam a renda dos consumidores e reduzem o preço dos smartphones. Essas duas forças aumentarão o valor que os consumidores pagam pelos dispositivos se a elasticidade-renda da demanda for maior que ________ e a elasticidade-preço da demanda for maior que ________.",
@@ -570,11 +570,11 @@
           "um; um"
         ],
         "answer": "b",
-        "justification": "Para que o aumento da renda aumente o gasto, o bem deve ser normal (elasticidade-renda $> 0$). Para que uma queda no preço aumente o gasto total, a demanda deve ser elástica (elasticidade-preço $> 1$)[cite: 5]."
+        "justification": "Para que o aumento da renda aumente o gasto, o bem deve ser normal (elasticidade-renda $> 0$). Para que uma queda no preço aumente o gasto total, a demanda deve ser elástica (elasticidade-preço $> 1$)."
       }
     }
   },
-    "6": {
+  "6": {
     "name": "Oferta, demanda e políticas do governo",
     "questions": {
       "1": {
@@ -586,7 +586,7 @@
           "haja excesso daquele bem."
         ],
         "answer": "d",
-        "justification": "Um preço mínimo obrigatório (acima do equilíbrio) impede que o preço caia para o nível de mercado. Isso resulta em uma quantidade ofertada maior do que a quantidade demandada, gerando um excesso ou excedente do bem[cite: 6]."
+        "justification": "Um preço mínimo obrigatório (acima do equilíbrio) impede que o preço caia para o nível de mercado. Isso resulta em uma quantidade ofertada maior do que a quantidade demandada, gerando um excesso ou excedente do bem."
       },
       "2": {
         "command": "Em um mercado com um preço máximo obrigatório, o aumento desse valor",
@@ -597,7 +597,7 @@
           "reduzirá a escassez."
         ],
         "answer": "d",
-        "justification": "O preço máximo obrigatório cria escassez ao manter o preço abaixo do equilíbrio. Ao aumentar esse teto, o preço se aproxima do nível de equilíbrio, o que incentiva a oferta e desestimula o excesso de demanda, reduzindo a escassez[cite: 6]."
+        "justification": "O preço máximo obrigatório cria escassez ao manter o preço abaixo do equilíbrio. Ao aumentar esse teto, o preço se aproxima do nível de equilíbrio, o que incentiva a oferta e desestimula o excesso de demanda, reduzindo a escassez."
       },
       "3": {
         "command": "O controle de aluguéis causa uma grande escassez em ________ prazo porque, durante aquele horizonte de tempo, oferta e demanda são ________ elásticas.",
@@ -608,7 +608,7 @@
           "curto; menos"
         ],
         "answer": "a",
-        "justification": "No longo prazo, tanto a oferta (construção de novos imóveis) quanto a demanda (escolha de onde morar) são mais elásticas. Por isso, a resposta às distorções de preço é mais acentuada, resultando em uma escassez muito maior do que no curto prazo[cite: 6]."
+        "justification": "No longo prazo, tanto a oferta (construção de novos imóveis) quanto a demanda (escolha de onde morar) são mais elásticas. Por isso, a resposta às distorções de preço é mais acentuada, resultando em uma escassez muito maior do que no curto prazo."
       },
       "4": {
         "command": "Um aumento no salário mínimo reduz o valor total pago aos trabalhadores afetados se a elasticidade-preço da ________ for ________ que 1.",
@@ -619,7 +619,7 @@
           "demanda; menor"
         ],
         "answer": "c",
-        "justification": "Se a demanda por trabalho for elástica (elasticidade $> 1$), um aumento percentual no salário resultará em uma redução percentual maior na quantidade de trabalho contratada. Assim, a massa salarial total (salário $\\times$ emprego) diminuirá[cite: 6]."
+        "justification": "Se a demanda por trabalho for elástica (elasticidade $> 1$), um aumento percentual no salário resultará em uma redução percentual maior na quantidade de trabalho contratada. Assim, a massa salarial total (salário $\\times$ emprego) diminuirá."
       },
       "5": {
         "command": "Um imposto de $1 por unidade cobrado dos consumidores de um bem é equivalente a",
@@ -630,7 +630,7 @@
           "um valor máximo que aumenta o preço do bem em $1 por unidade."
         ],
         "answer": "a",
-        "justification": "A incidência econômica de um imposto independe de quem é legalmente responsável pelo recolhimento. Tanto o imposto sobre o consumo quanto sobre a produção criam uma 'cunha' entre o preço pago pelo comprador e o recebido pelo vendedor[cite: 6]."
+        "justification": "A incidência econômica de um imposto independe de quem é legalmente responsável pelo recolhimento. Tanto o imposto sobre o consumo quanto sobre a produção criam uma 'cunha' entre o preço pago pelo comprador e o recebido pelo vendedor."
       },
       "6": {
         "command": "Quando um bem é tributado, o ônus do imposto recai principalmente sobre os consumidores se",
@@ -641,7 +641,7 @@
           "a oferta for elástica e a demanda for inelástica."
         ],
         "answer": "d",
-        "justification": "O ônus de um imposto recai mais pesadamente sobre o lado do mercado que é menos elástico. Se a demanda é inelástica (consumidores têm pouca alternativa) e a oferta é elástica, os produtores repassam a maior parte do custo aos compradores[cite: 6]."
+        "justification": "O ônus de um imposto recai mais pesadamente sobre o lado do mercado que é menos elástico. Se a demanda é inelástica (consumidores têm pouca alternativa) e a oferta é elástica, os produtores repassam a maior parte do custo aos compradores."
       },
       "7": {
         "command": "Qual das seguintes alternativas aumentaria a quantidade ofertada, reduziria a quantidade demandada e aumentaria o preço pago pelos consumidores?",
@@ -652,7 +652,7 @@
           "a remoção de um preço mínimo obrigatório"
         ],
         "answer": "c",
-        "justification": "Um preço mínimo obrigatório fixa o preço acima do equilíbrio. Isso aumenta o preço pago pelos consumidores (reduzindo sua demanda) e aumenta o preço recebido pelos produtores (aumentando sua oferta), gerando excesso[cite: 6]."
+        "justification": "Um preço mínimo obrigatório fixa o preço acima do equilíbrio. Isso aumenta o preço pago pelos consumidores (reduzindo sua demanda) e aumenta o preço recebido pelos produtores (aumentando sua oferta), gerando excesso."
       },
       "8": {
         "command": "Qual das seguintes alternativas aumentaria a quantidade ofertada, aumentaria a quantidade demandada e reduziria o preço pago pelos consumidores?",
@@ -663,11 +663,11 @@
           "a remoção de um preço mínimo obrigatório"
         ],
         "answer": "b",
-        "justification": "Ao remover um imposto, a 'cunha' fiscal desaparece. O preço efetivo para os compradores cai (aumentando a demanda) e o preço líquido recebido pelos vendedores sobe (aumentando a oferta), elevando a quantidade total de equilíbrio[cite: 6]."
+        "justification": "Ao remover um imposto, a 'cunha' fiscal desaparece. O preço efetivo para os compradores cai (aumentando a demanda) e o preço líquido recebido pelos vendedores sobe (aumentando a oferta), elevando a quantidade total de equilíbrio."
       }
     }
   },
-    "7": {
+  "7": {
     "name": "Mercados e bem-estar",
     "questions": {
       "1": {
@@ -679,7 +679,7 @@
           "$18"
         ],
         "answer": "b",
-        "justification": "O excedente do consumidor é a disposição para pagar menos o preço efetivamente pago. Alex tem um excedente de $12 - 6 = 6$. Bruno tem um excedente de $8 - 6 = 2$. Camila não compra o sorvete, pois sua disposição ($4) é menor que o preço ($6). O total é $6 + 2 = 8$[cite: 7]."
+        "justification": "O excedente do consumidor é a disposição para pagar menos o preço efetivamente pago. Alex tem um excedente de $12 - 6 = 6$. Bruno tem um excedente de $8 - 6 = 2$. Camila não compra o sorvete, pois sua disposição ($4) é menor que o preço ($6). O total é $6 + 2 = 8$."
       },
       "2": {
         "command": "Se o preço do sorvete cair para $3, em quanto aumentará o excedente do consumidor de Alex, Bruno e Camila?",
@@ -690,7 +690,7 @@
           "$9"
         ],
         "answer": "b",
-        "justification": "Com o preço a $3, os excedentes individuais passam a ser: Alex ($12 - 3 = 9$), Bruno ($8 - 3 = 5$) e Camila ($4 - 3 = 1$). O novo excedente total é $15$. Como o anterior era $8$, o aumento foi de $15 - 8 = 7$[cite: 7]."
+        "justification": "Com o preço a $3, os excedentes individuais passam a ser: Alex ($12 - 3 = 9$), Bruno ($8 - 3 = 5$) e Camila ($4 - 3 = 1$). O novo excedente total é $15$. Como o anterior era $8$, o aumento foi de $15 - 8 = 7$."
       },
       "3": {
         "command": "A curva de demanda dos biscoitos tem inclinação descendente. Quando o preço de um biscoito é $3, a quantidade demandada é 100 unidades. Se o preço cair para $2, o que acontecerá com o excedente do consumidor?",
@@ -701,7 +701,7 @@
           "Ele aumentará em mais de $100."
         ],
         "answer": "d",
-        "justification": "A queda no preço aumenta o excedente dos consumidores que já compravam (100 unidades $\\times$ $1 de economia = $100) e ainda adiciona o excedente dos novos consumidores que entram no mercado devido ao preço menor. Portanto, o aumento total é necessariamente superior a $100[cite: 7]."
+        "justification": "A queda no preço aumenta o excedente dos consumidores que já compravam (100 unidades $\\times$ $1 de economia = $100) e ainda adiciona o excedente dos novos consumidores que entram no mercado devido ao preço menor. Portanto, o aumento total é necessariamente superior a $100."
       },
       "4": {
         "command": "Diego, Emília e Fernando estão disponíveis para oferecer mentoria neste semestre. O custo de oportunidade da mentoria é de $400 para Diego, $200 para Emília e $100 para Fernando. A universidade contratará os mentores por um valor de $300. Qual é o excedente do produtor desse mercado?",
@@ -712,7 +712,7 @@
           "$400"
         ],
         "answer": "c",
-        "justification": "O excedente do produtor é o preço recebido menos o custo de oportunidade. Emília tem excedente de $300 - 200 = 100$. Fernando tem excedente de $300 - 100 = 200$. Diego não participa, pois seu custo ($400) supera o preço ($300). O total é $100 + 200 = 300$[cite: 7]."
+        "justification": "O excedente do produtor é o preço recebido menos o custo de oportunidade. Emília tem excedente de $300 - 200 = 100$. Fernando tem excedente de $300 - 100 = 200$. Diego não participa, pois seu custo ($400) supera o preço ($300). O total é $100 + 200 = 300$."
       },
       "5": {
         "command": "Gabriel trabalha em período integral como jardineiro por $300 por semana. Quando o preço de mercado aumenta para $400, Hector também se torna jardineiro. De quanto será o aumento do excedente do produtor em decorrência desse aumento no preço?",
@@ -723,7 +723,7 @@
           "mais de $300"
         ],
         "answer": "b",
-        "justification": "Gabriel ganha $100 adicionais de excedente (preço subiu de $300 para $400). Hector entra no mercado porque seu custo é entre $300 e $400; seu excedente será a diferença entre $400 e seu custo (algo entre $0 e $100). Assim, o aumento total é $100 (de Gabriel) + o valor de Hector, totalizando entre $100 e $200[cite: 7]."
+        "justification": "Gabriel ganha $100 adicionais de excedente (preço subiu de $300 para $400). Hector entra no mercado porque seu custo é entre $300 e $400; seu excedente será a diferença entre $400 e seu custo (algo entre $0 e $100). Assim, o aumento total é $100 (de Gabriel) + o valor de Hector, totalizando entre $100 e $200."
       },
       "6": {
         "command": "A curva de oferta de um produto é Qo = 2P e o preço de mercado é $10. Qual é o excedente do produtor neste mercado? (Dica: elabore o gráfico da curva de oferta e lembre-se da fórmula da área de um triângulo.)",
@@ -734,7 +734,7 @@
           "$200"
         ],
         "answer": "c",
-        "justification": "Para $P=10$, $Q=20$. A curva parte da origem (0,0). O excedente do produtor é a área do triângulo abaixo do preço e acima da oferta: $Area = (Base \\times Altura) / 2 = (20 \\times 10) / 2 = 100$[cite: 7]."
+        "justification": "Para $P=10$, $Q=20$. A curva parte da origem (0,0). O excedente do produtor é a área do triângulo abaixo do preço e acima da oferta: $Area = (Base \\times Altura) / 2 = (20 \\times 10) / 2 = 100$."
       },
       "7": {
         "command": "Isabelle atribui o valor de $60 a 1 hora de seu tempo. Ela gasta 2 horas fazendo uma massagem em Joelma, que estava disposta a pagar até $300 pela massagem. Porém, o preço negociado entre elas foi de $200. Nessa transação,",
@@ -745,7 +745,7 @@
           "o excedente do produtor é $40 maior que o excedente do consumidor."
         ],
         "answer": "a",
-        "justification": "O custo de Isabelle é $60 \\times 2 = 120$. Seu excedente (produtor) é $200 - 120 = 80$. O excedente de Joelma (consumidor) é $300 - 200 = 100$. A diferença é $100 - 80 = 20$, sendo o excedente do consumidor maior[cite: 7]."
+        "justification": "O custo de Isabelle é $60 \\times 2 = 120$. Seu excedente (produtor) é $200 - 120 = 80$. O excedente de Joelma (consumidor) é $300 - 200 = 100$. A diferença é $100 - 80 = 20$, sendo o excedente do consumidor maior."
       },
       "8": {
         "command": "Uma alocação eficiente de recursos maximiza",
@@ -756,7 +756,7 @@
           "o excedente do consumidor menos o excedente do produtor."
         ],
         "answer": "c",
-        "justification": "Eficiência econômica é alcançada quando a alocação de recursos maximiza o excedente total, que é a soma do bem-estar dos compradores (excedente do consumidor) e dos vendedores (excedente do produtor) no mercado[cite: 7]."
+        "justification": "Eficiência econômica é alcançada quando a alocação de recursos maximiza o excedente total, que é a soma do bem-estar dos compradores (excedente do consumidor) e dos vendedores (excedente do produtor) no mercado."
       },
       "9": {
         "command": "Quando um mercado está em equilíbrio, os compradores são aqueles com ________ disposição para pagar, e os vendedores são aqueles com os ________ custos.",
@@ -767,7 +767,7 @@
           "menor; menores"
         ],
         "answer": "b",
-        "justification": "O equilíbrio de mercado aloca naturalmente os bens para os compradores que os valorizam mais (maior disposição para pagar) e para os vendedores que conseguem produzir ao menor custo, maximizando o excedente total[cite: 7]."
+        "justification": "O equilíbrio de mercado aloca naturalmente os bens para os compradores que os valorizam mais (maior disposição para pagar) e para os vendedores que conseguem produzir ao menor custo, maximizando o excedente total."
       },
       "10": {
         "command": "A produção de uma quantidade maior que o equilíbrio entre oferta e demanda é ineficiente porque a disposição do comprador marginal para pagar é",
@@ -778,11 +778,11 @@
           "positiva e maior que o custo do vendedor marginal."
         ],
         "answer": "c",
-        "justification": "Além do ponto de equilíbrio, o custo de produzir uma unidade adicional (curva de oferta) supera o valor que os consumidores atribuem a ela (curva de demanda). Produzir essas unidades reduz o excedente total, gerando ineficiência[cite: 7]."
+        "justification": "Além do ponto de equilíbrio, o custo de produzir uma unidade adicional (curva de oferta) supera o valor que os consumidores atribuem a ela (curva de demanda). Produzir essas unidades reduz o excedente total, gerando ineficiência."
       }
     }
   },
-    "10": {
+  "10": {
     "name": "Externalidades",
     "questions": {
       "1": {
@@ -794,7 +794,7 @@
           "Xavier se oferece para pagar para que Scott mantenha sua grama cortada."
         ],
         "answer": "c",
-        "justification": "Uma externalidade positiva ocorre quando o impacto de uma ação sobre um terceiro é benéfico, mas esse terceiro não paga nem recebe compensação por isso. O fato de a vizinhança ficar mais atraente beneficia Xavier sem que ele tenha participado da transação original[cite: 8]."
+        "justification": "Uma externalidade positiva ocorre quando o impacto de uma ação sobre um terceiro é benéfico, mas esse terceiro não paga nem recebe compensação por isso. O fato de a vizinhança ficar mais atraente beneficia Xavier sem que ele tenha participado da transação original."
       },
       "2": {
         "command": "Se a produção de um bem gera uma externalidade negativa, a curva do custo social ficará ________ da curva de oferta e a quantidade socialmente ótima é ________ que a quantidade de equilíbrio.",
@@ -805,7 +805,7 @@
           "abaixo; menor"
         ],
         "answer": "b",
-        "justification": "O custo social engloba os custos privados dos produtores mais os custos externos aos terceiros. Assim, a curva de custo social situa-se acima da curva de oferta (custo privado). O equilíbrio de mercado ignora esse custo extra, produzindo uma quantidade maior do que a desejável pela sociedade (quantidade ótima)[cite: 8]."
+        "justification": "O custo social engloba os custos privados dos produtores mais os custos externos aos terceiros. Assim, a curva de custo social situa-se acima da curva de oferta (custo privado). O equilíbrio de mercado ignora esse custo extra, produzindo uma quantidade maior do que a desejável pela sociedade (quantidade ótima)."
       },
       "3": {
         "command": "Quando o governo lança um imposto igual aos custos externos associados à produção de um bem, ele ________ o preço pago pelos consumidores e torna o resultado do mercado ________ eficiente.",
@@ -816,7 +816,7 @@
           "reduz; menos"
         ],
         "answer": "a",
-        "justification": "Ao aplicar um imposto corretivo (imposto de Pigou), o governo internaliza a externalidade. Isso eleva o preço para o consumidor, refletindo o custo real para a sociedade, e reduz a quantidade produzida para o nível socialmente ótimo, aumentando a eficiência econômica[cite: 8]."
+        "justification": "Ao aplicar um imposto corretivo (imposto de Pigou), o governo internaliza a externalidade. Isso eleva o preço para o consumidor, refletindo o custo real para a sociedade, e reduz a quantidade produzida para o nível socialmente ótimo, aumentando a eficiência econômica."
       },
       "4": {
         "command": "Qual das seguintes afirmações sobre impostos corretivos geralmente NÃO é verdadeira?",
@@ -827,7 +827,7 @@
           "Eles causam peso morto."
         ],
         "answer": "d",
-        "justification": "Diferente dos impostos comuns, os impostos corretivos visam corrigir falhas de mercado. Em vez de causar distorções e peso morto (ineficiência), eles eliminam a ineficiência causada pela externalidade, movendo a alocação de recursos em direção ao ótimo social[cite: 8]."
+        "justification": "Diferente dos impostos comuns, os impostos corretivos visam corrigir falhas de mercado. Em vez de causar distorções e peso morto (ineficiência), eles eliminam a ineficiência causada pela externalidade, movendo a alocação de recursos em direção ao ótimo social."
       },
       "5": {
         "command": "O governo leiloa 500 unidades de direitos de poluição. As licenças são vendidas a $50 cada e geram $25 mil em receita para o governo. Essa política é equivalente a um imposto corretivo de ________ por unidade de poluição.",
@@ -838,7 +838,7 @@
           "$500"
         ],
         "answer": "b",
-        "justification": "Licenças de poluição comercializáveis e impostos corretivos são ferramentas equivalentes. Se o preço de mercado de uma licença para poluir uma unidade é $50, isso cria o mesmo incentivo econômico que um imposto direto de $50 por unidade emitida[cite: 8]."
+        "justification": "Licenças de poluição comercializáveis e impostos corretivos são ferramentas equivalentes. Se o preço de mercado de uma licença para poluir uma unidade é $50, isso cria o mesmo incentivo econômico que um imposto direto de $50 por unidade emitida."
       },
       "6": {
         "command": "A regulamentação de comando e controle pode ser melhor que um imposto corretivo quando",
@@ -849,7 +849,7 @@
           "o conhecimento sobre o custo da redução da poluição é difuso e difícil de obter."
         ],
         "answer": "c",
-        "justification": "Embora economistas prefiram incentivos de mercado (impostos), a proibição direta (comando e controle) é mais eficaz quando o custo social de qualquer nível da atividade é proibitivo, tornando a eliminação total (quantidade zero) o único objetivo aceitável[cite: 8]."
+        "justification": "Embora economistas prefiram incentivos de mercado (impostos), a proibição direta (comando e controle) é mais eficaz quando o custo social de qualquer nível da atividade é proibitivo, tornando a eliminação total (quantidade zero) o único objetivo aceitável."
       },
       "7": {
         "command": "Segundo o teorema de Coase,",
@@ -860,7 +860,7 @@
           "quando duas pessoas resolvem o problema das externalidades de maneira amigável, elas transferem o problema para um terceiro."
         ],
         "answer": "a",
-        "justification": "O teorema de Coase afirma que, se os agentes privados puderem negociar sem custos, o mercado privado resolverá o problema das externalidades e alocará os recursos de forma eficiente por conta própria, independentemente da distribuição inicial de direitos[cite: 8]."
+        "justification": "O teorema de Coase afirma que, se os agentes privados puderem negociar sem custos, o mercado privado resolverá o problema das externalidades e alocará os recursos de forma eficiente por conta própria, independentemente da distribuição inicial de direitos."
       },
       "8": {
         "command": "O teorema de Coase NÃO se aplica se",
@@ -871,11 +871,11 @@
           "ambas as partes entenderem totalmente a externalidade."
         ],
         "answer": "c",
-        "justification": "A aplicação do teorema de Coase exige que as partes consigam negociar e cumprir acordos facilmente. Se os custos de transação (advogados, tempo de negociação, grande número de interessados) forem muito altos, a solução privada falha e a intervenção governamental pode ser necessária[cite: 8]."
+        "justification": "A aplicação do teorema de Coase exige que as partes consigam negociar e cumprir acordos facilmente. Se os custos de transação (advogados, tempo de negociação, grande número de interessados) forem muito altos, a solução privada falha e a intervenção governamental pode ser necessária."
       }
     }
   },
-    "11": {
+  "11": {
     "name": "Bens públicos e recursos comuns",
     "questions": {
       "1": {
@@ -887,7 +887,7 @@
           "bens públicos e recursos comuns"
         ],
         "answer": "a",
-        "justification": "Excludibilidade é a propriedade de um bem pela qual se pode impedir uma pessoa de usá-lo[cite: 9]. Bens privados são excludentes porque você deve pagar por eles, e bens artificialmente escassos (ou bens de clube) também são excludentes, embora não sejam rivais[cite: 9]."
+        "justification": "Excludibilidade é a propriedade de um bem pela qual se pode impedir uma pessoa de usá-lo. Bens privados são excludentes porque você deve pagar por eles, e bens artificialmente escassos (ou bens de clube) também são excludentes, embora não sejam rivais."
       },
       "2": {
         "command": "Quais categorias de bens são rivais?",
@@ -898,7 +898,7 @@
           "bens públicos e recursos comuns"
         ],
         "answer": "b",
-        "justification": "Rivalidade no consumo é a propriedade pela qual o uso de um bem por uma pessoa diminui a capacidade de outra pessoa usá-lo[cite: 9]. Bens privados (como um sorvete) e recursos comuns (como peixes no oceano) possuem essa característica, pois o consumo de um reduz a disponibilidade para outros[cite: 9]."
+        "justification": "Rivalidade no consumo é a propriedade pela qual o uso de um bem por uma pessoa diminui a capacidade de outra pessoa usá-lo. Bens privados (como um sorvete) e recursos comuns (como peixes no oceano) possuem essa característica, pois o consumo de um reduz a disponibilidade para outros."
       },
       "3": {
         "command": "Qual alternativa é um exemplo de bem público?",
@@ -909,7 +909,7 @@
           "peixes no oceano"
         ],
         "answer": "b",
-        "justification": "A defesa nacional é o exemplo clássico de bem público porque não é excludente (não se pode impedir alguém de ser protegido) e não é rival (a proteção de um cidadão não reduz a proteção dos outros)[cite: 9]."
+        "justification": "A defesa nacional é o exemplo clássico de bem público porque não é excludente (não se pode impedir alguém de ser protegido) e não é rival (a proteção de um cidadão não reduz a proteção dos outros)."
       },
       "4": {
         "command": "Bens públicos são",
@@ -920,7 +920,7 @@
           "um tipo de monopólio natural."
         ],
         "answer": "b",
-        "justification": "Devido ao problema do 'carona' (free rider), as pessoas têm incentivo para não pagar por bens públicos esperando que outros o façam[cite: 9]. Como resultado, o mercado privado falha em fornecer a quantidade socialmente desejável, exigindo a intervenção governamental para garantir o provimento adequado[cite: 9]."
+        "justification": "Devido ao problema do 'carona' (free rider), as pessoas têm incentivo para não pagar por bens públicos esperando que outros o façam. Como resultado, o mercado privado falha em fornecer a quantidade socialmente desejável, exigindo a intervenção governamental para garantir o provimento adequado."
       },
       "5": {
         "command": "Os três moradores de Smallville estão pensando em promover uma queima de fogos. Clark atribui a esse bem público um valor de $80, Lana, de $50, e Pete (que não gosta de fogos de artifício), de –$30. Os fogos custarão $120 à cidade, ou $40 por pessoa. O resultado eficiente para o local seria",
@@ -931,7 +931,7 @@
           "não fornecer o bem público porque o valor total de todos os moradores é menor que o custo total."
         ],
         "answer": "d",
-        "justification": "A eficiência social ocorre quando o benefício total excede o custo total. Somando as disposições a pagar: $80 + 50 + (-30) = 100$. Como o custo total é $120, o custo supera o benefício social total, tornando o fornecimento ineficiente[cite: 9]."
+        "justification": "A eficiência social ocorre quando o benefício total excede o custo total. Somando as disposições a pagar: $80 + 50 + (-30) = 100$. Como o custo total é $120, o custo supera o benefício social total, tornando o fornecimento ineficiente."
       },
       "6": {
         "command": "Qual alternativa é um exemplo de recurso comum?",
@@ -942,7 +942,7 @@
           "peixes no oceano"
         ],
         "answer": "d",
-        "justification": "Peixes no oceano são recursos comuns porque são rivais no consumo (um peixe pescado por um pescador não pode ser pescado por outro), mas não são excludentes (é difícil impedir as pessoas de pescarem em águas internacionais)[cite: 9]."
+        "justification": "Peixes no oceano são recursos comuns porque são rivais no consumo (um peixe pescado por um pescador não pode ser pescado por outro), mas não são excludentes (é difícil impedir as pessoas de pescarem em águas internacionais)."
       },
       "7": {
         "command": "Recursos comuns são",
@@ -953,7 +953,7 @@
           "um tipo de monopólio natural."
         ],
         "answer": "c",
-        "justification": "Isso descreve a 'Tragédia dos Comuns'. Como o bem não é excludente mas é rival, os indivíduos tendem a usá-lo excessivamente do ponto de vista da sociedade, pois não consideram a externalidade negativa que impõem aos outros ao reduzir a disponibilidade do recurso[cite: 9]."
+        "justification": "Isso descreve a 'Tragédia dos Comuns'. Como o bem não é excludente mas é rival, os indivíduos tendem a usá-lo excessivamente do ponto de vista da sociedade, pois não consideram a externalidade negativa que impõem aos outros ao reduzir a disponibilidade do recurso."
       },
       "8": {
         "command": "Considere uma rodovia com pedágio que apresenta congestionamento apenas no horário de pico. Durante outros períodos do dia, o uso da rodovia não é ________, por isso, o pedágio eficiente é ________.",
@@ -964,11 +964,11 @@
           "rival no consumo; zero"
         ],
         "answer": "d",
-        "justification": "Se não há congestionamento, o custo marginal de um veículo adicional na estrada é zero, o que significa que o bem não é rival no consumo naquele momento[cite: 9]. Para maximizar o excedente social, o preço (pedágio) deve ser igual ao custo marginal, portanto, zero[cite: 9]."
+        "justification": "Se não há congestionamento, o custo marginal de um veículo adicional na estrada é zero, o que significa que o bem não é rival no consumo naquele momento. Para maximizar o excedente social, o preço (pedágio) deve ser igual ao custo marginal, portanto, zero."
       }
     }
   },
-    "14": {
+  "14": {
     "name": "Os custos de produção",
     "questions": {
       "1": {
@@ -980,7 +980,7 @@
           "$400"
         ],
         "answer": "c",
-        "justification": "O custo total econômico inclui custos explícitos e implícitos[cite: 10]. O custo explícito é o gasto com sementes ($100). O custo implícito é o custo de oportunidade do tempo de Seu Lobato: $20/hora $\\times$ 10 horas = $200. Total = $100 + $200 = $300[cite: 10]."
+        "justification": "O custo total econômico inclui custos explícitos e implícitos. O custo explícito é o gasto com sementes ($100). O custo implícito é o custo de oportunidade do tempo de Seu Lobato: $20/hora $\\times$ 10 horas = $200. Total = $100 + $200 = $300."
       },
       "2": {
         "command": "Xavier abre uma barraca de limonada durante duas horas. Ele gasta $10 em ingredientes e vende $60 em limonada. Nas mesmas duas horas, ele poderia ter cortado a grama do vizinho por $40. Xavier obtém um lucro contábil e um lucro econômico de quanto, respectivamente?",
@@ -991,7 +991,7 @@
           "$50; $90"
         ],
         "answer": "a",
-        "justification": "Lucro contábil é a receita total menos custos explícitos: $60 - $10 = $50[cite: 10]. Lucro econômico é a receita total menos custos totais (explícitos + implícitos): $60 - ($10 + $40) = $10[cite: 10]."
+        "justification": "Lucro contábil é a receita total menos custos explícitos: $60 - $10 = $50. Lucro econômico é a receita total menos custos totais (explícitos + implícitos): $60 - ($10 + $40) = $10."
       },
       "3": {
         "command": "A agricultora Adriana apresenta em sua fazenda o produto marginal decrescente. Se ela não plantar as sementes, não terá colheita. Se ela plantar 1 saco de sementes, ganhará 3 sacas de trigo. Se plantar 2 sacos, ganhará 5 sacas. Se plantar 3 sacos, ganhará",
@@ -1002,7 +1002,7 @@
           "9 sacas."
         ],
         "answer": "a",
-        "justification": "Produto marginal é o aumento na produção resultante de uma unidade adicional de insumo[cite: 10]. Da 1ª saca, o PM é 3. Da 2ª saca, o PM é 2 (5-3). Com o produto marginal decrescente, a 3ª saca deve render menos que 2, resultando em um total menor que 7 (5+2). A única alternativa coerente é 6 sacas (PM = 1)[cite: 10]."
+        "justification": "Produto marginal é o aumento na produção resultante de uma unidade adicional de insumo. Da 1ª saca, o PM é 3. Da 2ª saca, o PM é 2 (5-3). Com o produto marginal decrescente, a 3ª saca deve render menos que 2, resultando em um total menor que 7 (5+2). A única alternativa coerente é 6 sacas (PM = 1)."
       },
       "4": {
         "command": "O produto marginal decrescente explica por que, à medida que a produção aumenta,",
@@ -1013,7 +1013,7 @@
           "a função de produção se torna mais plana e a curva de custo total se torna mais íngreme."
         ],
         "answer": "d",
-        "justification": "Com o produto marginal decrescente, cada trabalhador adicional produz menos que o anterior, achatando a função de produção[cite: 10]. Simultaneamente, para produzir unidades extras, é necessário contratar cada vez mais insumos, o que faz com que o custo total suba de forma acelerada, tornando a curva de custo total mais íngreme[cite: 10]."
+        "justification": "Com o produto marginal decrescente, cada trabalhador adicional produz menos que o anterior, achatando a função de produção. Simultaneamente, para produzir unidades extras, é necessário contratar cada vez mais insumos, o que faz com que o custo total suba de forma acelerada, tornando a curva de custo total mais íngreme."
       },
       "5": {
         "command": "Uma empresa está produzindo 1.000 unidades a um custo total de $5.000. Quando aumenta a produção para 1.001 unidades, seu custo total sobe para $5.008. Para essa empresa,",
@@ -1024,7 +1024,7 @@
           "o custo marginal é $8, e o custo total médio é $5."
         ],
         "answer": "d",
-        "justification": "O custo marginal ($CMg$) é o aumento no custo total por unidade adicional: $5008 - 5000 = $8[cite: 10]. O custo total médio ($CTM$) é o custo total dividido pela quantidade: $5000 / 1000 = $5 por unidade[cite: 10]."
+        "justification": "O custo marginal ($CMg$) é o aumento no custo total por unidade adicional: $5008 - 5000 = $8. O custo total médio ($CTM$) é o custo total dividido pela quantidade: $5000 / 1000 = $5 por unidade."
       },
       "6": {
         "command": "Uma empresa está produzindo 20 unidades com um custo total médio de $25 e um custo marginal de $15. Se aumentar a produção para 21 unidades, qual das seguintes opções deve ocorrer?",
@@ -1035,7 +1035,7 @@
           "O custo total médio aumentará."
         ],
         "answer": "c",
-        "justification": "Sempre que o custo marginal é menor que o custo total médio ($CMg < CTM$), o custo total médio está em queda[cite: 10]. Como $15 < $25, a produção da próxima unidade 'puxará' a média para baixo[cite: 10]."
+        "justification": "Sempre que o custo marginal é menor que o custo total médio ($CMg < CTM$), o custo total médio está em queda. Como $15 < $25, a produção da próxima unidade 'puxará' a média para baixo."
       },
       "7": {
         "command": "O governo impõe uma taxa de licenciamento de $1.000 por ano a todas as pizzarias. Como resultado, quais curvas de custo se deslocariam?",
@@ -1046,7 +1046,7 @@
           "custo variável médio e custo fixo médio"
         ],
         "answer": "b",
-        "justification": "A taxa de licenciamento é um custo fixo, pois não varia com a quantidade de pizzas produzidas[cite: 10]. Portanto, ela altera o Custo Fixo Médio ($CFM$) e, consequentemente, o Custo Total Médio ($CTM$). O Custo Marginal ($CMg$) e o Custo Variável Médio ($CVM$) não mudam, pois não dependem de custos fixos[cite: 10]."
+        "justification": "A taxa de licenciamento é um custo fixo, pois não varia com a quantidade de pizzas produzidas. Portanto, ela altera o Custo Fixo Médio ($CFM$) e, consequentemente, o Custo Total Médio ($CTM$). O Custo Marginal ($CMg$) e o Custo Variável Médio ($CVM$) não mudam, pois não dependem de custos fixos."
       },
       "8": {
         "command": "Se, em uma dada empresa, um nível mais alto de produção permitir que os trabalhadores se especializem em tarefas específicas, essa empresa provavelmente exibirá ________ de escala e custo total médio ________.",
@@ -1057,7 +1057,7 @@
           "deseconomias; crescente"
         ],
         "answer": "a",
-        "justification": "Economias de escala ocorrem quando o custo total médio de longo prazo diminui à medida que a quantidade produzida aumenta[cite: 10]. A especialização do trabalho é um dos principais motivos para que grandes empresas alcancem maior produtividade e menores custos médios[cite: 10]."
+        "justification": "Economias de escala ocorrem quando o custo total médio de longo prazo diminui à medida que a quantidade produzida aumenta. A especialização do trabalho é um dos principais motivos para que grandes empresas alcancem maior produtividade e menores custos médios."
       },
       "9": {
         "command": "Se a Boeing produzir 9 jatos por mês, seu custo total de longo prazo será de $9 milhões por mês. Se ela produzir 10 jatos por mês, seu custo total de longo prazo será de $11 milhões por mês. A Boeing apresentaria:",
@@ -1068,11 +1068,11 @@
           "deseconomias de escala."
         ],
         "answer": "d",
-        "justification": "Para 9 jatos, o $CTM = $9M / 9 = $1M por jato. Para 10 jatos, o $CTM = $11M / 10 = $1,1M por jato[cite: 10]. Como o custo médio aumentou conforme a produção subiu, a empresa está enfrentando deseconomias de escala[cite: 10]."
+        "justification": "Para 9 jatos, o $CTM = $9M / 9 = $1M por jato. Para 10 jatos, o $CTM = $11M / 10 = $1,1M por jato. Como o custo médio aumentou conforme a produção subiu, a empresa está enfrentando deseconomias de escala."
       }
     }
   },
-    "16": {
+  "16": {
     "name": "Monopólio",
     "questions": {
       "1": {
@@ -1084,7 +1084,7 @@
           "evitarem que os consumidores tenham de escolher entre fornecedores alternativos."
         ],
         "answer": "c",
-        "justification": "Leis de patentes e direitos autorais são exemplos de monopólios criados pelo governo para incentivar a pesquisa e a criação, garantindo ao autor o direito exclusivo de vender sua produção por um tempo determinado[cite: 11]."
+        "justification": "Leis de patentes e direitos autorais são exemplos de monopólios criados pelo governo para incentivar a pesquisa e a criação, garantindo ao autor o direito exclusivo de vender sua produção por um tempo determinado."
       },
       "2": {
         "command": "Uma empresa é um monopólio natural se exibir ________ à medida que a produção aumenta.",
@@ -1095,7 +1095,7 @@
           "custo total médio decrescente"
         ],
         "answer": "d",
-        "justification": "Um monopólio natural surge quando uma única empresa consegue fornecer um bem ou serviço para todo o mercado a um custo menor do que duas ou mais empresas, o que ocorre devido à presença de economias de escala em toda a faixa de produção[cite: 11]."
+        "justification": "Um monopólio natural surge quando uma única empresa consegue fornecer um bem ou serviço para todo o mercado a um custo menor do que duas ou mais empresas, o que ocorre devido à presença de economias de escala em toda a faixa de produção."
       },
       "3": {
         "command": "Para uma empresa monopolista que maximiza o lucro e cobra um único preço, qual é a relação entre preço (P), receita marginal (RMg) e custo marginal (CMg)?",
@@ -1106,7 +1106,7 @@
           "P > RMg e RMg > CMg"
         ],
         "answer": "b",
-        "justification": "O monopolista maximiza o lucro produzindo a quantidade onde a receita marginal é igual ao custo marginal ($RMg = CMg$). Como a curva de demanda tem inclinação negativa, o preço cobrado é sempre superior à receita marginal ($P > RMg$)[cite: 11]."
+        "justification": "O monopolista maximiza o lucro produzindo a quantidade onde a receita marginal é igual ao custo marginal ($RMg = CMg$). Como a curva de demanda tem inclinação negativa, o preço cobrado é sempre superior à receita marginal ($P > RMg$)."
       },
       "4": {
         "command": "Se os custos fixos de um monopólio aumentarem, seu preço vai _________ e seu lucro vai _________.",
@@ -1117,7 +1117,7 @@
           "permanecer igual; diminuir"
         ],
         "answer": "d",
-        "justification": "O preço e a quantidade de equilíbrio do monopólio são determinados pela interseção entre receita marginal e custo marginal. Como custos fixos não alteram o custo marginal, o preço permanece o mesmo, mas o lucro diminui devido ao maior custo total[cite: 11]."
+        "justification": "O preço e a quantidade de equilíbrio do monopólio são determinados pela interseção entre receita marginal e custo marginal. Como custos fixos não alteram o custo marginal, o preço permanece o mesmo, mas o lucro diminui devido ao maior custo total."
       },
       "5": {
         "command": "Em comparação com o ótimo social, uma empresa monopolista escolhe",
@@ -1128,7 +1128,7 @@
           "uma quantidade e um preço muito baixos."
         ],
         "answer": "a",
-        "justification": "Diferente de um mercado competitivo, o monopolista produz menos do que a quantidade socialmente eficiente (onde o preço igualaria o custo marginal) e cobra um preço acima do custo marginal, gerando ineficiência[cite: 11]."
+        "justification": "Diferente de um mercado competitivo, o monopolista produz menos do que a quantidade socialmente eficiente (onde o preço igualaria o custo marginal) e cobra um preço acima do custo marginal, gerando ineficiência."
       },
       "6": {
         "command": "O peso morto de um monopólio surge porque",
@@ -1139,7 +1139,7 @@
           "o monopólio escolhe uma quantidade que não iguala preço e receita média."
         ],
         "answer": "b",
-        "justification": "O peso morto representa a perda de bem-estar social decorrente do fato de que o monopolista produz uma quantidade inferior àquela que maximiza o excedente total, impedindo trocas mutuamente benéficas entre compradores e o produtor[cite: 11]."
+        "justification": "O peso morto representa a perda de bem-estar social decorrente do fato de que o monopolista produz uma quantidade inferior àquela que maximiza o excedente total, impedindo trocas mutuamente benéficas entre compradores e o produtor."
       },
       "7": {
         "command": "A discriminação de preços por parte de uma empresa monopolista refere-se à cobrança de preços diferentes com base",
@@ -1150,7 +1150,7 @@
           "no fato de o consumidor ter a possibilidade de se tornar um comprador recorrente."
         ],
         "answer": "a",
-        "justification": "A discriminação de preços é a prática comercial de vender o mesmo bem a preços diferentes para clientes diferentes, tentando capturar o máximo da disposição para pagar de cada indivíduo ou grupo[cite: 11]."
+        "justification": "A discriminação de preços é a prática comercial de vender o mesmo bem a preços diferentes para clientes diferentes, tentando capturar o máximo da disposição para pagar de cada indivíduo ou grupo."
       },
       "8": {
         "command": "Quando um monopolista passa da cobrança de um preço único para a prática da discriminação de preços perfeita, ele reduz",
@@ -1161,7 +1161,7 @@
           "o excedente total."
         ],
         "answer": "c",
-        "justification": "Na discriminação de preços perfeita, o monopolista cobra de cada consumidor exatamente sua disposição para pagar. Isso elimina o excedente do consumidor, transformando-o inteiramente em lucro para o produtor[cite: 11]."
+        "justification": "Na discriminação de preços perfeita, o monopolista cobra de cada consumidor exatamente sua disposição para pagar. Isso elimina o excedente do consumidor, transformando-o inteiramente em lucro para o produtor."
       },
       "9": {
         "command": "Reguladores antitruste provavelmente proibirão a fusão de duas empresas se",
@@ -1172,7 +1172,7 @@
           "a empresa combinada minar a concorrência com preços mais baixos."
         ],
         "answer": "c",
-        "justification": "As leis antitruste visam evitar que fusões reduzam a competição e aumentem o poder de mercado de forma prejudicial aos consumidores, agindo principalmente quando a concentração de mercado resultante é elevada[cite: 11]."
+        "justification": "As leis antitruste visam evitar que fusões reduzam a competição e aumentem o poder de mercado de forma prejudicial aos consumidores, agindo principalmente quando a concentração de mercado resultante é elevada."
       },
       "10": {
         "command": "Se os reguladores impuserem um preço de custo marginal a um monopólio natural, um possível problema é que",
@@ -1183,11 +1183,11 @@
           "a empresa terá lucros excessivos."
         ],
         "answer": "c",
-        "justification": "Em um monopólio natural, o custo total médio é decrescente, o que implica que o custo marginal é sempre menor que o custo médio. Se o preço for igualado ao custo marginal, a empresa terá prejuízo sistemático[cite: 11]."
+        "justification": "Em um monopólio natural, o custo total médio é decrescente, o que implica que o custo marginal é sempre menor que o custo médio. Se o preço for igualado ao custo marginal, a empresa terá prejuízo sistemático."
       }
     }
   },
-    "18": {
+  "18": {
     "name": "Oligopólio",
     "questions": {
       "1": {
@@ -1199,7 +1199,7 @@
           "um pequeno número de empresas age de maneira estratégica."
         ],
         "answer": "d",
-        "justification": "O oligopólio é uma estrutura de mercado com poucos vendedores, onde as ações de qualquer um deles podem ter um grande impacto sobre os lucros de todos os outros. Por isso, as empresas são interdependentes e precisam agir estrategicamente, considerando as possíveis reações de seus concorrentes[cite: 12]."
+        "justification": "O oligopólio é uma estrutura de mercado com poucos vendedores, onde as ações de qualquer um deles podem ter um grande impacto sobre os lucros de todos os outros. Por isso, as empresas são interdependentes e precisam agir estrategicamente, considerando as possíveis reações de seus concorrentes."
       },
       "2": {
         "command": "Se uma indústria oligopolista se organizar como um cartel cooperativo, passará a produzir uma quantidade que é __________ que o nível competitivo e __________ que o nível de monopólio.",
@@ -1210,7 +1210,7 @@
           "a mesma; maior"
         ],
         "answer": "c",
-        "justification": "Quando as empresas de um oligopólio formam um cartel e agem em conluio, elas buscam maximizar o lucro total do grupo. Para isso, elas se comportam como um monopólio, reduzindo a produção para elevar os preços acima do nível competitivo[cite: 12]."
+        "justification": "Quando as empresas de um oligopólio formam um cartel e agem em conluio, elas buscam maximizar o lucro total do grupo. Para isso, elas se comportam como um monopólio, reduzindo a produção para elevar os preços acima do nível competitivo."
       },
       "3": {
         "command": "Se um oligopólio não cooperar e cada empresa escolher sua própria quantidade, a indústria passará a produzir uma quantidade que é __________ que o nível competitivo e __________ que o nível de monopólio.",
@@ -1221,7 +1221,7 @@
           "a mesma; maior"
         ],
         "answer": "a",
-        "justification": "Em um equilíbrio de Nash, os oligopolistas produzem uma quantidade maior do que a de um monopólio (devido ao incentivo individual de aumentar a participação de mercado), mas menor do que a de uma concorrência perfeita (pois ainda possuem algum poder de mercado para manter preços acima do custo marginal)[cite: 12]."
+        "justification": "Em um equilíbrio de Nash, os oligopolistas produzem uma quantidade maior do que a de um monopólio (devido ao incentivo individual de aumentar a participação de mercado), mas menor do que a de uma concorrência perfeita (pois ainda possuem algum poder de mercado para manter preços acima do custo marginal)."
       },
       "4": {
         "command": "À medida que o número de empresas de um oligopólio aumenta, a indústria se aproxima de um nível de produção que é __________ que o nível competitivo e __________ que o nível de monopólio.",
@@ -1232,7 +1232,7 @@
           "o mesmo; maior"
         ],
         "answer": "d",
-        "justification": "Conforme mais empresas entram no mercado, o efeito preço (a queda no preço ao vender uma unidade a mais) diminui para cada vendedor individual. Isso leva o mercado a se comportar de forma mais competitiva, onde a produção total aumenta e o preço se aproxima do custo marginal[cite: 12]."
+        "justification": "Conforme mais empresas entram no mercado, o efeito preço (a queda no preço ao vender uma unidade a mais) diminui para cada vendedor individual. Isso leva o mercado a se comportar de forma mais competitiva, onde a produção total aumenta e o preço se aproxima do custo marginal."
       },
       "5": {
         "command": "O dilema dos prisioneiros é um jogo entre dois participantes que ilustra que",
@@ -1243,7 +1243,7 @@
           "indivíduos racionais e egoístas naturalmente evitarão o equilíbrio de Nash porque ele é pior para ambos."
         ],
         "answer": "c",
-        "justification": "O dilema demonstra que a cooperação é difícil de manter porque é individualmente racional (estratégia dominante) desertar, mesmo que ambos os jogadores estivessem em uma situação melhor se tivessem cooperado[cite: 12]."
+        "justification": "O dilema demonstra que a cooperação é difícil de manter porque é individualmente racional (estratégia dominante) desertar, mesmo que ambos os jogadores estivessem em uma situação melhor se tivessem cooperado."
       },
       "6": {
         "command": "Duas pessoas diante de um dilema dos prisioneiros podem cooperar se",
@@ -1254,7 +1254,7 @@
           "cada uma entender que a estratégia escolhida por ela não é conhecida pela outra até que o resultado seja alcançado."
         ],
         "answer": "b",
-        "justification": "Em jogos repetidos, a ameaça de punição futura (como a estratégia 'olho por olho') pode tornar a cooperação a melhor opção a longo prazo, superando o ganho imediato de uma traição única[cite: 12]."
+        "justification": "Em jogos repetidos, a ameaça de punição futura (como a estratégia 'olho por olho') pode tornar a cooperação a melhor opção a longo prazo, superando o ganho imediato de uma traição única."
       },
       "7": {
         "command": "A legislação antitruste visa a",
@@ -1265,7 +1265,7 @@
           "impedir que as empresas ajam de maneiras que reduzem a concorrência."
         ],
         "answer": "d",
-        "justification": "O objetivo das leis antitruste é proteger a livre concorrência. Elas proíbem práticas como a fixação de preços (cartéis) e fusões que resultariam em um poder de mercado excessivo prejudicial ao consumidor[cite: 12]."
+        "justification": "O objetivo das leis antitruste é proteger a livre concorrência. Elas proíbem práticas como a fixação de preços (cartéis) e fusões que resultariam em um poder de mercado excessivo prejudicial ao consumidor."
       },
       "8": {
         "command": "A aplicação das leis antitruste é controversa, principalmente porque",
@@ -1276,7 +1276,7 @@
           "a aplicação vigorosa pode reduzir a lucratividade dos negócios, diminuindo o valor para os acionistas."
         ],
         "answer": "b",
-        "justification": "Práticas como a manutenção de preços de revenda, a fixação de preços predatórios e a venda casada são debatidas por economistas; embora possam ser usadas para restringir a competição, em alguns casos podem servir para melhorar a eficiência ou a qualidade do serviço ao cliente[cite: 12]."
+        "justification": "Práticas como a manutenção de preços de revenda, a fixação de preços predatórios e a venda casada são debatidas por economistas; embora possam ser usadas para restringir a competição, em alguns casos podem servir para melhorar a eficiência ou a qualidade do serviço ao cliente."
       }
     }
   }
