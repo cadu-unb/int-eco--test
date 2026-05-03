@@ -219,7 +219,7 @@
           "as mesmas quantidades de carne e batata que o outro."
         ],
         "answer": "b",
-        "justification": "Sem o comércio, um indivíduo é autossuficiente, o que significa que sua fronteira de possibilidades de consumo coincide com sua fronteira de possibilidades de produção ($FPP$). Para maximizar o bem-estar sem trocas, consome-se exatamente o que se produz, situando-se sobre a curva da $FPP$."
+        "justification": "Sem o comércio, um indivíduo é autossuficiente, o que significa que sua fronteira de possibilidades de consumo coincide com sua fronteira de possibilidades de produção (FPP). Para maximizar o bem-estar sem trocas, consome-se exatamente o que se produz, situando-se sobre a curva da FPP."
       },
       "2": {
         "command": "Depois que Felipe e Rosana fecham o negócio, cada um deles consome",
@@ -230,7 +230,7 @@
           "as mesmas quantidades de carne e batata que o outro."
         ],
         "answer": "c",
-        "justification": "O comércio permite que os indivíduos se especializem em atividades onde possuem vantagem comparativa. Através da troca, é possível alcançar combinações de consumo que seriam impossíveis de produzir isoladamente, situando o consumo final em um ponto além da $FPP$ original."
+        "justification": "O comércio permite que os indivíduos se especializem em atividades onde possuem vantagem comparativa. Através da troca, é possível alcançar combinações de consumo que seriam impossíveis de produzir isoladamente, situando o consumo final em um ponto além da FPP original."
       },
       "3": {
         "command": "Em 1 hora, Mateo consegue lavar dois carros ou aparar um gramado, e Sophia consegue lavar três carros ou aparar um gramado. Quem tem a vantagem absoluta na lavagem dos carros? E no corte do gramado?",
@@ -252,7 +252,7 @@
           "Sophia na lavagem, nenhum deles no gramado"
         ],
         "answer": "b",
-        "justification": "A vantagem comparativa baseia-se no custo de oportunidade. Para Sophia, lavar 1 carro custa $1/3$ de gramado; para Mateo, custa $1/2$. Como $1/3 < 1/2$, Sophia tem vantagem nos carros. Consequentemente, Mateo tem vantagem no gramado, pois seu custo de oportunidade (2 carros) é menor que o de Sophia (3 carros)."
+        "justification": "A vantagem comparativa baseia-se no custo de oportunidade. Para Sophia, lavar 1 carro custa 1/3 de gramado; para Mateo, custa 1/2. Como 1/3 < 1/2, Sophia tem vantagem nos carros. Consequentemente, Mateo tem vantagem no gramado, pois seu custo de oportunidade (2 carros) é menor que o de Sophia (3 carros)."
       },
       "5": {
         "command": "Quando Mateo e Sophia produzem de forma eficiente e fazem um acordo mutuamente benéfico com base na vantagem comparativa,",
@@ -285,7 +285,7 @@
           "Não há ganhos comerciais nessa situação."
         ],
         "answer": "b",
-        "justification": "Nos EUA, o custo de uma aeronave é 5.000 camisas. Na China, é 10.000 camisas. Os EUA têm vantagem comparativa em aeronaves. Inversamente, o custo de uma camisa nos EUA é $1/5000$ de aeronave, enquanto na China é $1/10000$. A China tem vantagem comparativa em camisas."
+        "justification": "Nos EUA, o custo de uma aeronave é 5.000 camisas. Na China, é 10.000 camisas. Os EUA têm vantagem comparativa em aeronaves. Inversamente, o custo de uma camisa nos EUA é 1/5000 de aeronave, enquanto na China é 1/10000. A China tem vantagem comparativa em camisas."
       },
       "8": {
         "command": "Kayla faz o jantar em 30 minutos e lava as roupas em 20 minutos. Sua colega de quarto leva o dobro do tempo para realizar cada tarefa. Como elas deveriam alocar as tarefas?",
@@ -296,7 +296,7 @@
           "Não há ganhos comerciais nessa situação."
         ],
         "answer": "d",
-        "justification": "Embora Kayla tenha vantagem absoluta em ambas as tarefas, a vantagem comparativa depende de custos de oportunidade distintos. Como a colega leva exatamente o dobro do tempo para ambas ($60$ min e $40$ min), os custos de oportunidade são idênticos ($1,5$ lavagens por jantar). Sem diferença nos custos relativos, não há incentivo econômico para a troca."
+        "justification": "Embora Kayla tenha vantagem absoluta em ambas as tarefas, a vantagem comparativa depende de custos de oportunidade distintos. Como a colega leva exatamente o dobro do tempo para ambas (60 min e 40 min), os custos de oportunidade são idênticos (1,5 lavagens por jantar). Sem diferença nos custos relativos, não há incentivo econômico para a troca."
       }
     }
   },
@@ -471,7 +471,7 @@
           "preço; maior"
         ],
         "answer": "d",
-        "justification": "Quando a demanda é elástica (elasticidade-preço $> 1$), a queda percentual na quantidade demandada é maior do que o aumento percentual no preço. Como resultado, a receita total (Preço $\\times$ Quantidade) diminui."
+        "justification": "Quando a demanda é elástica (elasticidade-preço > 1), a queda percentual na quantidade demandada é maior do que o aumento percentual no preço. Como resultado, a receita total (Preço \\times Quantidade) diminui."
       },
       "3": {
         "command": "Uma curva de demanda linear com inclinação descendente",
@@ -496,7 +496,7 @@
         "justification": "Alimentos são bens necessários com elasticidade-renda menor que 1 (Lei de Engel). Se a renda cai, o gasto com alimentação não cai na mesma proporção, fazendo com que o peso dos alimentos no orçamento total aumente para populações de baixa renda."
       },
       "5": {
-        "command": "O preço de um bem aumenta de $16 para $24, e a quantidade ofertada sobe de 90 para 110 unidades. Calculada a partir do método do ponto médio, qual é a elasticidade-preço da oferta?",
+        "command": "O preço de um bem aumenta de 16 para 24, e a quantidade ofertada sobe de 90 para 110 unidades. Calculada a partir do método do ponto médio, qual é a elasticidade-preço da oferta?",
         "alternatives": [
           "1/5",
           "1/2",
@@ -504,7 +504,7 @@
           "5"
         ],
         "answer": "b",
-        "justification": "Pelo método do ponto médio: Variação % na Qtd = $(110-90) / 100 = 20\\%$; Variação % no Preço = $(24-16) / 20 = 40\\%$. Elasticidade = $20\\% / 40\\% = 0,5$ ou $1/2$."
+        "justification": "Pelo método do ponto médio: Variação % na Qtd = (110-90) / 100 = 20\\%; Variação % no Preço = (24-16) / 20 = 40\\%. Elasticidade = 20\\% / 40\\% = 0,5 ou 1/2."
       },
       "6": {
         "command": "Se a elasticidade-preço da oferta for zero, a curva de oferta",
@@ -570,7 +570,7 @@
           "um; um"
         ],
         "answer": "b",
-        "justification": "Para que o aumento da renda aumente o gasto, o bem deve ser normal (elasticidade-renda $> 0$). Para que uma queda no preço aumente o gasto total, a demanda deve ser elástica (elasticidade-preço $> 1$)."
+        "justification": "Para que o aumento da renda aumente o gasto, o bem deve ser normal (elasticidade-renda > 0). Para que uma queda no preço aumente o gasto total, a demanda deve ser elástica (elasticidade-preço > 1)."
       }
     }
   },
@@ -619,15 +619,15 @@
           "demanda; menor"
         ],
         "answer": "c",
-        "justification": "Se a demanda por trabalho for elástica (elasticidade $> 1$), um aumento percentual no salário resultará em uma redução percentual maior na quantidade de trabalho contratada. Assim, a massa salarial total (salário $\\times$ emprego) diminuirá."
+        "justification": "Se a demanda por trabalho for elástica (elasticidade > 1), um aumento percentual no salário resultará em uma redução percentual maior na quantidade de trabalho contratada. Assim, a massa salarial total (salário \\times emprego) diminuirá."
       },
       "5": {
-        "command": "Um imposto de $1 por unidade cobrado dos consumidores de um bem é equivalente a",
+        "command": "Um imposto de 1 por unidade cobrado dos consumidores de um bem é equivalente a",
         "alternatives": [
-          "um imposto de $1 por unidade cobrado dos produtores do bem.",
-          "um subsídio de $1 por unidade pago aos produtores do bem.",
-          "um valor mínimo que aumenta o preço do bem em $1 por unidade.",
-          "um valor máximo que aumenta o preço do bem em $1 por unidade."
+          "um imposto de 1 por unidade cobrado dos produtores do bem.",
+          "um subsídio de 1 por unidade pago aos produtores do bem.",
+          "um valor mínimo que aumenta o preço do bem em 1 por unidade.",
+          "um valor máximo que aumenta o preço do bem em 1 por unidade."
         ],
         "answer": "a",
         "justification": "A incidência econômica de um imposto independe de quem é legalmente responsável pelo recolhimento. Tanto o imposto sobre o consumo quanto sobre a produção criam uma 'cunha' entre o preço pago pelo comprador e o recebido pelo vendedor."
@@ -671,81 +671,81 @@
     "name": "Mercados e bem-estar",
     "questions": {
       "1": {
-        "command": "Alex, Bruno e Camila querem comprar um sorvete. Alex está disposto a pagar $12, enquanto Bruno e Camila estão dispostos a pagar $8 e $4, respectivamente. O preço de mercado é $6. De quanto é o excedente do consumidor?",
+        "command": "Alex, Bruno e Camila querem comprar um sorvete. Alex está disposto a pagar 12, enquanto Bruno e Camila estão dispostos a pagar 8 e 4, respectivamente. O preço de mercado é 6. De quanto é o excedente do consumidor?",
         "alternatives": [
-          "$6",
-          "$8",
-          "$14",
-          "$18"
+          "6",
+          "8",
+          "14",
+          "18"
         ],
         "answer": "b",
-        "justification": "O excedente do consumidor é a disposição para pagar menos o preço efetivamente pago. Alex tem um excedente de $12 - 6 = 6$. Bruno tem um excedente de $8 - 6 = 2$. Camila não compra o sorvete, pois sua disposição ($4) é menor que o preço ($6). O total é $6 + 2 = 8$."
+        "justification": "O excedente do consumidor é a disposição para pagar menos o preço efetivamente pago. Alex tem um excedente de 12 - 6 = 6. Bruno tem um excedente de 8 - 6 = 2. Camila não compra o sorvete, pois sua disposição (4) é menor que o preço (6). O total é 6 + 2 = 8."
       },
       "2": {
-        "command": "Se o preço do sorvete cair para $3, em quanto aumentará o excedente do consumidor de Alex, Bruno e Camila?",
+        "command": "Se o preço do sorvete cair para 3, em quanto aumentará o excedente do consumidor de Alex, Bruno e Camila?",
         "alternatives": [
-          "$6",
-          "$7",
-          "$8",
-          "$9"
+          "6",
+          "7",
+          "8",
+          "9"
         ],
         "answer": "b",
-        "justification": "Com o preço a $3, os excedentes individuais passam a ser: Alex ($12 - 3 = 9$), Bruno ($8 - 3 = 5$) e Camila ($4 - 3 = 1$). O novo excedente total é $15$. Como o anterior era $8$, o aumento foi de $15 - 8 = 7$."
+        "justification": "Com o preço a 3, os excedentes individuais passam a ser: Alex (12 - 3 = 9), Bruno (8 - 3 = 5) e Camila (4 - 3 = 1). O novo excedente total é 15. Como o anterior era 8, o aumento foi de 15 - 8 = 7."
       },
       "3": {
-        "command": "A curva de demanda dos biscoitos tem inclinação descendente. Quando o preço de um biscoito é $3, a quantidade demandada é 100 unidades. Se o preço cair para $2, o que acontecerá com o excedente do consumidor?",
+        "command": "A curva de demanda dos biscoitos tem inclinação descendente. Quando o preço de um biscoito é 3, a quantidade demandada é 100 unidades. Se o preço cair para 2, o que acontecerá com o excedente do consumidor?",
         "alternatives": [
-          "Ele cairá em menos de $100.",
-          "Ele cairá em mais de $100.",
-          "Ele aumentará em menos de $100.",
-          "Ele aumentará em mais de $100."
+          "Ele cairá em menos de 100.",
+          "Ele cairá em mais de 100.",
+          "Ele aumentará em menos de 100.",
+          "Ele aumentará em mais de 100."
         ],
         "answer": "d",
-        "justification": "A queda no preço aumenta o excedente dos consumidores que já compravam (100 unidades $\\times$ $1 de economia = $100) e ainda adiciona o excedente dos novos consumidores que entram no mercado devido ao preço menor. Portanto, o aumento total é necessariamente superior a $100."
+        "justification": "A queda no preço aumenta o excedente dos consumidores que já compravam (100 unidades \\times 1 de economia = 100) e ainda adiciona o excedente dos novos consumidores que entram no mercado devido ao preço menor. Portanto, o aumento total é necessariamente superior a 100."
       },
       "4": {
-        "command": "Diego, Emília e Fernando estão disponíveis para oferecer mentoria neste semestre. O custo de oportunidade da mentoria é de $400 para Diego, $200 para Emília e $100 para Fernando. A universidade contratará os mentores por um valor de $300. Qual é o excedente do produtor desse mercado?",
+        "command": "Diego, Emília e Fernando estão disponíveis para oferecer mentoria neste semestre. O custo de oportunidade da mentoria é de 400 para Diego, 200 para Emília e 100 para Fernando. A universidade contratará os mentores por um valor de 300. Qual é o excedente do produtor desse mercado?",
         "alternatives": [
-          "$100",
-          "$200",
-          "$300",
-          "$400"
+          "100",
+          "200",
+          "300",
+          "400"
         ],
         "answer": "c",
-        "justification": "O excedente do produtor é o preço recebido menos o custo de oportunidade. Emília tem excedente de $300 - 200 = 100$. Fernando tem excedente de $300 - 100 = 200$. Diego não participa, pois seu custo ($400) supera o preço ($300). O total é $100 + 200 = 300$."
+        "justification": "O excedente do produtor é o preço recebido menos o custo de oportunidade. Emília tem excedente de 300 - 200 = 100. Fernando tem excedente de 300 - 100 = 200. Diego não participa, pois seu custo (400) supera o preço (300). O total é 100 + 200 = 300."
       },
       "5": {
-        "command": "Gabriel trabalha em período integral como jardineiro por $300 por semana. Quando o preço de mercado aumenta para $400, Hector também se torna jardineiro. De quanto será o aumento do excedente do produtor em decorrência desse aumento no preço?",
+        "command": "Gabriel trabalha em período integral como jardineiro por 300 por semana. Quando o preço de mercado aumenta para 400, Hector também se torna jardineiro. De quanto será o aumento do excedente do produtor em decorrência desse aumento no preço?",
         "alternatives": [
-          "menos de $100",
-          "entre $100 e $200",
-          "entre $200 e $300",
-          "mais de $300"
+          "menos de 100",
+          "entre 100 e 200",
+          "entre 200 e 300",
+          "mais de 300"
         ],
         "answer": "b",
-        "justification": "Gabriel ganha $100 adicionais de excedente (preço subiu de $300 para $400). Hector entra no mercado porque seu custo é entre $300 e $400; seu excedente será a diferença entre $400 e seu custo (algo entre $0 e $100). Assim, o aumento total é $100 (de Gabriel) + o valor de Hector, totalizando entre $100 e $200."
+        "justification": "Gabriel ganha 100 adicionais de excedente (preço subiu de 300 para 400). Hector entra no mercado porque seu custo é entre 300 e 400; seu excedente será a diferença entre 400 e seu custo (algo entre 0 e 100). Assim, o aumento total é 100 (de Gabriel) + o valor de Hector, totalizando entre 100 e 200."
       },
       "6": {
-        "command": "A curva de oferta de um produto é Qo = 2P e o preço de mercado é $10. Qual é o excedente do produtor neste mercado? (Dica: elabore o gráfico da curva de oferta e lembre-se da fórmula da área de um triângulo.)",
+        "command": "A curva de oferta de um produto é Qo = 2P e o preço de mercado é 10. Qual é o excedente do produtor neste mercado? (Dica: elabore o gráfico da curva de oferta e lembre-se da fórmula da área de um triângulo.)",
         "alternatives": [
-          "$5",
-          "$20",
-          "$100",
-          "$200"
+          "5",
+          "20",
+          "100",
+          "200"
         ],
         "answer": "c",
-        "justification": "Para $P=10$, $Q=20$. A curva parte da origem (0,0). O excedente do produtor é a área do triângulo abaixo do preço e acima da oferta: $Area = (Base \\times Altura) / 2 = (20 \\times 10) / 2 = 100$."
+        "justification": "Para P=10, Q=20. A curva parte da origem (0,0). O excedente do produtor é a área do triângulo abaixo do preço e acima da oferta: Area = (Base \\times Altura) / 2 = (20 \\times 10) / 2 = 100."
       },
       "7": {
-        "command": "Isabelle atribui o valor de $60 a 1 hora de seu tempo. Ela gasta 2 horas fazendo uma massagem em Joelma, que estava disposta a pagar até $300 pela massagem. Porém, o preço negociado entre elas foi de $200. Nessa transação,",
+        "command": "Isabelle atribui o valor de 60 a 1 hora de seu tempo. Ela gasta 2 horas fazendo uma massagem em Joelma, que estava disposta a pagar até 300 pela massagem. Porém, o preço negociado entre elas foi de 200. Nessa transação,",
         "alternatives": [
-          "o excedente do consumidor é $20 maior que o excedente do produtor.",
-          "o excedente do consumidor é $40 maior que o excedente do produtor.",
-          "o excedente do produtor é $20 maior que o excedente do consumidor.",
-          "o excedente do produtor é $40 maior que o excedente do consumidor."
+          "o excedente do consumidor é 20 maior que o excedente do produtor.",
+          "o excedente do consumidor é 40 maior que o excedente do produtor.",
+          "o excedente do produtor é 20 maior que o excedente do consumidor.",
+          "o excedente do produtor é 40 maior que o excedente do consumidor."
         ],
         "answer": "a",
-        "justification": "O custo de Isabelle é $60 \\times 2 = 120$. Seu excedente (produtor) é $200 - 120 = 80$. O excedente de Joelma (consumidor) é $300 - 200 = 100$. A diferença é $100 - 80 = 20$, sendo o excedente do consumidor maior."
+        "justification": "O custo de Isabelle é 60 \\times 2 = 120. Seu excedente (produtor) é 200 - 120 = 80. O excedente de Joelma (consumidor) é 300 - 200 = 100. A diferença é 100 - 80 = 20, sendo o excedente do consumidor maior."
       },
       "8": {
         "command": "Uma alocação eficiente de recursos maximiza",
@@ -788,7 +788,7 @@
       "1": {
         "command": "Qual das seguintes alternativas é um exemplo de uma externalidade positiva?",
         "alternatives": [
-          "Jean corta a grama de Scott e recebe $100 pelo serviço.",
+          "Jean corta a grama de Scott e recebe 100 pelo serviço.",
           "O cortador de grama de Jean emite fumaça, que Xavier, vizinho de Scott, acaba inalando.",
           "A grama recém-cortada de Scott torna a vizinhança mais atraente.",
           "Xavier se oferece para pagar para que Scott mantenha sua grama cortada."
@@ -830,15 +830,15 @@
         "justification": "Diferente dos impostos comuns, os impostos corretivos visam corrigir falhas de mercado. Em vez de causar distorções e peso morto (ineficiência), eles eliminam a ineficiência causada pela externalidade, movendo a alocação de recursos em direção ao ótimo social."
       },
       "5": {
-        "command": "O governo leiloa 500 unidades de direitos de poluição. As licenças são vendidas a $50 cada e geram $25 mil em receita para o governo. Essa política é equivalente a um imposto corretivo de ________ por unidade de poluição.",
+        "command": "O governo leiloa 500 unidades de direitos de poluição. As licenças são vendidas a 50 cada e geram 25 mil em receita para o governo. Essa política é equivalente a um imposto corretivo de ________ por unidade de poluição.",
         "alternatives": [
-          "$10",
-          "$50",
-          "$450",
-          "$500"
+          "10",
+          "50",
+          "450",
+          "500"
         ],
         "answer": "b",
-        "justification": "Licenças de poluição comercializáveis e impostos corretivos são ferramentas equivalentes. Se o preço de mercado de uma licença para poluir uma unidade é $50, isso cria o mesmo incentivo econômico que um imposto direto de $50 por unidade emitida."
+        "justification": "Licenças de poluição comercializáveis e impostos corretivos são ferramentas equivalentes. Se o preço de mercado de uma licença para poluir uma unidade é 50, isso cria o mesmo incentivo econômico que um imposto direto de 50 por unidade emitida."
       },
       "6": {
         "command": "A regulamentação de comando e controle pode ser melhor que um imposto corretivo quando",
@@ -923,7 +923,7 @@
         "justification": "Devido ao problema do 'carona' (free rider), as pessoas têm incentivo para não pagar por bens públicos esperando que outros o façam. Como resultado, o mercado privado falha em fornecer a quantidade socialmente desejável, exigindo a intervenção governamental para garantir o provimento adequado."
       },
       "5": {
-        "command": "Os três moradores de Smallville estão pensando em promover uma queima de fogos. Clark atribui a esse bem público um valor de $80, Lana, de $50, e Pete (que não gosta de fogos de artifício), de –$30. Os fogos custarão $120 à cidade, ou $40 por pessoa. O resultado eficiente para o local seria",
+        "command": "Os três moradores de Smallville estão pensando em promover uma queima de fogos. Clark atribui a esse bem público um valor de 80, Lana, de 50, e Pete (que não gosta de fogos de artifício), de –30. Os fogos custarão 120 à cidade, ou 40 por pessoa. O resultado eficiente para o local seria",
         "alternatives": [
           "fornecer o bem público porque a pessoa média o valoriza mais do que seu custo por pessoa.",
           "fornecer o bem público porque a maioria dos moradores o valoriza mais do que seu custo por pessoa.",
@@ -931,7 +931,7 @@
           "não fornecer o bem público porque o valor total de todos os moradores é menor que o custo total."
         ],
         "answer": "d",
-        "justification": "A eficiência social ocorre quando o benefício total excede o custo total. Somando as disposições a pagar: $80 + 50 + (-30) = 100$. Como o custo total é $120, o custo supera o benefício social total, tornando o fornecimento ineficiente."
+        "justification": "A eficiência social ocorre quando o benefício total excede o custo total. Somando as disposições a pagar: 80 + 50 + (-30) = 100. Como o custo total é 120, o custo supera o benefício social total, tornando o fornecimento ineficiente."
       },
       "6": {
         "command": "Qual alternativa é um exemplo de recurso comum?",
@@ -972,26 +972,26 @@
     "name": "Os custos de produção",
     "questions": {
       "1": {
-        "command": "Seu Lobato, um fazendeiro, dá aulas de banjo por $20 a hora. Em um dia, ele passa 10 horas plantando $100 em sementes em sua fazenda. Qual custo total em que ele incorreu?",
+        "command": "Seu Lobato, um fazendeiro, dá aulas de banjo por 20 a hora. Em um dia, ele passa 10 horas plantando 100 em sementes em sua fazenda. Qual custo total em que ele incorreu?",
         "alternatives": [
-          "$100",
-          "$200",
-          "$300",
-          "$400"
+          "100",
+          "200",
+          "300",
+          "400"
         ],
         "answer": "c",
-        "justification": "O custo total econômico inclui custos explícitos e implícitos. O custo explícito é o gasto com sementes ($100). O custo implícito é o custo de oportunidade do tempo de Seu Lobato: $20/hora $\\times$ 10 horas = $200. Total = $100 + $200 = $300."
+        "justification": "O custo total econômico inclui custos explícitos e implícitos. O custo explícito é o gasto com sementes (100). O custo implícito é o custo de oportunidade do tempo de Seu Lobato: 20/hora \\times 10 horas = 200. Total = 100 + 200 = 300."
       },
       "2": {
-        "command": "Xavier abre uma barraca de limonada durante duas horas. Ele gasta $10 em ingredientes e vende $60 em limonada. Nas mesmas duas horas, ele poderia ter cortado a grama do vizinho por $40. Xavier obtém um lucro contábil e um lucro econômico de quanto, respectivamente?",
+        "command": "Xavier abre uma barraca de limonada durante duas horas. Ele gasta 10 em ingredientes e vende 60 em limonada. Nas mesmas duas horas, ele poderia ter cortado a grama do vizinho por 40. Xavier obtém um lucro contábil e um lucro econômico de quanto, respectivamente?",
         "alternatives": [
-          "$50; $10",
-          "$90; $50",
-          "$10; $50",
-          "$50; $90"
+          "50; 10",
+          "90; 50",
+          "10; 50",
+          "50; 90"
         ],
         "answer": "a",
-        "justification": "Lucro contábil é a receita total menos custos explícitos: $60 - $10 = $50. Lucro econômico é a receita total menos custos totais (explícitos + implícitos): $60 - ($10 + $40) = $10."
+        "justification": "Lucro contábil é a receita total menos custos explícitos: 60 - 10 = 50. Lucro econômico é a receita total menos custos totais (explícitos + implícitos): 60 - (10 + 40) = 10."
       },
       "3": {
         "command": "A agricultora Adriana apresenta em sua fazenda o produto marginal decrescente. Se ela não plantar as sementes, não terá colheita. Se ela plantar 1 saco de sementes, ganhará 3 sacas de trigo. Se plantar 2 sacos, ganhará 5 sacas. Se plantar 3 sacos, ganhará",
@@ -1016,18 +1016,18 @@
         "justification": "Com o produto marginal decrescente, cada trabalhador adicional produz menos que o anterior, achatando a função de produção. Simultaneamente, para produzir unidades extras, é necessário contratar cada vez mais insumos, o que faz com que o custo total suba de forma acelerada, tornando a curva de custo total mais íngreme."
       },
       "5": {
-        "command": "Uma empresa está produzindo 1.000 unidades a um custo total de $5.000. Quando aumenta a produção para 1.001 unidades, seu custo total sobe para $5.008. Para essa empresa,",
+        "command": "Uma empresa está produzindo 1.000 unidades a um custo total de 5.000. Quando aumenta a produção para 1.001 unidades, seu custo total sobe para 5.008. Para essa empresa,",
         "alternatives": [
-          "o custo marginal é $5, e o custo variável médio é $8.",
-          "o custo marginal é $8, e o custo variável médio é $5.",
-          "o custo marginal é $5, e o custo total médio é $8.",
-          "o custo marginal é $8, e o custo total médio é $5."
+          "o custo marginal é 5, e o custo variável médio é 8.",
+          "o custo marginal é 8, e o custo variável médio é 5.",
+          "o custo marginal é 5, e o custo total médio é 8.",
+          "o custo marginal é 8, e o custo total médio é 5."
         ],
         "answer": "d",
-        "justification": "O custo marginal ($CMg$) é o aumento no custo total por unidade adicional: $5008 - 5000 = $8. O custo total médio ($CTM$) é o custo total dividido pela quantidade: $5000 / 1000 = $5 por unidade."
+        "justification": "O custo marginal (CMg) é o aumento no custo total por unidade adicional: 5008 - 5000 = 8. O custo total médio (CTM) é o custo total dividido pela quantidade: 5000 / 1000 = 5 por unidade."
       },
       "6": {
-        "command": "Uma empresa está produzindo 20 unidades com um custo total médio de $25 e um custo marginal de $15. Se aumentar a produção para 21 unidades, qual das seguintes opções deve ocorrer?",
+        "command": "Uma empresa está produzindo 20 unidades com um custo total médio de 25 e um custo marginal de 15. Se aumentar a produção para 21 unidades, qual das seguintes opções deve ocorrer?",
         "alternatives": [
           "O custo marginal diminuirá.",
           "O custo marginal aumentará.",
@@ -1035,10 +1035,10 @@
           "O custo total médio aumentará."
         ],
         "answer": "c",
-        "justification": "Sempre que o custo marginal é menor que o custo total médio ($CMg < CTM$), o custo total médio está em queda. Como $15 < $25, a produção da próxima unidade 'puxará' a média para baixo."
+        "justification": "Sempre que o custo marginal é menor que o custo total médio (CMg < CTM), o custo total médio está em queda. Como 15 < 25, a produção da próxima unidade 'puxará' a média para baixo."
       },
       "7": {
-        "command": "O governo impõe uma taxa de licenciamento de $1.000 por ano a todas as pizzarias. Como resultado, quais curvas de custo se deslocariam?",
+        "command": "O governo impõe uma taxa de licenciamento de 1.000 por ano a todas as pizzarias. Como resultado, quais curvas de custo se deslocariam?",
         "alternatives": [
           "custo total médio e custo marginal",
           "custo total médio e custo fixo médio",
@@ -1046,7 +1046,7 @@
           "custo variável médio e custo fixo médio"
         ],
         "answer": "b",
-        "justification": "A taxa de licenciamento é um custo fixo, pois não varia com a quantidade de pizzas produzidas. Portanto, ela altera o Custo Fixo Médio ($CFM$) e, consequentemente, o Custo Total Médio ($CTM$). O Custo Marginal ($CMg$) e o Custo Variável Médio ($CVM$) não mudam, pois não dependem de custos fixos."
+        "justification": "A taxa de licenciamento é um custo fixo, pois não varia com a quantidade de pizzas produzidas. Portanto, ela altera o Custo Fixo Médio (CFM) e, consequentemente, o Custo Total Médio (CTM). O Custo Marginal (CMg) e o Custo Variável Médio (CVM) não mudam, pois não dependem de custos fixos."
       },
       "8": {
         "command": "Se, em uma dada empresa, um nível mais alto de produção permitir que os trabalhadores se especializem em tarefas específicas, essa empresa provavelmente exibirá ________ de escala e custo total médio ________.",
@@ -1060,7 +1060,7 @@
         "justification": "Economias de escala ocorrem quando o custo total médio de longo prazo diminui à medida que a quantidade produzida aumenta. A especialização do trabalho é um dos principais motivos para que grandes empresas alcancem maior produtividade e menores custos médios."
       },
       "9": {
-        "command": "Se a Boeing produzir 9 jatos por mês, seu custo total de longo prazo será de $9 milhões por mês. Se ela produzir 10 jatos por mês, seu custo total de longo prazo será de $11 milhões por mês. A Boeing apresentaria:",
+        "command": "Se a Boeing produzir 9 jatos por mês, seu custo total de longo prazo será de 9 milhões por mês. Se ela produzir 10 jatos por mês, seu custo total de longo prazo será de 11 milhões por mês. A Boeing apresentaria:",
         "alternatives": [
           "aumento do custo marginal.",
           "redução do custo marginal.",
@@ -1068,7 +1068,7 @@
           "deseconomias de escala."
         ],
         "answer": "d",
-        "justification": "Para 9 jatos, o $CTM = $9M / 9 = $1M por jato. Para 10 jatos, o $CTM = $11M / 10 = $1,1M por jato. Como o custo médio aumentou conforme a produção subiu, a empresa está enfrentando deseconomias de escala."
+        "justification": "Para 9 jatos, o CTM = 9M / 9 = 1M por jato. Para 10 jatos, o CTM = 11M / 10 = 1,1M por jato. Como o custo médio aumentou conforme a produção subiu, a empresa está enfrentando deseconomias de escala."
       }
     }
   },
@@ -1106,7 +1106,7 @@
           "P > RMg e RMg > CMg"
         ],
         "answer": "b",
-        "justification": "O monopolista maximiza o lucro produzindo a quantidade onde a receita marginal é igual ao custo marginal ($RMg = CMg$). Como a curva de demanda tem inclinação negativa, o preço cobrado é sempre superior à receita marginal ($P > RMg$)."
+        "justification": "O monopolista maximiza o lucro produzindo a quantidade onde a receita marginal é igual ao custo marginal (RMg = CMg). Como a curva de demanda tem inclinação negativa, o preço cobrado é sempre superior à receita marginal (P > RMg)."
       },
       "4": {
         "command": "Se os custos fixos de um monopólio aumentarem, seu preço vai _________ e seu lucro vai _________.",
