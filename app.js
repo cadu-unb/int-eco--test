@@ -314,6 +314,17 @@ function selectAnswer(letter) {
   $('btn-next-q').disabled = false;
 }
 
+// Botão de retorno do quiz → configuração
+$('btn-back-quiz').addEventListener('click', () => {
+  if (Object.keys(State.answers).length > 0) {
+    const confirmar = confirm('Tem certeza que deseja sair? Seu progresso será perdido.');
+    if (!confirmar) return;
+  }
+  State.answers    = {};
+  State.currentIdx = 0;
+  showScreen('config');
+});
+
 $('btn-prev-q').addEventListener('click', () => {
   if (State.currentIdx > 0) {
     State.currentIdx--;

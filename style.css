@@ -466,9 +466,38 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.2); }
   position: sticky; top: 0; z-index: 5;
 }
 .quiz-meta {
-  display: flex; justify-content: space-between; align-items: center;
+  display: flex; align-items: center; gap: 10px;
   margin-bottom: 12px;
 }
+
+.btn-back-quiz {
+  width: 34px; height: 34px; flex-shrink: 0;
+  border: 1.5px solid var(--border);
+  border-radius: 50%;
+  background: transparent;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; color: var(--text-mid);
+  transition: border-color var(--transition), background var(--transition), color var(--transition);
+}
+.btn-back-quiz:hover { border-color: var(--verde); background: var(--verde-pale); color: var(--verde); }
+
+/* Ghost link — Favoritos */
+.btn-ghost-link {
+  display: inline-flex; align-items: center; gap: 7px;
+  color: rgba(255,255,255,.55);
+  font-size: .82rem; font-weight: 500;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.2);
+  padding: 7px 16px; border-radius: 100px;
+  transition: color var(--transition), border-color var(--transition), background var(--transition);
+  width: fit-content;
+}
+.btn-ghost-link:hover {
+  color: rgba(255,255,255,.9);
+  border-color: rgba(255,255,255,.4);
+  background: rgba(255,255,255,.08);
+}
+
 
 .quiz-chapter-tag {
   font-size: .78rem; font-weight: 700; letter-spacing: .06em;
