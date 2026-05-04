@@ -244,7 +244,7 @@
         "justification": "A vantagem absoluta compara a produtividade. Sophia lava mais carros que Mateo (3 vs 2) no mesmo tempo, possuindo vantagem absoluta nessa tarefa. No gramado, ambos produzem a mesma quantidade (1), portanto, ninguém possui vantagem absoluta sobre o outro nesta atividade específica."
       },
       "4": {
-        "command": "Entre Mateo e Sophia, quem tem a vantagem comparativa na lavagem dos carros? E no corte do gramado?",
+        "command": "Em 1 hora, Mateo consegue lavar dois carros ou aparar um gramado, e Sophia consegue lavar três carros ou aparar um gramado. Entre Mateo e Sophia, quem tem a vantagem comparativa na lavagem dos carros? E no corte do gramado?",
         "alternatives": [
           "Mateo na lavagem, Sophia no gramado",
           "Sophia na lavagem, Mateo no gramado",
@@ -255,7 +255,7 @@
         "justification": "A vantagem comparativa baseia-se no custo de oportunidade. Para Sophia, lavar 1 carro custa $1/3$ de gramado; para Mateo, custa $1/2$. Como $1/3 < 1/2$, Sophia tem vantagem nos carros. Consequentemente, Mateo tem vantagem no gramado, pois seu custo de oportunidade (2 carros) é menor que o de Sophia (3 carros)."
       },
       "5": {
-        "command": "Quando Mateo e Sophia produzem de forma eficiente e fazem um acordo mutuamente benéfico com base na vantagem comparativa,",
+        "command": "Em 1 hora, Mateo consegue lavar dois carros ou aparar um gramado, e Sophia consegue lavar três carros ou aparar um gramado. Quando Mateo e Sophia produzem de forma eficiente e fazem um acordo mutuamente benéfico com base na vantagem comparativa,",
         "alternatives": [
           "Mateo apara mais grama, e Sophia lava mais carros.",
           "Mateo lava mais carros, e Sophia apara mais grama.",
