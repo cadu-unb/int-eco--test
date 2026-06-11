@@ -417,6 +417,116 @@ Estrutura sugerida:
     PPCA0021_S2.json
 ```
 
+## Documentacao de manutencao
+
+Criar uma pasta:
+
+```text
+docs/
+```
+
+Essa pasta deve facilitar manutencao futura dos bancos de questoes, formatos aceitos, regras de correcao e uso da aplicacao.
+
+Criar um arquivo `.md` para cada materia, assunto ou conjunto principal. O nome do arquivo deve seguir o mesmo codigo usado nos JSON, por exemplo:
+
+```text
+docs/
+  ECO0019.md
+  PPCA0021.md
+```
+
+Cada arquivo de documentacao deve conter:
+
+- Nome da materia ou assunto.
+- Codigos de arquivos JSON relacionados.
+- Estrutura esperada dos dados.
+- Exemplos validos de questoes.
+- Tipos de questao usados naquele assunto.
+- Regras de correcao especificas, quando existirem.
+- Observacoes sobre alternativas ambiguas ou pegadinhas.
+- Como adicionar novas questoes.
+- Como revisar justificativas.
+- Como validar se o JSON esta correto.
+- Historico simples de mudancas relevantes.
+
+Tambem criar um arquivo geral:
+
+```text
+docs/README.md
+```
+
+Esse arquivo deve explicar a estrutura completa do projeto:
+
+- Como funciona `json/index.json`.
+- Como cada arquivo de questoes deve ser organizado.
+- Formato de `meta`.
+- Formato de `sections`.
+- Formato de `questions`.
+- Como montar `id`, `type`, `command`, `alternatives`, `answer` e `justification`.
+- Como funcionam IDs globais.
+- Como favoritos usam `localStorage`.
+- Como respostas do usuario sao armazenadas.
+- Como a correcao compara respostas simples e multiplas.
+- Como publicar no GitHub Pages.
+- Como testar carregamento dos arquivos JSON.
+
+Exemplo minimo para `docs/ECO0019.md`:
+
+```markdown
+# ECO0019 - Introducao a Economia
+
+## Arquivos JSON
+
+- `json/ECO0019_P1.json`
+- `json/ECO0019_P2.json`
+
+## Estrutura
+
+Cada arquivo usa `meta`, `sections` e `questions`.
+
+## Tipos de questao
+
+- `single_correct`
+- `true_false`
+- `multiple_correct`
+- `single_incorrect`
+
+## Regras de correcao
+
+As respostas sao arrays. Para questoes multiplas, a resposta do usuario deve conter exatamente os mesmos IDs de `answer`, sem importar ordem.
+
+## Manutencao
+
+Ao adicionar questoes, verificar se:
+
+- O `id` nao se repete dentro da mesma secao.
+- Toda alternativa tem `id` unico.
+- `answer` aponta para alternativas existentes.
+- `justification` explica por que a resposta esta correta.
+- O arquivo foi incluido em `json/index.json`.
+```
+
+Estrutura final sugerida com documentacao:
+
+```text
+/
+  index.html
+  favoritos.html
+  style.css
+  app.js
+  README.md
+  docs/
+    README.md
+    ECO0019.md
+    PPCA0021.md
+  json/
+    index.json
+    ECO0019_P1.json
+    ECO0019_P2.json
+    PPCA0021_S1.json
+    PPCA0021_S2.json
+```
+
 ## Passos de implementacao
 
 1. Criar `json/index.json` como manifesto dos arquivos de questoes.
@@ -437,8 +547,9 @@ Estrutura sugerida:
 12. Atualizar favoritos para usar IDs globais e carregar todos os arquivos.
 13. Remover textos fixos de uma materia especifica da tela inicial.
 14. Adicionar melhorias de acessibilidade listadas acima.
-15. Testar localmente abrindo com servidor estatico, nao por `file://`.
-16. Publicar no GitHub Pages e validar carregamento dos JSON no navegador.
+15. Criar pasta `docs/` com documentacao geral e um `.md` por assunto.
+16. Testar localmente abrindo com servidor estatico, nao por `file://`.
+17. Publicar no GitHub Pages e validar carregamento dos JSON no navegador.
 
 ## Criterios de aceite
 
@@ -452,6 +563,8 @@ Estrutura sugerida:
 - Interface e navegavel por teclado.
 - Leitor de tela recebe contexto suficiente de telas, botoes, erros, carregamento e resultados.
 - Nenhum texto principal fica preso a uma disciplina especifica.
+- Pasta `docs/` existe com `README.md` geral e um arquivo `.md` por materia ou assunto.
+- Documentacao explica formatos de dados, exemplos, IDs, tipos de questao, uso e regras de correcao.
 
 ## Observacoes tecnicas
 
