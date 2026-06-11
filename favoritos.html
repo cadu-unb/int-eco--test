@@ -154,10 +154,14 @@
     .q-card-tags {
       display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;
     }
-    .tag-chapter {
+    .tag-section {
       font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
       background: var(--verde-pale); color: var(--verde);
       padding: 3px 10px; border-radius: 100px;
+    }
+    .tag-type {
+      font-size: .72rem; font-weight: 600; color: var(--text-light);
+      padding: 3px 0;
     }
     .tag-id {
       font-size: .72rem; font-weight: 600; color: var(--text-light);
@@ -289,10 +293,9 @@
       <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
     <div class="header-brand">
-      <span class="brand-saber">SABER</span>
       <span class="brand-unb">UnB</span>
     </div>
-    <span class="header-title">/ Favoritos</span>
+    <span class="header-title">/ Meus Favoritos</span>
   </header>
 
   <!-- Toolbar -->
@@ -333,83 +336,88 @@
   <script>
   'use strict';
 
-  const STORAGE_KEY = 'saber_unb_favoritos';
+  const STORAGE_KEY = 'quiz_app_favorites_v2';
 
-  // ── Estado ──────────────────────────────
-  let allQuestions = [];   // [{uid, chapterId, chapterName, command, alternatives, answer, justification}]
-  let favorites    = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
-  let activeTab    = 'all';
-  let activeChapter = null;
-  let searchQuery  = '';
+  let allQuestions = [];
+  let favorites = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+  let activeTab = 'all';
+  let activeType = null;
+  let searchQuery = '';
 
-  // ── Persistência ────────────────────────
   function saveFavorites() {
     localStorage.setItem(STORAGE_KEY, JSON.stringify([...favorites]));
   }
 
-  // ── Load JSON ───────────────────────────
   async function loadData() {
     try {
-      const res = await fetch('json/questions.json');
-      if (!res.ok) throw new Error();
-      const data = await res.json();
-      allQuestions = [];
+      const manifestRes = await fetch('json/index.json');
+      if (!manifestRes.ok) throw new Error('Manifesto não encontrado');
+      const manifest = await manifestRes.json();
 
-      Object.entries(data).forEach(([chapId, chapter]) => {
-        Object.entries(chapter.questions || {}).forEach(([qId, q]) => {
-          allQuestions.push({
-            uid: `${chapId}__${qId}`,
-            chapterId: Number(chapId),
-            chapterName: chapter.name || `Capítulo ${chapId}`,
-            ...q,
+      allQuestions = [];
+      for (const set of manifest.sets) {
+        const setRes = await fetch('json/' + set.file);
+        if (!setRes.ok) {
+          console.warn(`Falha ao carregar ${set.file}`);
+          continue;
+        }
+        const data = await setRes.json();
+        const meta = data.meta || {};
+        (data.sections || []).forEach(section => {
+          (section.questions || []).forEach(question => {
+            const globalId = `${set.file}::${section.id}::${question.id}`;
+            allQuestions.push({
+              globalId,
+              setFile: set.file,
+              sectionId: section.id,
+              sectionTitle: section.title,
+              ...meta,
+              ...question,
+            });
           });
         });
-      });
+      }
 
-      buildChapterChips();
+      buildTypeChips();
       render();
-    } catch {
+    } catch (err) {
+      console.error(err);
       document.getElementById('fav-main').innerHTML = `
         <div class="empty-state">
-          <p>Não foi possível carregar as questões.<br>Verifique se <strong>json/questions.json</strong> existe.</p>
+          <p>Não foi possível carregar as questões.<br>Verifique se <strong>json/index.json</strong> existe.</p>
         </div>`;
     } finally {
       document.getElementById('loader').classList.remove('visible');
     }
   }
 
-  // ── Chapter chips ───────────────────────
-  function buildChapterChips() {
-    const chapters = [...new Map(allQuestions.map(q => [q.chapterId, q.chapterName])).entries()]
-      .sort((a, b) => a[0] - b[0]);
-
+  function buildTypeChips() {
+    const types = [...new Set(allQuestions.map(q => q.type))].sort();
     const container = document.getElementById('filter-chips');
     container.innerHTML = '';
 
-    chapters.forEach(([id, name]) => {
+    types.forEach(type => {
       const btn = document.createElement('button');
       btn.className = 'filter-chip';
-      btn.textContent = `Cap. ${id}`;
-      btn.title = name;
-      btn.dataset.chap = id;
+      btn.textContent = type.replace('_', ' ');
+      btn.dataset.type = type;
       btn.addEventListener('click', () => {
-        activeChapter = (activeChapter === id) ? null : id;
+        activeType = (activeType === type) ? null : type;
         document.querySelectorAll('.filter-chip').forEach(c =>
-          c.classList.toggle('active', Number(c.dataset.chap) === activeChapter));
+          c.classList.toggle('active', c.dataset.type === activeType));
         render();
       });
       container.appendChild(btn);
     });
   }
 
-  // ── Filter & render ─────────────────────
   function getFiltered() {
     return allQuestions.filter(q => {
-      if (activeTab === 'fav' && !favorites.has(q.uid)) return false;
-      if (activeChapter !== null && q.chapterId !== activeChapter) return false;
+      if (activeTab === 'fav' && !favorites.has(q.globalId)) return false;
+      if (activeType !== null && q.type !== activeType) return false;
       if (searchQuery) {
         const needle = searchQuery.toLowerCase();
-        const haystack = (q.command + ' ' + q.alternatives.join(' ')).toLowerCase();
+        const haystack = (q.command + ' ' + (q.alternatives || []).map(a => a.text).join(' ')).toLowerCase();
         if (!haystack.includes(needle)) return false;
       }
       return true;
@@ -417,22 +425,22 @@
   }
 
   function updateCounts() {
-    const filtered     = getFiltered();
-    const totalAll     = allQuestions.filter(q => {
-      if (activeChapter !== null && q.chapterId !== activeChapter) return false;
+    const filtered = getFiltered();
+    const totalAll = allQuestions.filter(q => {
+      if (activeType !== null && q.type !== activeType) return false;
       if (searchQuery) {
         const needle = searchQuery.toLowerCase();
-        const haystack = (q.command + ' ' + q.alternatives.join(' ')).toLowerCase();
+        const haystack = (q.command + ' ' + (q.alternatives || []).map(a => a.text).join(' ')).toLowerCase();
         if (!haystack.includes(needle)) return false;
       }
       return true;
     }).length;
     const totalFav = allQuestions.filter(q => {
-      if (!favorites.has(q.uid)) return false;
-      if (activeChapter !== null && q.chapterId !== activeChapter) return false;
+      if (!favorites.has(q.globalId)) return false;
+      if (activeType !== null && q.type !== activeType) return false;
       if (searchQuery) {
         const needle = searchQuery.toLowerCase();
-        const haystack = (q.command + ' ' + q.alternatives.join(' ')).toLowerCase();
+        const haystack = (q.command + ' ' + (q.alternatives || []).map(a => a.text).join(' ')).toLowerCase();
         if (!haystack.includes(needle)) return false;
       }
       return true;
@@ -444,7 +452,7 @@
 
   function render() {
     updateCounts();
-    const main    = document.getElementById('fav-main');
+    const main = document.getElementById('fav-main');
     const filtered = getFiltered();
     main.innerHTML = '';
 
@@ -462,48 +470,40 @@
       return;
     }
 
-    // Agrupar por capítulo
-    const byChapter = {};
+    const bySection = {};
     filtered.forEach(q => {
-      const k = q.chapterId;
-      if (!byChapter[k]) byChapter[k] = { name: q.chapterName, questions: [] };
-      byChapter[k].questions.push(q);
+      const k = q.sectionTitle;
+      if (!bySection[k]) bySection[k] = [];
+      bySection[k].push(q);
     });
 
-    Object.entries(byChapter)
-      .sort((a, b) => Number(a[0]) - Number(b[0]))
-      .forEach(([chapId, { name, questions }]) => {
-        // Separator
-        const sep = document.createElement('div');
-        sep.className = 'chapter-sep';
-        sep.innerHTML = `
-          <div class="chapter-sep-line"></div>
-          <span class="chapter-sep-label">Cap. ${chapId} · ${name}</span>
-          <div class="chapter-sep-line"></div>`;
-        main.appendChild(sep);
+    Object.entries(bySection).forEach(([sectionTitle, questions]) => {
+      const sep = document.createElement('div');
+      sep.className = 'chapter-sep';
+      sep.innerHTML = `
+        <div class="chapter-sep-line"></div>
+        <span class="chapter-sep-label">${sectionTitle}</span>
+        <div class="chapter-sep-line"></div>`;
+      main.appendChild(sep);
 
-        questions.forEach((q, i) => {
-          const card = buildCard(q, i);
-          main.appendChild(card);
-        });
+      questions.forEach((q, i) => {
+        const card = buildCard(q, i);
+        main.appendChild(card);
       });
+    });
   }
 
-  // ── Build card ──────────────────────────
   function buildCard(q, delay) {
-    const isFav = favorites.has(q.uid);
-    const letters = ['A','B','C','D','E'];
-
+    const isFav = favorites.has(q.globalId);
     const card = document.createElement('div');
     card.className = 'q-card' + (isFav ? ' favorited' : '');
     card.style.animationDelay = Math.min(delay, 8) * 0.04 + 's';
 
-    const altsHTML = q.alternatives.map((alt, i) => {
-      const letter = letters[i];
-      const isCorrect = letter === q.answer.toUpperCase();
+    const altsHTML = (q.alternatives || []).map((alt, i) => {
+      const isCorrect = q.answer && q.answer.includes(alt.id);
       return `<li class="alt-row ${isCorrect ? 'correct-alt' : ''}">
-        <span class="alt-badge">${letter}</span>
-        <span>${alt}</span>
+        <span class="alt-badge">${alt.id.toUpperCase()}</span>
+        <span>${alt.text}</span>
       </li>`;
     }).join('');
 
@@ -515,39 +515,37 @@
       <div class="q-card-top">
         <div class="q-card-meta">
           <div class="q-card-tags">
-            <span class="tag-chapter">Cap. ${q.chapterId}</span>
-            <span class="tag-id">#${q.uid}</span>
+            <span class="tag-section">${q.sectionTitle}</span>
+            <span class="tag-type">${q.type}</span>
           </div>
           <p class="q-command">${q.command}</p>
         </div>
-        <button class="btn-star ${isFav ? 'starred' : ''}" data-uid="${q.uid}" title="${isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">
+        <button class="btn-star ${isFav ? 'starred' : ''}" data-global-id="${q.globalId}" title="${isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">
           <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
             <path d="M10 2l2.4 5 5.6.8-4 3.9.9 5.3L10 14.5l-4.9 2.5.9-5.3L2 7.8l5.6-.8L10 2z"
               stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
           </svg>
         </button>
       </div>
-      <button class="q-expand-toggle" data-uid="${q.uid}">
+      <button class="q-expand-toggle" data-global-id="${q.globalId}">
         <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Ver alternativas e gabarito
         <svg class="toggle-icon" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <div class="q-details" data-uid="${q.uid}">
+      <div class="q-details" data-global-id="${q.globalId}">
         <ul class="alt-list">${altsHTML}</ul>
         ${justHTML}
       </div>`;
 
-    // Star click
     card.querySelector('.btn-star').addEventListener('click', e => {
       e.stopPropagation();
-      toggleFavorite(q.uid, card);
+      toggleFavorite(q.globalId, card);
     });
 
-    // Expand click
     card.querySelector('.q-expand-toggle').addEventListener('click', () => {
       const details = card.querySelector('.q-details');
-      const toggle  = card.querySelector('.q-expand-toggle');
-      const open    = details.classList.toggle('open');
+      const toggle = card.querySelector('.q-expand-toggle');
+      const open = details.classList.toggle('open');
       toggle.classList.toggle('open', open);
       toggle.innerHTML = open
         ? `<svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -561,16 +559,15 @@
     return card;
   }
 
-  function toggleFavorite(uid, card) {
-    if (favorites.has(uid)) {
-      favorites.delete(uid);
+  function toggleFavorite(globalId, card) {
+    if (favorites.has(globalId)) {
+      favorites.delete(globalId);
       card.classList.remove('favorited');
       const btn = card.querySelector('.btn-star');
       btn.classList.remove('starred');
       btn.title = 'Adicionar aos favoritos';
-      btn.querySelector('svg path').setAttribute('fill', 'none');
     } else {
-      favorites.add(uid);
+      favorites.add(globalId);
       card.classList.add('favorited');
       const btn = card.querySelector('.btn-star');
       btn.classList.add('starred');
@@ -578,8 +575,7 @@
     }
     saveFavorites();
     updateCounts();
-    // Se estiver na aba de favoritos, remover o card com animação
-    if (activeTab === 'fav' && !favorites.has(uid)) {
+    if (activeTab === 'fav' && !favorites.has(globalId)) {
       card.style.transition = 'opacity .25s, transform .25s';
       card.style.opacity = '0';
       card.style.transform = 'translateX(12px)';
@@ -587,7 +583,6 @@
     }
   }
 
-  // ── Event listeners ─────────────────────
   document.getElementById('view-tabs').addEventListener('click', e => {
     const tab = e.target.closest('.view-tab');
     if (!tab) return;
@@ -601,7 +596,6 @@
     render();
   });
 
-  // ── Init ─────────────────────────────────
   loadData();
   </script>
 </body>

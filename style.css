@@ -401,6 +401,29 @@ body {
 }
 .chapter-chip:hover:not(.checked) { border-color: #b0c4b1; color: var(--verde); }
 
+.filter-grid {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+
+.filter-chip {
+  display: flex; align-items: center; gap: 6px;
+  padding: 8px 12px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--white);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-size: .85rem; font-weight: 500; color: var(--text-mid);
+  user-select: none;
+}
+.filter-chip input { display: none; }
+.filter-chip.checked {
+  border-color: var(--verde);
+  background: var(--verde-pale);
+  color: var(--verde);
+}
+.filter-chip:hover:not(.checked) { border-color: #b0c4b1; color: var(--verde); }
+
 .select-actions {
   display: flex; gap: 8px; align-items: center;
   font-size: .8rem; color: var(--text-light);

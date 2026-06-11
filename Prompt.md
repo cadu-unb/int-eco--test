@@ -435,6 +435,200 @@ docs/
   PPCA0021.md
 ```
 
+Criar tambem uma subpasta:
+
+```text
+docs/prompt/
+```
+
+Essa subpasta deve conter um prompt `.md` para cada tipo/formato de questao aceito pela aplicacao. Cada prompt deve orientar a criacao de questoes a partir de um documento-fonte indicado obrigatoriamente nas primeiras linhas do arquivo.
+
+Arquivos sugeridos:
+
+```text
+docs/prompt/
+  single_correct.md
+  true_false.md
+  multiple_correct.md
+  single_incorrect.md
+```
+
+Cada prompt em `docs/prompt/` deve solicitar questoes de nivel medio-dificil, bem elaboradas, em tom formal e academico. Os distratores devem ser plausiveis, tecnicamente verossimeis e capazes de convencer um leitor que estudou superficialmente o tema, sem serem absurdos, caricatos ou obviamente incorretos.
+
+As primeiras linhas de cada prompt devem conter campos para identificar o documento usado como base:
+
+```markdown
+# Documento-fonte
+
+Nome do documento: `[PREENCHER_NOME_DO_DOCUMENTO]`
+Trecho, capitulo ou intervalo usado: `[PREENCHER_RECORTE]`
+Materia/codigo: `[PREENCHER_MATERIA_OU_CODIGO]`
+```
+
+Cada prompt deve exigir que a resposta gerada esteja no formato JSON padrao da aplicacao, usando:
+
+- `id`
+- `type`
+- `command`
+- `alternatives`
+- `answer`
+- `justification`
+
+Cada prompt tambem deve exigir:
+
+- Enunciado claro e formal.
+- Alternativas com tamanho e estilo semelhantes.
+- Distratores baseados em erros conceituais comuns.
+- Ausencia de pistas obvias de resposta.
+- Justificativa academica explicando a resposta correta e, quando util, por que os distratores estao errados.
+- Respeito estrito ao conteudo do documento-fonte, sem inventar informacao externa.
+- Saida somente em JSON valido, sem comentarios fora do JSON.
+
+Conteudo minimo recomendado para `docs/prompt/single_correct.md`:
+
+```markdown
+# Documento-fonte
+
+Nome do documento: `[PREENCHER_NOME_DO_DOCUMENTO]`
+Trecho, capitulo ou intervalo usado: `[PREENCHER_RECORTE]`
+Materia/codigo: `[PREENCHER_MATERIA_OU_CODIGO]`
+
+# Tarefa
+
+Crie questoes de multipla escolha com uma unica alternativa correta, de nivel medio-dificil, com linguagem formal e academica.
+
+Use apenas o conteudo do documento-fonte informado. Nao invente conceitos externos.
+
+Cada questao deve ter distratores plausiveis, baseados em interpretacoes incompletas, confusoes conceituais ou generalizacoes indevidas do conteudo.
+
+# Formato de saida
+
+Retorne somente JSON valido no formato:
+
+[
+  {
+    "id": "q001",
+    "type": "single_correct",
+    "command": "Enunciado da questao.",
+    "alternatives": [
+      { "id": "a", "text": "Alternativa A" },
+      { "id": "b", "text": "Alternativa B" },
+      { "id": "c", "text": "Alternativa C" },
+      { "id": "d", "text": "Alternativa D" }
+    ],
+    "answer": ["a"],
+    "justification": "Justificativa formal da resposta correta."
+  }
+]
+```
+
+Conteudo minimo recomendado para `docs/prompt/true_false.md`:
+
+```markdown
+# Documento-fonte
+
+Nome do documento: `[PREENCHER_NOME_DO_DOCUMENTO]`
+Trecho, capitulo ou intervalo usado: `[PREENCHER_RECORTE]`
+Materia/codigo: `[PREENCHER_MATERIA_OU_CODIGO]`
+
+# Tarefa
+
+Crie questoes de verdadeiro ou falso, de nivel medio-dificil, com afirmacoes formais e conceitualmente densas.
+
+As afirmacoes falsas devem ser plausiveis e conter erro sutil, como inversao causal, generalizacao indevida, conceito deslocado ou condicao omitida.
+
+# Formato de saida
+
+Retorne somente JSON valido no formato:
+
+[
+  {
+    "id": "q001",
+    "type": "true_false",
+    "command": "Afirmacao a ser julgada como verdadeira ou falsa.",
+    "alternatives": [
+      { "id": "true", "text": "Verdadeiro" },
+      { "id": "false", "text": "Falso" }
+    ],
+    "answer": ["true"],
+    "justification": "Justificativa formal indicando por que a afirmacao e verdadeira ou falsa."
+  }
+]
+```
+
+Conteudo minimo recomendado para `docs/prompt/multiple_correct.md`:
+
+```markdown
+# Documento-fonte
+
+Nome do documento: `[PREENCHER_NOME_DO_DOCUMENTO]`
+Trecho, capitulo ou intervalo usado: `[PREENCHER_RECORTE]`
+Materia/codigo: `[PREENCHER_MATERIA_OU_CODIGO]`
+
+# Tarefa
+
+Crie questoes de multipla escolha com mais de uma alternativa correta, de nivel medio-dificil, em tom formal e academico.
+
+Cada questao deve ter pelo menos duas alternativas corretas. Os distratores devem ser plausiveis e proximos do tema, mas tecnicamente incorretos segundo o documento-fonte.
+
+# Formato de saida
+
+Retorne somente JSON valido no formato:
+
+[
+  {
+    "id": "q001",
+    "type": "multiple_correct",
+    "command": "Assinale todas as alternativas corretas.",
+    "alternatives": [
+      { "id": "a", "text": "Alternativa A" },
+      { "id": "b", "text": "Alternativa B" },
+      { "id": "c", "text": "Alternativa C" },
+      { "id": "d", "text": "Alternativa D" },
+      { "id": "e", "text": "Alternativa E" }
+    ],
+    "answer": ["a", "d"],
+    "justification": "Justificativa formal explicando o conjunto correto de alternativas."
+  }
+]
+```
+
+Conteudo minimo recomendado para `docs/prompt/single_incorrect.md`:
+
+```markdown
+# Documento-fonte
+
+Nome do documento: `[PREENCHER_NOME_DO_DOCUMENTO]`
+Trecho, capitulo ou intervalo usado: `[PREENCHER_RECORTE]`
+Materia/codigo: `[PREENCHER_MATERIA_OU_CODIGO]`
+
+# Tarefa
+
+Crie questoes de multipla escolha em que o usuario deve assinalar a unica alternativa incorreta, de nivel medio-dificil, em tom formal e academico.
+
+O enunciado deve deixar explicito: "Assinale a alternativa incorreta". A alternativa incorreta deve ser plausivel e conter erro conceitual sutil, nao uma afirmacao absurda.
+
+# Formato de saida
+
+Retorne somente JSON valido no formato:
+
+[
+  {
+    "id": "q001",
+    "type": "single_incorrect",
+    "command": "Assinale a alternativa incorreta sobre o tema.",
+    "alternatives": [
+      { "id": "a", "text": "Alternativa correta sobre o tema." },
+      { "id": "b", "text": "Alternativa correta sobre o tema." },
+      { "id": "c", "text": "Alternativa incorreta, mas plausivel." },
+      { "id": "d", "text": "Alternativa correta sobre o tema." }
+    ],
+    "answer": ["c"],
+    "justification": "Justificativa formal indicando por que a alternativa marcada e a unica incorreta."
+  }
+]
+```
+
 Cada arquivo de documentacao deve conter:
 
 - Nome da materia ou assunto.
@@ -519,6 +713,11 @@ Estrutura final sugerida com documentacao:
     README.md
     ECO0019.md
     PPCA0021.md
+    prompt/
+      single_correct.md
+      true_false.md
+      multiple_correct.md
+      single_incorrect.md
   json/
     index.json
     ECO0019_P1.json
@@ -548,8 +747,9 @@ Estrutura final sugerida com documentacao:
 13. Remover textos fixos de uma materia especifica da tela inicial.
 14. Adicionar melhorias de acessibilidade listadas acima.
 15. Criar pasta `docs/` com documentacao geral e um `.md` por assunto.
-16. Testar localmente abrindo com servidor estatico, nao por `file://`.
-17. Publicar no GitHub Pages e validar carregamento dos JSON no navegador.
+16. Criar `docs/prompt/` com um prompt `.md` por tipo de questao.
+17. Testar localmente abrindo com servidor estatico, nao por `file://`.
+18. Publicar no GitHub Pages e validar carregamento dos JSON no navegador.
 
 ## Criterios de aceite
 
@@ -565,6 +765,8 @@ Estrutura final sugerida com documentacao:
 - Nenhum texto principal fica preso a uma disciplina especifica.
 - Pasta `docs/` existe com `README.md` geral e um arquivo `.md` por materia ou assunto.
 - Documentacao explica formatos de dados, exemplos, IDs, tipos de questao, uso e regras de correcao.
+- Pasta `docs/prompt/` existe com prompts especificos para cada tipo de questao.
+- Cada prompt solicita o documento-fonte nas primeiras linhas e exige questoes medio-dificeis com distratores plausiveis.
 
 ## Observacoes tecnicas
 

@@ -20,13 +20,13 @@
     <div class="welcome-content">
       <div class="logo-badge">
         <span class="logo-dot"></span>
-        <span class="logo-label">UnB · Economia</span>
+        <span class="logo-label">Banco de Questões</span>
       </div>
       <h1 class="hero-title">
-        Olá,<br>
-        <span class="hero-name">jogador(a)!</span>
+        Bem-vindo!<br>
+        <span class="hero-name">Estude comigo</span>
       </h1>
-      <p class="hero-subtitle">Teste seus conhecimentos em <strong>Introdução à Economia</strong> com questões baseadas no livro do Mankiw.</p>
+      <p class="hero-subtitle">Escolha uma matéria, configure seu treino e acompanhe seus resultados.</p>
 
       <button class="btn-primary btn-start" id="btn-start">
         <span>Começar</span>
@@ -44,15 +44,15 @@
           Sobre esta aplicação
         </summary>
         <div class="disclaimer-body">
-          <p>Esta aplicação é um projeto <strong>educacional, comunitário e sem fins lucrativos</strong>, desenvolvido para auxiliar estudantes no estudo de Economia.</p>
-          <p>As questões são baseadas na obra:</p>
-          <div class="ref-block">
-            <p><strong>Autor:</strong> Mankiw, N. Gregory</p>
-            <p><strong>Título:</strong> Introdução à Economia</p>
-            <p><strong>Edição:</strong> 10. ed. — Porto Alegre: Bookman, 2025</p>
-            <p><strong>ISBN:</strong> 9788582606773</p>
-          </div>
-          <p class="disclaimer-note">Por que alguns produtos ficam mais caros de repente? O que influencia os salários? Como as decisões políticas afetam sua vida financeira? Este livro responde essas e muitas outras perguntas de forma clara e acessível.</p>
+          <p>Esta aplicação é um projeto <strong>educacional, comunitário e sem fins lucrativos</strong> para ajudar estudantes a revisar e aprender através de questionários interativos.</p>
+          <p>Funcionalidades:</p>
+          <ul style="margin-left: 1.5em; margin-bottom: 1em;">
+            <li>Múltiplos tipos de questões</li>
+            <li>Filtros dinâmicos por matéria, tópico e tipo</li>
+            <li>Resultados detalhados com justificativas</li>
+            <li>Favoritos persistentes</li>
+          </ul>
+          <p class="disclaimer-note">Selecione uma matéria, configure seus filtros e comece a estudar!</p>
         </div>
       </details>
     </div>
@@ -71,28 +71,36 @@
     </div>
 
     <div class="config-body">
-      <h2 class="config-title">Configurar<br><span>sua prova</span></h2>
+      <h2 class="config-title">Configurar<br><span>seu treino</span></h2>
 
-      <!-- Filtro de Prova -->
+      <!-- Filtro de Matéria -->
       <section class="config-section">
-        <label class="section-label">Filtro de Prova</label>
-        <div class="toggle-group" id="toggle-provas">
-          <button class="toggle-btn active" data-prova="1">Prova 1</button>
-          <button class="toggle-btn" data-prova="2" id="btn-prova2">Prova 2</button>
+        <label class="section-label">Matéria</label>
+        <div class="filter-grid" id="filter-subject">
+          <!-- Preenchido via JS -->
         </div>
       </section>
 
-      <!-- Seleção de Capítulos -->
+      <!-- Filtro de Grupo -->
       <section class="config-section">
-        <div class="section-label-row">
-          <label class="section-label">Capítulos</label>
-          <div class="select-actions">
-            <button class="link-btn" id="btn-select-all">Todos</button>
-            <span>·</span>
-            <button class="link-btn" id="btn-clear-all">Nenhum</button>
-          </div>
+        <label class="section-label">Grupo</label>
+        <div class="filter-grid" id="filter-group">
+          <!-- Preenchido via JS -->
         </div>
-        <div class="chapters-grid" id="chapters-grid">
+      </section>
+
+      <!-- Filtro de Seção -->
+      <section class="config-section">
+        <label class="section-label">Seção</label>
+        <div class="filter-grid" id="filter-section">
+          <!-- Preenchido via JS -->
+        </div>
+      </section>
+
+      <!-- Filtro de Tipo -->
+      <section class="config-section">
+        <label class="section-label">Tipo de Questão</label>
+        <div class="filter-grid" id="filter-type">
           <!-- Preenchido via JS -->
         </div>
       </section>
@@ -105,13 +113,13 @@
         </div>
         <div class="range-wrapper">
           <span class="range-limit">5</span>
-          <input type="range" id="qty-range" min="5" max="20" value="10" />
-          <span class="range-limit">20</span>
+          <input type="range" id="qty-range" min="5" max="50" value="10" />
+          <span class="range-limit">50</span>
         </div>
       </section>
 
       <div class="config-footer">
-        <p class="config-info" id="config-info">Selecione ao menos um capítulo.</p>
+        <p class="config-info" id="config-info">Carregando questões...</p>
         <button class="btn-primary" id="btn-start-quiz" disabled>
           <span>Iniciar Questionário</span>
           <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>

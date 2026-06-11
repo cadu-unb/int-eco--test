@@ -1,0 +1,18 @@
+{
+  "sets": [
+    {
+      "file": "ECO0019_P1.json",
+      "code": "ECO0019",
+      "title": "Introdução à Economia - Prova 1",
+      "subject": "Economia",
+      "group": "Prova 1"
+    },
+    {
+      "file": "ECO0019_P2.json",
+      "code": "ECO0019",
+      "title": "Introdução à Economia - Prova 2",
+      "subject": "Economia",
+      "group": "Prova 2"
+    }
+  ]
+}

@@ -1,60 +1,75 @@
 /* ══════════════════════════════════════
-   SABER UnB — Economia Quiz · app.js
+   SABER UnB — Banco de Questões · app.js
    ══════════════════════════════════════ */
 
 'use strict';
 
-// ── Estado Global ──────────────────────
 const State = {
-  allData:         {},   // JSON completo
-  provaFilter:     1,    // 1 ou 2
-  selectedChapters: [],  // IDs selecionados
-  qty:             10,
-  questions:       [],   // questões sorteadas [{id, chapterId, chapterName, ...}]
-  answers:         {},   // { idx: 'A' | 'B' | ... }
-  currentIdx:      0,
+  manifest: null,
+  allQuestionSets: {},
+  allQuestions: [],
+  filters: {
+    subject: null,
+    group: null,
+    section: null,
+    type: null,
+  },
+  selectedQuestions: [],
+  qty: 10,
+  questions: [],
+  answers: {},
+  currentIdx: 0,
 };
 
-// ── Referências DOM ────────────────────
 const $ = id => document.getElementById(id);
-
 const screens = {
   welcome: $('screen-welcome'),
-  config:  $('screen-config'),
-  quiz:    $('screen-quiz'),
+  config: $('screen-config'),
+  quiz: $('screen-quiz'),
   results: $('screen-results'),
 };
 const loader = $('loader');
 
-// ── Navegação entre telas ──────────────
 function showScreen(name) {
   Object.values(screens).forEach(s => s.classList.remove('active'));
   screens[name].classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ── Loader ─────────────────────────────
 const showLoader = () => loader.classList.add('visible');
 const hideLoader = () => loader.classList.remove('visible');
 
-// ═══════════════════════════════════════
-//  TELA 1 — WELCOME
-// ═══════════════════════════════════════
+// ════ WELCOME SCREEN ════
 $('btn-start').addEventListener('click', async () => {
   showScreen('config');
-  if (Object.keys(State.allData).length === 0) await loadData();
+  if (!State.manifest) await initializeApp();
   else buildConfigUI();
 });
 
-async function loadData() {
+async function initializeApp() {
   showLoader();
   try {
-    const res = await fetch('json/questions.json');
-    if (!res.ok) throw new Error('Falha ao carregar questões.');
-    State.allData = await res.json();
+    const manifestRes = await fetch('json/index.json');
+    if (!manifestRes.ok) throw new Error('Manifesto não encontrado.');
+    State.manifest = await manifestRes.json();
+
+    for (const set of State.manifest.sets) {
+      const setRes = await fetch('json/' + set.file);
+      if (!setRes.ok) {
+        console.warn(`Falha ao carregar ${set.file}`);
+        continue;
+      }
+      const data = await setRes.json();
+      State.allQuestionSets[set.file] = { ...data.meta, ...data, setFile: set.file };
+      normalizeQuestionSet(set.file, data);
+    }
+
+    if (State.allQuestions.length === 0) {
+      throw new Error('Nenhuma questão carregada.');
+    }
     buildConfigUI();
   } catch (err) {
-    alert('Não foi possível carregar as questões. Verifique se o arquivo json/questions.json existe.');
+    alert('Erro ao carregar questões. ' + err.message);
     console.error(err);
     showScreen('welcome');
   } finally {
@@ -62,105 +77,94 @@ async function loadData() {
   }
 }
 
-// ═══════════════════════════════════════
-//  TELA 2 — CONFIG
-// ═══════════════════════════════════════
+function normalizeQuestionSet(setFile, data) {
+  const meta = data.meta || {};
+  (data.sections || []).forEach(section => {
+    (section.questions || []).forEach(question => {
+      const globalId = `${setFile}::${section.id}::${question.id}`;
+      State.allQuestions.push({
+        globalId,
+        setFile,
+        sectionId: section.id,
+        sectionTitle: section.title,
+        ...meta,
+        ...question,
+      });
+    });
+  });
+}
+
+// ════ CONFIG SCREEN ════
 function buildConfigUI() {
-  const keys = Object.keys(State.allData).map(Number).sort((a, b) => a - b);
+  const subjects = [...new Set(State.allQuestions.map(q => q.subject))].sort();
+  const groups = [...new Set(State.allQuestions.map(q => q.group))].sort();
+  const sections = [...new Set(State.allQuestions.map(q => q.sectionTitle))].sort();
+  const types = [...new Set(State.allQuestions.map(q => q.type))].sort();
 
-  // Verificar se há capítulos > 18
-  const hasProva2 = keys.some(k => k > 18);
-  const btn2 = $('btn-prova2');
-  if (!hasProva2) {
-    btn2.disabled = true;
-    btn2.setAttribute('data-tooltip', 'Coming Soon');
-  }
+  renderFilterUI('filter-subject', subjects, 'subject');
+  renderFilterUI('filter-group', groups, 'group');
+  renderFilterUI('filter-section', sections, 'section');
+  renderFilterUI('filter-type', types, 'type');
 
-  // Renderizar capítulos do filtro atual
-  renderChapterGrid();
   updateConfigInfo();
 }
 
-function getFilteredKeys() {
-  const keys = Object.keys(State.allData).map(Number).sort((a, b) => a - b);
-  return State.provaFilter === 1
-    ? keys.filter(k => k <= 18)
-    : keys.filter(k => k > 18);
-}
+function renderFilterUI(containerId, items, filterKey) {
+  const container = $(containerId);
+  if (!container) return;
 
-function renderChapterGrid() {
-  const grid = $('chapters-grid');
-  grid.innerHTML = '';
-
-  const filteredKeys = getFilteredKeys();
-
-  filteredKeys.forEach(key => {
-    const ch = State.allData[key];
-    const strKey = String(key);
-    const isChecked = State.selectedChapters.includes(strKey);
-
+  container.innerHTML = '';
+  items.forEach(item => {
     const label = document.createElement('label');
-    label.className = 'chapter-chip' + (isChecked ? ' checked' : '');
+    label.className = 'filter-chip';
     label.innerHTML = `
-      <input type="checkbox" value="${strKey}" ${isChecked ? 'checked' : ''} />
-      <span class="chip-check"></span>
-      <span>Cap. ${key}</span>
+      <input type="checkbox" value="${item}" />
+      <span>${item || 'Sem classificação'}</span>
     `;
-    label.title = ch.name || '';
 
     label.querySelector('input').addEventListener('change', e => {
-      const val = e.target.value;
+      const value = e.target.value;
       if (e.target.checked) {
-        if (!State.selectedChapters.includes(val)) State.selectedChapters.push(val);
+        if (!State.filters[filterKey]) State.filters[filterKey] = [];
+        if (!State.filters[filterKey].includes(value)) State.filters[filterKey].push(value);
         label.classList.add('checked');
       } else {
-        State.selectedChapters = State.selectedChapters.filter(v => v !== val);
+        State.filters[filterKey] = State.filters[filterKey].filter(v => v !== value);
         label.classList.remove('checked');
       }
       updateConfigInfo();
     });
-
-    grid.appendChild(label);
+    container.appendChild(label);
   });
-
-  // Sincronizar checkboxes com filtro atual
-  State.selectedChapters = State.selectedChapters.filter(k => filteredKeys.map(String).includes(k));
-  updateConfigInfo();
 }
 
-// Botões "Todos" / "Nenhum"
-$('btn-select-all').addEventListener('click', () => {
-  const filteredKeys = getFilteredKeys().map(String);
-  State.selectedChapters = [...filteredKeys];
-  document.querySelectorAll('#chapters-grid .chapter-chip').forEach(chip => {
-    chip.classList.add('checked');
-    chip.querySelector('input').checked = true;
+function getFilteredQuestions() {
+  return State.allQuestions.filter(q => {
+    if (State.filters.subject && !State.filters.subject.includes(q.subject)) return false;
+    if (State.filters.group && !State.filters.group.includes(q.group)) return false;
+    if (State.filters.section && !State.filters.section.includes(q.sectionTitle)) return false;
+    if (State.filters.type && !State.filters.type.includes(q.type)) return false;
+    return true;
   });
-  updateConfigInfo();
-});
+}
 
-$('btn-clear-all').addEventListener('click', () => {
-  State.selectedChapters = [];
-  document.querySelectorAll('#chapters-grid .chapter-chip').forEach(chip => {
-    chip.classList.remove('checked');
-    chip.querySelector('input').checked = false;
-  });
-  updateConfigInfo();
-});
+function updateConfigInfo() {
+  const info = $('config-info');
+  const btn = $('btn-start-quiz');
+  const filtered = getFilteredQuestions();
+  const available = filtered.length;
 
-// Toggle Prova
-document.querySelectorAll('.toggle-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (btn.disabled) return;
-    document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    State.provaFilter = Number(btn.dataset.prova);
-    State.selectedChapters = [];
-    renderChapterGrid();
-  });
-});
+  if (available === 0) {
+    info.textContent = 'Nenhuma questão encontrada com os filtros selecionados.';
+    btn.disabled = true;
+    return;
+  }
 
-// Range quantidade
+  const effective = Math.min(State.qty, available);
+  info.textContent = `${available} questões disponíveis · ${effective} serão sorteadas.`;
+  btn.disabled = false;
+}
+
 const qtyRange = $('qty-range');
 const qtyDisplay = $('qty-display');
 qtyRange.addEventListener('input', () => {
@@ -177,78 +181,16 @@ function updateRangeGradient() {
 }
 updateRangeGradient();
 
-function updateConfigInfo() {
-  const info = $('config-info');
-  const btn  = $('btn-start-quiz');
-
-  if (State.selectedChapters.length === 0) {
-    info.textContent = 'Selecione ao menos um capítulo.';
-    btn.disabled = true;
-    return;
-  }
-
-  // Calcular total de questões disponíveis
-  const available = State.selectedChapters.reduce((acc, key) => {
-    const ch = State.allData[key];
-    if (!ch) return acc;
-    return acc + Object.keys(ch.questions || {}).length;
-  }, 0);
-
-  if (available === 0) {
-    info.textContent = 'Nenhuma questão encontrada nos capítulos selecionados.';
-    btn.disabled = true;
-    return;
-  }
-
-  const effective = Math.min(State.qty, available);
-  const cap = State.selectedChapters.length;
-  info.textContent = `${cap} capítulo(s) · ${available} questões disponíveis · ${effective} serão sorteadas.`;
-  btn.disabled = false;
-}
-
 $('btn-back-config').addEventListener('click', () => showScreen('welcome'));
 
 $('btn-start-quiz').addEventListener('click', () => {
-  State.questions = drawQuestions();
-  State.answers   = {};
+  const filtered = getFilteredQuestions();
+  State.questions = shuffle(filtered).slice(0, State.qty);
+  State.answers = {};
   State.currentIdx = 0;
   renderQuestion();
   showScreen('quiz');
 });
-
-// ── Sorteio distribuído ────────────────
-function drawQuestions() {
-  const chapterPools = {};
-
-  State.selectedChapters.forEach(key => {
-    const ch = State.allData[key];
-    if (!ch) return;
-    const qs = Object.entries(ch.questions || {}).map(([id, q]) => ({
-      id,
-      chapterId: key,
-      chapterName: ch.name || `Capítulo ${key}`,
-      ...q,
-    }));
-    if (qs.length) chapterPools[key] = shuffle(qs);
-  });
-
-  const poolKeys = Object.keys(chapterPools);
-  const total = Object.values(chapterPools).reduce((a, p) => a + p.length, 0);
-  const qty = Math.min(State.qty, total);
-
-  // Distribuição igualitária com resto
-  const base  = Math.floor(qty / poolKeys.length);
-  let   extra = qty % poolKeys.length;
-
-  const selected = [];
-  poolKeys.forEach(key => {
-    const take = base + (extra > 0 ? 1 : 0);
-    extra = Math.max(0, extra - 1);
-    selected.push(...chapterPools[key].slice(0, take));
-  });
-
-  return shuffle(selected).slice(0, qty);
-}
 
 function shuffle(arr) {
   const a = [...arr];
@@ -259,40 +201,29 @@ function shuffle(arr) {
   return a;
 }
 
-// ═══════════════════════════════════════
-//  TELA 3 — QUIZ
-// ═══════════════════════════════════════
+// ════ QUIZ SCREEN ════
 function renderQuestion() {
   const idx = State.currentIdx;
-  const q   = State.questions[idx];
+  const q = State.questions[idx];
   const total = State.questions.length;
 
-  // Progresso
   $('progress-bar').style.width = ((idx + 1) / total * 100) + '%';
   $('quiz-counter').textContent = `${idx + 1} / ${total}`;
-  $('quiz-chapter-tag').textContent = `Cap. ${q.chapterId}`;
-
-  // Enunciado
+  $('quiz-chapter-tag').textContent = `${q.sectionTitle}`;
   $('question-command').textContent = q.command;
 
-  // Alternativas
   const list = $('alternatives-list');
   list.innerHTML = '';
-  const letters = ['A', 'B', 'C', 'D', 'E'];
 
-  q.alternatives.forEach((alt, i) => {
-    const li = document.createElement('li');
-    li.className = 'alt-item' + (State.answers[idx] === letters[i] ? ' selected' : '');
-    li.dataset.letter = letters[i];
-    li.innerHTML = `
-      <span class="alt-letter">${letters[i]}</span>
-      <span class="alt-text">${alt}</span>
-    `;
-    li.addEventListener('click', () => selectAnswer(letters[i]));
-    list.appendChild(li);
-  });
+  const renderFn = {
+    'single_correct': renderSingleCorrect,
+    'true_false': renderTrueFalse,
+    'multiple_correct': renderMultipleCorrect,
+    'single_incorrect': renderSingleIncorrect,
+  }[q.type] || renderSingleCorrect;
 
-  // Botões de navegação
+  renderFn(q, list, idx);
+
   $('btn-prev-q').disabled = idx === 0;
 
   const nextBtn = $('btn-next-q');
@@ -301,26 +232,86 @@ function renderQuestion() {
   } else {
     nextBtn.innerHTML = `Próxima <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   }
-  nextBtn.disabled = State.answers[idx] === undefined;
+  nextBtn.disabled = !State.answers[idx];
 }
 
-function selectAnswer(letter) {
-  State.answers[State.currentIdx] = letter;
-
-  document.querySelectorAll('.alt-item').forEach(li => {
-    li.classList.toggle('selected', li.dataset.letter === letter);
+function renderSingleCorrect(q, list, idx) {
+  (q.alternatives || []).forEach((alt, i) => {
+    const li = document.createElement('li');
+    li.className = 'alt-item' + (State.answers[idx] && State.answers[idx].includes(alt.id) ? ' selected' : '');
+    li.dataset.id = alt.id;
+    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.addEventListener('click', () => {
+      State.answers[idx] = [alt.id];
+      document.querySelectorAll('.alt-item').forEach(li => li.classList.remove('selected'));
+      li.classList.add('selected');
+      $('btn-next-q').disabled = false;
+    });
+    list.appendChild(li);
   });
-
-  $('btn-next-q').disabled = false;
 }
 
-// Botão de retorno do quiz → configuração
+function renderTrueFalse(q, list, idx) {
+  (q.alternatives || []).forEach(alt => {
+    const li = document.createElement('li');
+    li.className = 'alt-item' + (State.answers[idx] && State.answers[idx].includes(alt.id) ? ' selected' : '');
+    li.dataset.id = alt.id;
+    li.innerHTML = `<span class="alt-text">${alt.text}</span>`;
+    li.addEventListener('click', () => {
+      State.answers[idx] = [alt.id];
+      document.querySelectorAll('.alt-item').forEach(li => li.classList.remove('selected'));
+      li.classList.add('selected');
+      $('btn-next-q').disabled = false;
+    });
+    list.appendChild(li);
+  });
+}
+
+function renderMultipleCorrect(q, list, idx) {
+  (q.alternatives || []).forEach((alt, i) => {
+    const li = document.createElement('li');
+    const isSelected = State.answers[idx] && State.answers[idx].includes(alt.id);
+    li.className = 'alt-item' + (isSelected ? ' selected' : '');
+    li.dataset.id = alt.id;
+    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.addEventListener('click', () => {
+      const answers = State.answers[idx] || [];
+      if (answers.includes(alt.id)) {
+        State.answers[idx] = answers.filter(a => a !== alt.id);
+        li.classList.remove('selected');
+        li.querySelector('input').checked = false;
+      } else {
+        State.answers[idx] = [...answers, alt.id].sort();
+        li.classList.add('selected');
+        li.querySelector('input').checked = true;
+      }
+      $('btn-next-q').disabled = !State.answers[idx] || State.answers[idx].length === 0;
+    });
+    list.appendChild(li);
+  });
+}
+
+function renderSingleIncorrect(q, list, idx) {
+  (q.alternatives || []).forEach(alt => {
+    const li = document.createElement('li');
+    li.className = 'alt-item' + (State.answers[idx] && State.answers[idx].includes(alt.id) ? ' selected' : '');
+    li.dataset.id = alt.id;
+    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.addEventListener('click', () => {
+      State.answers[idx] = [alt.id];
+      document.querySelectorAll('.alt-item').forEach(li => li.classList.remove('selected'));
+      li.classList.add('selected');
+      $('btn-next-q').disabled = false;
+    });
+    list.appendChild(li);
+  });
+}
+
 $('btn-back-quiz').addEventListener('click', () => {
   if (Object.keys(State.answers).length > 0) {
-    const confirmar = confirm('Tem certeza que deseja sair? Seu progresso será perdido.');
-    if (!confirmar) return;
+    if (!confirm('Tem certeza que deseja sair? Seu progresso será perdido.')) return;
   }
-  State.answers    = {};
+  State.answers = {};
   State.currentIdx = 0;
   showScreen('config');
 });
@@ -342,61 +333,79 @@ $('btn-next-q').addEventListener('click', () => {
   }
 });
 
-// ═══════════════════════════════════════
-//  TELA 4 — RESULTS
-// ═══════════════════════════════════════
-function buildResults() {
-  const qs     = State.questions;
-  const ans    = State.answers;
-  const total  = qs.length;
-  const correct = qs.filter((q, i) => (ans[i] || '').toUpperCase() === q.answer.toUpperCase()).length;
-  const pct    = Math.round((correct / total) * 100);
+// ════ RESULTS SCREEN ════
+function isAnswerCorrect(question, userAnswer) {
+  const expected = normalizeAnswer(question.answer);
+  const received = normalizeAnswer(userAnswer || []);
+  return arraysEqual(expected, received);
+}
 
-  // Anel de pontuação
+function normalizeAnswer(ans) {
+  return (ans || []).map(a => String(a).toLowerCase()).sort();
+}
+
+function arraysEqual(a, b) {
+  return a.length === b.length && a.every((v, i) => v === b[i]);
+}
+
+function buildResults() {
+  const qs = State.questions;
+  const ans = State.answers;
+  const total = qs.length;
+  const correct = qs.filter((q, i) => isAnswerCorrect(q, ans[i])).length;
+  const pct = Math.round((correct / total) * 100);
+
   $('score-pct').textContent = pct + '%';
   $('score-message').textContent = scoreMessage(pct);
 
-  const circumference = 2 * Math.PI * 50; // r=50
+  const circumference = 2 * Math.PI * 50;
   const offset = circumference * (1 - pct / 100);
   setTimeout(() => {
     const ring = $('ring-fill');
-    ring.style.strokeDasharray  = circumference;
+    ring.style.strokeDasharray = circumference;
     ring.style.strokeDashoffset = offset;
-    // Cor por desempenho
     ring.style.stroke = pct >= 70 ? '#4dffab' : pct >= 50 ? '#ffd600' : '#ff6b6b';
   }, 100);
 
-  // Listagem
   const summary = $('results-summary');
   summary.innerHTML = `<h3 style="font-family:'Fraunces',serif;font-size:1.4rem;font-weight:700;margin-bottom:4px;">${correct} de ${total} acertos</h3>`;
 
   qs.forEach((q, i) => {
-    const userAns    = (ans[i] || '—').toUpperCase();
-    const correctAns = q.answer.toUpperCase();
-    const isCorrect  = userAns === correctAns;
-
-    const userAltText = getAltText(q, userAns);
-    const corrAltText = getAltText(q, correctAns);
+    const userAns = ans[i] || [];
+    const isCorrect = isAnswerCorrect(q, userAns);
 
     const card = document.createElement('div');
     card.className = 'result-card';
+
+    const userAnsText = userAns.length > 0
+      ? userAns.map(id => {
+          const alt = (q.alternatives || []).find(a => a.id === id);
+          return alt ? `${id.toUpperCase()}) ${alt.text}` : id;
+        }).join(' + ')
+      : '—';
+
+    const correctAnsText = q.answer.map(id => {
+      const alt = (q.alternatives || []).find(a => a.id === id);
+      return alt ? `${id.toUpperCase()}) ${alt.text}` : id;
+    }).join(' + ');
+
     card.innerHTML = `
       <div class="result-card-header">
         <div class="result-icon ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? '✓' : '✗'}</div>
         <div>
-          <p class="result-q-num">Questão ${i + 1} · Cap. ${q.chapterId}</p>
+          <p class="result-q-num">Questão ${i + 1} · ${q.sectionTitle}</p>
           <p class="result-command">${q.command}</p>
         </div>
       </div>
       <div class="result-card-body">
         <div class="result-answer-row">
           <span class="answer-tag ${isCorrect ? 'user-correct' : 'user-wrong'}">Sua resposta</span>
-          <span>${userAns !== '—' ? `${userAns}) ${userAltText}` : '—'}</span>
+          <span>${userAnsText}</span>
         </div>
         ${!isCorrect ? `
         <div class="result-answer-row">
           <span class="answer-tag correct-ans">Correta</span>
-          <span>${correctAns}) ${corrAltText}</span>
+          <span>${correctAnsText}</span>
         </div>` : ''}
         ${q.justification ? `
         <div class="result-justification">
@@ -409,31 +418,23 @@ function buildResults() {
   });
 }
 
-function getAltText(q, letter) {
-  const letters = ['A', 'B', 'C', 'D', 'E'];
-  const idx = letters.indexOf(letter.toUpperCase());
-  return (idx >= 0 && q.alternatives[idx]) ? q.alternatives[idx] : '';
-}
-
 function scoreMessage(pct) {
   if (pct === 100) return '🏆 Perfeito! Domínio total do conteúdo!';
-  if (pct >= 80)  return '🌟 Excelente! Continue assim!';
-  if (pct >= 70)  return '✅ Muito bom! Você está no caminho certo.';
-  if (pct >= 50)  return '📚 Bom esforço! Revise os conteúdos errados.';
+  if (pct >= 80) return '🌟 Excelente! Continue assim!';
+  if (pct >= 70) return '✅ Muito bom! Você está no caminho certo.';
+  if (pct >= 50) return '📚 Bom esforço! Revise os conteúdos errados.';
   return '💡 Continue estudando! Você vai melhorar!';
 }
 
-// Botões de resultado
 $('btn-retry').addEventListener('click', () => {
-  State.answers    = {};
+  State.answers = {};
   State.currentIdx = 0;
   renderQuestion();
   showScreen('quiz');
 });
 
 $('btn-new-quiz').addEventListener('click', () => {
-  State.selectedChapters = [];
-  renderChapterGrid();
-  updateConfigInfo();
+  State.filters = { subject: null, group: null, section: null, type: null };
+  buildConfigUI();
   showScreen('config');
 });

@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "code": "ECO0019",
+    "title": "Introdução à Economia - Prova 1",
+    "subject": "Economia",
+    "group": "Prova 1",
+    "description": "Questões de revisão para a primeira prova de Introdução à Economia."
+  },
+  "sections": [
+    {
+      "id": "cap-01",
+      "title": "Dez princípios de economia",
+      "questions": [
+        {
+          "id": "q001",
+          "type": "single_correct",
+          "command": "A economia é melhor definida como o estudo de",
+          "alternatives": [
+            { "id": "a", "text": "como a sociedade administra seus recursos escassos." },
+            { "id": "b", "text": "como administrar uma empresa da maneira mais lucrativa." },
+            { "id": "c", "text": "como prever inflação, desemprego e preços de ações." },
+            { "id": "d", "text": "como o governo pode proteger as pessoas do interesse próprio descontrolado." }
+          ],
+          "answer": ["a"],
+          "justification": "A economia estuda a alocação de recursos limitados para satisfazer necessidades humanas ilimitadas. O conceito central é a escassez, que exige que escolhas sejam feitas sobre o que produzir, como produzir e para quem produzir."
+        },
+        {
+          "id": "q002",
+          "type": "single_correct",
+          "command": "O custo de oportunidade de uma ida ao cinema é",
+          "alternatives": [
+            { "id": "a", "text": "o preço do ingresso." },
+            { "id": "b", "text": "o preço do ingresso mais o custo do refrigerante e da pipoca comprados no cinema." },
+            { "id": "c", "text": "o gasto financeiro total necessário para ir ao cinema mais o valor do seu tempo." },
+            { "id": "d", "text": "zero, desde que você goste do filme e o considere um bom uso do seu tempo e dinheiro." }
+          ],
+          "answer": ["c"],
+          "justification": "O custo de oportunidade compreende tudo aquilo de que se abre mão para obter algo. No caso do cinema, além do desembolso financeiro (ingresso e consumo), deve-se considerar o valor do tempo despendido, que poderia ser utilizado em outra atividade produtiva ou de lazer."
+        },
+        {
+          "id": "q003",
+          "type": "single_correct",
+          "command": "Uma mudança marginal é aquela que",
+          "alternatives": [
+            { "id": "a", "text": "não é importante para as políticas públicas." },
+            { "id": "b", "text": "altera de modo crescente um plano existente." },
+            { "id": "c", "text": "torna um resultado ineficiente." },
+            { "id": "d", "text": "não influencia os incentivos." }
+          ],
+          "answer": ["b"],
+          "justification": "Em economia, o termo 'marginal' refere-se a ajustes incrementais na borda de um plano de ação. Decisores racionais tomam decisões comparando benefícios marginais e custos marginais de uma pequena alteração adicional."
+        },
+        {
+          "id": "q004",
+          "type": "single_correct",
+          "command": "Porque as pessoas respondem a incentivos,",
+          "alternatives": [
+            { "id": "a", "text": "os formuladores de políticas públicas podem obter resultados diferentes ao mudar as punições ou recompensas." },
+            { "id": "b", "text": "as políticas podem ter consequências inesperadas." },
+            { "id": "c", "text": "a sociedade enfrenta um trade-off entre eficiência e igualdade." },
+            { "id": "d", "text": "Todas as alternativas estão corretas" }
+          ],
+          "answer": ["d"],
+          "justification": "Os incentivos são fundamentais na análise econômica. Mudanças em custos e benefícios alteram o comportamento dos agentes (a), muitas vezes gerando efeitos secundários não previstos (b). Além disso, políticas de redistribuição de renda (igualdade) podem reduzir o incentivo ao trabalho, afetando a eficiência (c)."
+        },
+        {
+          "id": "q005",
+          "type": "single_correct",
+          "command": "O comércio internacional beneficia um país quando",
+          "alternatives": [
+            { "id": "a", "text": "a receita da venda no exterior supera os gastos provenientes de compras no exterior." },
+            { "id": "b", "text": "seus parceiros comerciais passam por uma redução no bem-estar." },
+            { "id": "c", "text": "todos os países se especializam em fazer o que fazem de melhor." },
+            { "id": "d", "text": "não há perda de empregos domésticos por conta do comércio." }
+          ],
+          "answer": ["c"],
+          "justification": "O comércio permite que os países se especializem em atividades onde possuem vantagem comparativa. Isso aumenta a produtividade global e permite que todos os países consumam uma maior variedade de bens a custos menores do que se fossem autossuficientes."
+        },
+        {
+          "id": "q006",
+          "type": "single_correct",
+          "command": "A \"mão invisível\" de Adam Smith refere-se",
+          "alternatives": [
+            { "id": "a", "text": "aos métodos sutis e geralmente ocultos que as empresas usam para lucrar à custa do consumidor." },
+            { "id": "b", "text": "à capacidade dos mercados competitivos de alcançar os resultados desejados, apesar do interesse próprio dos participantes do mercado." },
+            { "id": "c", "text": "à capacidade da regulamentação governamental de beneficiar os consumidores, mesmo quando eles não estão cientes dessas regulamentações." },
+            { "id": "d", "text": "à maneira com que os produtores ou consumidores de mercados não regulamentados impõem custos a observadores inocentes." }
+          ],
+          "answer": ["b"],
+          "justification": "O conceito descreve como a interação de compradores e vendedores no mercado, movidos pelo interesse próprio, é guiada pelos preços para promover, sem intenção direta, o bem-estar econômico geral e a alocação eficiente de recursos."
+        },
+        {
+          "id": "q007",
+          "type": "single_correct",
+          "command": "O governo pode intervir em uma economia para",
+          "alternatives": [
+            { "id": "a", "text": "proteger direitos de propriedade." },
+            { "id": "b", "text": "corrigir uma falha de mercado derivada de externalidades." },
+            { "id": "c", "text": "obter uma distribuição de renda mais igualitária." },
+            { "id": "d", "text": "Todas as alternativas acima" }
+          ],
+          "answer": ["d"],
+          "justification": "A intervenção estatal é necessária para garantir as regras do jogo (direitos de propriedade), para mitigar ineficiências como poluição ou poder de mercado (falhas de mercado) e para promover objetivos sociais de equidade que o mercado sozinho não atende."
+        },
+        {
+          "id": "q008",
+          "type": "single_correct",
+          "command": "O principal motivo para alguns países terem um padrão de vida médio mais elevado do que outros é que",
+          "alternatives": [
+            { "id": "a", "text": "os países mais ricos exploraram os mais pobres." },
+            { "id": "b", "text": "os governos de alguns países emitiram mais dinheiro." },
+            { "id": "c", "text": "alguns países têm leis mais fortes para proteger os direitos dos trabalhadores." },
+            { "id": "d", "text": "alguns países têm níveis mais elevados de produtividade." }
+          ],
+          "answer": ["d"],
+          "justification": "A produtividade, definida como a quantidade de bens e serviços produzidos por unidade de insumo de trabalho, é o determinante fundamental do padrão de vida. Países onde os trabalhadores produzem mais por hora desfrutam de rendas mais altas."
+        },
+        {
+          "id": "q009",
+          "type": "single_correct",
+          "command": "Se um país apresenta inflação elevada e persistente, a explicação mais provável é que",
+          "alternatives": [
+            { "id": "a", "text": "o governo está emitindo quantidades excessivas de moeda." },
+            { "id": "b", "text": "os sindicatos estão negociando salários excessivamente altos." },
+            { "id": "c", "text": "o governo está impondo níveis excessivos de tributação." },
+            { "id": "d", "text": "as empresas estão usando seu poder de mercado para impor aumentos de preços excessivos." }
+          ],
+          "answer": ["a"],
+          "justification": "A causa primária da inflação persistente é o crescimento excessivo da oferta de moeda. Quando o Banco Central emite moeda em ritmo superior ao crescimento da produção de bens e serviços, o valor da moeda cai, elevando o nível geral de preços."
+        },
+        {
+          "id": "q010",
+          "type": "single_correct",
+          "command": "Se um governo usa as ferramentas da política monetária para reduzir a demanda por bens e serviços, o resultado provável é ________ inflação e ________ desemprego em curto prazo.",
+          "alternatives": [
+            { "id": "a", "text": "menor; menor" },
+            { "id": "b", "text": "menor; maior" },
+            { "id": "c", "text": "maior; maior" },
+            { "id": "d", "text": "maior; menor" }
+          ],
+          "answer": ["b"],
+          "justification": "De acordo com a Curva de Phillips de curto prazo, existe um trade-off entre inflação e desemprego. Ao reduzir a demanda agregada para conter a inflação, a produção cai e o desemprego tende a aumentar temporariamente antes que os preços e salários se ajustem."
+        }
+      ]
+    },
+    {
+      "id": "cap-02",
+      "title": "Pensando como um economista",
+      "questions": [
+        {
+          "id": "q001",
+          "type": "single_correct",
+          "command": "Um modelo econômico é",
+          "alternatives": [
+            { "id": "a", "text": "uma máquina mecânica que replica o funcionamento da economia." },
+            { "id": "b", "text": "uma descrição detalhada e realista da economia." },
+            { "id": "c", "text": "uma representação simplificada de algum aspecto da economia." },
+            { "id": "d", "text": "um programa de computador que prevê o futuro da economia." }
+          ],
+          "answer": ["c"],
+          "justification": "Modelos econômicos são simplificações da realidade que omitem detalhes irrelevantes para focar no que é essencial para entender o comportamento humano ou o funcionamento do mercado. Eles são construídos com premissas para facilitar a compreensão de fenômenos complexos."
+        },
+        {
+          "id": "q002",
+          "type": "single_correct",
+          "command": "O diagrama do fluxo circular ilustra que, nos mercados de fatores de produção,",
+          "alternatives": [
+            { "id": "a", "text": "as famílias são vendedoras e as empresas são compradoras." },
+            { "id": "b", "text": "as famílias são compradoras e as empresas são vendedoras." },
+            { "id": "c", "text": "famílias e empresas são compradoras." },
+            { "id": "d", "text": "famílias e empresas são vendedoras." }
+          ],
+          "answer": ["a"],
+          "justification": "No diagrama do fluxo circular, as famílias possuem e vendem os fatores de produção (trabalho, terra e capital) para as empresas, que os utilizam para produzir bens e serviços. Em troca, as empresas pagam salários, aluguéis e lucros às famílias."
+        },
+        {
+          "id": "q003",
+          "type": "single_correct",
+          "command": "Um ponto dentro da fronteira de possibilidades de produção é",
+          "alternatives": [
+            { "id": "a", "text": "eficiente, mas não viável." },
+            { "id": "b", "text": "viável, mas não eficiente." },
+            { "id": "c", "text": "eficiente e viável." },
+            { "id": "d", "text": "nem eficiente nem viável." }
+          ],
+          "answer": ["b"],
+          "justification": "Um ponto dentro da fronteira é viável porque a economia tem recursos para alcançá-lo, mas é ineficiente porque não está utilizando todos os recursos disponíveis da melhor forma possível, sendo possível aumentar a produção de um bem sem reduzir a do outro."
+        },
+        {
+          "id": "q004",
+          "type": "single_correct",
+          "command": "Todos os tópicos abaixo fazem parte do estudo da microeconomia, EXCETO",
+          "alternatives": [
+            { "id": "a", "text": "o impacto dos impostos dos cigarros sobre o comportamento de tabagismo dos adolescentes." },
+            { "id": "b", "text": "o papel do poder de mercado da Microsoft na precificação do software." },
+            { "id": "c", "text": "a eficácia de programas de combate à pobreza para reduzir o número de pessoas em situação de rua." },
+            { "id": "d", "text": "a influência do déficit orçamentário do governo sobre o crescimento econômico." }
+          ],
+          "answer": ["d"],
+          "justification": "A microeconomia foca na tomada de decisão de famílias e empresas em mercados específicos. O estudo de variáveis agregadas como déficit orçamentário e crescimento econômico nacional é o escopo da macroeconomia."
+        },
+        {
+          "id": "q005",
+          "type": "single_correct",
+          "command": "Qual das alternativas a seguir é uma declaração positiva, não normativa?",
+          "alternatives": [
+            { "id": "a", "text": "A lei X reduzirá a renda nacional." },
+            { "id": "b", "text": "A lei X é uma boa legislação." },
+            { "id": "c", "text": "O Congresso deve aprovar a lei X." },
+            { "id": "d", "text": "O Presidente deve vetar a lei X." }
+          ],
+          "answer": ["a"],
+          "justification": "Declarações positivas buscam descrever o mundo como ele é, sendo testáveis com dados. Declarações normativas envolvem juízos de valor sobre como o mundo deveria ser, geralmente usando palavras como 'deve' ou 'bom'."
+        },
+        {
+          "id": "q006",
+          "type": "single_correct",
+          "command": "Qual órgão governamental normalmente conta com o conselho de economistas?",
+          "alternatives": [
+            { "id": "a", "text": "Departamento do Tesouro" },
+            { "id": "b", "text": "Departamento de Gestão e Orçamento" },
+            { "id": "c", "text": "Departamento de Justiça" },
+            { "id": "d", "text": "Todas as alternativas anteriores" }
+          ],
+          "answer": ["d"],
+          "justification": "Economistas atuam em diversos níveis do governo: no Tesouro para política tributária, no Orçamento para análise de gastos e no Judiciário/Justiça para avaliar questões de concorrência e leis antitruste."
+        },
+        {
+          "id": "q007",
+          "type": "single_correct",
+          "command": "Os economistas podem discordar por conta de diferentes",
+          "alternatives": [
+            { "id": "a", "text": "palpites a respeito da validade de teorias alternativas." },
+            { "id": "b", "text": "julgamentos sobre a magnitude dos principais parâmetros." },
+            { "id": "c", "text": "filosofias políticas relacionadas aos objetivos das políticas públicas." },
+            { "id": "d", "text": "Todas as alternativas anteriores" }
+          ],
+          "answer": ["d"],
+          "justification": "A divergência científica ocorre por dúvidas sobre a validade de teorias (a), por estimativas diferentes de como uma variável afeta outra (b) ou por valores éticos e políticos distintos sobre o que é prioridade para a sociedade (c)."
+        },
+        {
+          "id": "q008",
+          "type": "single_correct",
+          "command": "A maioria dos economistas acredita que as tarifas são",
+          "alternatives": [
+            { "id": "a", "text": "uma boa forma de promover o crescimento econômico doméstico." },
+            { "id": "b", "text": "uma forma ruim de aumentar o bem-estar econômico geral." },
+            { "id": "c", "text": "uma resposta muitas vezes necessária para a concorrência estrangeira." },
+            { "id": "d", "text": "uma maneira eficiente de aumentar a receita do governo." }
+          ],
+          "answer": ["b"],
+          "justification": "Existe um consenso quase universal entre economistas de que barreiras ao comércio, como tarifas e quotas de importação, reduzem a eficiência econômica e o bem-estar total, pois impedem os ganhos da especialização e aumentam os preços para os consumidores."
+        }
+      ]
+    }
+  ]
+}
