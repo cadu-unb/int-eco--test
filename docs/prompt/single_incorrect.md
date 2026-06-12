@@ -180,3 +180,7 @@ Independete da fonte, utilize SOMENTE PT-BR.
 - "Azul é um número" (óbvio demais)
 - Completamente não relacionado
 - Erro de português ou lógica impossível
+
+# Retorno
+
+5 Questões seguindo o padrão definido acima em formato `json` dentro de um bloco de código;

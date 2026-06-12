@@ -7,34 +7,32 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
-    /* ── Reset & Vars ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --verde: #006039; --verde-light: #007a49; --verde-pale: #e8f5ee;
-      --azul: #004D80;  --azul-pale: #e6f0f8;
+      --azul: #004D80; --azul-pale: #e6f0f8;
       --offwhite: #f8f9fa; --white: #fff;
       --text-dark: #1a2332; --text-mid: #4a5568; --text-light: #8a9ab0;
       --border: #e2e8f0;
       --gold: #c8961c; --gold-pale: #fef9e7;
       --radius-sm: 10px; --radius-md: 16px; --radius-lg: 24px;
-      --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
-      --shadow-md: 0 6px 24px rgba(0,0,0,.10);
+      --shadow-sm: 0 2px 8px rgba(0,0,0,.06); --shadow-md: 0 6px 24px rgba(0,0,0,.10);
       --t: .22s cubic-bezier(.4,0,.2,1);
     }
-    html { font-size: 16px; }
-    body {
-      font-family: 'DM Sans', sans-serif;
-      background: var(--offwhite);
-      color: var(--text-dark);
-      min-height: 100dvh;
+    body.theme-dark {
+      --offwhite: #0f172a; --white: #1e293b;
+      --text-dark: #f1f5f9; --text-mid: #94a3b8; --text-light: #64748b;
+      --border: #334155;
+      --verde-pale: rgba(0,96,57,0.25); --azul-pale: rgba(0,77,128,0.25);
+      --gold-pale: rgba(200,150,28,0.15);
     }
+    html { font-size: 16px; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--offwhite); color: var(--text-dark); min-height: 100dvh; }
 
-    /* ── Header ── */
+    /* ── HEADER ── */
     .fav-header {
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-      padding: 16px 24px;
-      display: flex; align-items: center; gap: 14px;
+      background: var(--white); border-bottom: 1px solid var(--border);
+      padding: 16px 24px; display: flex; align-items: center; gap: 14px;
       position: sticky; top: 0; z-index: 20;
     }
     .btn-back {
@@ -47,327 +45,304 @@
     }
     .btn-back:hover { border-color: var(--verde); background: var(--verde-pale); color: var(--verde); }
     .header-brand { display: flex; align-items: baseline; gap: 4px; }
-    .brand-saber {
-      font-family: 'Fraunces', serif; font-size: 1.4rem; font-weight: 900;
-      background: linear-gradient(135deg, var(--verde), var(--azul));
-      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
-    }
     .brand-unb { font-size: .9rem; font-weight: 600; color: var(--text-mid); }
     .header-title { font-size: 1rem; font-weight: 600; color: var(--text-mid); margin-left: 4px; }
+    .btn-theme {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1.5px solid var(--border); background: transparent;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; color: var(--text-mid); flex-shrink: 0; margin-left: auto;
+      transition: border-color var(--t), background var(--t), color var(--t);
+    }
+    .btn-theme:hover { border-color: var(--verde); background: var(--verde-pale); color: var(--verde); }
 
-    /* ── Toolbar ── */
+    /* ── TOOLBAR ── */
     .toolbar {
-      max-width: 800px; margin: 0 auto;
-      padding: 20px 24px 0;
+      max-width: 860px; margin: 0 auto; padding: 20px 24px 0;
       display: flex; flex-wrap: wrap; align-items: center; gap: 12px;
     }
     .toolbar-title {
       font-family: 'Fraunces', serif;
-      font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 900;
-      line-height: 1.1; flex: 1 0 100%;
+      font-size: clamp(1.6rem, 4vw, 2.2rem); font-weight: 900; line-height: 1.1; flex: 1 0 100%;
     }
     .toolbar-title span {
       background: linear-gradient(135deg, var(--gold), #e6a820);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
     }
-
-    .view-tabs {
-      display: flex; gap: 6px;
-      background: var(--offwhite); border: 1px solid var(--border);
-      padding: 4px; border-radius: 100px;
-    }
+    .view-tabs { display: flex; gap: 6px; background: var(--offwhite); border: 1px solid var(--border); padding: 4px; border-radius: 100px; }
     .view-tab {
-      padding: 7px 18px; border-radius: 100px; border: none;
-      background: transparent; cursor: pointer;
-      font-family: 'DM Sans', sans-serif; font-size: .85rem; font-weight: 600;
-      color: var(--text-mid); transition: all var(--t);
-      display: flex; align-items: center; gap: 6px;
+      padding: 7px 18px; border-radius: 100px; border: none; background: transparent;
+      cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: .85rem; font-weight: 600;
+      color: var(--text-mid); transition: all var(--t); display: flex; align-items: center; gap: 6px;
     }
     .view-tab.active { background: var(--white); color: var(--text-dark); box-shadow: var(--shadow-sm); }
-    .view-tab .tab-count {
-      background: var(--gold-pale); color: var(--gold);
-      font-size: .72rem; font-weight: 700;
-      padding: 1px 7px; border-radius: 100px;
-    }
+    .tab-count { background: var(--gold-pale); color: var(--gold); font-size: .72rem; font-weight: 700; padding: 1px 7px; border-radius: 100px; }
     .view-tab.active .tab-count { background: var(--gold); color: white; }
-
-    .search-wrap {
-      flex: 1; min-width: 200px;
-      position: relative;
-    }
+    .search-wrap { flex: 1; min-width: 220px; position: relative; }
     .search-wrap svg { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--text-light); pointer-events: none; }
     .search-input {
-      width: 100%; padding: 10px 12px 10px 38px;
-      border: 1.5px solid var(--border); border-radius: 100px;
-      background: var(--white); font-family: 'DM Sans', sans-serif;
-      font-size: .9rem; color: var(--text-dark); outline: none;
-      transition: border-color var(--t);
+      width: 100%; padding: 10px 12px 10px 38px; border: 1.5px solid var(--border); border-radius: 100px;
+      background: var(--white); font-family: 'DM Sans', sans-serif; font-size: .9rem; color: var(--text-dark);
+      outline: none; transition: border-color var(--t);
     }
     .search-input:focus { border-color: var(--verde); }
     .search-input::placeholder { color: var(--text-light); }
 
-    .filter-chips {
-      display: flex; gap: 8px; flex-wrap: wrap; flex: 1 0 100%;
+    /* ── FILTER BAR ── */
+    .filter-bar {
+      max-width: 860px; margin: 0 auto; padding: 12px 24px 4px;
+      display: flex; flex-wrap: wrap; gap: 8px; align-items: center;
     }
-    .filter-chip {
-      padding: 5px 14px; border-radius: 100px;
-      border: 1.5px solid var(--border); background: var(--white);
-      font-size: .8rem; font-weight: 600; color: var(--text-mid);
-      cursor: pointer; transition: all var(--t);
+    .filter-select {
+      padding: 6px 26px 6px 11px; border: 1.5px solid var(--border); border-radius: 100px;
+      background: var(--white); font-family: 'DM Sans', sans-serif; font-size: .8rem;
+      color: var(--text-mid); cursor: pointer; outline: none; transition: border-color var(--t), background var(--t), color var(--t);
+      appearance: none; -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%238a9ab0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E");
+      background-repeat: no-repeat; background-position: right 9px center;
+      max-width: 190px;
     }
-    .filter-chip.active { border-color: var(--verde); background: var(--verde-pale); color: var(--verde); }
+    .filter-select:focus { border-color: var(--verde); }
+    .filter-select.has-value { border-color: var(--verde); background-color: var(--verde-pale); color: var(--verde); }
+    .type-chips { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+    .type-chip {
+      padding: 5px 12px; border-radius: 100px; border: 1.5px solid var(--border); background: var(--white);
+      font-size: .78rem; font-weight: 600; color: var(--text-mid); cursor: pointer; transition: all var(--t);
+    }
+    .type-chip.active { border-color: var(--verde); background: var(--verde-pale); color: var(--verde); }
+    .filter-divider { width: 1px; height: 20px; background: var(--border); flex-shrink: 0; }
+    .sort-label { font-size: .78rem; font-weight: 600; color: var(--text-light); white-space: nowrap; }
+    .btn-clear-invalid {
+      padding: 6px 14px; border: 1.5px solid var(--border); border-radius: 100px;
+      background: transparent; font-family: 'DM Sans', sans-serif; font-size: .78rem; font-weight: 600;
+      color: var(--text-light); cursor: pointer; transition: all var(--t); white-space: nowrap;
+    }
+    .btn-clear-invalid:hover { border-color: #e53e3e; color: #e53e3e; background: #fde8e8; }
 
-    /* ── Main content ── */
-    .fav-main {
-      max-width: 800px; margin: 0 auto;
-      padding: 20px 24px 60px;
-      display: flex; flex-direction: column; gap: 12px;
-    }
-
-    .empty-state {
-      text-align: center; padding: 60px 20px;
-      color: var(--text-light);
-    }
+    /* ── MAIN ── */
+    .fav-main { max-width: 860px; margin: 0 auto; padding: 16px 24px 60px; display: flex; flex-direction: column; gap: 10px; }
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--text-light); }
     .empty-state svg { margin-bottom: 16px; opacity: .35; }
     .empty-state p { font-size: 1rem; line-height: 1.6; }
     .empty-state strong { color: var(--text-mid); }
 
-    /* ── Question Card ── */
+    /* ── SECTION SEPARATOR ── */
+    .chapter-sep { display: flex; align-items: center; gap: 12px; margin: 8px 0 4px; }
+    .chapter-sep-line { flex: 1; height: 1px; background: var(--border); }
+    .chapter-sep-label { font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--text-light); white-space: nowrap; }
+
+    /* ── CARD ── */
     .q-card {
-      background: var(--white);
-      border: 1.5px solid var(--border);
-      border-radius: var(--radius-lg);
-      box-shadow: var(--shadow-sm);
-      overflow: hidden;
+      background: var(--white); border: 1.5px solid var(--border); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-sm); overflow: hidden;
       transition: box-shadow var(--t), border-color var(--t);
+      animation: fadeUp .25s ease both;
     }
     .q-card:hover { box-shadow: var(--shadow-md); }
     .q-card.favorited { border-color: var(--gold); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
-    .q-card-top {
-      display: flex; align-items: flex-start; gap: 12px;
-      padding: 18px 18px 14px;
-    }
-    .q-card-meta {
-      flex: 1;
-    }
-    .q-card-tags {
-      display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 8px;
-    }
-    .tag-section {
-      font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
-      background: var(--verde-pale); color: var(--verde);
-      padding: 3px 10px; border-radius: 100px;
-    }
-    .tag-type {
-      font-size: .72rem; font-weight: 600; color: var(--text-light);
-      padding: 3px 0;
-    }
-    .tag-id {
-      font-size: .72rem; font-weight: 600; color: var(--text-light);
-      padding: 3px 0;
-    }
-    .q-command {
-      font-size: .95rem; line-height: 1.6; color: var(--text-dark); font-weight: 500;
-    }
+    .q-card-top { display: flex; align-items: flex-start; gap: 12px; padding: 16px 16px 12px; }
+    .q-card-meta { flex: 1; min-width: 0; }
+    .q-card-tags { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+    .tag { font-size: .7rem; font-weight: 600; padding: 2px 9px; border-radius: 100px; white-space: nowrap; }
+    .tag-subject { background: var(--verde-pale); color: var(--verde); }
+    .tag-group { background: var(--azul-pale); color: var(--azul); }
+    .tag-type { color: var(--text-light); background: transparent; border: 1px solid var(--border); }
+    .tag-source { color: var(--text-light); font-size: .65rem; font-weight: 500; }
+    .tag-date { color: var(--gold); font-size: .65rem; font-weight: 600; }
+    .q-command { font-size: .92rem; line-height: 1.6; color: var(--text-dark); font-weight: 500; }
 
-    /* Star button */
     .btn-star {
-      width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;
+      width: 38px; height: 38px; flex-shrink: 0; border-radius: 50%;
       border: 1.5px solid var(--border); background: transparent;
       display: flex; align-items: center; justify-content: center;
-      cursor: pointer; transition: all var(--t);
-      color: var(--text-light);
+      cursor: pointer; transition: all var(--t); color: var(--text-light);
     }
     .btn-star:hover { border-color: var(--gold); color: var(--gold); background: var(--gold-pale); }
     .btn-star.starred { border-color: var(--gold); background: var(--gold-pale); color: var(--gold); }
     .btn-star.starred svg { fill: var(--gold); }
 
-    /* Expand toggle */
     .q-expand-toggle {
-      display: flex; align-items: center; gap: 8px;
-      padding: 10px 18px;
-      border-top: 1px solid var(--border);
-      background: none; border-bottom: none; border-left: none; border-right: none;
-      width: 100%; cursor: pointer;
-      font-family: 'DM Sans', sans-serif; font-size: .82rem; font-weight: 600;
-      color: var(--text-mid); text-align: left;
+      display: flex; align-items: center; gap: 8px; padding: 9px 16px;
+      border-top: 1px solid var(--border); background: none;
+      border-bottom: none; border-left: none; border-right: none;
+      width: 100%; cursor: pointer; font-family: 'DM Sans', sans-serif;
+      font-size: .8rem; font-weight: 600; color: var(--text-mid); text-align: left;
       transition: background var(--t), color var(--t);
     }
     .q-expand-toggle:hover { background: var(--offwhite); color: var(--verde); }
-    .q-expand-toggle .toggle-icon {
-      margin-left: auto;
-      transition: transform var(--t);
-    }
+    .toggle-icon { margin-left: auto; transition: transform var(--t); }
     .q-expand-toggle.open .toggle-icon { transform: rotate(180deg); }
 
-    /* Alternatives */
-    .q-details {
-      display: none;
-      padding: 0 18px 18px;
-      border-top: 1px solid var(--border);
-    }
+    .q-details { display: none; padding: 0 16px 16px; border-top: 1px solid var(--border); }
     .q-details.open { display: block; }
-
-    .alt-list {
-      list-style: none;
-      display: flex; flex-direction: column; gap: 8px;
-      padding: 14px 0 10px;
-    }
+    .alt-list { list-style: none; display: flex; flex-direction: column; gap: 7px; padding: 12px 0 10px; }
     .alt-row {
-      display: flex; align-items: flex-start; gap: 10px;
-      padding: 10px 12px; border-radius: var(--radius-sm);
-      font-size: .88rem; line-height: 1.5; color: var(--text-mid);
-      background: var(--offwhite);
+      display: flex; align-items: flex-start; gap: 10px; padding: 9px 12px;
+      border-radius: var(--radius-sm); font-size: .86rem; line-height: 1.5;
+      color: var(--text-mid); background: var(--offwhite);
     }
-    .alt-row.correct-alt {
-      background: var(--verde-pale); color: var(--text-dark); font-weight: 500;
-    }
+    .alt-row.correct-alt { background: var(--verde-pale); color: var(--text-dark); font-weight: 500; }
     .alt-badge {
-      width: 26px; height: 26px; border-radius: 50%;
+      width: 24px; height: 24px; border-radius: 50%;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: .75rem; flex-shrink: 0;
+      font-weight: 700; font-size: .72rem; flex-shrink: 0;
       background: var(--border); color: var(--text-mid);
     }
     .alt-row.correct-alt .alt-badge { background: var(--verde); color: white; }
-
     .justification-box {
-      margin-top: 2px;
-      padding: 12px 14px;
-      background: var(--azul-pale);
-      border-left: 3px solid var(--azul);
+      margin-top: 4px; padding: 11px 13px;
+      background: var(--azul-pale); border-left: 3px solid var(--azul);
       border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-      font-size: .83rem; color: var(--text-mid); line-height: 1.6;
+      font-size: .82rem; color: var(--text-mid); line-height: 1.6;
     }
-    .just-label {
-      font-weight: 700; color: var(--azul);
-      font-size: .75rem; text-transform: uppercase; letter-spacing: .04em;
-      margin-bottom: 4px;
-    }
+    .just-label { font-weight: 700; color: var(--azul); font-size: .74rem; text-transform: uppercase; letter-spacing: .04em; margin-bottom: 4px; }
 
-    /* ── Chapter separator ── */
-    .chapter-sep {
-      display: flex; align-items: center; gap: 12px;
-      margin: 8px 0 4px;
-    }
-    .chapter-sep-line { flex: 1; height: 1px; background: var(--border); }
-    .chapter-sep-label {
-      font-size: .78rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-      color: var(--text-light); white-space: nowrap;
-    }
-
-    /* ── Loader ── */
+    /* ── LOADER ── */
     .loader-overlay {
-      position: fixed; inset: 0;
-      background: rgba(248,249,250,.92); backdrop-filter: blur(6px);
+      position: fixed; inset: 0; background: rgba(248,249,250,.92); backdrop-filter: blur(6px);
       display: none; flex-direction: column; align-items: center; justify-content: center;
       gap: 16px; z-index: 999; font-size: .95rem; color: var(--text-mid);
     }
     .loader-overlay.visible { display: flex; }
-    .loader-spinner {
-      width: 44px; height: 44px;
-      border: 3px solid var(--border); border-top-color: var(--verde);
-      border-radius: 50%; animation: spin .8s linear infinite;
-    }
+    .loader-spinner { width: 44px; height: 44px; border: 3px solid var(--border); border-top-color: var(--verde); border-radius: 50%; animation: spin .8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes fadeUp { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
-    .q-card { animation: fadeUp .25s ease both; }
 
-    /* ── Responsive ── */
-    @media (max-width: 480px) {
-      .toolbar { padding: 16px 16px 0; }
-      .fav-main { padding: 16px 16px 60px; }
-      .fav-header { padding: 14px 16px; }
-    }
-
+    /* ── A11Y ── */
+    .skip-link { position: absolute; top: -40px; left: 0; background: var(--verde); color: white; padding: 8px 16px; text-decoration: none; z-index: 100; border-radius: 0 0 4px 0; }
+    .skip-link:focus { top: 0; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+    button, [role="button"] { outline: 2px solid transparent; outline-offset: 2px; }
+    button:focus-visible, [role="button"]:focus-visible { outline: 2px solid var(--verde); outline-offset: 2px; }
+    .btn-star:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+    @media (max-width: 480px) {
+      .fav-header { padding: 14px 16px; }
+      .toolbar, .filter-bar { padding-left: 16px; padding-right: 16px; }
+      .fav-main { padding: 12px 16px 60px; }
+    }
   </style>
 </head>
 <body>
+  <a href="#fav-main" class="skip-link">Pular para conteúdo principal</a>
 
-  <!-- Header -->
   <header class="fav-header">
-    <a href="index.html" class="btn-back" title="Voltar ao início">
-      <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <a href="index.html" class="btn-back" aria-label="Voltar ao quiz principal">
+      <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
-    <div class="header-brand">
-      <span class="brand-unb">UnB</span>
-    </div>
+    <div class="header-brand"><span class="brand-unb">UnB</span></div>
     <span class="header-title">/ Meus Favoritos</span>
+    <button class="btn-theme" id="btn-theme" aria-label="Alternar tema"></button>
   </header>
 
-  <!-- Toolbar -->
-  <div class="toolbar" id="toolbar">
+  <nav class="toolbar">
     <h1 class="toolbar-title">Banco de <span>Questões</span></h1>
-
-    <!-- Tabs Todas / Favoritas -->
-    <div class="view-tabs" id="view-tabs">
-      <button class="view-tab active" data-tab="all">
-        Todas
-        <span class="tab-count" id="count-all">0</span>
+    <div class="view-tabs" id="view-tabs" role="tablist">
+      <button class="view-tab active" data-tab="all" role="tab" aria-selected="true">
+        Todas <span class="tab-count" id="count-all">0</span>
       </button>
-      <button class="view-tab" data-tab="fav">
-        ★ Favoritas
-        <span class="tab-count" id="count-fav">0</span>
+      <button class="view-tab" data-tab="fav" role="tab" aria-selected="false">
+        ★ Favoritas <span class="tab-count" id="count-fav">0</span>
       </button>
     </div>
-
-    <!-- Busca -->
     <div class="search-wrap">
-      <svg width="16" height="16" viewBox="0 0 20 20" fill="none"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-      <input type="search" class="search-input" id="search-input" placeholder="Buscar questão…" />
+      <label for="search-input" class="sr-only">Buscar questão</label>
+      <svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.8"/><path d="M13 13l3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      <input type="search" class="search-input" id="search-input" placeholder="Buscar por enunciado, alternativa, seção…" />
     </div>
+  </nav>
 
-    <!-- Chips de capítulo -->
-    <div class="filter-chips" id="filter-chips"></div>
+  <div class="filter-bar" id="filter-bar">
+    <select class="filter-select" id="filter-subject" aria-label="Filtrar por matéria">
+      <option value="">Matéria (todas)</option>
+    </select>
+    <select class="filter-select" id="filter-code" aria-label="Filtrar por código">
+      <option value="">Código (todos)</option>
+    </select>
+    <select class="filter-select" id="filter-group" aria-label="Filtrar por grupo">
+      <option value="">Grupo (todos)</option>
+    </select>
+    <select class="filter-select" id="filter-section" aria-label="Filtrar por seção">
+      <option value="">Seção (todas)</option>
+    </select>
+    <select class="filter-select" id="filter-source" aria-label="Filtrar por arquivo">
+      <option value="">Arquivo (todos)</option>
+    </select>
+    <div class="type-chips" id="type-chips"></div>
+    <div class="filter-divider"></div>
+    <span class="sort-label">Ordenar:</span>
+    <select class="filter-select" id="sort-select" aria-label="Ordenação">
+      <option value="default">Padrão</option>
+      <option value="subject">Matéria</option>
+      <option value="group">Grupo</option>
+      <option value="section">Seção</option>
+      <option value="type">Tipo</option>
+      <option value="date_asc">Data ↑</option>
+      <option value="date_desc">Data ↓</option>
+    </select>
+    <button class="btn-clear-invalid" id="btn-clear-invalid">Limpar inválidos</button>
   </div>
 
-  <!-- Main -->
   <main class="fav-main" id="fav-main"></main>
 
-  <!-- Loader -->
-  <div class="loader-overlay visible" id="loader">
-    <div class="loader-spinner"></div>
+  <div class="loader-overlay visible" id="loader" role="status" aria-live="polite" aria-label="Carregando">
+    <div class="loader-spinner" aria-hidden="true"></div>
     <p>Carregando questões…</p>
   </div>
 
   <script>
   'use strict';
-
   const STORAGE_KEY = 'quiz_app_favorites_v2';
 
   let allQuestions = [];
-  let favorites = new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]'));
+  let favorites = {};
   let activeTab = 'all';
-  let activeType = null;
   let searchQuery = '';
+  let filterSubject = '', filterCode = '', filterGroup = '', filterSection = '', filterSource = '', filterType = '';
+  let sortBy = 'default';
 
-  function saveFavorites() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([...favorites]));
+  // ── PERSISTENCE ──
+  function loadFavorites() {
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return {};
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) {
+        const now = new Date().toISOString();
+        const migrated = {};
+        parsed.forEach(id => { migrated[id] = { createdAt: now }; });
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(migrated));
+        return migrated;
+      }
+      if (parsed && typeof parsed === 'object') return parsed;
+      return {};
+    } catch { return {}; }
   }
 
+  function saveFavorites() {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(favorites));
+  }
+
+  // ── DATA LOADING ──
   async function loadData() {
     try {
       const manifestRes = await fetch('json/index.json');
       if (!manifestRes.ok) throw new Error('Manifesto não encontrado');
       const manifest = await manifestRes.json();
-
       allQuestions = [];
       for (const set of manifest.sets) {
         const setRes = await fetch('json/' + set.file);
-        if (!setRes.ok) {
-          console.warn(`Falha ao carregar ${set.file}`);
-          continue;
-        }
+        if (!setRes.ok) { console.warn(`Falha: ${set.file}`); continue; }
         const data = await setRes.json();
         const meta = data.meta || {};
         (data.sections || []).forEach(section => {
           (section.questions || []).forEach(question => {
-            const globalId = `${set.file}::${section.id}::${question.id}`;
             allQuestions.push({
-              globalId,
+              globalId: `${set.file}::${section.id}::${question.id}`,
               setFile: set.file,
               sectionId: section.id,
               sectionTitle: section.title,
@@ -377,129 +352,156 @@
           });
         });
       }
-
+      buildFilterOptions();
       buildTypeChips();
       render();
     } catch (err) {
       console.error(err);
-      document.getElementById('fav-main').innerHTML = `
-        <div class="empty-state">
-          <p>Não foi possível carregar as questões.<br>Verifique se <strong>json/index.json</strong> existe.</p>
-        </div>`;
+      document.getElementById('fav-main').innerHTML =
+        '<div class="empty-state"><p>Não foi possível carregar questões.<br><strong>json/index.json</strong> não encontrado.</p></div>';
     } finally {
       document.getElementById('loader').classList.remove('visible');
     }
   }
 
-  function buildTypeChips() {
-    const types = [...new Set(allQuestions.map(q => q.type))].sort();
-    const container = document.getElementById('filter-chips');
-    container.innerHTML = '';
+  // ── FILTER OPTIONS ──
+  function buildFilterOptions() {
+    function populate(id, values) {
+      const sel = document.getElementById(id);
+      const first = sel.options[0].cloneNode(true);
+      sel.innerHTML = '';
+      sel.appendChild(first);
+      [...new Set(values)].filter(Boolean).sort().forEach(v => {
+        const opt = document.createElement('option');
+        opt.value = v; opt.textContent = v;
+        sel.appendChild(opt);
+      });
+    }
+    populate('filter-subject', allQuestions.map(q => q.subject));
+    populate('filter-code', allQuestions.map(q => q.code));
+    populate('filter-group', allQuestions.map(q => q.group));
+    populate('filter-section', allQuestions.map(q => q.sectionTitle));
+    populate('filter-source', allQuestions.map(q => q.setFile));
+  }
 
+  function buildTypeChips() {
+    const types = [...new Set(allQuestions.map(q => q.type))].filter(Boolean).sort();
+    const container = document.getElementById('type-chips');
+    container.innerHTML = '';
     types.forEach(type => {
       const btn = document.createElement('button');
-      btn.className = 'filter-chip';
-      btn.textContent = type.replace('_', ' ');
+      btn.className = 'type-chip' + (filterType === type ? ' active' : '');
+      btn.textContent = type.replace(/_/g, ' ');
       btn.dataset.type = type;
+      btn.setAttribute('aria-pressed', filterType === type ? 'true' : 'false');
       btn.addEventListener('click', () => {
-        activeType = (activeType === type) ? null : type;
-        document.querySelectorAll('.filter-chip').forEach(c =>
-          c.classList.toggle('active', c.dataset.type === activeType));
+        filterType = filterType === type ? '' : type;
+        document.querySelectorAll('.type-chip').forEach(c => {
+          const a = c.dataset.type === filterType;
+          c.classList.toggle('active', a);
+          c.setAttribute('aria-pressed', a ? 'true' : 'false');
+        });
         render();
       });
       container.appendChild(btn);
     });
   }
 
+  // ── FILTERING ──
+  function matchesFilters(q) {
+    if (activeTab === 'fav' && !favorites[q.globalId]) return false;
+    if (filterSubject && q.subject !== filterSubject) return false;
+    if (filterCode && q.code !== filterCode) return false;
+    if (filterGroup && q.group !== filterGroup) return false;
+    if (filterSection && q.sectionTitle !== filterSection) return false;
+    if (filterSource && q.setFile !== filterSource) return false;
+    if (filterType && q.type !== filterType) return false;
+    if (searchQuery) {
+      const needle = searchQuery.toLowerCase();
+      const haystack = [
+        q.command, q.subject, q.group, q.sectionTitle, q.sectionId, q.code,
+        ...(q.alternatives || []).map(a => a.text),
+        q.justification || ''
+      ].join(' ').toLowerCase();
+      if (!haystack.includes(needle)) return false;
+    }
+    return true;
+  }
+
+  function sortQuestions(qs) {
+    const s = (q, k) => (q[k] || '').toString().toLowerCase();
+    const comparators = {
+      subject:   (a, b) => s(a,'subject').localeCompare(s(b,'subject')) || s(a,'sectionTitle').localeCompare(s(b,'sectionTitle')),
+      group:     (a, b) => s(a,'group').localeCompare(s(b,'group')) || s(a,'sectionTitle').localeCompare(s(b,'sectionTitle')),
+      section:   (a, b) => s(a,'sectionTitle').localeCompare(s(b,'sectionTitle')),
+      type:      (a, b) => s(a,'type').localeCompare(s(b,'type')),
+      date_asc:  (a, b) => (favorites[a.globalId]?.createdAt||'').localeCompare(favorites[b.globalId]?.createdAt||''),
+      date_desc: (a, b) => (favorites[b.globalId]?.createdAt||'').localeCompare(favorites[a.globalId]?.createdAt||''),
+    };
+    if (sortBy !== 'default' && comparators[sortBy]) return [...qs].sort(comparators[sortBy]);
+    return qs;
+  }
+
   function getFiltered() {
-    return allQuestions.filter(q => {
-      if (activeTab === 'fav' && !favorites.has(q.globalId)) return false;
-      if (activeType !== null && q.type !== activeType) return false;
-      if (searchQuery) {
-        const needle = searchQuery.toLowerCase();
-        const haystack = (q.command + ' ' + (q.alternatives || []).map(a => a.text).join(' ')).toLowerCase();
-        if (!haystack.includes(needle)) return false;
-      }
-      return true;
-    });
+    return sortQuestions(allQuestions.filter(matchesFilters));
   }
 
+  // ── COUNTS ──
   function updateCounts() {
-    const filtered = getFiltered();
-    const totalAll = allQuestions.filter(q => {
-      if (activeType !== null && q.type !== activeType) return false;
-      if (searchQuery) {
-        const needle = searchQuery.toLowerCase();
-        const haystack = (q.command + ' ' + (q.alternatives || []).map(a => a.text).join(' ')).toLowerCase();
-        if (!haystack.includes(needle)) return false;
-      }
-      return true;
-    }).length;
-    const totalFav = allQuestions.filter(q => {
-      if (!favorites.has(q.globalId)) return false;
-      if (activeType !== null && q.type !== activeType) return false;
-      if (searchQuery) {
-        const needle = searchQuery.toLowerCase();
-        const haystack = (q.command + ' ' + (q.alternatives || []).map(a => a.text).join(' ')).toLowerCase();
-        if (!haystack.includes(needle)) return false;
-      }
-      return true;
-    }).length;
-
-    document.getElementById('count-all').textContent = totalAll;
-    document.getElementById('count-fav').textContent = totalFav;
+    const prevTab = activeTab;
+    activeTab = 'all';
+    const allCount = allQuestions.filter(matchesFilters).length;
+    activeTab = 'fav';
+    const favCount = allQuestions.filter(matchesFilters).length;
+    activeTab = prevTab;
+    document.getElementById('count-all').textContent = allCount;
+    document.getElementById('count-fav').textContent = favCount;
   }
 
+  // ── RENDER ──
   function render() {
     updateCounts();
     const main = document.getElementById('fav-main');
     const filtered = getFiltered();
     main.innerHTML = '';
 
-    if (filtered.length === 0) {
+    if (!filtered.length) {
       const msg = activeTab === 'fav'
-        ? 'Nenhuma questão favoritada ainda.<br>Clique na estrela ★ em qualquer questão para salvá-la aqui.'
+        ? 'Nenhuma questão favoritada.<br>Clique em ★ em qualquer questão para salvar aqui.'
         : 'Nenhuma questão encontrada para os filtros selecionados.';
-      main.innerHTML = `
-        <div class="empty-state">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
-            <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8l-6.2 3.2 1.2-6.8L2 9.3l6.9-1L12 2z"/>
-          </svg>
-          <p>${msg}</p>
-        </div>`;
+      main.innerHTML = `<div class="empty-state">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+          <path d="M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8l-6.2 3.2 1.2-6.8L2 9.3l6.9-1L12 2z"/>
+        </svg>
+        <p>${msg}</p>
+      </div>`;
       return;
     }
 
     const bySection = {};
     filtered.forEach(q => {
-      const k = q.sectionTitle;
+      const k = q.sectionTitle || '—';
       if (!bySection[k]) bySection[k] = [];
       bySection[k].push(q);
     });
 
-    Object.entries(bySection).forEach(([sectionTitle, questions]) => {
+    Object.entries(bySection).forEach(([sec, qs]) => {
       const sep = document.createElement('div');
       sep.className = 'chapter-sep';
-      sep.innerHTML = `
-        <div class="chapter-sep-line"></div>
-        <span class="chapter-sep-label">${sectionTitle}</span>
-        <div class="chapter-sep-line"></div>`;
+      sep.innerHTML = `<div class="chapter-sep-line"></div><span class="chapter-sep-label">${sec}</span><div class="chapter-sep-line"></div>`;
       main.appendChild(sep);
-
-      questions.forEach((q, i) => {
-        const card = buildCard(q, i);
-        main.appendChild(card);
-      });
+      qs.forEach((q, i) => main.appendChild(buildCard(q, i)));
     });
   }
 
   function buildCard(q, delay) {
-    const isFav = favorites.has(q.globalId);
+    const isFav = !!favorites[q.globalId];
+    const fav = favorites[q.globalId];
     const card = document.createElement('div');
     card.className = 'q-card' + (isFav ? ' favorited' : '');
-    card.style.animationDelay = Math.min(delay, 8) * 0.04 + 's';
+    card.style.animationDelay = Math.min(delay, 8) * 0.03 + 's';
 
-    const altsHTML = (q.alternatives || []).map((alt, i) => {
+    const altsHTML = (q.alternatives || []).map(alt => {
       const isCorrect = q.answer && q.answer.includes(alt.id);
       return `<li class="alt-row ${isCorrect ? 'correct-alt' : ''}">
         <span class="alt-badge">${alt.id.toUpperCase()}</span>
@@ -508,31 +510,38 @@
     }).join('');
 
     const justHTML = q.justification
-      ? `<div class="justification-box"><p class="just-label">Justificativa</p><p>${q.justification}</p></div>`
-      : '';
+      ? `<div class="justification-box"><p class="just-label">Justificativa</p><p>${q.justification}</p></div>` : '';
+
+    const dateStr = fav?.createdAt ? new Date(fav.createdAt).toLocaleDateString('pt-BR') : '';
+    const dateTag = dateStr ? `<span class="tag tag-date">★ ${dateStr}</span>` : '';
 
     card.innerHTML = `
       <div class="q-card-top">
         <div class="q-card-meta">
           <div class="q-card-tags">
-            <span class="tag-section">${q.sectionTitle}</span>
-            <span class="tag-type">${q.type}</span>
+            ${q.subject ? `<span class="tag tag-subject">${q.subject}</span>` : ''}
+            ${q.group ? `<span class="tag tag-group">${q.group}</span>` : ''}
+            ${q.type ? `<span class="tag tag-type">${q.type.replace(/_/g,' ')}</span>` : ''}
+            ${q.setFile ? `<span class="tag tag-source">${q.setFile}</span>` : ''}
+            ${dateTag}
           </div>
           <p class="q-command">${q.command}</p>
         </div>
-        <button class="btn-star ${isFav ? 'starred' : ''}" data-global-id="${q.globalId}" title="${isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}">
-          <svg width="18" height="18" viewBox="0 0 20 20" fill="none">
+        <button class="btn-star ${isFav ? 'starred' : ''}" data-id="${q.globalId}"
+          aria-label="${isFav ? 'Remover dos favoritos' : 'Adicionar aos favoritos'}"
+          aria-pressed="${isFav}">
+          <svg width="17" height="17" viewBox="0 0 20 20" fill="${isFav ? 'currentColor' : 'none'}" aria-hidden="true">
             <path d="M10 2l2.4 5 5.6.8-4 3.9.9 5.3L10 14.5l-4.9 2.5.9-5.3L2 7.8l5.6-.8L10 2z"
               stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
           </svg>
         </button>
       </div>
-      <button class="q-expand-toggle" data-global-id="${q.globalId}">
-        <svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <button class="q-expand-toggle" aria-expanded="false" aria-label="Ver alternativas e gabarito">
+        <svg width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Ver alternativas e gabarito
-        <svg class="toggle-icon" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg class="toggle-icon" width="13" height="13" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-      <div class="q-details" data-global-id="${q.globalId}">
+      <div class="q-details">
         <ul class="alt-list">${altsHTML}</ul>
         ${justHTML}
       </div>`;
@@ -543,51 +552,54 @@
     });
 
     card.querySelector('.q-expand-toggle').addEventListener('click', () => {
-      const details = card.querySelector('.q-details');
-      const toggle = card.querySelector('.q-expand-toggle');
-      const open = details.classList.toggle('open');
-      toggle.classList.toggle('open', open);
-      toggle.innerHTML = open
-        ? `<svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-           Ocultar
-           <svg class="toggle-icon open" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`
-        : `<svg width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-           Ver alternativas e gabarito
-           <svg class="toggle-icon" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      const det = card.querySelector('.q-details');
+      const tog = card.querySelector('.q-expand-toggle');
+      const open = det.classList.toggle('open');
+      tog.classList.toggle('open', open);
+      tog.setAttribute('aria-expanded', open);
     });
 
     return card;
   }
 
   function toggleFavorite(globalId, card) {
-    if (favorites.has(globalId)) {
-      favorites.delete(globalId);
+    const btn = card.querySelector('.btn-star');
+    const svg = btn.querySelector('svg');
+    if (favorites[globalId]) {
+      delete favorites[globalId];
       card.classList.remove('favorited');
-      const btn = card.querySelector('.btn-star');
       btn.classList.remove('starred');
-      btn.title = 'Adicionar aos favoritos';
+      btn.setAttribute('aria-label', 'Adicionar aos favoritos');
+      btn.setAttribute('aria-pressed', 'false');
+      svg.setAttribute('fill', 'none');
     } else {
-      favorites.add(globalId);
+      favorites[globalId] = { createdAt: new Date().toISOString() };
       card.classList.add('favorited');
-      const btn = card.querySelector('.btn-star');
       btn.classList.add('starred');
-      btn.title = 'Remover dos favoritos';
+      btn.setAttribute('aria-label', 'Remover dos favoritos');
+      btn.setAttribute('aria-pressed', 'true');
+      svg.setAttribute('fill', 'currentColor');
     }
     saveFavorites();
     updateCounts();
-    if (activeTab === 'fav' && !favorites.has(globalId)) {
+    if (activeTab === 'fav' && !favorites[globalId]) {
       card.style.transition = 'opacity .25s, transform .25s';
       card.style.opacity = '0';
-      card.style.transform = 'translateX(12px)';
+      card.style.transform = 'translateX(10px)';
       setTimeout(() => render(), 280);
     }
   }
 
+  // ── EVENTS ──
   document.getElementById('view-tabs').addEventListener('click', e => {
     const tab = e.target.closest('.view-tab');
     if (!tab) return;
     activeTab = tab.dataset.tab;
-    document.querySelectorAll('.view-tab').forEach(t => t.classList.toggle('active', t === tab));
+    document.querySelectorAll('.view-tab').forEach(t => {
+      const a = t === tab;
+      t.classList.toggle('active', a);
+      t.setAttribute('aria-selected', a);
+    });
     render();
   });
 
@@ -596,6 +608,68 @@
     render();
   });
 
+  [
+    ['filter-subject', v => { filterSubject = v; }],
+    ['filter-code',    v => { filterCode = v; }],
+    ['filter-group',   v => { filterGroup = v; }],
+    ['filter-section', v => { filterSection = v; }],
+    ['filter-source',  v => { filterSource = v; }],
+  ].forEach(([id, setter]) => {
+    document.getElementById(id).addEventListener('change', e => {
+      setter(e.target.value);
+      e.target.classList.toggle('has-value', e.target.value !== '');
+      render();
+    });
+  });
+
+  document.getElementById('sort-select').addEventListener('change', e => {
+    sortBy = e.target.value;
+    render();
+  });
+
+  document.getElementById('btn-clear-invalid').addEventListener('click', () => {
+    const valid = new Set(allQuestions.map(q => q.globalId));
+    let removed = 0;
+    Object.keys(favorites).forEach(id => {
+      if (!valid.has(id)) { delete favorites[id]; removed++; }
+    });
+    saveFavorites();
+    const msg = removed > 0
+      ? `${removed} favorito(s) inválido(s) removido(s).`
+      : 'Nenhum favorito inválido encontrado.';
+    const btn = document.getElementById('btn-clear-invalid');
+    const orig = btn.textContent;
+    btn.textContent = msg;
+    btn.disabled = true;
+    setTimeout(() => { btn.textContent = orig; btn.disabled = false; }, 2500);
+    if (removed > 0) render();
+  });
+
+  // ── THEME ──
+  function applyTheme(dark, save) {
+    document.body.classList.toggle('theme-dark', dark);
+    if (save) localStorage.setItem('quiz_app_theme', dark ? 'dark' : 'light');
+    const moon = `<svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+    const sun = `<svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4.1 4.1l1.4 1.4M14.5 14.5l1.4 1.4M4.1 15.9l1.4-1.4M14.5 5.5l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+    const btn = document.getElementById('btn-theme');
+    if (btn) {
+      btn.innerHTML = dark ? moon : sun;
+      btn.setAttribute('aria-label', dark ? 'Mudar para tema claro' : 'Mudar para tema escuro');
+    }
+  }
+
+  (function() {
+    const saved = localStorage.getItem('quiz_app_theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    applyTheme(saved !== null ? saved === 'dark' : prefersDark, false);
+  })();
+
+  document.getElementById('btn-theme').addEventListener('click', () => {
+    applyTheme(!document.body.classList.contains('theme-dark'), true);
+  });
+
+  // ── INIT ──
+  favorites = loadFavorites();
   loadData();
   </script>
 </body>

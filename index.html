@@ -9,9 +9,11 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Skip to main content link -->
+  <a href="#main-content" class="skip-link">Pular para conteúdo principal</a>
 
   <!-- ══════════════ TELA 1: ABERTURA ══════════════ -->
-  <div id="screen-welcome" class="screen active">
+  <div id="screen-welcome" class="screen active" role="region" aria-label="Tela inicial">
     <div class="welcome-bg">
       <div class="bg-circle c1"></div>
       <div class="bg-circle c2"></div>
@@ -28,9 +30,9 @@
       </h1>
       <p class="hero-subtitle">Escolha uma matéria, configure seu treino e acompanhe seus resultados.</p>
 
-      <button class="btn-primary btn-start" id="btn-start">
+      <button class="btn-primary btn-start" id="btn-start" aria-label="Começar a usar o aplicativo">
         <span>Começar</span>
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
 
       <a href="favoritos.html" class="btn-ghost-link">
@@ -59,152 +61,174 @@
   </div>
 
   <!-- ══════════════ TELA 2: CONFIGURAÇÃO ══════════════ -->
-  <div id="screen-config" class="screen">
-    <div class="screen-header">
-      <button class="btn-back" id="btn-back-config">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div id="screen-config" class="screen" role="region" aria-label="Tela de configuração">
+    <header class="screen-header">
+      <button class="btn-back" id="btn-back-config" aria-label="Voltar à tela inicial">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <div class="header-brand">
         <!-- <span class="brand-saber">SABER</span> -->
         <span class="brand-unb">UnB</span>
       </div>
-    </div>
+      <button class="btn-theme" id="btn-theme-config" aria-label="Alternar tema"></button>
+    </header>
 
-    <div class="config-body">
-      <h2 class="config-title">Configurar<br><span>seu treino</span></h2>
+    <main class="config-body" id="config-main">
+      <h1 class="config-title">Configurar<br><span>seu treino</span></h1>
 
       <!-- Filtro de Matéria -->
-      <section class="config-section">
-        <label class="section-label">Matéria</label>
+      <fieldset class="config-section">
+        <legend class="section-label">Matéria</legend>
         <div class="filter-grid" id="filter-subject">
           <!-- Preenchido via JS -->
         </div>
-      </section>
+      </fieldset>
 
       <!-- Filtro de Grupo -->
-      <section class="config-section">
-        <label class="section-label">Grupo</label>
+      <fieldset class="config-section">
+        <legend class="section-label">Grupo</legend>
         <div class="filter-grid" id="filter-group">
           <!-- Preenchido via JS -->
         </div>
-      </section>
+      </fieldset>
 
       <!-- Filtro de Seção -->
-      <section class="config-section">
-        <label class="section-label">Seção</label>
+      <fieldset class="config-section">
+        <legend class="section-label">Seção</legend>
         <div class="filter-grid" id="filter-section">
           <!-- Preenchido via JS -->
         </div>
-      </section>
+      </fieldset>
 
       <!-- Filtro de Tipo -->
-      <section class="config-section">
-        <label class="section-label">Tipo de Questão</label>
+      <fieldset class="config-section">
+        <legend class="section-label">Tipo de Questão</legend>
         <div class="filter-grid" id="filter-type">
           <!-- Preenchido via JS -->
         </div>
-      </section>
+      </fieldset>
 
       <!-- Quantidade -->
-      <section class="config-section">
+      <fieldset class="config-section">
         <div class="section-label-row">
-          <label class="section-label" for="qty-range">Quantidade de questões</label>
-          <span class="qty-display" id="qty-display">10</span>
+          <legend class="section-label" id="qty-label">Quantidade de questões</legend>
+          <span class="qty-display" id="qty-display" aria-live="polite" aria-label="Quantidade selecionada">10</span>
         </div>
         <div class="range-wrapper">
-          <span class="range-limit">5</span>
-          <input type="range" id="qty-range" min="5" max="50" value="10" />
-          <span class="range-limit">50</span>
+          <span class="range-limit" aria-hidden="true">5</span>
+          <input type="range" id="qty-range" min="5" max="50" value="10" aria-labelledby="qty-label" aria-valuemin="5" aria-valuemax="50" aria-valuenow="10" aria-valuetext="10 questões" />
+          <span class="range-limit" aria-hidden="true">50</span>
         </div>
-      </section>
+      </fieldset>
 
       <div class="config-footer">
-        <p class="config-info" id="config-info">Carregando questões...</p>
-        <button class="btn-primary" id="btn-start-quiz" disabled>
+        <p class="config-info" id="config-info" aria-live="polite" aria-atomic="true">Carregando questões...</p>
+        <button class="btn-primary" id="btn-start-quiz" disabled aria-label="Iniciar questionário com questões configuradas">
           <span>Iniciar Questionário</span>
-          <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
       </div>
-    </div>
+    </main>
   </div>
 
   <!-- ══════════════ TELA 3: QUESTIONÁRIO ══════════════ -->
-  <div id="screen-quiz" class="screen">
-    <div class="quiz-header">
+  <div id="screen-quiz" class="screen" role="region" aria-label="Tela de quiz">
+    <header class="quiz-header">
       <div class="quiz-meta">
-        <button class="btn-back btn-back-quiz" id="btn-back-quiz" title="Voltar à configuração">
-          <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <button class="btn-back btn-back-quiz" id="btn-back-quiz" aria-label="Voltar à configuração">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </button>
-        <span class="quiz-chapter-tag" id="quiz-chapter-tag">Cap. —</span>
-        <span class="quiz-counter" id="quiz-counter">1 / 10</span>
+        <span class="quiz-chapter-tag" id="quiz-chapter-tag" aria-label="Seção atual">Cap. —</span>
+        <span class="quiz-counter" id="quiz-counter" aria-live="polite" aria-label="Progresso do questionário">1 / 10</span>
+        <button class="btn-theme" id="btn-theme-quiz" aria-label="Alternar tema"></button>
       </div>
       <div class="progress-bar-wrap">
         <div class="progress-bar-fill" id="progress-bar"></div>
       </div>
-    </div>
+    </header>
 
-    <div class="quiz-body">
-      <p class="question-command" id="question-command">Carregando...</p>
-      <ul class="alternatives-list" id="alternatives-list">
-        <!-- Preenchido via JS -->
-      </ul>
-    </div>
+    <main class="quiz-body" id="quiz-main">
+      <h2 class="sr-only" id="question-title">Questão</h2>
+      <p class="question-command" id="question-command" aria-labelledby="question-title">Carregando...</p>
+      <fieldset class="alternatives-fieldset">
+        <legend class="sr-only">Alternativas</legend>
+        <ul class="alternatives-list" id="alternatives-list" role="radiogroup" aria-labelledby="question-title">
+          <!-- Preenchido via JS -->
+        </ul>
+      </fieldset>
+      <span class="question-section-id" id="question-section-id" aria-label="Seção da questão"></span>
+    </main>
 
-    <div class="quiz-footer">
-      <button class="btn-secondary" id="btn-prev-q" disabled>
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <footer class="quiz-footer">
+      <button class="btn-secondary" id="btn-prev-q" disabled aria-label="Questão anterior">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M16 10H4M10 4l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Anterior
       </button>
-      <button class="btn-primary" id="btn-next-q" disabled>
+      <button class="btn-primary" id="btn-next-q" disabled aria-label="Próxima questão ou finalizar">
         Próxima
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
-    </div>
+    </footer>
   </div>
 
   <!-- ══════════════ TELA 4: RESULTADOS ══════════════ -->
-  <div id="screen-results" class="screen">
-    <div class="screen-header results-header">
+  <div id="screen-results" class="screen" role="region" aria-label="Tela de resultados">
+    <header class="screen-header results-header">
       <div class="header-brand">
         <!-- <span class="brand-saber">SABER</span> -->
         <span class="brand-unb">UnB</span>
       </div>
-    </div>
+      <button class="btn-theme" id="btn-theme-results" aria-label="Alternar tema"></button>
+    </header>
 
-    <div class="results-hero">
-      <div class="score-ring" id="score-ring">
-        <svg viewBox="0 0 120 120">
+    <main class="results-hero" id="results-main">
+      <h1 class="sr-only">Resultados do questionário</h1>
+      <div class="score-ring" id="score-ring" aria-label="Resultado do questionário">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
           <circle class="ring-bg" cx="60" cy="60" r="50"/>
           <circle class="ring-fill" id="ring-fill" cx="60" cy="60" r="50" stroke-dasharray="314" stroke-dashoffset="314"/>
         </svg>
         <div class="score-text">
-          <span class="score-pct" id="score-pct">0%</span>
+          <span class="score-pct" id="score-pct" aria-label="Percentual de acertos">0%</span>
           <span class="score-label">acertos</span>
         </div>
       </div>
-      <p class="score-message" id="score-message">Bom trabalho!</p>
-    </div>
+      <p class="score-message" id="score-message" aria-live="polite" aria-atomic="true">Bom trabalho!</p>
+    </main>
 
-    <div class="results-summary" id="results-summary">
+    <section class="results-summary" id="results-summary" aria-labelledby="summary-title">
+      <h2 class="sr-only" id="summary-title">Resumo das respostas</h2>
       <!-- Preenchido via JS -->
-    </div>
+    </section>
 
     <div class="results-actions">
-      <button class="btn-secondary" id="btn-retry">
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10a6 6 0 1 1 1.5 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 14v-4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <button class="btn-secondary" id="btn-retry" aria-label="Refazer o questionário com as mesmas questões">
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10a6 6 0 1 1 1.5 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M4 14v-4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         Refazer
       </button>
-      <button class="btn-primary" id="btn-new-quiz">
+      <button class="btn-primary" id="btn-new-quiz" aria-label="Começar um novo questionário">
         Nova prova
-        <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
     </div>
   </div>
 
   <!-- ══════════════ LOADER ══════════════ -->
-  <div id="loader" class="loader-overlay">
-    <div class="loader-spinner"></div>
+  <div id="loader" class="loader-overlay" role="status" aria-live="polite" aria-label="Carregando">
+    <div class="loader-spinner" aria-hidden="true"></div>
     <p>Carregando questões…</p>
+  </div>
+
+  <!-- Modal de diálogo genérica (para confirmações) -->
+  <div id="modal-dialog" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-content">
+      <h2 id="modal-title" class="modal-title"></h2>
+      <p id="modal-message" class="modal-message"></p>
+      <div class="modal-buttons">
+        <button id="modal-confirm" class="btn-primary">Confirmar</button>
+        <button id="modal-cancel" class="btn-secondary">Cancelar</button>
+      </div>
+    </div>
   </div>
 
   <script src="app.js"></script>

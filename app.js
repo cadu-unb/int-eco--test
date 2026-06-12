@@ -29,15 +29,41 @@ const screens = {
   results: $('screen-results'),
 };
 const loader = $('loader');
+document.body.classList.add('welcome-active');
 
 function showScreen(name) {
   Object.values(screens).forEach(s => s.classList.remove('active'));
   screens[name].classList.add('active');
+  document.body.classList.toggle('welcome-active', name === 'welcome');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 const showLoader = () => loader.classList.add('visible');
 const hideLoader = () => loader.classList.remove('visible');
+
+// ════ MODAL DIALOG ════
+function showModal(title, message, onConfirm, onCancel) {
+  const modal = $('modal-dialog');
+  const titleEl = $('modal-title');
+  const messageEl = $('modal-message');
+  const confirmBtn = $('modal-confirm');
+  const cancelBtn = $('modal-cancel');
+
+  titleEl.textContent = title;
+  messageEl.textContent = message;
+
+  confirmBtn.onclick = () => {
+    modal.hidden = true;
+    if (onConfirm) onConfirm();
+  };
+  cancelBtn.onclick = () => {
+    modal.hidden = true;
+    if (onCancel) onCancel();
+  };
+
+  modal.hidden = false;
+  confirmBtn.focus();
+}
 
 // ════ WELCOME SCREEN ════
 $('btn-start').addEventListener('click', async () => {
@@ -69,8 +95,8 @@ async function initializeApp() {
     }
     buildConfigUI();
   } catch (err) {
-    alert('Erro ao carregar questões. ' + err.message);
     console.error(err);
+    showModal('Erro ao carregar', 'Erro ao carregar questões. ' + err.message, () => showScreen('welcome'));
     showScreen('welcome');
   } finally {
     hideLoader();
@@ -95,21 +121,36 @@ function normalizeQuestionSet(setFile, data) {
 }
 
 // ════ CONFIG SCREEN ════
+const FILTER_CHAIN = ['subject', 'group', 'section', 'type'];
+const FILTER_CONTAINER = { subject: 'filter-subject', group: 'filter-group', section: 'filter-section', type: 'filter-type' };
+const FILTER_FIELD = { subject: 'subject', group: 'group', section: 'sectionTitle', type: 'type' };
+
 function buildConfigUI() {
-  const subjects = [...new Set(State.allQuestions.map(q => q.subject))].sort();
-  const groups = [...new Set(State.allQuestions.map(q => q.group))].sort();
-  const sections = [...new Set(State.allQuestions.map(q => q.sectionTitle))].sort();
-  const types = [...new Set(State.allQuestions.map(q => q.type))].sort();
-
-  renderFilterUI('filter-subject', subjects, 'subject');
-  renderFilterUI('filter-group', groups, 'group');
-  renderFilterUI('filter-section', sections, 'section');
-  renderFilterUI('filter-type', types, 'type');
-
+  State.filters = { subject: null, group: null, section: null, type: null };
+  rebuildFiltersFrom(0);
   updateConfigInfo();
 }
 
-function renderFilterUI(containerId, items, filterKey) {
+function getQuestionsUpTo(chainIdx) {
+  return State.allQuestions.filter(q => {
+    for (let i = 0; i < chainIdx; i++) {
+      const f = State.filters[FILTER_CHAIN[i]];
+      if (f && f.length > 0 && !f.includes(q[FILTER_FIELD[FILTER_CHAIN[i]]])) return false;
+    }
+    return true;
+  });
+}
+
+function rebuildFiltersFrom(startIdx) {
+  for (let i = startIdx; i < FILTER_CHAIN.length; i++) {
+    const key = FILTER_CHAIN[i];
+    const pool = getQuestionsUpTo(i);
+    const items = [...new Set(pool.map(q => q[FILTER_FIELD[key]]))].filter(Boolean).sort();
+    renderFilterUI(FILTER_CONTAINER[key], items, key, i);
+  }
+}
+
+function renderFilterUI(containerId, items, filterKey, chainIdx) {
   const container = $(containerId);
   if (!container) return;
 
@@ -119,7 +160,7 @@ function renderFilterUI(containerId, items, filterKey) {
     label.className = 'filter-chip';
     label.innerHTML = `
       <input type="checkbox" value="${item}" />
-      <span>${item || 'Sem classificação'}</span>
+      <span>${item}</span>
     `;
 
     label.querySelector('input').addEventListener('change', e => {
@@ -129,9 +170,15 @@ function renderFilterUI(containerId, items, filterKey) {
         if (!State.filters[filterKey].includes(value)) State.filters[filterKey].push(value);
         label.classList.add('checked');
       } else {
-        State.filters[filterKey] = State.filters[filterKey].filter(v => v !== value);
+        State.filters[filterKey] = (State.filters[filterKey] || []).filter(v => v !== value);
+        if (State.filters[filterKey].length === 0) State.filters[filterKey] = null;
         label.classList.remove('checked');
       }
+      // Reset + rebuild all downstream filters
+      for (let i = chainIdx + 1; i < FILTER_CHAIN.length; i++) {
+        State.filters[FILTER_CHAIN[i]] = null;
+      }
+      rebuildFiltersFrom(chainIdx + 1);
       updateConfigInfo();
     });
     container.appendChild(label);
@@ -170,6 +217,8 @@ const qtyDisplay = $('qty-display');
 qtyRange.addEventListener('input', () => {
   State.qty = Number(qtyRange.value);
   qtyDisplay.textContent = State.qty;
+  qtyRange.setAttribute('aria-valuenow', State.qty);
+  qtyRange.setAttribute('aria-valuetext', `${State.qty} questões`);
   updateRangeGradient();
   updateConfigInfo();
 });
@@ -185,7 +234,11 @@ $('btn-back-config').addEventListener('click', () => showScreen('welcome'));
 
 $('btn-start-quiz').addEventListener('click', () => {
   const filtered = getFilteredQuestions();
-  State.questions = shuffle(filtered).slice(0, State.qty);
+  const sampled = shuffle(filtered).slice(0, State.qty);
+  State.questions = sampled.map(q => {
+    if (q.type === 'true_false') return { ...q, alternatives: [...(q.alternatives || [])] };
+    return { ...q, alternatives: shuffle([...(q.alternatives || [])]) };
+  });
   State.answers = {};
   State.currentIdx = 0;
   renderQuestion();
@@ -224,27 +277,61 @@ function renderQuestion() {
 
   renderFn(q, list, idx);
 
+  // Keyboard navigation
+  list.addEventListener('keydown', e => handleAlternativeKeydown(e, idx, q.type));
+
+  const secIdEl = $('question-section-id');
+  if (secIdEl) secIdEl.textContent = q.sectionId || '';
+
   $('btn-prev-q').disabled = idx === 0;
 
   const nextBtn = $('btn-next-q');
   if (idx === total - 1) {
-    nextBtn.innerHTML = `Finalizar <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M5 10l4 4 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    nextBtn.innerHTML = `Finalizar <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10l4 4 6-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   } else {
-    nextBtn.innerHTML = `Próxima <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+    nextBtn.innerHTML = `Próxima <svg width="18" height="18" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
   }
   nextBtn.disabled = !State.answers[idx];
 }
 
+function handleAlternativeKeydown(e, idx, qType) {
+  const items = [...document.querySelectorAll('.alt-item')];
+  const currentIdx = items.findIndex(li => li === document.activeElement || li.contains(document.activeElement));
+
+  if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+    e.preventDefault();
+    const nextIdx = (currentIdx + 1) % items.length;
+    items[nextIdx].focus();
+  } else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+    e.preventDefault();
+    const prevIdx = currentIdx === 0 ? items.length - 1 : currentIdx - 1;
+    items[prevIdx].focus();
+  } else if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    if (currentIdx >= 0) {
+      items[currentIdx].click();
+    }
+  }
+}
+
 function renderSingleCorrect(q, list, idx) {
   (q.alternatives || []).forEach((alt, i) => {
+    const isSelected = State.answers[idx] && State.answers[idx].includes(alt.id);
     const li = document.createElement('li');
-    li.className = 'alt-item' + (State.answers[idx] && State.answers[idx].includes(alt.id) ? ' selected' : '');
+    li.className = 'alt-item' + (isSelected ? ' selected' : '');
     li.dataset.id = alt.id;
+    li.tabIndex = 0;
+    li.role = 'radio';
+    li.setAttribute('aria-checked', isSelected);
     li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
-      document.querySelectorAll('.alt-item').forEach(li => li.classList.remove('selected'));
+      document.querySelectorAll('.alt-item').forEach(item => {
+        item.classList.remove('selected');
+        item.setAttribute('aria-checked', 'false');
+      });
       li.classList.add('selected');
+      li.setAttribute('aria-checked', 'true');
       $('btn-next-q').disabled = false;
     });
     list.appendChild(li);
@@ -253,14 +340,22 @@ function renderSingleCorrect(q, list, idx) {
 
 function renderTrueFalse(q, list, idx) {
   (q.alternatives || []).forEach(alt => {
+    const isSelected = State.answers[idx] && State.answers[idx].includes(alt.id);
     const li = document.createElement('li');
-    li.className = 'alt-item' + (State.answers[idx] && State.answers[idx].includes(alt.id) ? ' selected' : '');
+    li.className = 'alt-item' + (isSelected ? ' selected' : '');
     li.dataset.id = alt.id;
+    li.tabIndex = 0;
+    li.role = 'radio';
+    li.setAttribute('aria-checked', isSelected);
     li.innerHTML = `<span class="alt-text">${alt.text}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
-      document.querySelectorAll('.alt-item').forEach(li => li.classList.remove('selected'));
+      document.querySelectorAll('.alt-item').forEach(item => {
+        item.classList.remove('selected');
+        item.setAttribute('aria-checked', 'false');
+      });
       li.classList.add('selected');
+      li.setAttribute('aria-checked', 'true');
       $('btn-next-q').disabled = false;
     });
     list.appendChild(li);
@@ -269,20 +364,25 @@ function renderTrueFalse(q, list, idx) {
 
 function renderMultipleCorrect(q, list, idx) {
   (q.alternatives || []).forEach((alt, i) => {
-    const li = document.createElement('li');
     const isSelected = State.answers[idx] && State.answers[idx].includes(alt.id);
+    const li = document.createElement('li');
     li.className = 'alt-item' + (isSelected ? ' selected' : '');
     li.dataset.id = alt.id;
-    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.tabIndex = 0;
+    li.role = 'checkbox';
+    li.setAttribute('aria-checked', isSelected);
+    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} tabindex="-1" /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
     li.addEventListener('click', () => {
       const answers = State.answers[idx] || [];
       if (answers.includes(alt.id)) {
         State.answers[idx] = answers.filter(a => a !== alt.id);
         li.classList.remove('selected');
+        li.setAttribute('aria-checked', 'false');
         li.querySelector('input').checked = false;
       } else {
         State.answers[idx] = [...answers, alt.id].sort();
         li.classList.add('selected');
+        li.setAttribute('aria-checked', 'true');
         li.querySelector('input').checked = true;
       }
       $('btn-next-q').disabled = !State.answers[idx] || State.answers[idx].length === 0;
@@ -293,14 +393,22 @@ function renderMultipleCorrect(q, list, idx) {
 
 function renderSingleIncorrect(q, list, idx) {
   (q.alternatives || []).forEach(alt => {
+    const isSelected = State.answers[idx] && State.answers[idx].includes(alt.id);
     const li = document.createElement('li');
-    li.className = 'alt-item' + (State.answers[idx] && State.answers[idx].includes(alt.id) ? ' selected' : '');
+    li.className = 'alt-item' + (isSelected ? ' selected' : '');
     li.dataset.id = alt.id;
+    li.tabIndex = 0;
+    li.role = 'radio';
+    li.setAttribute('aria-checked', isSelected);
     li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
-      document.querySelectorAll('.alt-item').forEach(li => li.classList.remove('selected'));
+      document.querySelectorAll('.alt-item').forEach(item => {
+        item.classList.remove('selected');
+        item.setAttribute('aria-checked', 'false');
+      });
       li.classList.add('selected');
+      li.setAttribute('aria-checked', 'true');
       $('btn-next-q').disabled = false;
     });
     list.appendChild(li);
@@ -309,11 +417,20 @@ function renderSingleIncorrect(q, list, idx) {
 
 $('btn-back-quiz').addEventListener('click', () => {
   if (Object.keys(State.answers).length > 0) {
-    if (!confirm('Tem certeza que deseja sair? Seu progresso será perdido.')) return;
+    showModal(
+      'Descartar progresso?',
+      'Tem certeza que deseja sair? Seu progresso será perdido.',
+      () => {
+        State.answers = {};
+        State.currentIdx = 0;
+        showScreen('config');
+      }
+    );
+  } else {
+    State.answers = {};
+    State.currentIdx = 0;
+    showScreen('config');
   }
-  State.answers = {};
-  State.currentIdx = 0;
-  showScreen('config');
 });
 
 $('btn-prev-q').addEventListener('click', () => {
@@ -437,4 +554,27 @@ $('btn-new-quiz').addEventListener('click', () => {
   State.filters = { subject: null, group: null, section: null, type: null };
   buildConfigUI();
   showScreen('config');
+});
+
+// ════ THEME ════
+function applyTheme(dark, save) {
+  document.body.classList.toggle('theme-dark', dark);
+  if (save) localStorage.setItem('quiz_app_theme', dark ? 'dark' : 'light');
+  const moonIcon = `<svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+  const sunIcon = `<svg width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="3.5" stroke="currentColor" stroke-width="1.8"/><path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4.1 4.1l1.4 1.4M14.5 14.5l1.4 1.4M4.1 15.9l1.4-1.4M14.5 5.5l1.4-1.4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>`;
+  document.querySelectorAll('.btn-theme').forEach(btn => {
+    btn.innerHTML = dark ? moonIcon : sunIcon;
+    btn.setAttribute('aria-label', dark ? 'Mudar para tema claro' : 'Mudar para tema escuro');
+    btn.title = dark ? 'Mudar para tema claro' : 'Mudar para tema escuro';
+  });
+}
+
+(function initTheme() {
+  const saved = localStorage.getItem('quiz_app_theme');
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  applyTheme(saved !== null ? saved === 'dark' : prefersDark, false);
+})();
+
+document.querySelectorAll('.btn-theme').forEach(btn => {
+  btn.addEventListener('click', () => applyTheme(!document.body.classList.contains('theme-dark'), true));
 });

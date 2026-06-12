@@ -164,3 +164,7 @@ Bom número de respostas corretas por dificuldade:
 - **Difícil:** 3-4 corretas
 
 Se muitas alternativas estão corretas (>4), a questão fica ambígua. Reconsidere.
+
+# Retorno
+
+5 Questões seguindo o padrão definido acima em formato `json` dentro de um bloco de código;

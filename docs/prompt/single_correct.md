@@ -127,3 +127,7 @@ Independete da fonte, utilize SOMENTE PT-BR.
 - **Apenas UMA resposta correta:** O array `answer` tem apenas 1 elemento
 - **Justificativa acadêmica:** Não infantilizada, mas acessível
 - **JSON válido:** Sem vírgulas flutuantes, aspas misturadas, ou campos extra
+
+# Retorno
+
+5 Questões seguindo o padrão definido acima em formato `json` dentro de um bloco de código;

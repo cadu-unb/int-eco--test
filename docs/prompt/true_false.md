@@ -153,3 +153,7 @@ Independete da fonte, utilize SOMENTE PT-BR.
 - **Justificativa menciona qual é falsa/verdadeira:** Não deixe ambígua
 - **JSON válido:** Sem vírgulas extras, aspas misturadas, ou typos
 - **Nível de dificuldade:** Afirmações falsas devem ser pedagogicamente valiosas
+
+# Retorno
+
+5 Questões seguindo o padrão definido acima em formato `json` dentro de um bloco de código;
