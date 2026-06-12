@@ -24,7 +24,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo enfatiza que modelos tradicionais, como logit, probit e logit multinomial, estimam efeitos associados aos níveis dos atributos, tornando menos direta a obtenção da importância do atributo como um todo. B é incorreta porque tais modelos usam dados de preferência declarada; C é incorreta porque a tradição de DCM parte justamente da maximização de utilidade; D é incorreta porque os modelos tradicionais frequentemente lidam com níveis de atributos categóricos."
+          "justification": "A alternativa A é correta porque o artigo enfatiza que modelos tradicionais, como logit, probit e logit multinomial, estimam efeitos associados aos níveis dos atributos, tornando menos direta a obtenção da importância do atributo como um todo. B é <strong>incorreta</strong> porque tais modelos usam dados de preferência declarada; C é <strong>incorreta</strong> porque a tradição de DCM parte justamente da maximização de utilidade; D é <strong>incorreta</strong> porque os modelos tradicionais frequentemente lidam com níveis de atributos categóricos."
         },
         {
           "id": "q002",
@@ -39,7 +39,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo explica que os níveis dos atributos em DCE podem ser tratados como variáveis booleanas, formando blocos de indicadores associados a construtos de atributos. B é incorreta porque o desenho experimental busca ortogonalidade, não dependência entre indicadores; C é incorreta porque a escolha pode ser modelada como construto binário de item único; D é incorreta porque o PLS-SEM utiliza construtos latentes para representar os atributos."
+          "justification": "A alternativa A é correta porque o artigo explica que os níveis dos atributos em DCE podem ser tratados como variáveis booleanas, formando blocos de indicadores associados a construtos de atributos. B é <strong>incorreta</strong> porque o desenho experimental busca ortogonalidade, não dependência entre indicadores; C é <strong>incorreta</strong> porque a escolha pode ser modelada como construto binário de item único; D é <strong>incorreta</strong> porque o PLS-SEM utiliza construtos latentes para representar os atributos."
         },
         {
           "id": "q003",
@@ -54,7 +54,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo estabelece que, após a estimação, os pesos internos, pesos externos e cargas devem ser transformados para a métrica de interpretação das variáveis booleanas. B é incorreta porque o texto não apresenta essa conversão como etapa do procedimento; C é incorreta porque máxima verossimilhança pertence à comparação com modelos tradicionais, não ao reescalonamento do PLS-SEM; D é incorreta porque sinais negativos são interpretáveis e não implicam exclusão automática."
+          "justification": "A alternativa A é correta porque o artigo estabelece que, após a estimação, os pesos internos, pesos externos e cargas devem ser transformados para a métrica de interpretação das variáveis booleanas. B é <strong>incorreta</strong> porque o texto não apresenta essa conversão como etapa do procedimento; C é <strong>incorreta</strong> porque máxima verossimilhança pertence à comparação com modelos tradicionais, não ao reescalonamento do PLS-SEM; D é <strong>incorreta</strong> porque sinais negativos são interpretáveis e não implicam exclusão automática."
         },
         {
           "id": "q004",
@@ -69,7 +69,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque, no modelo PLS-SEM descrito, os coeficientes padronizados do modelo interno expressam a relevância dos atributos como um todo na explicação da escolha. B é incorreta porque os coeficientes não são simples contagens; C é incorreta porque os efeitos dos níveis dos atributos estão associados aos pesos externos e aos efeitos totais; D é incorreta porque a variável de escolha continua sendo o construto-alvo binário."
+          "justification": "A alternativa A é correta porque, no modelo PLS-SEM descrito, os coeficientes padronizados do modelo interno expressam a relevância dos atributos como um todo na explicação da escolha. B é <strong>incorreta</strong> porque os coeficientes não são simples contagens; C é <strong>incorreta</strong> porque os efeitos dos níveis dos atributos estão associados aos pesos externos e aos efeitos totais; D é <strong>incorreta</strong> porque a variável de escolha continua sendo o construto-alvo binário."
         },
         {
           "id": "q005",
@@ -84,7 +84,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo relata que os sinais, a ordenação e os valores finais das estimativas foram muito próximos, com diferença absoluta média reduzida. B é incorreta porque a comparação sustenta a adequação do PLS-SEM; C é incorreta porque a vantagem destacada do PLS-SEM é justamente estimar diretamente a importância dos atributos como um todo; D é incorreta porque a aplicação inclui atributos com dois e quatro níveis."
+          "justification": "A alternativa A é correta porque o artigo relata que os sinais, a ordenação e os valores finais das estimativas foram muito próximos, com diferença absoluta média reduzida. B é <strong>incorreta</strong> porque a comparação sustenta a adequação do PLS-SEM; C é <strong>incorreta</strong> porque a vantagem destacada do PLS-SEM é justamente estimar diretamente a importância dos atributos como um todo; D é <strong>incorreta</strong> porque a aplicação inclui atributos com dois e quatro níveis."
         },
         {
           "id": "q006",
@@ -154,7 +154,7 @@
         {
           "id": "q011",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre os tipos de dados utilizados em modelos de escolha discreta, conforme apresentados no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre os tipos de dados utilizados em modelos de escolha discreta, conforme apresentados no artigo.",
           "alternatives": [
             { "id": "a", "text": "dados de preferência revelada são usados para explicar escolhas relativas a alternativas efetivamente observadas." },
             { "id": "b", "text": "dados de preferência declarada são usados para explicar escolhas relacionadas a alternativas hipotéticas." },
@@ -164,12 +164,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo associa os dados de preferência declarada, especialmente em experimentos de escolha discreta, à construção de alternativas hipotéticas compostas por atributos e níveis de atributos. As alternativas A, B e C estão corretas, pois refletem a distinção feita no texto entre preferência revelada, preferência declarada e sua possível combinação."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo associa os dados de preferência declarada, especialmente em experimentos de escolha discreta, à construção de alternativas hipotéticas compostas por atributos e níveis de atributos. As alternativas A, B e C estão corretas, pois refletem a distinção feita no texto entre preferência revelada, preferência declarada e sua possível combinação."
         },
         {
           "id": "q012",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a formulação probabilística do modelo de escolha discreta discutida no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a formulação probabilística do modelo de escolha discreta discutida no artigo.",
           "alternatives": [
             { "id": "a", "text": "a escolha de uma alternativa é modelada como a probabilidade de sua utilidade superar a utilidade das demais alternativas disponíveis no conjunto de escolha." },
             { "id": "b", "text": "a probabilidade de escolha pode ser expressa a partir da comparação entre componentes sistemáticos e estocásticos das utilidades alternativas." },
@@ -179,12 +179,12 @@
           "answer": [
             "c"
           ],
-          "justification": "A alternativa C é incorreta porque inverte a lógica do modelo: o artigo apresenta a escolha como associada à alternativa cuja utilidade é maior que a das demais alternativas do conjunto. As alternativas A, B e D estão corretas porque descrevem a estrutura probabilística e a relação entre utilidade, componentes sistemáticos e estocásticos e modelos logit ou probit."
+          "justification": "A alternativa C é <strong>incorreta</strong> porque inverte a lógica do modelo: o artigo apresenta a escolha como associada à alternativa cuja utilidade é maior que a das demais alternativas do conjunto. As alternativas A, B e D estão corretas porque descrevem a estrutura probabilística e a relação entre utilidade, componentes sistemáticos e estocásticos e modelos logit ou probit."
         },
         {
           "id": "q013",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre o objetivo e a lógica de estimação do PLS-SEM conforme descritos no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre o objetivo e a lógica de estimação do PLS-SEM conforme descritos no artigo.",
           "alternatives": [
             { "id": "a", "text": "o PLS-SEM estima modelos de caminhos com variáveis latentes e equações lineares." },
             { "id": "b", "text": "o algoritmo PLS-SEM busca maximizar a variância explicada das variáveis latentes dependentes no modelo." },
@@ -194,12 +194,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo enfatiza que o PLS-SEM estima os modelos a partir dos dados dos indicadores, por meio de um algoritmo de mínimos quadrados alternados, sem depender exclusivamente de pressupostos distribucionais sobre erros. As alternativas A, B e C estão corretas e correspondem à caracterização do método apresentada no documento."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo enfatiza que o PLS-SEM estima os modelos a partir dos dados dos indicadores, por meio de um algoritmo de mínimos quadrados alternados, sem depender exclusivamente de pressupostos distribucionais sobre erros. As alternativas A, B e C estão corretas e correspondem à caracterização do método apresentada no documento."
         },
         {
           "id": "q014",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre o desenho empírico da ilustração envolvendo escolha de varejistas rurais.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre o desenho empírico da ilustração envolvendo escolha de varejistas rurais.",
           "alternatives": [
             { "id": "a", "text": "o estudo utilizou dados referentes à escolha de comprar ou não alimento para cães de determinado varejista, em um conjunto com duas alternativas." },
             { "id": "b", "text": "a amostra analisada compreendeu 4288 observações válidas provenientes de 268 respondentes." },
@@ -209,12 +209,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo informa que a aplicação considerou 14 atributos, dos quais seis tinham quatro níveis e oito tinham dois níveis. As alternativas A, B e C estão corretas, pois reproduzem elementos centrais do desenho empírico descrito na ilustração."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo informa que a aplicação considerou 14 atributos, dos quais seis tinham quatro níveis e oito tinham dois níveis. As alternativas A, B e C estão corretas, pois reproduzem elementos centrais do desenho empírico descrito na ilustração."
         },
         {
           "id": "q015",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre as implicações analíticas e gerenciais atribuídas ao uso de PLS-SEM em dados de experimentos de escolha discreta.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre as implicações analíticas e gerenciais atribuídas ao uso de PLS-SEM em dados de experimentos de escolha discreta.",
           "alternatives": [
             { "id": "a", "text": "a análise por atributos como um todo pode reduzir a complexidade decisória em comparação com a interpretação isolada de numerosos níveis de atributos." },
             { "id": "b", "text": "os escores de variáveis latentes podem apoiar análises complementares, como segmentação, heterogeneidade observável ou não observável e análises orientadas à predição." },
@@ -224,7 +224,7 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo afirma que os escores de variáveis latentes e métodos avançados de PLS-SEM podem ser usados justamente para análises respondent-specific, multigrupo, de heterogeneidade e segmentação. As alternativas A, B e C estão corretas, pois correspondem às vantagens analíticas e gerenciais destacadas no texto."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo afirma que os escores de variáveis latentes e métodos avançados de PLS-SEM podem ser usados justamente para análises respondent-specific, multigrupo, de heterogeneidade e segmentação. As alternativas A, B e C estão corretas, pois correspondem às vantagens analíticas e gerenciais destacadas no texto."
         },
         {
           "id": "q016",
@@ -243,7 +243,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas porque o artigo menciona a dificuldade de incorporar processos cognitivos e aponta combinação de fontes de dados, heterogeneidade, critérios de segmentação e desenhos experimentais como aspectos potencialmente problemáticos na seleção de modelos. D está incorreta porque o texto não afirma que variáveis latentes eliminem integralmente problemas de especificação."
+          "justification": "A, B, C e E estão corretas porque o artigo menciona a dificuldade de incorporar processos cognitivos e aponta combinação de fontes de dados, heterogeneidade, critérios de segmentação e desenhos experimentais como aspectos potencialmente problemáticos na seleção de modelos. D está <strong>incorreta</strong> porque o texto não afirma que variáveis latentes eliminem integralmente problemas de especificação."
         },
         {
           "id": "q017",
@@ -262,7 +262,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o artigo caracteriza indicadores como variáveis manifestas, variáveis latentes como construtos, relações de mensuração como pesos externos e o modelo interno como estrutura de relações entre construtos. E está incorreta porque os termos de erro representam a variância não explicada das variáveis dependentes em cada regressão parcial."
+          "justification": "A, B, C e D estão corretas: o artigo caracteriza indicadores como variáveis manifestas, variáveis latentes como construtos, relações de mensuração como pesos externos e o modelo interno como estrutura de relações entre construtos. E está <strong>incorreta</strong> porque os termos de erro representam a variância não explicada das variáveis dependentes em cada regressão parcial."
         },
         {
           "id": "q018",
@@ -281,7 +281,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o artigo informa que cada respondente recebeu dois conjuntos; o primeiro tinha oito escolhas com duas alternativas; o desenho de pontos extremos mostrava níveis 1 ou 4 em atributos de quatro níveis; e o desenho multinível podia usar quaisquer níveis. E está incorreta porque cada escolha envolvia duas alternativas, não três varejistas simultaneamente."
+          "justification": "A, B, C e D estão corretas: o artigo informa que cada respondente recebeu dois conjuntos; o primeiro tinha oito escolhas com duas alternativas; o desenho de pontos extremos mostrava níveis 1 ou 4 em atributos de quatro níveis; e o desenho multinível podia usar quaisquer níveis. E está <strong>incorreta</strong> porque cada escolha envolvia duas alternativas, não três varejistas simultaneamente."
         },
         {
           "id": "q019",
@@ -300,7 +300,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas porque o artigo descreve o cálculo dos pesos pela amplitude dos níveis de atributos, dividida pela soma das amplitudes, em forma percentual, e relata diferenças apenas marginais entre logit condicional e PLS-SEM. E está incorreta porque o peso de importância não decorre da simples frequência de exposição do atributo no questionário."
+          "justification": "A, B, C e D estão corretas porque o artigo descreve o cálculo dos pesos pela amplitude dos níveis de atributos, dividida pela soma das amplitudes, em forma percentual, e relata diferenças apenas marginais entre logit condicional e PLS-SEM. E está <strong>incorreta</strong> porque o peso de importância não decorre da simples frequência de exposição do atributo no questionário."
         },
         {
           "id": "q020",
@@ -319,7 +319,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o artigo aponta análises por respondente, heterogeneidade, multigrupos, predição e características do decisor como direções futuras relevantes. E está incorreta porque o texto não propõe abandonar variáveis latentes; ao contrário, discute seu potencial no contexto do PLS-SEM aplicado à modelagem de escolha discreta."
+          "justification": "A, B, C e D estão corretas: o artigo aponta análises por respondente, heterogeneidade, multigrupos, predição e características do decisor como direções futuras relevantes. E está <strong>incorreta</strong> porque o texto não propõe abandonar variáveis latentes; ao contrário, discute seu potencial no contexto do PLS-SEM aplicado à modelagem de escolha discreta."
         }
       ]
     },
@@ -340,7 +340,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo introduz a CCA como técnica de modelagem por equações estruturais destinada a testar modelos de compósitos e a apoiar a operacionalização de artefatos. B é incorreta porque a CCA não elimina CFA ou SEM; C restringe indevidamente o escopo a dados longitudinais e fatores comuns; D é incorreta porque o modelo de compósitos impõe restrições testáveis nas covariâncias entre blocos."
+          "justification": "A alternativa A é correta porque o artigo introduz a CCA como técnica de modelagem por equações estruturais destinada a testar modelos de compósitos e a apoiar a operacionalização de artefatos. B é <strong>incorreta</strong> porque a CCA não elimina CFA ou SEM; C restringe indevidamente o escopo a dados longitudinais e fatores comuns; D é <strong>incorreta</strong> porque o modelo de compósitos impõe restrições testáveis nas covariâncias entre blocos."
         },
         {
           "id": "q002",
@@ -355,7 +355,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo associa conceitos comportamentais à lógica de mensuração de entidades existentes e artefatos à lógica construtivista de objetos desenhados para cumprir propósitos. B inverte a relação entre fator comum e compósito; C troca os paradigmas associados no texto; D é incorreta porque ambos os tipos de modelo empregam indicadores observáveis."
+          "justification": "A alternativa A é correta porque o artigo associa conceitos comportamentais à lógica de mensuração de entidades existentes e artefatos à lógica construtivista de objetos desenhados para cumprir propósitos. B inverte a relação entre fator comum e compósito; C troca os paradigmas associados no texto; D é <strong>incorreta</strong> porque ambos os tipos de modelo empregam indicadores observáveis."
         },
         {
           "id": "q003",
@@ -385,7 +385,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo afirma que a identificação requer normalização dos vetores de pesos e não isolamento dos compósitos na rede nomológica. B é incorreta porque o modelo de compósitos permite covariâncias intra-bloco livres; C é incorreta porque modelos subidentificados não têm solução única; D contraria a exigência de conexão do compósito a outros elementos."
+          "justification": "A alternativa A é correta porque o artigo afirma que a identificação requer normalização dos vetores de pesos e não isolamento dos compósitos na rede nomológica. B é <strong>incorreta</strong> porque o modelo de compósitos permite covariâncias intra-bloco livres; C é <strong>incorreta</strong> porque modelos subidentificados não têm solução única; D contraria a exigência de conexão do compósito a outros elementos."
         },
         {
           "id": "q005",
@@ -400,7 +400,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo propõe testar o ajuste global por meio de bootstrap associado a medidas como distância euclidiana quadrada, distância geodésica e SRMR. B é incorreta porque o texto observa que maxvar não fornece naturalmente o teste qui-quadrado de máxima verossimilhança; C é insuficiente e corresponde a limitações de abordagens anteriores; D não representa o procedimento estatístico defendido no artigo."
+          "justification": "A alternativa A é correta porque o artigo propõe testar o ajuste global por meio de bootstrap associado a medidas como distância euclidiana quadrada, distância geodésica e SRMR. B é <strong>incorreta</strong> porque o texto observa que maxvar não fornece naturalmente o teste qui-quadrado de máxima verossimilhança; C é insuficiente e corresponde a limitações de abordagens anteriores; D não representa o procedimento estatístico defendido no artigo."
         },
         {
           "id": "q006",
@@ -470,7 +470,7 @@
         {
           "id": "q011",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a relação entre SEM, CFA e CCA conforme apresentada no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a relação entre SEM, CFA e CCA conforme apresentada no artigo.",
           "alternatives": [
             { "id": "a", "text": "a SEM com variáveis latentes combina análise fatorial confirmatória e análise de caminhos." },
             { "id": "b", "text": "a CFA é destacada como ferramenta confirmatória relevante para avaliar validade de construto." },
@@ -480,12 +480,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo afirma que a SEM foi aprimorada para lidar com dados categóricos, dados longitudinais e relações não lineares. As alternativas A, B e C estão corretas, pois refletem a caracterização da SEM, da CFA e da proposta da CCA no texto."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo afirma que a SEM foi aprimorada para lidar com dados categóricos, dados longitudinais e relações não lineares. As alternativas A, B e C estão corretas, pois refletem a caracterização da SEM, da CFA e da proposta da CCA no texto."
         },
         {
           "id": "q012",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre os exemplos de conceitos comportamentais e artefatos apresentados no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre os exemplos de conceitos comportamentais e artefatos apresentados no artigo.",
           "alternatives": [
             { "id": "a", "text": "em educação, a ansiedade do estudante é exemplificada como conceito comportamental." },
             { "id": "b", "text": "em sistemas de informação, o design de interface de usuário é exemplificado como conceito de design." },
@@ -495,12 +495,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo apresenta, em criminologia, a atividade criminal como conceito comportamental e a estratégia de prevenção como conceito de design ou artefato. As alternativas A, B e C estão corretas conforme os exemplos organizados na tabela de disciplinas, conceitos comportamentais e artefatos."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo apresenta, em criminologia, a atividade criminal como conceito comportamental e a estratégia de prevenção como conceito de design ou artefato. As alternativas A, B e C estão corretas conforme os exemplos organizados na tabela de disciplinas, conceitos comportamentais e artefatos."
         },
         {
           "id": "q013",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a matriz de covariância no modelo de compósitos.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a matriz de covariância no modelo de compósitos.",
           "alternatives": [
             { "id": "a", "text": "as covariâncias entre indicadores de blocos diferentes são restringidas pela suposição de que os compósitos transportam toda a informação entre os blocos." },
             { "id": "b", "text": "as covariâncias intra-bloco são tratadas como livres, permitindo que indicadores de um mesmo bloco covariem sem restrição específica." },
@@ -510,12 +510,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo afirma que, embora as covariâncias intra-bloco sejam livres, as covariâncias inter-bloco são restringidas pela estrutura do modelo de compósitos. As alternativas A, B e C estão corretas, pois descrevem a distinção entre covariâncias intra-bloco livres e restrições inter-bloco testáveis."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo afirma que, embora as covariâncias intra-bloco sejam livres, as covariâncias inter-bloco são restringidas pela estrutura do modelo de compósitos. As alternativas A, B e C estão corretas, pois descrevem a distinção entre covariâncias intra-bloco livres e restrições inter-bloco testáveis."
         },
         {
           "id": "q014",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre os estados de identificação de modelos discutidos no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre os estados de identificação de modelos discutidos no artigo.",
           "alternatives": [
             { "id": "a", "text": "um modelo subidentificado não oferece solução única para os parâmetros, pois múltiplos conjuntos podem satisfazer as restrições do modelo." },
             { "id": "b", "text": "um modelo exatamente identificado tem solução única, mas não permite avaliar o ajuste global porque ajusta perfeitamente os dados." },
@@ -525,12 +525,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque modelos subidentificados não possuem solução única e não são adequados para conclusões confiáveis. As alternativas A, B e C estão corretas, pois correspondem às definições de modelos subidentificados, exatamente identificados e sobre-identificados apresentadas no artigo."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque modelos subidentificados não possuem solução única e não são adequados para conclusões confiáveis. As alternativas A, B e C estão corretas, pois correspondem às definições de modelos subidentificados, exatamente identificados e sobre-identificados apresentadas no artigo."
         },
         {
           "id": "q015",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre os índices de ajuste para modelos de compósitos discutidos no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre os índices de ajuste para modelos de compósitos discutidos no artigo.",
           "alternatives": [
             { "id": "a", "text": "o SRMR representa a discrepância média entre a matriz de correlação empírica e a matriz de correlação implicada pelo modelo." },
             { "id": "b", "text": "o NFI mede a discrepância relativa entre o ajuste de um modelo de linha de base e o ajuste do modelo estimado." },
@@ -540,7 +540,7 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo recomenda cautela no uso de índices de ajuste e afirma que valores de corte ainda precisam ser determinados para modelos de compósitos. As alternativas A, B e C estão corretas, pois descrevem a função do SRMR, do NFI e do RMStheta conforme apresentados no texto."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo recomenda cautela no uso de índices de ajuste e afirma que valores de corte ainda precisam ser determinados para modelos de compósitos. As alternativas A, B e C estão corretas, pois descrevem a função do SRMR, do NFI e do RMStheta conforme apresentados no texto."
         },
         {
           "id": "q016",
@@ -559,7 +559,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o artigo afirma que as abordagens então existentes se limitavam à colinearidade dos indicadores e às relações com outras variáveis, sem teste rigoroso análogo à CFA, o que restringia a SEM sobretudo a conceitos comportamentais. D está incorreta porque a avaliação confirmatória sistemática equivalente é justamente a lacuna que a CCA procura preencher."
+          "justification": "A, B, C e E estão corretas: o artigo afirma que as abordagens então existentes se limitavam à colinearidade dos indicadores e às relações com outras variáveis, sem teste rigoroso análogo à CFA, o que restringia a SEM sobretudo a conceitos comportamentais. D está <strong>incorreta</strong> porque a avaliação confirmatória sistemática equivalente é justamente a lacuna que a CCA procura preencher."
         },
         {
           "id": "q017",
@@ -578,7 +578,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o artigo define cada artefato como compósito formado por um bloco de indicadores, com pesos reunidos em vetor, assumindo que cada indicador se conecta a apenas um compósito e que os pesos são escalados para variância unitária. D está incorreta porque o compósito é justamente uma combinação linear dos indicadores observáveis."
+          "justification": "A, B, C e E estão corretas: o artigo define cada artefato como compósito formado por um bloco de indicadores, com pesos reunidos em vetor, assumindo que cada indicador se conecta a apenas um compósito e que os pesos são escalados para variância unitária. D está <strong>incorreta</strong> porque o compósito é justamente uma combinação linear dos indicadores observáveis."
         },
         {
           "id": "q018",
@@ -596,7 +596,7 @@
             "b",
             "d"
           ],
-          "justification": "A, B e D estão corretas: o artigo afirma que a matriz de covariância dos indicadores é positiva definida se, e somente se, as matrizes intra-bloco forem positivas definidas e a matriz de covariância dos compósitos também o for. C está incorreta porque o modelo permite covariâncias intra-bloco livres; E está incorreta porque ignora a condição explícita sobre as matrizes intra-bloco."
+          "justification": "A, B e D estão corretas: o artigo afirma que a matriz de covariância dos indicadores é positiva definida se, e somente se, as matrizes intra-bloco forem positivas definidas e a matriz de covariância dos compósitos também o for. C está <strong>incorreta</strong> porque o modelo permite covariâncias intra-bloco livres; E está <strong>incorreta</strong> porque ignora a condição explícita sobre as matrizes intra-bloco."
         },
         {
           "id": "q019",
@@ -615,7 +615,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o artigo menciona PCA, LDA, GCCA, PLS-PM, RGCCA e GSCA entre formas de construir ou estimar compósitos. D está incorreta porque o texto afirma que o uso de pesos predefinidos também é possível."
+          "justification": "A, B, C e E estão corretas: o artigo menciona PCA, LDA, GCCA, PLS-PM, RGCCA e GSCA entre formas de construir ou estimar compósitos. D está <strong>incorreta</strong> porque o texto afirma que o uso de pesos predefinidos também é possível."
         },
         {
           "id": "q020",
@@ -634,7 +634,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o artigo relata equivalência entre distância euclidiana quadrada e SRMR no primeiro modelo, maior poder dessas medidas nos modelos 2 e 3, dificuldade de detectar a má especificação fraca do modelo 5 em amostras pequenas e identificação quase universal em amostras acima de 1050. E está incorreta porque o texto confirma a relação oposta: o poder aumenta com o tamanho amostral."
+          "justification": "A, B, C e D estão corretas: o artigo relata equivalência entre distância euclidiana quadrada e SRMR no primeiro modelo, maior poder dessas medidas nos modelos 2 e 3, dificuldade de detectar a má especificação fraca do modelo 5 em amostras pequenas e identificação quase universal em amostras acima de 1050. E está <strong>incorreta</strong> porque o texto confirma a relação oposta: o poder aumenta com o tamanho amostral."
         }
       ]
     },
@@ -655,7 +655,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo afirma oferecer uma avaliação abrangente de técnicas de SEM baseadas em compósitos usando dados provenientes de populações de modelos de compósitos. B é incorreta porque o estudo não hierarquiza universalmente modelos fatoriais como superiores; C inverte a crítica central do artigo; D é incorreta porque a pesquisa avalia desempenho de estimação, poder estatístico e erros, não apenas ajuste global."
+          "justification": "A alternativa A é correta porque o artigo afirma oferecer uma avaliação abrangente de técnicas de SEM baseadas em compósitos usando dados provenientes de populações de modelos de compósitos. B é <strong>incorreta</strong> porque o estudo não hierarquiza universalmente modelos fatoriais como superiores; C inverte a crítica central do artigo; D é <strong>incorreta</strong> porque a pesquisa avalia desempenho de estimação, poder estatístico e erros, não apenas ajuste global."
         },
         {
           "id": "q002",
@@ -685,7 +685,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo afirma que a SEM baseada em fatores estima parâmetros com base na variância comum, ao passo que o PLS usa a variância total dos indicadores para formar compósitos. B inverte as características dos métodos; C é incorreta porque ambos lidam com modelos de mensuração; D também inverte a distinção, pois o PLS estima explicitamente escores de variáveis latentes."
+          "justification": "A alternativa A é correta porque o artigo afirma que a SEM baseada em fatores estima parâmetros com base na variância comum, ao passo que o PLS usa a variância total dos indicadores para formar compósitos. B inverte as características dos métodos; C é <strong>incorreta</strong> porque ambos lidam com modelos de mensuração; D também inverte a distinção, pois o PLS estima explicitamente escores de variáveis latentes."
         },
         {
           "id": "q004",
@@ -700,7 +700,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o artigo compara PLS, GSCA e regressão por escores somados. B é incorreta porque o PLSc foi explicitamente excluído por não ser relevante ao objetivo do estudo; C lista softwares associados à SEM baseada em fatores, não os métodos comparados; D mistura técnicas que não constituem o conjunto de comparação da simulação."
+          "justification": "A alternativa A é correta porque o artigo compara PLS, GSCA e regressão por escores somados. B é <strong>incorreta</strong> porque o PLSc foi explicitamente excluído por não ser relevante ao objetivo do estudo; C lista softwares associados à SEM baseada em fatores, não os métodos comparados; D mistura técnicas que não constituem o conjunto de comparação da simulação."
         },
         {
           "id": "q005",
@@ -715,7 +715,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o estudo conclui que PLS e GSCA são estimadores consistentes em populações baseadas em compósitos e que a regressão por escores somados perde desempenho quando os pesos dos indicadores são desiguais. B generaliza indevidamente os escores somados; C contradiz a afirmação de convergência dos métodos; D é incorreta porque o artigo relata maior poder estatístico do PLS em comparação ao GSCA."
+          "justification": "A alternativa A é correta porque o estudo conclui que PLS e GSCA são estimadores consistentes em populações baseadas em compósitos e que a regressão por escores somados perde desempenho quando os pesos dos indicadores são desiguais. B generaliza indevidamente os escores somados; C contradiz a afirmação de convergência dos métodos; D é <strong>incorreta</strong> porque o artigo relata maior poder estatístico do PLS em comparação ao GSCA."
         },
         {
           "id": "q006",
@@ -785,7 +785,7 @@
         {
           "id": "q011",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a regressão por escores somados em comparação com PLS e GSCA.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a regressão por escores somados em comparação com PLS e GSCA.",
           "alternatives": [
             { "id": "a", "text": "a regressão por escores somados assume pesos iguais, usualmente unitários, para os indicadores." },
             { "id": "b", "text": "o PLS difere dos escores somados porque os pesos dos indicadores representam efeitos parcializados sobre o construto correspondente." },
@@ -795,12 +795,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque essa descrição corresponde ao PLS, não à regressão por escores somados. No artigo, os escores somados assumem pesos iguais, enquanto o PLS estima pesos que refletem efeitos parcializados dos indicadores. As alternativas A, B e C estão corretas conforme a caracterização metodológica apresentada."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque essa descrição corresponde ao PLS, não à regressão por escores somados. No artigo, os escores somados assumem pesos iguais, enquanto o PLS estima pesos que refletem efeitos parcializados dos indicadores. As alternativas A, B e C estão corretas conforme a caracterização metodológica apresentada."
         },
         {
           "id": "q012",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre o desenho de simulação utilizado no estudo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre o desenho de simulação utilizado no estudo.",
           "alternatives": [
             { "id": "a", "text": "o número de indicadores por variável latente foi manipulado com os níveis 2, 4, 6 e 8." },
             { "id": "b", "text": "os pesos padronizados dos indicadores foram considerados em condições de pesos iguais e desiguais." },
@@ -810,12 +810,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo manipulou a distribuição dos dados em três níveis: normal, não normal e extremamente não normal. As alternativas A, B e C estão corretas, pois correspondem aos fatores e níveis descritos no desenho fatorial da simulação."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo manipulou a distribuição dos dados em três níveis: normal, não normal e extremamente não normal. As alternativas A, B e C estão corretas, pois correspondem aos fatores e níveis descritos no desenho fatorial da simulação."
         },
         {
           "id": "q013",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a avaliação da acurácia dos parâmetros no estudo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a avaliação da acurácia dos parâmetros no estudo.",
           "alternatives": [
             { "id": "a", "text": "o MAE mede a distância absoluta média entre parâmetros estimados e parâmetros pré-especificados." },
             { "id": "b", "text": "valores menores de MAE indicam maior acurácia na recuperação dos parâmetros." },
@@ -825,12 +825,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo afirma que o MARE não é definido para os caminhos nulos considerados na simulação. Ele expressa o erro absoluto médio relativo aos parâmetros pré-especificados, não uma medida exclusiva para erros tipo I. As alternativas A, B e C descrevem corretamente MAE e MARE."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo afirma que o MARE não é definido para os caminhos nulos considerados na simulação. Ele expressa o erro absoluto médio relativo aos parâmetros pré-especificados, não uma medida exclusiva para erros tipo I. As alternativas A, B e C descrevem corretamente MAE e MARE."
         },
         {
           "id": "q014",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre os resultados de convergência e acurácia no estudo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre os resultados de convergência e acurácia no estudo.",
           "alternatives": [
             { "id": "a", "text": "PLS, GSCA e escores somados convergiram em todas as combinações de níveis dos fatores analisados." },
             { "id": "b", "text": "na estimação dos modelos de mensuração, o GSCA apresentou valores de MAE ligeiramente menores que o PLS nas condições simuladas." },
@@ -840,12 +840,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo informa que as diferenças entre dados normais e não normais foram apenas marginais nas análises apresentadas. As alternativas A, B e C estão corretas: os métodos convergiram, o GSCA teve leve vantagem no MAE dos modelos de mensuração, e o tamanho amostral teve forte impacto na redução do erro."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo informa que as diferenças entre dados normais e não normais foram apenas marginais nas análises apresentadas. As alternativas A, B e C estão corretas: os métodos convergiram, o GSCA teve leve vantagem no MAE dos modelos de mensuração, e o tamanho amostral teve forte impacto na redução do erro."
         },
         {
           "id": "q015",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre poder estatístico e erros tipo I conforme avaliados no artigo.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre poder estatístico e erros tipo I conforme avaliados no artigo.",
           "alternatives": [
             { "id": "a", "text": "a análise de poder verificou a capacidade dos métodos de revelar relações com tamanhos de efeito baixo, médio e alto." },
             { "id": "b", "text": "o PLS apresentou melhor desempenho em poder estatístico, seguido por GSCA e pela abordagem de escores somados." },
@@ -855,7 +855,7 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o artigo relata que as diferenças de poder entre os métodos se tornam menos pronunciadas à medida que o tamanho amostral aumenta, chegando a desaparecer em amostras maiores. As alternativas A, B e C estão corretas conforme a avaliação de poder estatístico e erro tipo I descrita no estudo."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o artigo relata que as diferenças de poder entre os métodos se tornam menos pronunciadas à medida que o tamanho amostral aumenta, chegando a desaparecer em amostras maiores. As alternativas A, B e C estão corretas conforme a avaliação de poder estatístico e erro tipo I descrita no estudo."
         },
         {
           "id": "q016",
@@ -874,7 +874,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o artigo revisa JM e JAMS entre 1986 e 2015, encontra 193 estudos com SEM baseada em fatores e 53 com PLS, relata crescimento de ambas as abordagens e observa ganho relativo do PLS. D está incorreta porque o PLS não desaparece; ao contrário, ganha impulso relativo no período recente."
+          "justification": "A, B, C e E estão corretas: o artigo revisa JM e JAMS entre 1986 e 2015, encontra 193 estudos com SEM baseada em fatores e 53 com PLS, relata crescimento de ambas as abordagens e observa ganho relativo do PLS. D está <strong>incorreta</strong> porque o PLS não desaparece; ao contrário, ganha impulso relativo no período recente."
         },
         {
           "id": "q017",
@@ -893,7 +893,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o artigo destaca o ACSI, aplicações em serviços, o modelo de aceitação de tecnologia e o uso do ACSI como indicador de desempenho. D está incorreta porque o texto menciona aplicações do modelo de aceitação de tecnologia a elementos do mix de marketing, não sua inadequação."
+          "justification": "A, B, C e E estão corretas: o artigo destaca o ACSI, aplicações em serviços, o modelo de aceitação de tecnologia e o uso do ACSI como indicador de desempenho. D está <strong>incorreta</strong> porque o texto menciona aplicações do modelo de aceitação de tecnologia a elementos do mix de marketing, não sua inadequação."
         },
         {
           "id": "q018",
@@ -912,7 +912,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o artigo contrapõe a minimização da discrepância de covariâncias na SEM baseada em fatores à maximização de variância explicada no PLS, bem como fatores comuns e variância comum versus compósitos e variância total. E está incorreta porque o texto afirma que as abordagens são complementares, não intercambiáveis."
+          "justification": "A, B, C e D estão corretas: o artigo contrapõe a minimização da discrepância de covariâncias na SEM baseada em fatores à maximização de variância explicada no PLS, bem como fatores comuns e variância comum versus compósitos e variância total. E está <strong>incorreta</strong> porque o texto afirma que as abordagens são complementares, não intercambiáveis."
         },
         {
           "id": "q019",
@@ -931,7 +931,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o artigo afirma que o modelo simulado reflete ACSI/ECSI, usa coeficientes baixos, médios e altos, adiciona um construto com dois caminhos nulos e emprega desenho fatorial completo com 120 combinações. E está incorreta porque foram manipulados 2, 4, 6 e 8 indicadores e cinco tamanhos amostrais."
+          "justification": "A, B, C e D estão corretas: o artigo afirma que o modelo simulado reflete ACSI/ECSI, usa coeficientes baixos, médios e altos, adiciona um construto com dois caminhos nulos e emprega desenho fatorial completo com 120 combinações. E está <strong>incorreta</strong> porque foram manipulados 2, 4, 6 e 8 indicadores e cinco tamanhos amostrais."
         },
         {
           "id": "q020",
@@ -950,7 +950,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o artigo questiona a aplicabilidade universal do PLS em pequenas amostras, destaca desvios mais pronunciados nos modelos de mensuração, recomenda cautela em interpretações no nível dos itens e reforça a necessidade de mais dados. D está incorreta porque o texto identifica vieses relevantes nos pesos dos indicadores em amostras pequenas."
+          "justification": "A, B, C e E estão corretas: o artigo questiona a aplicabilidade universal do PLS em pequenas amostras, destaca desvios mais pronunciados nos modelos de mensuração, recomenda cautela em interpretações no nível dos itens e reforça a necessidade de mais dados. D está <strong>incorreta</strong> porque o texto identifica vieses relevantes nos pesos dos indicadores em amostras pequenas."
         }
       ]
     },
@@ -971,7 +971,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o editorial apresenta o artigo de Rigdon como um marco que propõe uma mudança de pensamento e estimula a emancipação do PLS-SEM em relação ao CB-SEM. B, C e D são incorretas porque o texto não propõe abandono do PLS-SEM, nem sua equiparação indistinta ao CB-SEM, nem sua substituição por modelos fatoriais."
+          "justification": "A alternativa A é correta porque o editorial apresenta o artigo de Rigdon como um marco que propõe uma mudança de pensamento e estimula a emancipação do PLS-SEM em relação ao CB-SEM. B, C e D são <strong>incorreta</strong>s porque o texto não propõe abandono do PLS-SEM, nem sua equiparação indistinta ao CB-SEM, nem sua substituição por modelos fatoriais."
         },
         {
           "id": "q002",
@@ -1001,7 +1001,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o editorial identifica o trabalho de Chin e a disponibilidade de interfaces gráficas, como o PLS Graph, como fatores que marcaram o retorno do PLS-SEM. B, C e D são incorretas porque não refletem o argumento do texto: o PLS-SEM tornou-se mais acessível, não foi substituído, restringido ou descartado."
+          "justification": "A alternativa A é correta porque o editorial identifica o trabalho de Chin e a disponibilidade de interfaces gráficas, como o PLS Graph, como fatores que marcaram o retorno do PLS-SEM. B, C e D são <strong>incorreta</strong>s porque não refletem o argumento do texto: o PLS-SEM tornou-se mais acessível, não foi substituído, restringido ou descartado."
         },
         {
           "id": "q004",
@@ -1031,7 +1031,7 @@
           "answer": [
             "a"
           ],
-          "justification": "A alternativa A é correta porque o editorial afirma que algoritmos consistentes de PLS podem servir como ponte entre modelos fatoriais e modelos de compósitos, sobretudo em modelos que combinam ambos. B é incorreta porque a distinção continua relevante; C é incorreta porque o texto propõe aplicar correções aos construtos fatoriais e PLS tradicional aos compósitos; D contradiz diretamente essa proposta."
+          "justification": "A alternativa A é correta porque o editorial afirma que algoritmos consistentes de PLS podem servir como ponte entre modelos fatoriais e modelos de compósitos, sobretudo em modelos que combinam ambos. B é <strong>incorreta</strong> porque a distinção continua relevante; C é <strong>incorreta</strong> porque o texto propõe aplicar correções aos construtos fatoriais e PLS tradicional aos compósitos; D contradiz diretamente essa proposta."
         },
         {
           "id": "q006",
@@ -1101,7 +1101,7 @@
         {
           "id": "q011",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre o contexto editorial em que o texto se insere.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre o contexto editorial em que o texto se insere.",
           "alternatives": [
             { "id": "a", "text": "o editorial introduz uma troca de comentários em torno do artigo de Edward E. Rigdon." },
             { "id": "b", "text": "o debate está associado aos números especiais de Long Range Planning sobre PLS-SEM em gestão estratégica." },
@@ -1111,12 +1111,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o editorial não considera o debate encerrado; ao contrário, propõe avançar em novas questões metodológicas e aplicadas relativas ao PLS-SEM. As alternativas A, B e C estão corretas, pois o texto introduz uma troca de comentários vinculada aos números especiais de Long Range Planning e menciona contribuições técnicas e aplicadas."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o editorial não considera o debate encerrado; ao contrário, propõe avançar em novas questões metodológicas e aplicadas relativas ao PLS-SEM. As alternativas A, B e C estão corretas, pois o texto introduz uma troca de comentários vinculada aos números especiais de Long Range Planning e menciona contribuições técnicas e aplicadas."
         },
         {
           "id": "q012",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre as linhas de crítica ao PLS-SEM discutidas no editorial.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre as linhas de crítica ao PLS-SEM discutidas no editorial.",
           "alternatives": [
             { "id": "a", "text": "uma linha de crítica examinou supostas más aplicações do PLS-SEM associadas a argumentos como pequenos tamanhos amostrais e menor restrição distribucional." },
             { "id": "b", "text": "outra linha de crítica concentrou-se na incapacidade do PLS-SEM de mimetizar perfeitamente o CB-SEM." },
@@ -1126,12 +1126,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o editorial reconhece críticas, mas não as trata como consenso contra a utilidade do PLS-SEM. As alternativas A, B e C estão corretas, pois correspondem às três linhas de crítica descritas: más aplicações, comparação com CB-SEM e simulações de desempenho."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o editorial reconhece críticas, mas não as trata como consenso contra a utilidade do PLS-SEM. As alternativas A, B e C estão corretas, pois correspondem às três linhas de crítica descritas: más aplicações, comparação com CB-SEM e simulações de desempenho."
         },
         {
           "id": "q013",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a discussão do editorial a respeito de amostras pequenas em PLS-SEM.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a discussão do editorial a respeito de amostras pequenas em PLS-SEM.",
           "alternatives": [
             { "id": "a", "text": "o editorial afirma que não há capacidade mágica no PLS-SEM para superar problemas de amostras inadequadas." },
             { "id": "b", "text": "o texto reconhece que, em amostras pequenas, o PLS-SEM pode apresentar vantagem relativa de robustez e maior poder estatístico." },
@@ -1141,12 +1141,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o editorial rejeita a ideia de que o PLS-SEM resolva automaticamente limitações amostrais e apresenta recomendações associadas a análise de poder e tamanho de amostra. As alternativas A, B e C refletem corretamente a posição do texto sobre robustez relativa, poder estatístico e cautela na coleta de dados."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o editorial rejeita a ideia de que o PLS-SEM resolva automaticamente limitações amostrais e apresenta recomendações associadas a análise de poder e tamanho de amostra. As alternativas A, B e C refletem corretamente a posição do texto sobre robustez relativa, poder estatístico e cautela na coleta de dados."
         },
         {
           "id": "q014",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre a noção de 'capitalization on chance' discutida no editorial.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre a noção de 'capitalization on chance' discutida no editorial.",
           "alternatives": [
             { "id": "a", "text": "o editorial observa que, em metodologia estatística, o termo se refere à tendência de modelos serem alterados ou selecionados à luz dos dados." },
             { "id": "b", "text": "o texto critica o uso do termo quando aplicado ao PLS-SEM para designar tendências de pequenas amostras ou viés de pequena amostra." },
@@ -1156,12 +1156,12 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o editorial não define o fenômeno como exclusivo do PLS-SEM; ao contrário, critica o uso enviesado e ampliado do termo contra o método. As alternativas A, B e C estão corretas, pois reproduzem a distinção entre o sentido estatístico usual do termo, seu uso crítico em relação ao PLS-SEM e a observação sobre viés em estimadores não lineares."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o editorial não define o fenômeno como exclusivo do PLS-SEM; ao contrário, critica o uso enviesado e ampliado do termo contra o método. As alternativas A, B e C estão corretas, pois reproduzem a distinção entre o sentido estatístico usual do termo, seu uso crítico em relação ao PLS-SEM e a observação sobre viés em estimadores não lineares."
         },
         {
           "id": "q015",
           "type": "single_incorrect",
-          "command": "Assinale a alternativa incorreta sobre as questões de pesquisa propostas para o avanço do PLS-SEM como abordagem baseada em compósitos.",
+          "command": "Assinale a alternativa <strong>incorreta</strong> sobre as questões de pesquisa propostas para o avanço do PLS-SEM como abordagem baseada em compósitos.",
           "alternatives": [
             { "id": "a", "text": "o editorial pergunta para que tipos de estudo a abordagem baseada em compósitos seria mais adequada que a abordagem baseada em fatores." },
             { "id": "b", "text": "o texto propõe investigar quais procedimentos os pesquisadores deveriam seguir para estabelecer modelos baseados em compósitos." },
@@ -1171,7 +1171,7 @@
           "answer": [
             "d"
           ],
-          "justification": "A alternativa D é incorreta porque o editorial não reduz a agenda futura à reprodução integral do CB-SEM; pelo contrário, defende a emancipação do PLS-SEM e enumera várias questões próprias da abordagem baseada em compósitos. As alternativas A, B e C estão corretas, pois correspondem diretamente às áreas de investigação destacadas no texto."
+          "justification": "A alternativa D é <strong>incorreta</strong> porque o editorial não reduz a agenda futura à reprodução integral do CB-SEM; pelo contrário, defende a emancipação do PLS-SEM e enumera várias questões próprias da abordagem baseada em compósitos. As alternativas A, B e C estão corretas, pois correspondem diretamente às áreas de investigação destacadas no texto."
         },
         {
           "id": "q016",
@@ -1190,7 +1190,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o editorial atribui o PLS-SEM a Wold e o CB-SEM a Jöreskog, descreve os métodos como complementares, relaciona a dominância inicial do CB-SEM à disponibilidade do LISREL e destaca Lohmöller como exceção importante no desenvolvimento do PLS-SEM. D está incorreta porque o texto afirma que o PLS-SEM foi inicialmente pouco reconhecido e pouco utilizado."
+          "justification": "A, B, C e E estão corretas: o editorial atribui o PLS-SEM a Wold e o CB-SEM a Jöreskog, descreve os métodos como complementares, relaciona a dominância inicial do CB-SEM à disponibilidade do LISREL e destaca Lohmöller como exceção importante no desenvolvimento do PLS-SEM. D está <strong>incorreta</strong> porque o texto afirma que o PLS-SEM foi inicialmente pouco reconhecido e pouco utilizado."
         },
         {
           "id": "q017",
@@ -1209,7 +1209,7 @@
             "c",
             "e"
           ],
-          "justification": "A, B, C e E estão corretas: o editorial associa a ampliação do PLS-SEM a diretrizes aplicadas, interfaces gráficas, softwares como SmartPLS e livros-texto para pesquisa aplicada. D está incorreta porque o texto afirma que o PLS-SEM foi crescentemente adotado por disciplinas das ciências sociais."
+          "justification": "A, B, C e E estão corretas: o editorial associa a ampliação do PLS-SEM a diretrizes aplicadas, interfaces gráficas, softwares como SmartPLS e livros-texto para pesquisa aplicada. D está <strong>incorreta</strong> porque o texto afirma que o PLS-SEM foi crescentemente adotado por disciplinas das ciências sociais."
         },
         {
           "id": "q018",
@@ -1228,7 +1228,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o editorial cita ACSI, TAM, a disseminação em pesquisa de empresas familiares e os números especiais de Long Range Planning em gestão estratégica. E está incorreta porque o texto afirma justamente que ACSI e TAM são modelos proeminentes em marketing e MIS estimados com PLS-SEM."
+          "justification": "A, B, C e D estão corretas: o editorial cita ACSI, TAM, a disseminação em pesquisa de empresas familiares e os números especiais de Long Range Planning em gestão estratégica. E está <strong>incorreta</strong> porque o texto afirma justamente que ACSI e TAM são modelos proeminentes em marketing e MIS estimados com PLS-SEM."
         },
         {
           "id": "q019",
@@ -1247,7 +1247,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: a tabela do editorial apresenta o PLS-SEM como baseado em variância, o CB-SEM como baseado em covariância, os escores latentes como explicitamente estimados no PLS-SEM e o CB-SEM como tipicamente associado a indicadores reflexivos. E está incorreta porque o PLS-SEM é descrito como capaz de modelar relações formativas ou reflexivas."
+          "justification": "A, B, C e D estão corretas: a tabela do editorial apresenta o PLS-SEM como baseado em variância, o CB-SEM como baseado em covariância, os escores latentes como explicitamente estimados no PLS-SEM e o CB-SEM como tipicamente associado a indicadores reflexivos. E está <strong>incorreta</strong> porque o PLS-SEM é descrito como capaz de modelar relações formativas ou reflexivas."
         },
         {
           "id": "q020",
@@ -1266,7 +1266,7 @@
             "c",
             "d"
           ],
-          "justification": "A, B, C e D estão corretas: o editorial enumera essas questões como áreas relevantes para avançar o PLS-SEM como método baseado em compósitos. E está incorreta porque o texto prevê desenvolvimento dinâmico futuro do PLS-SEM, não sua interrupção."
+          "justification": "A, B, C e D estão corretas: o editorial enumera essas questões como áreas relevantes para avançar o PLS-SEM como método baseado em compósitos. E está <strong>incorreta</strong> porque o texto prevê desenvolvimento dinâmico futuro do PLS-SEM, não sua interrupção."
         }
       ]
     }
