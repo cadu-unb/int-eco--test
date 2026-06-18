@@ -7,6 +7,24 @@
     "description": "Questões avançadas de Introdução à Economia."
   },
   "sections": [
-    {}
+    {
+      "id": "cap-01",
+      "title": "TESTE",
+      "questions": [
+        {
+          "id": "q011",
+          "type": "single_correct",
+          "command": "Com base na tabela de elasticidade-preço abaixo, qual bem tem demanda mais inelástica?\n\n| Bem | Elasticidade |\n| :---: | :------------: |\n| Sal | 0,1 |\n| Carro | 1,5 |\n| Viagem aérea | 2,4 |",
+          "alternatives": [
+            { "id": "a", "text": "Sal" },
+            { "id": "b", "text": "Carro" },
+            { "id": "c", "text": "Viagem aérea" },
+            { "id": "d", "text": "Todos igualmente inelásticos" }
+          ],
+          "answer": ["a"],
+          "justification": "Elasticidade-preço próxima de zero indica demanda inelástica — a quantidade demandada varia pouco com o preço. Sal (0,1) é muito menos responsivo a preço que carro (1,5) ou viagem aérea (2,4)."
+        }
+      ]
+    }
   ]
 }
