@@ -254,6 +254,60 @@ function shuffle(arr) {
   return a;
 }
 
+// ════ RICH TEXT & MEDIA ════
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+function sanitizePath(path) {
+  if (!path || typeof path !== 'string') return null;
+  if (!/^img\/[\w\-.]+(?:\/[\w\-.]+)*\.(png|jpe?g|jpg|svg|pdf)$/i.test(path)) return null;
+  return path;
+}
+
+function renderMediaHTML(path) {
+  const safe = sanitizePath(path);
+  if (!safe) return '';
+  const ext = safe.split('.').pop().toLowerCase();
+  if (ext === 'pdf') {
+    return `<a href="${safe}" target="_blank" rel="noopener noreferrer" class="media-pdf-link">📄 Ver PDF</a>`;
+  }
+  return `<img src="${safe}" alt="" class="question-media" loading="lazy">`;
+}
+
+function isMarkdownTable(lines) {
+  const isSep = l => /^\s*\|[\s\-:|]+\|\s*$/.test(l);
+  return lines.length >= 2 && lines.some(isSep) && lines.every(l => l.trim().startsWith('|'));
+}
+
+function markdownTableToHTML(lines) {
+  const isSep = l => /^\s*\|[\s\-:|]+\|\s*$/.test(l);
+  const parseRow = line => line.replace(/^\s*\||\|\s*$/g, '').split('|').map(c => c.trim());
+  const dataLines = lines.filter(l => !isSep(l));
+  if (!dataLines.length) return '';
+  const [headerLine, ...bodyLines] = dataLines;
+  const headers = parseRow(headerLine);
+  const thead = `<thead><tr>${headers.map(h => `<th>${escapeHtml(h)}</th>`).join('')}</tr></thead>`;
+  const tbody = bodyLines.length
+    ? `<tbody>${bodyLines.map(l => `<tr>${parseRow(l).map(c => `<td>${escapeHtml(c)}</td>`).join('')}</tr>`).join('')}</tbody>`
+    : '';
+  return `<div class="md-table-wrap"><table class="md-table">${thead}${tbody}</table></div>`;
+}
+
+function renderRichText(text) {
+  if (!text) return '';
+  const blocks = text.split(/\n\n+/);
+  return blocks.map(block => {
+    const lines = block.split('\n');
+    if (isMarkdownTable(lines)) return markdownTableToHTML(lines);
+    return `<span class="rich-text-block">${lines.map(escapeHtml).join('<br>')}</span>`;
+  }).join('');
+}
+
 // ════ QUIZ SCREEN ════
 function renderQuestion() {
   const idx = State.currentIdx;
@@ -263,7 +317,9 @@ function renderQuestion() {
   $('progress-bar').style.width = ((idx + 1) / total * 100) + '%';
   $('quiz-counter').textContent = `${idx + 1} / ${total}`;
   $('quiz-chapter-tag').textContent = `${q.sectionTitle}`;
-  $('question-command').textContent = q.command;
+  const cmdEl = $('question-command');
+  cmdEl.innerHTML = renderRichText(q.command);
+  if (q.command_image) cmdEl.insertAdjacentHTML('beforeend', renderMediaHTML(q.command_image));
 
   const list = $('alternatives-list');
   list.innerHTML = '';
@@ -323,7 +379,7 @@ function renderSingleCorrect(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'radio';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
       document.querySelectorAll('.alt-item').forEach(item => {
@@ -347,7 +403,7 @@ function renderTrueFalse(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'radio';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<span class="alt-text">${alt.text}</span>`;
+    li.innerHTML = `<span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
       document.querySelectorAll('.alt-item').forEach(item => {
@@ -371,7 +427,7 @@ function renderMultipleCorrect(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'checkbox';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} tabindex="-1" /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} tabindex="-1" /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       const answers = State.answers[idx] || [];
       if (answers.includes(alt.id)) {
@@ -400,7 +456,7 @@ function renderSingleIncorrect(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'radio';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${alt.text}</span>`;
+    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
       document.querySelectorAll('.alt-item').forEach(item => {
@@ -497,21 +553,21 @@ function buildResults() {
     const userAnsText = userAns.length > 0
       ? userAns.map(id => {
           const alt = (q.alternatives || []).find(a => a.id === id);
-          return alt ? `${id.toUpperCase()}) ${alt.text}` : id;
+          return alt ? `${escapeHtml(id.toUpperCase())}) ${escapeHtml(alt.text)}` : escapeHtml(id);
         }).join(' + ')
       : '—';
 
     const correctAnsText = q.answer.map(id => {
       const alt = (q.alternatives || []).find(a => a.id === id);
-      return alt ? `${id.toUpperCase()}) ${alt.text}` : id;
+      return alt ? `${escapeHtml(id.toUpperCase())}) ${escapeHtml(alt.text)}` : escapeHtml(id);
     }).join(' + ');
 
     card.innerHTML = `
       <div class="result-card-header">
         <div class="result-icon ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? '✓' : '✗'}</div>
         <div>
-          <p class="result-q-num">Questão ${i + 1} · ${q.sectionTitle}</p>
-          <p class="result-command">${q.command}</p>
+          <p class="result-q-num">Questão ${i + 1} · ${escapeHtml(q.sectionTitle)}</p>
+          <div class="result-command">${renderRichText(q.command)}${q.command_image ? renderMediaHTML(q.command_image) : ''}</div>
         </div>
       </div>
       <div class="result-card-body">
@@ -527,7 +583,7 @@ function buildResults() {
         ${q.justification ? `
         <div class="result-justification">
           <p class="just-label">Justificativa</p>
-          <p>${q.justification}</p>
+          <div>${renderRichText(q.justification)}${q.justification_image ? renderMediaHTML(q.justification_image) : ''}</div>
         </div>` : ''}
       </div>
     `;

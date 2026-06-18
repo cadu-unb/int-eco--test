@@ -1,0 +1,202 @@
+/* ══════════════════════════════════════
+   SABER UnB — Base: variáveis, reset, acessibilidade, modal, screens, loader
+   ══════════════════════════════════════ */
+
+:root {
+  --verde: #006039;
+  --verde-light: #007a49;
+  --verde-pale: #e8f5ee;
+  --azul: #004D80;
+  --azul-light: #0062a0;
+  --azul-pale: #e6f0f8;
+  --offwhite: #f8f9fa;
+  --white: #ffffff;
+  --text-dark: #1a2332;
+  --text-mid: #4a5568;
+  --text-light: #8a9ab0;
+  --border: #e2e8f0;
+  --correct: #22a05b;
+  --wrong: #e53e3e;
+  --warning: #dd6b20;
+
+  --radius-sm: 10px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 2px 8px rgba(0,0,0,.06);
+  --shadow-md: 0 6px 24px rgba(0,0,0,.10);
+  --shadow-lg: 0 16px 48px rgba(0,0,0,.14);
+
+  --transition: .25s cubic-bezier(.4,0,.2,1);
+}
+
+body.theme-dark:not(.welcome-active) {
+  --offwhite: #0f172a;
+  --white: #1e293b;
+  --text-dark: #f1f5f9;
+  --text-mid: #94a3b8;
+  --text-light: #64748b;
+  --border: #334155;
+  --verde-pale: rgba(0,96,57,0.25);
+  --azul-pale: rgba(0,77,128,0.25);
+}
+body.theme-dark:not(.welcome-active) .loader-overlay {
+  background: rgba(15,23,42,.92);
+}
+body.theme-dark:not(.welcome-active) .modal-content {
+  background: var(--white);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { font-size: 16px; scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--offwhite);
+  color: var(--text-dark);
+  min-height: 100dvh;
+  overflow-x: hidden;
+}
+
+/* ── ACCESSIBILITY ── */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--verde);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  border-radius: 0 0 4px 0;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+button, [role="button"], input[type="range"], input[type="checkbox"] {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+button:focus-visible, [role="button"]:focus-visible, input[type="range"]:focus-visible, input[type="checkbox"]:focus-visible {
+  outline: 2px solid var(--verde);
+  outline-offset: 2px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+legend {
+  padding: 0;
+  display: block;
+  width: 100%;
+}
+
+/* Reduzir movimento para usuários que preferem */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ── MODAL ── */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.5);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-overlay[hidden] {
+  display: none;
+}
+.modal-overlay:not([hidden]) {
+  display: flex;
+}
+.modal-content {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px 24px;
+  max-width: 400px;
+  box-shadow: var(--shadow-lg);
+  text-align: center;
+}
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+.modal-message {
+  color: var(--text-mid);
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+}
+.modal-buttons button {
+  flex: 1;
+}
+
+/* ── SCREENS ── */
+.screen {
+  display: none;
+  min-height: 100dvh;
+  animation: fadeSlide .35s var(--transition) both;
+}
+.screen.active { display: flex; flex-direction: column; }
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── LOADER ── */
+.loader-overlay {
+  position: fixed; inset: 0;
+  background: rgba(248,249,250,.92);
+  backdrop-filter: blur(6px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 999;
+  font-size: .95rem;
+  color: var(--text-mid);
+}
+.loader-overlay.visible { display: flex; }
+
+.loader-spinner {
+  width: 44px; height: 44px;
+  border: 3px solid var(--border);
+  border-top-color: var(--verde);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }

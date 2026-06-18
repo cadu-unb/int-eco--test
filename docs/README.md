@@ -8,9 +8,19 @@ Projeto educacional para criar, manter e servir bancos de questões via GitHub P
 /
   index.html              # Tela inicial + app principal
   favoritos.html          # Página de favoritos
-  style.css               # Estilos compartilhados
   app.js                  # Lógica principal
-  README.md               # Este arquivo
+  css/
+    base.css              # Variáveis CSS, reset, acessibilidade, modal, loader
+    welcome.css           # Tela de boas-vindas
+    config.css            # Tela de configuração (filtros, range)
+    quiz.css              # Tela de quiz (alternativas, progresso)
+    results.css           # Tela de resultados (cards, score ring)
+    media.css             # Imagens, PDFs, tabelas markdown
+    utils.css             # Scrollbar, tooltip, responsividade
+  img/
+    <codigo>/             # Imagens organizadas por código de matéria
+      file.png            # PNG, JPEG, SVG aceitos como <img>
+      file.pdf            # PDF renderizado como link
   docs/
     README.md             # Documentação geral
     ECO0019.md            # Documentação de matéria
@@ -77,12 +87,14 @@ Cada arquivo representa um conjunto de questões sobre um tópico/prova.
           "id": "q001",
           "type": "single_correct",
           "command": "A economia é melhor definida como...",
+          "command_image": "img/ECO0019/fig1.png",
           "alternatives": [
             { "id": "a", "text": "Alternativa A" },
-            { "id": "b", "text": "Alternativa B" }
+            { "id": "b", "text": "Alternativa B", "image": "img/ECO0019/alt_b.svg" }
           ],
           "answer": ["a"],
-          "justification": "Explicação da resposta correta."
+          "justification": "Explicação da resposta correta.",
+          "justification_image": "img/ECO0019/fig2.pdf"
         }
       ]
     }
@@ -120,10 +132,46 @@ Cada questão dentro de uma seção.
 |-------|------|-------------|-------|
 | `id` | string | Sim | Único dentro da seção |
 | `type` | string | Sim | `single_correct`, `true_false`, `multiple_correct`, `single_incorrect` |
-| `command` | string | Sim | Enunciado da questão |
+| `command` | string | Sim | Enunciado da questão; suporta tabelas markdown |
+| `command_image` | string | Não | Caminho `img/<codigo>/arquivo.ext` — exibido após o enunciado |
 | `alternatives` | array | Sim | Lista de opções |
 | `answer` | array | Sim | **Sempre array**, mesmo com 1 resposta |
-| `justification` | string | Não | Explicação da resposta |
+| `justification` | string | Não | Explicação da resposta; suporta tabelas markdown |
+| `justification_image` | string | Não | Caminho `img/<codigo>/arquivo.ext` — exibido após a justificativa |
+
+### alternatives
+
+Cada objeto no array `alternatives`.
+
+| Campo | Tipo | Obrigatório | Notas |
+|-------|------|-------------|-------|
+| `id` | string | Sim | Único dentro da questão (a, b, c, d…) |
+| `text` | string | Sim | Texto da alternativa; suporta tabelas markdown |
+| `image` | string | Não | Caminho `img/<codigo>/arquivo.ext` — exibido abaixo do texto |
+
+## Imagens e PDFs
+
+Arquivos de mídia ficam em `img/<codigo>/`. Extensões suportadas: `.png`, `.jpg`, `.jpeg`, `.svg`, `.pdf`.
+
+| Extensão | Renderização |
+|----------|--------------|
+| `.png` `.jpg` `.jpeg` `.svg` | `<img>` responsivo, max-height 400px (200px dentro de alternativa) |
+| `.pdf` | Link "📄 Ver PDF" abre em nova aba |
+
+**Caminho válido:** `img/ECO0019/figura1.png` — deve começar com `img/` e usar apenas letras, números, hífens, underscores e pontos. Caminhos inválidos são ignorados silenciosamente (sem erro na tela).
+
+## Tabelas Markdown
+
+`command`, `justification` e `alternatives[].text` aceitam tabelas no formato markdown. Blocos separados por linha em branco dupla são tratados como parágrafos distintos.
+
+```
+| Produto | Preço |
+| ------- | ----- |
+| A       | R$10  |
+| B       | R$20  |
+```
+
+Renderizado como `<table>` com scroll horizontal em telas pequenas. O bloco é identificado como tabela se: todas as linhas começam com `|` e há pelo menos uma linha separadora (`| --- |`).
 
 ## Tipos de questão
 
@@ -302,20 +350,27 @@ Antes de adicionar novo arquivo:
 4. **Alternativas:** Cada `id` em `alternatives` deve ser diferente
 5. **Answer válido:** Cada ID em `answer` deve existir em `alternatives`
 6. **Type válido:** Deve ser um dos 4 tipos
-7. **Arquivo no manifesto:** Adicione à `json/index.json`
+7. **Caminhos de imagem:** Devem começar com `img/` e ter extensão permitida
+8. **Arquivo no manifesto:** Adicione à `json/index.json`
 
 ## Adicionando novas questões
 
 1. Use o prompt apropriado em `docs/prompt/`
 2. Gere questões no formato JSON correto
 3. Adicione à seção apropriada do arquivo
-4. Valide JSON
-5. Teste no navegador (local)
-6. Commit + push
+4. Coloque imagens em `img/<codigo>/` se necessário
+5. Valide JSON
+6. Teste no navegador (local)
+7. Commit + push
 
 ## Histórico de mudanças
 
-**v2.0** (Implementação atual)
+**v3.0** (atual)
+- Suporte a imagens (PNG, JPEG, SVG) e PDFs em command, justification e alternativas
+- Suporte a tabelas markdown em command, justification e texto de alternativas
+- CSS dividido em arquivos lógicos em `css/`
+
+**v2.0**
 - Suporte a múltiplos tipos de questão
 - Filtros dinâmicos baseados em dados
 - Carregamento via manifesto (index.json)
