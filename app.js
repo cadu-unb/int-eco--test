@@ -279,6 +279,12 @@ function renderMediaHTML(path) {
   return `<img src="${safe}" alt="" class="question-media" loading="lazy">`;
 }
 
+function renderMedias(imgField) {
+  if (!imgField) return '';
+  const paths = Array.isArray(imgField) ? imgField : [imgField];
+  return paths.map(renderMediaHTML).join('');
+}
+
 function isMarkdownTable(lines) {
   const isSep = l => /^\s*\|[\s\-:|]+\|\s*$/.test(l);
   return lines.length >= 2 && lines.some(isSep) && lines.every(l => l.trim().startsWith('|'));
@@ -319,7 +325,7 @@ function renderQuestion() {
   $('quiz-chapter-tag').textContent = `${q.sectionTitle}`;
   const cmdEl = $('question-command');
   cmdEl.innerHTML = renderRichText(q.command);
-  if (q.command_image) cmdEl.insertAdjacentHTML('beforeend', renderMediaHTML(q.command_image));
+  if (q.command_image) cmdEl.insertAdjacentHTML('beforeend', renderMedias(q.command_image));
 
   const list = $('alternatives-list');
   list.innerHTML = '';
@@ -379,7 +385,7 @@ function renderSingleCorrect(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'radio';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
+    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMedias(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
       document.querySelectorAll('.alt-item').forEach(item => {
@@ -403,7 +409,7 @@ function renderTrueFalse(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'radio';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
+    li.innerHTML = `<span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMedias(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
       document.querySelectorAll('.alt-item').forEach(item => {
@@ -427,7 +433,7 @@ function renderMultipleCorrect(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'checkbox';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} tabindex="-1" /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
+    li.innerHTML = `<input type="checkbox" ${isSelected ? 'checked' : ''} tabindex="-1" /><span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMedias(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       const answers = State.answers[idx] || [];
       if (answers.includes(alt.id)) {
@@ -456,7 +462,7 @@ function renderSingleIncorrect(q, list, idx) {
     li.tabIndex = 0;
     li.role = 'radio';
     li.setAttribute('aria-checked', isSelected);
-    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMediaHTML(alt.image) : ''}</span>`;
+    li.innerHTML = `<span class="alt-letter">${alt.id.toUpperCase()}</span><span class="alt-text">${renderRichText(alt.text)}${alt.image ? renderMedias(alt.image) : ''}</span>`;
     li.addEventListener('click', () => {
       State.answers[idx] = [alt.id];
       document.querySelectorAll('.alt-item').forEach(item => {
@@ -567,7 +573,7 @@ function buildResults() {
         <div class="result-icon ${isCorrect ? 'correct' : 'wrong'}">${isCorrect ? '✓' : '✗'}</div>
         <div>
           <p class="result-q-num">Questão ${i + 1} · ${escapeHtml(q.sectionTitle)}</p>
-          <div class="result-command">${renderRichText(q.command)}${q.command_image ? renderMediaHTML(q.command_image) : ''}</div>
+          <div class="result-command">${renderRichText(q.command)}${renderMedias(q.command_image)}</div>
         </div>
       </div>
       <div class="result-card-body">
@@ -583,7 +589,7 @@ function buildResults() {
         ${q.justification ? `
         <div class="result-justification">
           <p class="just-label">Justificativa</p>
-          <div>${renderRichText(q.justification)}${q.justification_image ? renderMediaHTML(q.justification_image) : ''}</div>
+          <div>${renderRichText(q.justification)}${renderMedias(q.justification_image)}</div>
         </div>` : ''}
       </div>
     `;

@@ -133,11 +133,11 @@ Cada questão dentro de uma seção.
 | `id` | string | Sim | Único dentro da seção |
 | `type` | string | Sim | `single_correct`, `true_false`, `multiple_correct`, `single_incorrect` |
 | `command` | string | Sim | Enunciado da questão; suporta tabelas markdown |
-| `command_image` | string | Não | Caminho `img/<codigo>/arquivo.ext` — exibido após o enunciado |
+| `command_image` | string ou array | Não | Caminho(s) `img/<codigo>/arquivo.ext` — exibidos após o enunciado |
 | `alternatives` | array | Sim | Lista de opções |
 | `answer` | array | Sim | **Sempre array**, mesmo com 1 resposta |
 | `justification` | string | Não | Explicação da resposta; suporta tabelas markdown |
-| `justification_image` | string | Não | Caminho `img/<codigo>/arquivo.ext` — exibido após a justificativa |
+| `justification_image` | string ou array | Não | Caminho(s) `img/<codigo>/arquivo.ext` — exibidos após a justificativa |
 
 ### alternatives
 
@@ -147,7 +147,7 @@ Cada objeto no array `alternatives`.
 |-------|------|-------------|-------|
 | `id` | string | Sim | Único dentro da questão (a, b, c, d…) |
 | `text` | string | Sim | Texto da alternativa; suporta tabelas markdown |
-| `image` | string | Não | Caminho `img/<codigo>/arquivo.ext` — exibido abaixo do texto |
+| `image` | string ou array | Não | Caminho(s) `img/<codigo>/arquivo.ext` — exibidos abaixo do texto |
 
 ## Imagens e PDFs
 
@@ -159,6 +159,14 @@ Arquivos de mídia ficam em `img/<codigo>/`. Extensões suportadas: `.png`, `.jp
 | `.pdf` | Link "📄 Ver PDF" abre em nova aba |
 
 **Caminho válido:** `img/ECO0019/figura1.png` — deve começar com `img/` e usar apenas letras, números, hífens, underscores e pontos. Caminhos inválidos são ignorados silenciosamente (sem erro na tela).
+
+**String ou array:** todos os campos de imagem aceitam uma string (imagem única) ou um array (múltiplas imagens renderizadas em sequência).
+
+```json
+"command_image": "img/ECO0019/fig1.png"
+
+"command_image": ["img/ECO0019/fig1.png", "img/ECO0019/fig2.svg", "img/ECO0019/anexo.pdf"]
+```
 
 ## Tabelas Markdown
 
