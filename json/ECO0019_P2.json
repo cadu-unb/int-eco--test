@@ -8,22 +8,1729 @@
   },
   "sections": [
     {
-      "id": "cap-01",
-      "title": "TESTE",
+      "id": "lista-5A",
+      "title": "Lista 5A - IEMONIT (Adaptado)",
       "questions": [
+        {
+          "id": "q001",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre o papel do sistema de intermediação financeira no processo de crescimento econômico.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "atua como intermediário entre poupadores e agentes que desejam gastar além de seus recursos próprios."
+            },
+            {
+              "id": "b",
+              "text": "pode reduzir o risco dos poupadores ao permitir diversificação das aplicações financeiras."
+            },
+            {
+              "id": "c",
+              "text": "pode elevar a eficiência da poupança ao canalizá-la para investimentos mais produtivos."
+            },
+            {
+              "id": "d",
+              "text": "transforma automaticamente toda poupança disponível em crescimento econômico máximo."
+            },
+            {
+              "id": "e",
+              "text": "conecta recursos financeiros poupados a investimentos em capital físico ou humano."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "e"
+          ],
+          "justification": "As alternativas A, B, C e E estão corretas, pois o texto define a intermediação financeira como conexão entre poupadores e investidores, com redução de riscos, diversificação e alocação mais eficiente da poupança. A alternativa D é incorreta porque o material afirma que a intermediação pode estimular e tornar mais eficiente a poupança, mas não garante automaticamente crescimento econômico máximo."
+        },
+        {
+          "id": "q002",
+          "type": "single_correct",
+          "command": "Em que consiste o mercado de fundos de empréstimos?",
+          "command_image": "img/ECO0019/EF-Q2.png",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "em um mercado no qual poupadores ofertam fundos e tomadores de empréstimos demandam fundos para investimento."
+            },
+            {
+              "id": "b",
+              "text": "em um mercado no qual apenas bancos centrais ofertam recursos financeiros para consumo das famílias."
+            },
+            {
+              "id": "c",
+              "text": "em um mercado no qual o preço de equilíbrio é definido exclusivamente pelo nível de produto."
+            },
+            {
+              "id": "d",
+              "text": "em um mercado no qual investidores ofertam fundos e poupadores demandam empréstimos para consumo."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta porque o mercado de fundos de empréstimos é definido como aquele em que os agentes que desejam poupar ofertam fundos e os agentes que desejam tomar empréstimos para investir demandam fundos. O preço de equilíbrio desse mercado é a taxa de juros real."
+        },
+        {
+          "id": "q003",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre os determinantes da produtividade de um país.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o capital físico compreende infraestrutura, máquinas e demais meios empregados na produção."
+            },
+            {
+              "id": "b",
+              "text": "o capital humano corresponde ao conhecimento e às habilidades dominados pelos trabalhadores."
+            },
+            {
+              "id": "c",
+              "text": "os recursos naturais influenciam a produtividade, mas não restringem necessariamente o sucesso econômico."
+            },
+            {
+              "id": "d",
+              "text": "o conhecimento tecnológico corresponde ao domínio do melhor jeito de produzir."
+            },
+            {
+              "id": "e",
+              "text": "o conhecimento tecnológico e o capital humano são conceitos idênticos, pois ambos designam máquinas e infraestrutura."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a definição dos quatro determinantes da produtividade: capital físico, capital humano, recursos naturais e conhecimento tecnológico. A alternativa E é incorreta porque o material distingue conhecimento tecnológico, ligado ao melhor modo de produzir, de capital humano, ligado à difusão de conhecimento e habilidades entre trabalhadores."
+        },
+        {
+          "id": "q004",
+          "type": "single_correct",
+          "command": "Em uma economia fechada e sem governo, o nível do produto encontra-se em equilíbrio quando:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o consumo é igual à poupança."
+            },
+            {
+              "id": "b",
+              "text": "o consumo é menor que a poupança."
+            },
+            {
+              "id": "c",
+              "text": "a poupança é igual ao investimento."
+            },
+            {
+              "id": "d",
+              "text": "a poupança é menor que o investimento."
+            },
+            {
+              "id": "e",
+              "text": "a poupança é maior que o investimento."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. Em uma economia fechada e sem governo, o equilíbrio do produto implica igualdade entre poupança e investimento."
+        },
+        {
+          "id": "q005",
+          "type": "single_correct",
+          "command": "Na análise de determinação da renda, uma redução da poupança resulta em:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "redução temporária dos juros, que elevam os investimentos."
+            },
+            {
+              "id": "b",
+              "text": "queda da taxa de investimentos, reduzindo os juros."
+            },
+            {
+              "id": "c",
+              "text": "redução dos investimentos, elevando os juros."
+            },
+            {
+              "id": "d",
+              "text": "aumento do endividamento das famílias e do consumo."
+            },
+            {
+              "id": "e",
+              "text": "aumento da renda e do crescimento no curto prazo."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. No modelo apresentado, a redução da poupança diminui a oferta de fundos disponíveis, elevando a taxa de juros e reduzindo o investimento."
+        },
+        {
+          "id": "q006",
+          "type": "true_false",
+          "command": "Um país que apresente taxa de poupança superior a outro necessariamente apresentará crescimento econômico superior.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Uma taxa de poupança mais elevada não garante necessariamente maior crescimento econômico, pois o resultado depende também da eficiência da intermediação financeira e do nível tecnológico dos investimentos realizados."
+        },
+        {
+          "id": "q007",
+          "type": "true_false",
+          "command": "Um acréscimo de capital de igual magnitude em dois países, sendo um deles bem mais rico do que outro, provoca um crescimento relativamente maior no país mais rico.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O crescimento tende a ser proporcionalmente maior no país mais pobre, pois o mesmo acréscimo de capital representa uma proporção maior em relação ao valor inicial menor. Esse fenômeno é chamado de efeito de alcance."
+        },
+        {
+          "id": "q008",
+          "type": "single_correct",
+          "command": "Com base no modelo do MFE, analise:\nI. Países com taxas de poupança mais elevadas sempre crescem mais do que países com taxas de poupança mais baixas.\nII. Acumulação de fatores de produção, como capital físico e capital humano elevam o nível do produto.\nIII. Países mais pobres crescem em ritmo mais elevado do que países ricos.\nEstá(ão) correta(s) apenas a(s) afirmativa(s):",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "I"
+            },
+            {
+              "id": "b",
+              "text": "II"
+            },
+            {
+              "id": "c",
+              "text": "III"
+            },
+            {
+              "id": "d",
+              "text": "I, II"
+            },
+            {
+              "id": "e",
+              "text": "II, III"
+            }
+          ],
+          "answer": [
+            "e"
+          ],
+          "justification": "A alternativa E é correta. A afirmativa I é falsa porque maior poupança não garante necessariamente maior crescimento. As afirmativas II e III estão corretas, pois a acumulação de capital físico e humano eleva o produto, e o efeito alcance indica maior ritmo de crescimento potencial em países mais pobres."
+        },
+        {
+          "id": "q009",
+          "type": "single_correct",
+          "command": "A poupança interna necessariamente iguala o investimento quando se trata de uma economia fechada. No caso de uma economia aberta, o acúmulo de poupança interna é condição necessária para o crescimento do PIB de um país?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "sim, porque toda economia aberta depende exclusivamente da poupança interna para financiar investimento."
+            },
+            {
+              "id": "b",
+              "text": "não necessariamente, pois o crescimento interno pode ser financiado pela poupança externa."
+            },
+            {
+              "id": "c",
+              "text": "sim, porque a poupança externa não pode financiar investimento líquido."
+            },
+            {
+              "id": "d",
+              "text": "não, porque em economias abertas o investimento deixa de ter relação com qualquer forma de poupança."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. O material afirma que, em uma economia aberta, o crescimento interno pode ser financiado pela poupança externa, isto é, por investimento líquido do exterior."
+        },
+        {
+          "id": "q010",
+          "type": "single_correct",
+          "command": "Considere as seguintes informações sobre Atlântida, um país que não realiza qualquer transação com o exterior, relativas ao ano de 2023.\n\n| Identificação | Valor |\n| :---: | :---: |\n| Produto (Y) | 6000 |\n| Imposto (T) | 1000 |\n| Consumo Priva (C) | 4000 |\n| Gastos correntes do governo (G) | 1200 |\n\nConsiderando a identidade Y = C + I + G + (X - M), qual é o valor do investimento bruto (I) em Atlântida em 2023?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "600"
+            },
+            {
+              "id": "b",
+              "text": "800"
+            },
+            {
+              "id": "c",
+              "text": "1000"
+            },
+            {
+              "id": "d",
+              "text": "1200"
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Como Atlântida não realiza transações com o exterior, tem-se 6000 = 4000 + I + 1200. Logo, I = 6000 - 4000 - 1200 = 800."
+        },
         {
           "id": "q011",
           "type": "single_correct",
-          "command": "Com base na tabela de elasticidade-preço abaixo, qual bem tem demanda mais inelástica?\n\n| Bem | Elasticidade |\n| :---: | :------------: |\n| Sal | 0,1 |\n| Carro | 1,5 |\n| Viagem aérea | 2,4 |",
+          "command": "Considere as seguintes informações sobre Atlântida, um país que não realiza qualquer transação com o exterior, relativas ao ano de 2023.\n\n| Identificação | Valor |\n| :---: | :---: |\n| Produto (Y) | 6000 |\n| Imposto (T) | 1000 |\n| Consumo Priva (C) | 4000 |\n| Gastos correntes do governo (G) | 1200 |\n\nComo foi financiado esse investimento, ou seja, quais são os valores da poupança privada (Sp) e da poupança pública (Sg)?",
           "alternatives": [
-            { "id": "a", "text": "Sal" },
-            { "id": "b", "text": "Carro" },
-            { "id": "c", "text": "Viagem aérea" },
-            { "id": "d", "text": "Todos igualmente inelásticos" }
+            {
+              "id": "a",
+              "text": "Sp = 800 e Sg = 0"
+            },
+            {
+              "id": "b",
+              "text": "Sp = 1000 e Sg = -200"
+            },
+            {
+              "id": "c",
+              "text": "Sp = -200 e Sg = 1000"
+            },
+            {
+              "id": "d",
+              "text": "Sp = 1200 e Sg = 200"
+            }
           ],
-          "answer": ["a"],
-          "justification": "Elasticidade-preço próxima de zero indica demanda inelástica — a quantidade demandada varia pouco com o preço. Sal (0,1) é muito menos responsivo a preço que carro (1,5) ou viagem aérea (2,4)."
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Como S = I = 800 e Sg = T - G = 1000 - 1200 = -200, tem-se S = Sp + Sg. Logo, Sp = 800 - (-200) = 1000."
+        },
+        {
+          "id": "q012",
+          "type": "single_correct",
+          "command": "Julgue os seguintes itens abaixo:\nI - Quando há um aumento na taxa de juros, há um crescimento da poupança.\nII - Em países mais desenvolvidos, investimentos pequenos são suficientes para que haja uma grande taxa de crescimento.\nIII - O efeito alcance, também denominado efeito catch-up, diz que economias pobres se desenvolvem mais rápido do que economias ricas, partindo da mesma taxa de investimento.\nIV - A presença de recursos naturais é fator determinante para a taxa de crescimento de uma economia.\nMarque a alternativa que possui todos os itens VERDADEIROS:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "I e II"
+            },
+            {
+              "id": "b",
+              "text": "II e IV"
+            },
+            {
+              "id": "c",
+              "text": "I, II, III e IV"
+            },
+            {
+              "id": "d",
+              "text": "I e III"
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. O aumento da taxa de juros tende a estimular a poupança, e o efeito alcance indica que economias pobres podem crescer mais rapidamente partindo da mesma taxa de investimento. II é falsa porque investimentos pequenos em países mais desenvolvidos não implicam grande crescimento relativo; IV é falsa porque recursos naturais influenciam, mas não determinam isoladamente o crescimento."
+        },
+        {
+          "id": "q013",
+          "type": "single_correct",
+          "command": "Sobre os fatores que contribuem para a produtividade de um país, marque a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o capital físico representa a estrutura utilizada na produção de um bem, como por exemplo o trabalhador."
+            },
+            {
+              "id": "b",
+              "text": "a presença de recursos naturais, apesar de ser um fator importante para a produtividade, não é determinante para o sucesso de uma economia."
+            },
+            {
+              "id": "c",
+              "text": "conhecimento tecnológico, ou capital humano, é o acúmulo de técnicas encontradas para a produção de um bem."
+            },
+            {
+              "id": "d",
+              "text": "para uma técnica ser considerada conhecimento tecnológico é necessário que seja de domínio público."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. O material afirma que recursos naturais influenciam a produtividade, mas não restringem necessariamente o sucesso econômico. A alternativa A confunde capital físico com trabalhador; C confunde conhecimento tecnológico com capital humano; D acrescenta uma condição não apresentada."
+        },
+        {
+          "id": "q014",
+          "type": "single_correct",
+          "command": "Sobre poupança, investimento e crescimento, assinale a alternativa CORRETA.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "em uma economia fechada a longo prazo, é possível haver investimento mesmo sem poupança."
+            },
+            {
+              "id": "b",
+              "text": "uma mesma taxa de investimento resulta em taxas de crescimento iguais, independente do grau de desenvolvimento dos países."
+            },
+            {
+              "id": "c",
+              "text": "em uma economia fechada, a subtração da poupança pública pela poupança privada equivale ao investimento."
+            },
+            {
+              "id": "d",
+              "text": "para os economistas, o investimento representa um aumento no estoque de capital ou um acréscimo de capacidade produtiva."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. O texto distingue poupança como renda não gasta e investimento como acumulação de capital, isto é, aumento do estoque de capital ou da capacidade produtiva."
+        },
+        {
+          "id": "q015",
+          "type": "single_correct",
+          "command": "Considere as seguintes afirmações sobre o mercado de fundos emprestáveis:\nI - A situação reconhecida na economia como “crowding out” resulta de um déficit governamental financiado com um endividamento do governo. Nesse caso, há uma diminuição da poupança total, uma vez que ocorre um deslocamento da poupança privada para financiar o déficit público.\nII - Quando existem incentivos fiscais aos investimentos, há um aumento na taxa de juros e um aumento na quantidade demandada de fundos de empréstimos.\nIII - Quando existem incentivos à poupança, há uma redução na taxa de juros e um aumento na quantidade demandada de fundos de empréstimos.\nIV - Quando existe um déficit orçamentário governamental, há uma redução da taxa de juros e uma redução da quantidade demandada de fundos de empréstimos.\nEstão corretas as afirmações:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "I, III e IV"
+            },
+            {
+              "id": "b",
+              "text": "I, II e III"
+            },
+            {
+              "id": "c",
+              "text": "I e IV"
+            },
+            {
+              "id": "d",
+              "text": "Todas as alternativas estão corretas."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. As afirmações I, II e III estão de acordo com o funcionamento do mercado de fundos emprestáveis. A afirmação IV é falsa, pois o déficit orçamentário reduz a poupança disponível, eleva a taxa de juros e tende a reduzir o investimento."
+        },
+        {
+          "id": "q016",
+          "type": "true_false",
+          "command": "Países que poupam grande parte de seus PIBs têm mais recursos para investir em capital, o que aumenta a produtividade e o padrão de vida no futuro.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A poupança fornece recursos para investimento em capital, o que pode elevar a produtividade e contribuir para maior padrão de vida no futuro."
+        },
+        {
+          "id": "q017",
+          "type": "true_false",
+          "command": "Os mercados financeiros são instituições por meio das quais uma pessoa que queira poupar pode oferecer fundos diretamente a alguém que deseje tomar empréstimo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O texto caracteriza mercados financeiros como mecanismos que conectam poupadores e tomadores de empréstimos, permitindo a transferência de fundos."
+        },
+        {
+          "id": "q018",
+          "type": "true_false",
+          "command": "Poupança e Investimento são determinantes importantes do crescimento econômico de curto prazo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. No material, poupança e investimento são apresentados como determinantes importantes do crescimento econômico no futuro e no longo prazo, especialmente por afetarem a acumulação de capital e a produtividade."
+        },
+        {
+          "id": "q019",
+          "type": "true_false",
+          "command": "A taxa de juros é o preço do empréstimo. Dessa forma, se a taxa de juros sobe, o empréstimo fica mais caro.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A taxa de juros é apresentada como o preço que equilibra o mercado de fundos de empréstimos; quando ela aumenta, o custo de tomar empréstimos também aumenta."
+        },
+        {
+          "id": "q020",
+          "type": "true_false",
+          "command": "Baixas taxas de juros incentivam a poupança, aumentando assim a oferta de recursos emprestáveis.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Taxas de juros mais altas tendem a incentivar a poupança, pois aumentam a remuneração dos recursos poupados. Taxas mais baixas, ao contrário, reduzem esse incentivo."
+        },
+        {
+          "id": "q021",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre como o efeito alcance da oferta de microcrédito em regiões cacaueiras no interior da Bahia pode impactar a dinâmica socioeconômica local e as cadeias produtivas regionais.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "pode permitir investimento em tecnologias, insumos e práticas agrícolas mais eficientes."
+            },
+            {
+              "id": "b",
+              "text": "pode aumentar a produtividade e melhorar a qualidade do cacau produzido."
+            },
+            {
+              "id": "c",
+              "text": "pode abrir oportunidades para agregar valor à produção, como na fabricação de chocolates artesanais."
+            },
+            {
+              "id": "d",
+              "text": "elimina automaticamente limitações de infraestrutura, capacitação financeira e acesso a mercados consumidores."
+            },
+            {
+              "id": "e",
+              "text": "pode estimular cooperativas, redes de colaboração e negócios complementares, como transporte e armazenamento."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "e"
+          ],
+          "justification": "As alternativas A, B, C e E estão corretas porque retomam os impactos esperados do microcrédito descritos no texto. A alternativa D é incorreta porque o material afirma que infraestrutura insuficiente, baixa capacitação financeira e acesso restrito a mercados podem limitar o efeito alcance."
+        },
+        {
+          "id": "q022",
+          "type": "single_correct",
+          "command": "Considere um país em que a poupança das famílias é limitada. Qual estratégia poderia melhorar a relação entre poupança e investimento?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Aumentar consideravelmente o consumo das famílias para estimular a economia."
+            },
+            {
+              "id": "b",
+              "text": "Facilitar o acesso a financiamentos externos e investimentos estrangeiros."
+            },
+            {
+              "id": "c",
+              "text": "Estabelecer políticas para reduzir a inflação, mesmo que impactem negativamente o crédito."
+            },
+            {
+              "id": "d",
+              "text": "Eliminar completamente subsídios governamentais para atividades econômicas."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Em países com poupança doméstica baixa, atrair capital estrangeiro pode complementar os recursos disponíveis e viabilizar projetos de investimento."
+        },
+        {
+          "id": "q023",
+          "type": "true_false",
+          "command": "Políticas públicas de educação no curto prazo não são suficientes para alavancar o capital humano.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O material afirma que os impactos de melhorias educacionais tendem a se manifestar em médio e longo prazos, não sendo suficientes no curto prazo para alavancar plenamente o capital humano."
+        },
+        {
+          "id": "q024",
+          "type": "true_false",
+          "command": "De todos os determinantes de uma produção, o fator tecnologia é o mais importante.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Embora a tecnologia seja crucial, o material afirma que outros fatores, como infraestrutura e qualificação da força de trabalho, também são determinantes significativos da produtividade."
+        },
+        {
+          "id": "q025",
+          "type": "true_false",
+          "command": "A infraestrutura tem impacto limitado na produtividade de setores como a agricultura e o comércio.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O material afirma que a infraestrutura desempenha papel central na produtividade, especialmente em setores como agricultura e comércio, que dependem de transporte e logística eficiente."
+        },
+        {
+          "id": "q026",
+          "type": "single_correct",
+          "command": "Assinale a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Os bancos garantem que todo o capital poupado pelos clientes seja convertido automaticamente em investimento produtivo."
+            },
+            {
+              "id": "b",
+              "text": "Os bancos atuam como intermediários ao captar recursos de poupadores, remunerando-os com juros, e oferecendo crédito a investidores por uma taxa superior."
+            },
+            {
+              "id": "c",
+              "text": "Os bancos utilizam diretamente os depósitos dos poupadores para adquirir ações no mercado de capitais."
+            },
+            {
+              "id": "d",
+              "text": "Os bancos limitam a intermediação financeira apenas a grandes investidores e poupadores institucionais."
+            },
+            {
+              "id": "e",
+              "text": "A intermediação bancária reduz o custo de transação, mas não desempenha papel relevante na alocação de recursos em uma economia."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Ela descreve o papel clássico da intermediação bancária, que conecta poupadores e investidores, reduz custos de transação e promove a alocação eficiente de recursos."
+        },
+        {
+          "id": "q027",
+          "type": "multiple_correct",
+          "command": "Analise graficamente o impacto de taxas de juros altas sobre a relação entre poupança e investimento em uma economia, e como essas variáveis se comportam no mercado de fundo de empréstimos. Assinale todas as alternativas corretas.",
+          "command_image": "img/ECO0019/IE-Q5.png",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "taxas de juros altas aumentam o custo do crédito para investidores."
+            },
+            {
+              "id": "b",
+              "text": "taxas de juros altas reduzem a quantidade de investimentos viáveis."
+            },
+            {
+              "id": "c",
+              "text": "a curva de oferta de poupança tende a se inclinar positivamente."
+            },
+            {
+              "id": "d",
+              "text": "a curva de demanda por investimento é inclinada positivamente, pois juros maiores estimulam o investimento."
+            },
+            {
+              "id": "e",
+              "text": "o ponto de equilíbrio ocorre onde oferta de poupança e demanda por investimento se encontram."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "e"
+          ],
+          "justification": "As alternativas A, B, C e E estão corretas conforme a explicação do mercado de fundos de empréstimos. A alternativa D é incorreta porque a curva de demanda por investimento é inclinada negativamente: taxas de juros mais altas desestimulam o investimento."
+        },
+        {
+          "id": "q028",
+          "type": "single_correct",
+          "command": "Sobre o mercado de fundos, a relação entre poupança e investimento e o papel das instituições financeiras, assinale a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O mercado de fundos é exclusivamente composto por bancos centrais, que captam poupança e direcionam os recursos para investimentos."
+            },
+            {
+              "id": "b",
+              "text": "As instituições financeiras atuam como intermediárias, conectando poupadores e investidores, facilitando o fluxo de recursos na economia."
+            },
+            {
+              "id": "c",
+              "text": "A poupança das famílias não tem impacto sobre o nível de investimento em uma economia."
+            },
+            {
+              "id": "d",
+              "text": "Os fundos de investimento são controlados diretamente pelos governos e não possuem gestão privada."
+            },
+            {
+              "id": "e",
+              "text": "A função principal das instituições financeiras é apenas armazenar dinheiro, sem interferir na alocação de recursos."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. As instituições financeiras conectam poupadores e investidores, alocando recursos de forma eficiente. As alternativas A, C, D e E são falsas porque restringem indevidamente o mercado de fundos, negam o papel da poupança, caracterizam incorretamente os fundos de investimento ou reduzem indevidamente a função das instituições financeiras."
+        },
+        {
+          "id": "q029",
+          "type": "single_incorrect",
+          "command": "Qual dos fatores abaixo NÃO é diretamente responsável pelo crescimento econômico?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Investimentos em capital humano."
+            },
+            {
+              "id": "b",
+              "text": "Avanços tecnológicos."
+            },
+            {
+              "id": "c",
+              "text": "Crescimento populacional."
+            },
+            {
+              "id": "d",
+              "text": "Acumulação de capital físico."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é a resposta correta porque, no conjunto apresentado, crescimento populacional não é apontado como fator diretamente responsável pelo crescimento econômico. Investimentos em capital humano, avanços tecnológicos e acumulação de capital físico são fatores associados à produtividade e ao crescimento."
+        },
+        {
+          "id": "q030",
+          "type": "true_false",
+          "command": "O Índice de Gini varia de 0 a 1, sendo 0 a completa igualdade e 1 a completa desigualdade.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O Índice de Gini varia de 0, que representa igualdade perfeita, a 1, que representa desigualdade máxima."
+        },
+        {
+          "id": "q031",
+          "type": "true_false",
+          "command": "A Curva de Lorenz é usada para representar graficamente a distribuição de renda em uma população.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A Curva de Lorenz ilustra graficamente a distribuição de renda em uma população; quanto mais distante da linha de igualdade perfeita, maior a desigualdade."
+        },
+        {
+          "id": "q032",
+          "type": "true_false",
+          "command": "Um Índice de Gini alto indica que a distribuição de renda é mais igualitária.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Um Índice de Gini alto indica maior desigualdade, não maior igualdade. Quanto mais próximo de 1, maior a concentração de renda."
+        },
+        {
+          "id": "q033",
+          "type": "true_false",
+          "command": "A desigualdade pode ser mensurada apenas com base na renda monetária das pessoas.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A desigualdade pode ser mensurada considerando outros aspectos além da renda monetária, como acesso à educação, saúde, oportunidades e qualidade de vida."
+        },
+        {
+          "id": "q034",
+          "type": "true_false",
+          "command": "Indicadores como o Índice de Desenvolvimento Humano (IDH) ajudam a complementar a análise da desigualdade.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O IDH complementa a análise da desigualdade ao incluir indicadores de saúde, educação e renda, permitindo uma visão mais ampla do desenvolvimento e da equidade."
+        },
+        {
+          "id": "q035",
+          "type": "true_false",
+          "command": "O Produto Interno Bruto (PIB) mede o valor de todos os bens e serviços finais produzidos dentro de um país em determinado período.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O PIB corresponde à soma do valor monetário dos bens e serviços finais produzidos dentro das fronteiras de um país em determinado período."
+        },
+        {
+          "id": "q036",
+          "type": "true_false",
+          "command": "O Produto Nacional Bruto (PNB) é igual ao PIB, mas descontando os impostos sobre a produção e importação.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O PNB considera o PIB somado às rendas recebidas do exterior e subtraído das rendas enviadas ao exterior, não sendo definido pelo desconto de impostos sobre produção e importação."
+        },
+        {
+          "id": "q037",
+          "type": "true_false",
+          "command": "A Renda Nacional é obtida somando-se os rendimentos gerados por fatores de produção pertencentes a residentes de um país, independentemente de onde foram gerados.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A Renda Nacional inclui rendimentos gerados por fatores de produção pertencentes a residentes do país, mesmo quando tais rendimentos são obtidos fora das fronteiras nacionais."
+        },
+        {
+          "id": "q038",
+          "type": "true_false",
+          "command": "A despesa de consumo das famílias é um dos componentes que influenciam diretamente o cálculo do PIB pela ótica da demanda.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Pela ótica da demanda, o PIB é composto por consumo das famílias, investimento, gastos do governo e saldo da balança comercial."
+        },
+        {
+          "id": "q039",
+          "type": "true_false",
+          "command": "O cálculo do PIB pode considerar atividades informais, desde que gerem renda.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O material afirma que atividades informais ou ilegais, mesmo gerando renda, não são contabilizadas no PIB por não passarem pelos registros oficiais."
+        },
+        {
+          "id": "q040",
+          "type": "multiple_correct",
+          "command": "Esquematize um fluxo circular de renda. Assinale todas as alternativas corretas sobre a representação do fluxo circular apresentada.",
+          "command_image": [
+            "img/ECO0019/IE-Q10-A.png",
+            "img/ECO0019/IE-Q10-B.png"
+          ],
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "as famílias fornecem fatores de produção às empresas."
+            },
+            {
+              "id": "b",
+              "text": "as empresas produzem bens e serviços que são vendidos às famílias."
+            },
+            {
+              "id": "c",
+              "text": "o governo recolhe impostos e oferece bens públicos, serviços sociais e transferências."
+            },
+            {
+              "id": "d",
+              "text": "as instituições financeiras intermediam a poupança das famílias e direcionam recursos para investimento."
+            },
+            {
+              "id": "e",
+              "text": "no fluxo circular, as famílias deixam de receber renda quando fornecem fatores de produção."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a explicação do fluxo circular da renda. A alternativa E é incorreta porque as famílias recebem renda na forma de salários, aluguéis, juros e lucros ao fornecerem fatores de produção."
+        },
+        {
+          "id": "q041",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre os mercados e agentes representados no fluxo circular de renda.",
+          "command_image": [
+            "img/ECO0019/IE-Q10-A.png",
+            "img/ECO0019/IE-Q10-B.png"
+          ],
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o mercado de bens e serviços é onde as famílias gastam sua renda para adquirir bens e serviços produzidos pelas empresas."
+            },
+            {
+              "id": "b",
+              "text": "o mercado de fatores de produção é onde as empresas pagam pelas contribuições das famílias à produção."
+            },
+            {
+              "id": "c",
+              "text": "as instituições financeiras aparecem como intermediárias entre poupança e investimento."
+            },
+            {
+              "id": "d",
+              "text": "o governo participa do fluxo ao coletar impostos e reinvestir recursos em bens públicos e serviços sociais."
+            },
+            {
+              "id": "e",
+              "text": "em uma economia fechada com governo e mercado financeiro, não há qualquer relação entre famílias, empresas e instituições financeiras."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas, pois descrevem os mercados e agentes apresentados no fluxo circular. A alternativa E é incorreta porque o próprio esquema inclui relações entre famílias, empresas, governo e instituições financeiras."
+        },
+        {
+          "id": "q042",
+          "type": "true_false",
+          "command": "O Índice de Gini mede a distribuição de renda de um país e varia de 0 a 1, sendo 0 a completa igualdade, e 1 a completa desigualdade.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O Índice de Gini mede a distribuição de renda, variando de 0, que representa igualdade perfeita, a 1, que representa desigualdade máxima."
+        },
+        {
+          "id": "q043",
+          "type": "true_false",
+          "command": "Um aumento no Índice de Desenvolvimento Humano (IDH) necessariamente indica uma redução da desigualdade econômica.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Um aumento no IDH não necessariamente reduz a desigualdade econômica, pois o IDH mede desenvolvimento humano com base em saúde, educação e renda, e esses fatores podem melhorar sem alterar significativamente a distribuição de renda."
+        },
+        {
+          "id": "q044",
+          "type": "true_false",
+          "command": "Países com alta desigualdade econômica geralmente apresentam um índice de Gini próximo de 0,5 ou superior.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Países com alta desigualdade econômica apresentam índices de Gini elevados, geralmente próximos de 0,5 ou superiores."
+        },
+        {
+          "id": "q045",
+          "type": "true_false",
+          "command": "A desigualdade de renda pode ser reduzida por políticas públicas como a progressividade tributária e investimentos em educação.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Políticas como progressividade tributária e investimentos em educação e saúde pública são reconhecidas como instrumentos eficazes para reduzir a desigualdade de renda."
+        },
+        {
+          "id": "q046",
+          "type": "true_false",
+          "command": "O IDH considera apenas a renda per capita de uma população para mensurar o desenvolvimento humano.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O IDH não considera apenas a renda; ele também avalia indicadores de saúde, como expectativa de vida, e educação, como anos de escolaridade."
+        },
+        {
+          "id": "q047",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre o uso do Produto Interno Bruto (PIB) para medir o desempenho econômico de um país e suas limitações como indicador.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o PIB representa o valor total de bens e serviços finais produzidos em determinado período."
+            },
+            {
+              "id": "b",
+              "text": "o PIB pode ser calculado pelas óticas da produção, da renda e da despesa."
+            },
+            {
+              "id": "c",
+              "text": "o PIB mede diretamente bem-estar social, sustentabilidade, saúde, educação e distribuição de renda."
+            },
+            {
+              "id": "d",
+              "text": "o PIB pode aumentar mesmo quando há aumento da desigualdade econômica."
+            },
+            {
+              "id": "e",
+              "text": "o PIB deve ser complementado por indicadores como IDH e índices de desigualdade para uma análise mais ampla."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "d",
+            "e"
+          ],
+          "justification": "As alternativas A, B, D e E estão corretas. O PIB mede o valor dos bens e serviços finais produzidos, pode ser calculado pelas óticas da produção, renda e despesa, e deve ser complementado por indicadores sociais e de desigualdade. A alternativa C é incorreta porque o PIB não mede diretamente bem-estar social, sustentabilidade ou distribuição de renda."
+        },
+        {
+          "id": "q048",
+          "type": "single_correct",
+          "command": "A produtividade é um conceito fundamental para a economia, pois está diretamente relacionada à eficiência com que os recursos são utilizados para gerar bens e serviços. Sobre o tema, marque a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "A produtividade só pode ser aumentada por meio de maior utilização de recursos naturais disponíveis."
+            },
+            {
+              "id": "b",
+              "text": "A produtividade é calculada apenas com base no número de trabalhadores empregados em um setor da economia."
+            },
+            {
+              "id": "c",
+              "text": "O aumento da produtividade depende exclusivamente da redução de custos de produção pelas empresas."
+            },
+            {
+              "id": "d",
+              "text": "A produtividade pode ser aumentada por meio de investimentos em tecnologia, capacitação da força de trabalho e inovação nos processos produtivos."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. A produtividade representa a eficiência com que capital físico, capital humano, recursos naturais e tecnologia são utilizados para gerar bens e serviços, podendo ser elevada por investimentos em tecnologia, capacitação da força de trabalho e inovação produtiva."
+        },
+        {
+          "id": "q049",
+          "type": "single_correct",
+          "command": "O Produto Interno Bruto (PIB) e o Produto Nacional Bruto (PNB) são dois indicadores importantes para mensurar a atividade econômica de um país, mas possuem diferenças conceituais. Com base nisso, marque a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O PIB considera toda a produção realizada por cidadãos de um país, independentemente de estarem dentro ou fora do território nacional."
+            },
+            {
+              "id": "b",
+              "text": "O PNB inclui apenas a produção realizada dentro das fronteiras do país, independentemente da nacionalidade dos produtores."
+            },
+            {
+              "id": "c",
+              "text": "O PIB mede a produção total realizada dentro do território nacional, enquanto o PNB inclui a renda recebida pelos cidadãos no exterior e exclui a renda enviada ao exterior por estrangeiros."
+            },
+            {
+              "id": "d",
+              "text": "O PNB e o PIB são sempre iguais, pois ambos medem a produção total de bens e serviços em um país."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. O PIB mede a produção total realizada dentro das fronteiras do país, independentemente da nacionalidade dos produtores. O PNB considera a produção com base na nacionalidade, somando ao PIB a renda recebida por cidadãos no exterior e subtraindo a renda enviada ao exterior por estrangeiros."
+        },
+        {
+          "id": "q050",
+          "type": "single_correct",
+          "command": "A respeito do fluxo circular de renda, marque a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "No fluxo circular de renda, as famílias são os principais compradores de bens e serviços, enquanto as empresas são as únicas responsáveis pela produção de bens e serviços."
+            },
+            {
+              "id": "b",
+              "text": "As famílias fornecem trabalho e recursos às empresas, enquanto as empresas oferecem bens e serviços às famílias no fluxo circular de renda, mas não há troca de dinheiro entre elas."
+            },
+            {
+              "id": "c",
+              "text": "O fluxo circular de renda mostra como o dinheiro circula entre os setores da economia, envolvendo a troca entre as famílias e as empresas, sendo essencial para o entendimento da produção e do consumo."
+            },
+            {
+              "id": "d",
+              "text": "O modelo de fluxo circular de renda só considera as transações dentro das empresas, sem a participação do governo ou do setor externo."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. O fluxo circular de renda mostra como o dinheiro circula entre setores da economia, especialmente nas trocas entre famílias e empresas, ajudando a compreender produção e consumo. As demais alternativas restringem indevidamente o modelo ou ignoram a troca monetária."
+        },
+        {
+          "id": "q051",
+          "type": "single_correct",
+          "command": "O Índice de Gini é uma métrica amplamente utilizada para medir a desigualdade econômica. Sobre ele, é correto afirmar:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Ele mede o nível de desenvolvimento humano em uma escala de 0 a 1."
+            },
+            {
+              "id": "b",
+              "text": "Um índice de Gini próximo de 0 indica alta desigualdade, enquanto um índice próximo de 1 indica baixa desigualdade."
+            },
+            {
+              "id": "c",
+              "text": "Ele é representado graficamente pela Curva de Lorenz e varia entre 0 e 1, sendo que valores próximos de 0 indicam menor desigualdade."
+            },
+            {
+              "id": "d",
+              "text": "Um índice de Gini maior que 1 indica alta desigualdade social."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. O Índice de Gini está relacionado à Curva de Lorenz, varia entre 0 e 1 e valores próximos de 0 indicam menor desigualdade. As demais alternativas confundem Gini com IDH, invertem sua escala ou atribuem valores fora de seu intervalo."
+        },
+        {
+          "id": "q052",
+          "type": "true_false",
+          "command": "O Índice de Gini pode ser maior que 1, representando níveis extremos de desigualdade.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O Índice de Gini varia entre 0 e 1, não podendo ultrapassar esse limite."
+        },
+        {
+          "id": "q053",
+          "type": "true_false",
+          "command": "A taxa de pobreza mede o percentual da população com renda abaixo de um nível considerado básico para subsistência.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A taxa de pobreza indica a proporção da população cuja renda se encontra abaixo de um patamar considerado mínimo para subsistência."
+        },
+        {
+          "id": "q054",
+          "type": "true_false",
+          "command": "Investir em educação e saúde é uma forma eficiente de combater a desigualdade a longo prazo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Investimentos em educação e saúde ampliam o capital humano e podem reduzir desigualdades de forma sustentável no longo prazo."
+        },
+        {
+          "id": "q055",
+          "type": "true_false",
+          "command": "Segundo Mankiw, políticas de transferência de renda, como o Bolsa Família, podem equilibrar eficiência econômica e equidade.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O material indica que políticas de transferência de renda, quando bem estruturadas, podem reduzir a pobreza sem criar desincentivos relevantes ao trabalho, conciliando eficiência econômica e equidade."
+        },
+        {
+          "id": "q056",
+          "type": "true_false",
+          "command": "A globalização e os avanços tecnológicos não contribuem para a desigualdade econômica.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O material afirma que globalização e avanços tecnológicos podem ampliar lacunas salariais entre trabalhadores qualificados e não qualificados, contribuindo para a desigualdade econômica."
+        },
+        {
+          "id": "q057",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre a relação entre o Índice de Gini e a Curva de Lorenz na mensuração da desigualdade econômica.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o Índice de Gini é derivado da Curva de Lorenz."
+            },
+            {
+              "id": "b",
+              "text": "a Curva de Lorenz ilustra a distribuição acumulada da renda de uma população."
+            },
+            {
+              "id": "c",
+              "text": "quanto mais distante a Curva de Lorenz estiver da linha de perfeita igualdade, maior será a desigualdade."
+            },
+            {
+              "id": "d",
+              "text": "o Índice de Gini quantifica a distância associada à desigualdade representada pela Curva de Lorenz."
+            },
+            {
+              "id": "e",
+              "text": "um Índice de Gini igual a 1 representa igualdade perfeita na distribuição de renda."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. O Índice de Gini deriva da Curva de Lorenz e quantifica a desigualdade representada pela distância em relação à linha de perfeita igualdade. A alternativa E é incorreta porque Gini igual a 1 representa desigualdade máxima, não igualdade perfeita."
+        },
+        {
+          "id": "q058",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre os desafios do Brasil para reduzir a desigualdade econômica de forma sustentável.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "melhorar educação e saúde é essencial para o desenvolvimento do capital humano."
+            },
+            {
+              "id": "b",
+              "text": "implementar tributação progressiva eficiente pode ser dificultado pela alta informalidade no mercado de trabalho."
+            },
+            {
+              "id": "c",
+              "text": "a complexidade do sistema tributário é um obstáculo relevante para políticas redistributivas."
+            },
+            {
+              "id": "d",
+              "text": "programas de transferência de renda bem estruturados podem reduzir a pobreza sem criar desincentivos ao trabalho."
+            },
+            {
+              "id": "e",
+              "text": "reduzir a desigualdade depende exclusivamente do aumento do PIB, sem necessidade de políticas públicas."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a resposta esperada, que destaca capital humano, tributação progressiva, informalidade, complexidade tributária e transferências de renda bem estruturadas. A alternativa E é incorreta porque o material enfatiza políticas públicas específicas, não apenas crescimento do PIB."
+        },
+        {
+          "id": "q059",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre a relação entre mobilidade social e desigualdade econômica.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a mobilidade social é a capacidade de um indivíduo melhorar sua posição socioeconômica."
+            },
+            {
+              "id": "b",
+              "text": "a desigualdade econômica refere-se à disparidade na distribuição de renda."
+            },
+            {
+              "id": "c",
+              "text": "a mobilidade social limitada restringe o acesso a oportunidades como educação e crédito."
+            },
+            {
+              "id": "d",
+              "text": "a mobilidade social limitada pode reduzir o potencial de crescimento econômico ao limitar o desenvolvimento do capital humano."
+            },
+            {
+              "id": "e",
+              "text": "a mobilidade social limitada fortalece os mercados internos ao ampliar o consumo das famílias de menor renda."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A mobilidade social limitada perpetua a desigualdade, reduz oportunidades e pode limitar o crescimento econômico. A alternativa E é incorreta porque o material afirma que a mobilidade social limitada restringe o consumo e enfraquece os mercados internos."
+        },
+        {
+          "id": "q060",
+          "type": "true_false",
+          "command": "O PIB nominal utiliza valores reais, ou seja, ajustados para retirar o efeito da inflação. Assim, um aumento do PIB nominal entre 2020 e 2021 indica necessariamente um aumento na produção.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O PIB nominal utiliza preços correntes do período e inclui o efeito da inflação. Portanto, um aumento do PIB nominal pode indicar aumento da produção, aumento dos preços ou ambos; para retirar o efeito da inflação, utiliza-se o PIB real."
+        },
+        {
+          "id": "q061",
+          "type": "true_false",
+          "command": "Pela ótica da produção, calcula-se o PIB somando os valores adicionados em cada etapa de produção e o valor do bem final. Por exemplo, ao produzir um carro, seriam somados os valores das peças individuais e o valor do carro ao ser vendido ao consumidor.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Pela ótica da produção, o PIB é calculado pela soma dos valores adicionados em cada etapa ou pelo valor do bem final, para evitar dupla contagem. Não se deve somar simultaneamente o valor das peças já contabilizadas e o valor final do carro."
+        },
+        {
+          "id": "q062",
+          "type": "true_false",
+          "command": "As medidas de fluxo e estoque referem-se a variáveis avaliadas por unidade de tempo e em determinado ponto do tempo, respectivamente. Por exemplo, a quantidade de alunos que frequentaram a UnB durante o semestre e a quantidade de alunos no último dia de aula.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Variáveis de fluxo são medidas ao longo de um período, enquanto variáveis de estoque são medidas em um ponto específico do tempo."
+        },
+        {
+          "id": "q063",
+          "type": "true_false",
+          "command": "A ótica da despesa é calculada pela fórmula C + I + G + (X – M). Assim, quando as importações superam as exportações, isso contribui para o aumento do PIB de um país.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A fórmula C + I + G + (X – M) está correta, mas, quando as importações superam as exportações, o saldo líquido (X – M) é negativo, reduzindo o PIB em vez de aumentá-lo."
+        },
+        {
+          "id": "q064",
+          "type": "single_correct",
+          "command": "Sobre o tema desigualdade social e seus indicadores, escolha a alternativa correta.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O Índice de Desenvolvimento Humano (IDH) é calculado com base na média geométrica de três dimensões: renda, medida pelo Produto Nacional Bruto (PNB) per capita; educação, que considera indicadores como média de anos de escolaridade e expectativa de anos de estudo; e saúde, avaliada pela expectativa de vida ao nascer."
+            },
+            {
+              "id": "b",
+              "text": "A Curva de Lorenz é um instrumento gráfico que representa a distribuição de renda em uma sociedade. Quando há perfeita igualdade, o Índice de Gini é igual a 1, já em situações de desigualdade máxima, o Índice de Gini atinge o valor 0."
+            },
+            {
+              "id": "c",
+              "text": "O PIB per capita é um indicador de bem-estar econômico muito utilizado para medir dados como a qualidade de vida da população e a distribuição de renda."
+            },
+            {
+              "id": "d",
+              "text": "Entre dois países com mesma renda per capita, o bem-estar social será maior naquele com menor desigualdade. Por exemplo, considere os países A e B, ambos com uma renda per capita de R$1000 e 10 habitantes. No país A, todos ganham R$1000, enquanto no país B, 9 pessoas ganham R$100 cada e 1 habitante ganha R$9100. Assim, o bem-estar será maior no país B."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. O IDH considera renda, educação e saúde. A alternativa B inverte a escala do Índice de Gini; C atribui ao PIB per capita a mensuração direta de qualidade de vida e distribuição de renda; D apresenta uma inconsistência no exemplo, pois o país A possui menor desigualdade."
+        },
+        {
+          "id": "q065",
+          "type": "single_incorrect",
+          "command": "Sobre seus conhecimentos acerca de desenvolvimento econômico e crescimento econômico, marque a alternativa incorreta.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Enquanto o crescimento econômico se refere a aspectos quantitativos, como o aumento do PIB, o desenvolvimento econômico está associado a melhorias qualitativas, como a elevação na qualidade de vida e na redução das desigualdades sociais."
+            },
+            {
+              "id": "b",
+              "text": "Nem sempre há uma relação direta entre crescimento econômico e a redução das desigualdades sociais. Existem países com elevados níveis de riqueza e alta desigualdade, assim como países com menor riqueza e maior igualdade na distribuição de renda."
+            },
+            {
+              "id": "c",
+              "text": "A produtividade é um fator importante para explicar diferentes crescimentos econômicos entre países. Entre os fatores que influenciam a produtividade estão o capital físico, que corresponde aos recursos naturais disponíveis, como terra, rios e minérios, e o capital humano, que corresponde à quantidade de pessoas disponíveis para trabalhar."
+            },
+            {
+              "id": "d",
+              "text": "A produção por trabalhador geralmente apresenta retornos decrescentes em relação aos fatores de produção. Isso significa que, em determinado ponto, o aumento no estoque de capital por trabalhador pode não gerar ganhos proporcionais na produtividade."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é incorreta. Capital físico refere-se a bens como máquinas e equipamentos utilizados na produção, enquanto capital humano está relacionado à qualidade do trabalho, como conhecimentos e habilidades adquiridos por meio da educação. As alternativas A, B e D estão corretas."
+        },
+        {
+          "id": "q066",
+          "type": "true_false",
+          "command": "O produto líquido é sempre menor, ou igual que o produto bruto.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O produto líquido é menor ou igual ao produto bruto, pois desconsidera a depreciação."
+        },
+        {
+          "id": "q067",
+          "type": "true_false",
+          "command": "Nos países em desenvolvimento, o produto nacional é geralmente maior que o produto interno, pois há maior produção realizada por empresas nacionais ocorrendo dentro do país do que no exterior.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Nos países em desenvolvimento, o produto nacional tende a ser menor que o produto interno, pois geralmente há mais remessas de lucros e juros para o exterior por empresas estrangeiras operando no país do que rendimentos recebidos do exterior por residentes."
+        },
+        {
+          "id": "q068",
+          "type": "true_false",
+          "command": "A soma das remunerações pagas aos fatores de produção é uma maneira de avaliar o produto, refletindo o valor gerado pela produção. A essa ótica, se dá o nome de ótica da despesa, já que alguém gera uma despesa ao pagar por isso.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A soma das remunerações pagas aos fatores de produção corresponde à ótica da renda, e não à ótica da despesa."
+        },
+        {
+          "id": "q069",
+          "type": "true_false",
+          "command": "No fluxo circular da renda, as famílias possuem dois papéis: como consumidoras de bens e serviços e fornecedoras de fatores de produção, como trabalho e capital.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. No fluxo circular da renda, as famílias fornecem fatores de produção, como trabalho e capital, às empresas e também consomem os bens e serviços produzidos."
+        },
+        {
+          "id": "q070",
+          "type": "single_correct",
+          "command": "A tabela abaixo apresenta os valores do Produto Interno Bruto (PIB) de um país no ano de 2001, calculados de duas maneiras distintas.\n\n| Cálculo do PIB | Valor |\n| :---: | :---: |\n| PIB em valores constantes | 1.200.000 |\n| PIB em valores correntes | 1.440.000 |\n\nCom base na tabela, qual alternativa explica corretamente a diferença entre os valores apresentados?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o PIB em valores constantes representa o PIB nominal, pois utiliza os preços vigentes no ano analisado."
+            },
+            {
+              "id": "b",
+              "text": "o PIB em valores correntes representa o PIB real, pois elimina os efeitos da inflação."
+            },
+            {
+              "id": "c",
+              "text": "o PIB em valores constantes representa o PIB real, pois usa preços de um ano-base e elimina os efeitos da inflação."
+            },
+            {
+              "id": "d",
+              "text": "o PIB em valores correntes e o PIB em valores constantes são idênticos, pois ambos excluem variações de preços."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. O PIB em valores constantes corresponde ao PIB real, pois utiliza preços de um ano-base para eliminar os efeitos da inflação. O PIB em valores correntes representa o PIB nominal, calculado com os preços vigentes no ano analisado."
+        },
+        {
+          "id": "q071",
+          "type": "single_correct",
+          "command": "A tabela abaixo apresenta os valores do Produto Interno Bruto (PIB) de um país no ano de 2001, calculados de duas maneiras distintas.\n\n| Cálculo do PIB | Valor |\n| :---: | :---: |\n| PIB em valores constantes | 1.200.000 |\n| PIB em valores correntes | 1.440.000 |\n\nUtilizando a tabela, calcule o deflator implícito do PIB e indique o significado de seu valor.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "100, indicando que não houve variação média de preços em relação ao ano-base."
+            },
+            {
+              "id": "b",
+              "text": "120, indicando que os preços estavam, em média, 20% acima dos preços do ano-base."
+            },
+            {
+              "id": "c",
+              "text": "80, indicando que os preços estavam, em média, 20% abaixo dos preços do ano-base."
+            },
+            {
+              "id": "d",
+              "text": "144, indicando que a produção real aumentou 44% em relação ao ano-base."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. O deflator implícito do PIB é calculado por (PIB nominal / PIB real) × 100. Assim, (1.440.000 / 1.200.000) × 100 = 120, o que indica que os preços estavam, em média, 20% acima dos preços utilizados como base para o cálculo do PIB real."
         }
+      ]
+    },
+    {
+      "id": "lista-5A",
+      "title": "Lista 5A - IEMONIT (Adaptado)",
+      "questions": [
+        
       ]
     }
   ]
