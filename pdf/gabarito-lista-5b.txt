@@ -1,0 +1,399 @@
+Introdução à Economia - UnB
+LISTA 5b (GABARITO)
+Conceitos importantes:
+1. MERCADO DE TRABALHO
+2. GANHOS, DISCRIMINAÇÃO E MEDIÇÃO DO DESEMPREGO
+3. PEA, SALÁRIO-MÍNIMO E SALÁRIO EFICIÊNCIA
+4. ECONOMIA MONETÁRIA
+5. FUNÇÕES DA MOEDA
+6. Bancos centrais e multiplicador bancário
+7. tipos de inflação
+
+Lista de Exercícios 5B - Introdução à Economia
+
+1
+
+Introdução à Economia - UnB
+
+LISTA 5B
+
+EXERCÍCIOS IEMONIT
+1. Explique brevemente como a moeda evoluiu desde o escambo até os dias atuais e por que essa evolução foi
+importante para o comércio.
+Resposta esperada: A moeda evoluiu começando pelo escambo, onde as pessoas trocavam bens diretamente, mas
+isso era difícil porque nem sempre ambas queriam o que a outra oferecia. Depois, passaram a usar moedamercadoria, como sal ou metais, que eram mais práticos. Com o tempo, surgiram as moedas de metal e papel,
+padronizadas e garantidas pelo governo, facilitando as trocas. Hoje, temos os bancos digitais, sistemas como o
+Pix, que permitem transferências instantâneas, e tecnologias emergentes como as criptomoedas, que oferecem
+novas formas de transações digitais. Essa evolução tornou o comércio mais eficiente, prático e moderno.
+2. Qual das alternativas abaixo descreve corretamente uma das funções da moeda?
+(A) A moeda serve como unidade de troca, facilitando o comércio de bens e serviços sem a necessidade de um
+sistema bancário.
+(B) A moeda é utilizada como reserva de valor, permitindo que riqueza seja armazenada e utilizada no futuro.
+(C) A moeda tem como função principal a regulação da oferta de crédito na economia.
+(D) A moeda é usada exclusivamente como meio de pagamento, não sendo aceita como padrão de valor.
+Gabarito: (B) Uma das funções da moeda é atuar como reserva de valor, permitindo que a riqueza seja guardada
+para uso posterior.
+3. Assinale as alternativas corretas sobre os bancos centrais, suas funções e objetivos:
+( ) O principal objetivo de um banco central é garantir a lucratividade dos bancos comerciais.
+Falso. O objetivo principal do banco central é garantir a estabilidade econômica do país. Ele regula o sistema
+financeiro para promover segurança e eficiência, mas não atua diretamente para beneficiar os bancos comerciais.
+( ) Uma das funções do banco central é emitir a moeda nacional e controlar a base monetária.
+Verdadeiro. O banco central é a instituição responsável pela emissão da moeda nacional e pelo controle da
+quantidade de dinheiro em circulação, ajustando a base monetária conforme necessário para atender às
+demandas da economia.
+( ) Bancos centrais buscam manter a estabilidade de preços e controlar a inflação.
+Verdadeiro. Um dos principais objetivos do banco central é assegurar a estabilidade de preços, ou seja, evitar
+inflação ou deflação descontroladas, garantindo o poder de compra da moeda ao longo do tempo.
+( ) O banco central regula e supervisiona as instituições financeiras do país.
+Verdadeiro. O banco central desempenha um papel crucial na regulação e supervisão do sistema financeiro,
+estabelecendo regras para o funcionamento de bancos e outras instituições financeiras, e monitorando a sua
+saúde e conformidade.
+( ) Bancos centrais têm como função principal decidir as políticas fiscais, como arrecadação de impostos e gastos
+públicos.
+Falso. As políticas fiscais são responsabilidade do governo, geralmente sob a alçada do Ministério da Fazenda ou
+equivalente. O banco central lida com a política monetária, enquanto as decisões fiscais envolvem impostos e
+gastos públicos.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+2
+
+Introdução à Economia - UnB
+
+LISTA 5B
+4. Qual das alternativas abaixo descreve corretamente uma das operações realizadas pelo Banco Central?
+(A) O Banco Central define a taxa de câmbio utilizada em todas as transações comerciais no país.
+(B) O Banco Central emite títulos públicos para financiar os gastos do governo.
+(C) O Banco Central fixa diretamente as taxas de juros cobradas pelos bancos comerciais aos seus clientes.
+(D) O Banco Central realiza operações de redesconto, emprestando dinheiro a bancos comerciais em situações de
+necessidade de liquidez.
+(E) O Banco Central não interfere diretamente na economia, apenas monitora os bancos comerciais.
+Gabarito: (D) Uma das operações do Banco Central é o redesconto, que fornece liquidez aos bancos comerciais
+em situações de necessidade, garantindo estabilidade no sistema financeiro.
+5. Um banco central estabelece uma taxa de reserva obrigatória de 20%. Suponha que um cliente deposite R$5.000
+em um banco. Com base no conceito de multiplicador bancário:
+1) Calcule o valor total que pode ser criado no sistema bancário a partir desse depósito inicial, considerando que
+todo o dinheiro emprestado volte ao sistema como novos depósitos.
+2) Explique o impacto que uma redução na taxa de reserva obrigatória para 10% teria sobre o valor total criado.
+Gabarito:
+1) Cálculo do valor total criado com taxa de 20% (𝑟 = 0,2):
+M =1/r = 1/0,2 = 5
+Dinheiro total criado = Depósito inicial x M = 5.000 x 5 = 25.000
+O sistema bancário pode criar um total de R$25.000.
+2) Impacto da redução para 10% (𝑟 = 0,1):
+Com r = 0,1:
+M =1/r = 1/0,1 = 10
+Dinheiro total criado = Depósito inicial x M = 5.000 x 10 = 50.000
+Com a redução na taxa de reserva, o sistema bancário pode criar até R$50.000, o que dobra o montante inicial
+criado.
+A redução da taxa de reserva aumenta o multiplicador bancário (𝑀), permitindo que os bancos emprestem uma maior
+proporção dos depósitos iniciais, ampliando a oferta de dinheiro na economia.
+6. Marque V para os itens que contribuem para o deslocamento da curva de demanda do trabalho e F para os itens
+que não a afetam.
+(V) O preço do produto final
+(V) Mudança tecnológica na cadeia de produção
+(F) A quantidade dos estudantes na UnB (meio óbvio né)
+(V) A oferta de outro fator de produção
+
+Lista de Exercícios 5B - Introdução à Economia
+
+3
+
+Introdução à Economia - UnB
+
+LISTA 5B
+7. Considerando o mercado de trabalho, marque a alternativa correta:
+a) O produto marginal do trabalho é a quantidade total de bens que os trabalhadores produzem. (O produto
+marginal é a quantidade adicional de um bem que um trabalho produz).
+b) O valor do produto marginal do trabalho é o produto marginal do trabalho multiplicado pelo preço do bem
+produzido.
+c) A curva do valor do produto marginal é a curva de oferta da mão de obra. (A curva do valor do produto
+marginal é a curva de demanda da mão de obra).
+d) A oferta de mão de obra é determinada pelo trade-off entre o estudo e o trabalho. (A oferta de mão de obra é
+determinada pelo trade-off entre o lazer e o trabalho).
+8. Explique o que são Diferenciais Compensatórios e dê um exemplo nacional sobre.
+Resposta esperada: Os diferenciais compensatórios são os valores adicionais nos salários para compensar as
+características não monetárias de diferentes empregos. Um exemplo é o salário dos mineradores, que também são
+protegidos por lei pela condição insalubre de trabalho.
+9. Sobre o desemprego de acordo com a classificação do IBGE, marque a alternativa errada.
+a) Uma pessoa é considerada desempregada se está sem trabalhar, quer trabalhar e está buscando ativamente
+trabalho.
+b) Uma pessoa economicamente ativa é composta pelas pessoas empregadas, ou seja, remuneradas. —> na PEA
+também é incluído as pessoas que estão desempregadas.
+c) A população que compõem a força de trabalho é o número total de pessoas empregadas e desempregadas.
+d) A população que está fora da força de trabalho são os estudantes, aposentados e pessoas que fazem trabalho
+doméstico não remunerado.
+10. Explique sobre a diferença entre o desemprego friccional e o desemprego estrutural.
+Resposta esperada: O desemprego friccional está relacionado ao tempo que demora para capacitar uma geração
+em relação à próxima. Já o desemprego estrutural está relacionado à disponibilidade de empregos que, por sua
+vez, está associada à produtividade econômica.
+11. Explique as principais funções da moeda na economia, destacando como cada uma delas contribui para o
+funcionamento eficiente do mercado e para a estabilidade econômica.
+Gabarito: A moeda desempenha três funções principais na economia:
+Meio de troca: A moeda facilita as trocas de bens e serviços, eliminando a necessidade de uma troca direta de
+mercadorias (escambo), o que tornaria as transações mais complexas. Como meio de troca, a moeda promove a
+especialização da produção e a eficiência nos mercados.
+Unidade de conta: A moeda oferece uma unidade comum de medida que permite comparar os valores de diferentes
+bens e serviços. Ela facilita a precificação, o cálculo de lucros e perdas, além de possibilitar a contabilidade e a
+formulação de políticas econômicas.
+Reserva de valor: A moeda permite que o poder de compra seja armazenado no tempo, possibilitando que os
+indivíduos adiem o consumo. Para que a moeda funcione bem como reserva de valor, ela deve manter seu poder de
+compra ao longo do tempo.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+4
+
+Introdução à Economia - UnB
+
+LISTA 5B
+12. Considerando os conceitos relacionados à inflação, seus tipos e suas particularidades, julgue os itens a seguir
+como verdadeiros (V) ou falsos (F).
+( ) Uma inflação baixa e estável pode ser considerada benéfica para a economia, pois sinaliza crescimento econômico
+sustentável.
+Verdadeiro. Uma inflação controlada, dentro de níveis baixos e estáveis, é considerada positiva para a economia,
+pois reflete equilíbrio entre oferta e demanda, contribuindo para previsibilidade econômica e incentivando
+investimentos.
+( ) Quando o índice de preços cai em um determinado período, ocorre uma inflação negativa.
+Falso. A queda generalizada e contínua no nível de preços é denominada deflação, e não "inflação negativa". Esse
+fenômeno pode ser prejudicial à economia, pois desestimula o consumo e os investimentos.
+( ) O principal indicador utilizado para medir a inflação no Brasil é o Índice Nacional de Preços ao Consumidor
+Amplo (IPCA).
+Verdadeiro. O IPCA, calculado pelo IBGE, é o índice oficial usado como referência para medir a inflação no
+Brasil, abrangendo famílias com rendimentos entre 1 e 40 salários mínimos, em diversas regiões metropolitanas
+do país.
+( ) Reduzir a taxa de juros é uma medida comum para conter a inflação de demanda.
+Falso. A redução da taxa de juros tende a aumentar a demanda, ao baratear o crédito e incentivar o consumo.
+Para conter a inflação de demanda, o Banco Central geralmente aumenta a taxa de juros, o que encarece o crédito
+e reduz o consumo e os investimentos.
+( ) A inflação inercial refere-se à tendência de os preços continuarem subindo devido a reajustes automáticos baseados
+na inflação passada.
+Verdadeiro. A inflação inercial ocorre quando os reajustes de preços e salários são indexados à inflação passada,
+criando uma espécie de "círculo vicioso". Mesmo sem pressões de demanda ou custo, os aumentos de preços
+persistem devido à expectativa de continuidade da inflação.
+13. Explique como o Banco Central do Brasil atua para controlar a inflação e quais são os principais instrumentos
+utilizados nesse processo.
+Gabarito: O Banco Central do Brasil controla a inflação por meio do regime de metas de inflação, adotado desde
+1999. Esse regime define uma meta anual de inflação, estabelecida pelo Conselho Monetário Nacional (CMN),
+que deve ser atingida ou mantida dentro de um intervalo aceitável.
+O principal instrumento utilizado pelo Banco Central é a política monetária, por meio da administração da taxa
+básica de juros (Selic). Quando a inflação está acima da meta, o Banco Central aumenta a Selic, encarecendo o
+crédito e desestimulando o consumo e os investimentos, o que reduz a pressão sobre os preços. Por outro lado, se
+a inflação está abaixo da meta, a Selic é reduzida para estimular a economia.
+Além disso, o Banco Central também monitora outros fatores, como câmbio, expectativas inflacionárias e
+condições externas, que podem impactar o comportamento dos preços. A comunicação com o mercado por meio
+de relatórios e decisões claras também é uma ferramenta importante para ancorar as expectativas de inflação.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+5
+
+Introdução à Economia - UnB
+
+LISTA 5B
+14. De acordo com o livro do Mankiw, sobre a criação da moeda, qual das alternativas a seguir melhor descreve o
+processo de emissão de moeda em uma economia?
+a) O Banco Central de um país emite moeda física sem nenhum controle, deixando a economia funcionar sem
+interferências.
+b) A criação de moeda é realizada exclusivamente pelo governo, que define o valor e a quantidade de moeda a ser
+emitida.
+c) O Banco Central emite moeda para financiar o déficit público, sem considerar os efeitos sobre a inflação.
+d) A moeda é emitida pelo Banco Central, mas sua quantidade deve ser gerida com base na política monetária,
+visando a estabilidade de preços e o controle da inflação.
+Gabarito: d) A moeda é emitida pelo Banco Central, mas sua quantidade deve ser gerida com base na política
+monetária, visando a estabilidade de preços e o controle da inflação.
+De acordo com Mankiw, a criação de moeda é controlada pelo Banco Central e está intimamente ligada à política
+monetária. A emissão de moeda deve ser cuidadosa para evitar a inflação excessiva e garantir a estabilidade
+econômica.
+15. Analise os itens abaixo e julgue-os como certos ou errados, com base nos conceitos de inflação.
+( ) A inflação é definida como o aumento contínuo e generalizado do nível de preços de bens e serviços em uma
+economia.
+Verdadeiro. A inflação é caracterizada pelo aumento generalizado e contínuo dos preços de bens e serviços em um
+determinado período, impactando o poder de compra da moeda.
+( ) A inflação de custos ocorre devido ao aumento nos custos de produção, como salários e matérias-primas, que
+acabam sendo repassados aos preços finais.
+Verdadeiro. A inflação de custos ocorre quando os custos de produção aumentam (como aumento nos preços de
+energia, matérias-primas ou salários), e as empresas repassam esses custos para os consumidores, elevando o nível
+geral de preços.
+( ) Uma elevação no preço do petróleo pode gerar inflação de custos em diversos setores da economia.
+Verdadeiro. O aumento no preço do petróleo pode gerar inflação de custos, pois o petróleo é uma matéria-prima
+crucial para várias indústrias (transporte, energia, produtos químicos), e seu aumento afeta os custos de produção
+e o preço final de muitos produtos e serviços.
+( ) Mecanismos de indexação, como o reajuste de salários e aluguéis, podem contribuir para a perpetuação da
+inflação inercial.
+Verdadeiro. A inflação inercial ocorre quando reajustes automáticos baseados na inflação passada, como os de
+salários e aluguéis, criam uma expectativa de aumento contínuo nos preços, perpetuando a inflação
+independentemente das condições econômicas atuais.
+( ) No Brasil, a inflação inercial foi combatida de forma efetiva com o Plano Real em 1994.
+Verdadeiro. O Plano Real de 1994 foi crucial para controlar a inflação inercial no Brasil. Ele desindexou a
+economia, introduziu uma nova moeda (o real) e implementou políticas fiscais e monetárias rigorosas para
+reduzir a inflação e estabilizar a economia.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+6
+
+Introdução à Economia - UnB
+
+LISTA 5B
+16. Sobre a moeda nas economias e para os agentes, assinale qual das opções não representa uma de suas funções:
+a) Unidade de conta
+b) Meio de troca
+c) Geração de riqueza
+d) Reserva de valor
+17. Assinale V ou F para as seguintes proposições:
+(V) A principal função do Banco Central é garantir a estabilidade da moeda e do sistema financeiro, o que inclui
+o controle da inflação e a regulação do setor bancário.
+(F) O Banco Central pode influenciar a liquidez da economia por meio de operações de mercado aberto,
+comprando títulos para reduzir a inflação e vendendo títulos para estimular a atividade econômica.
+(V) A taxa de redesconto é um instrumento de política monetária que permite ao Banco Central regular a oferta
+de moeda ao alterar o custo do crédito para os bancos comerciais.
+(F) As reservas compulsórias são as reservas de riqueza que o Banco Central mantém em seus cofres para garantir
+o real valor da moeda, sendo uma quantia fixa que delimita quanta moeda pode circular na economia sem que se
+gere inflação.
+18. Numa situação em que a taxa de reservas compulsórias estabelecida pelo BC é de 25%, e um banco recebe, em
+um mês, R$ 5 bilhões em depósitos, qual a moeda total em circulação gerada a partir dessas movimentações, seguindo
+a ideia do Multiplicador Bancário?
+R: 5 bilhões X 1/0,25 = 5 bilhões X 4 = 20 bilhões
+19. Sobre a evolução da moeda, assinale a alternativa correta:
+1. A transição da moeda mercadoria para a moeda de custo forçado ocorreu quando o ouro e a prata deixaram
+de ser usados como lastro físico, e os governos passaram a emitir moedas fiduciárias baseadas exclusivamente
+na confiança da sociedade e no controle estatal.
+2. A moeda mercadoria foi amplamente substituída pela moeda de custo forçado durante a Idade Média,
+quando as trocas comerciais começaram a exigir um sistema monetário mais prático e baseado em papelmoeda.
+3. A moeda de custo forçado sempre foi uma alternativa ao uso de metais preciosos, sendo usada mesmo nas
+sociedades antigas em função de sua maior eficiência em trocas comerciais.
+4. A principal característica da moeda mercadoria é sua dependência de decretos governamentais para circular,
+enquanto a moeda de custo forçado é valorizada pelo conteúdo intrínseco do material com que é feita.
+20. Explique o conceito de liquidez e sua relevância no sistema financeiro, destacando de que forma o Banco Central
+influencia a liquidez da economia por meio de seus instrumentos de política monetária.
+R: A liquidez é a facilidade com que um ativo pode ser convertido em meio de pagamento sem perda significativa
+de valor. O Banco Central regula a liquidez da economia por meio de instrumentos de política monetária, como
+as operações de mercado aberto, que ajustam a oferta de moeda ao comprar ou vender títulos públicos. Além
+disso, a taxa de redesconto influencia o custo do crédito para os bancos, enquanto o depósito compulsório
+controla a quantidade de recursos que podem ser emprestados.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+7
+
+Introdução à Economia - UnB
+
+LISTA 5B
+21. Qual dos fatores abaixo pode causar um aumento do desemprego, segundo as teorias econômicas?
+a) Expansão da negociação coletiva.
+b) Aumento do salário-mínimo acima da produtividade média.
+c) Redução da população economicamente ativa (PEA).
+d) Adoção de políticas de busca ativa de emprego.
+Resposta correta: b) Aumento do salário-mínimo acima da produtividade média. Justificativa: Quando o saláriomínimo é elevado acima da produtividade, empresas podem optar por reduzir o quadro de funcionários para
+minimizar custos, causando aumento do desemprego.
+22. Analise as afirmações abaixo sobre o mercado de trabalho e classifique como verdadeiro (V) ou falso (F) e
+justifique as falsas:
+1. O equilíbrio no mercado de trabalho é alcançado quando a oferta de trabalho é igual à demanda por trabalho.
+(V)
+2. O emprego informal não contribui para a arrecadação de impostos no Brasil. (F)
+3. A negociação coletiva sempre reduz a desigualdade de ganhos no mercado de trabalho. (F)
+4. A PEA inclui todas as pessoas ocupadas e desempregadas que estão em idade ativa e buscando trabalho. (V)
+5. A teoria do salário eficiência sugere que o aumento dos salários pode aumentar a produtividade dos
+trabalhadores. (V)
+Justificativas para as falsas:
+(2) Trabalhadores informais ainda podem contribuir para a arrecadação de impostos indiretos, como impostos
+sobre consumo (ICMS).
+(3) A negociação coletiva pode, em alguns casos, gerar desigualdade se os acordos beneficiam setores ou
+categorias específicas.
+23. Explique como a teoria do salário eficiência pode impactar a taxa de desemprego em um país.
+Gabarito: A teoria do salário eficiência sugere que, ao pagar salários mais altos, as empresas incentivam maior
+produtividade, aumentam o comprometimento e reduzem custos associados ao turnover. No entanto, salários
+elevados podem levar a custos maiores para as empresas, o que pode resultar em uma redução no número de
+trabalhadores contratados, contribuindo para o aumento do desemprego estrutural.
+24. Quais são as principais características do emprego informal no Brasil, e quais fatores levam os trabalhadores a
+optarem por ele?
+Resposta esperada: O emprego informal no Brasil é caracterizado pela ausência de vínculo empregatício formal, o
+que significa que os trabalhadores não possuem acesso a direitos como FGTS, previdência social e segurodesemprego. Fatores que levam à escolha pelo trabalho informal incluem a alta carga tributária sobre empregos
+formais, a flexibilidade de horários, a falta de oportunidades formais disponíveis, e a necessidade de geração
+imediata de renda. Adicionalmente, crises econômicas e a rigidez das leis trabalhistas no setor formal contribuem
+para o crescimento do emprego informal.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+8
+
+Introdução à Economia - UnB
+
+LISTA 5B
+25. O que pode explicar a alta informalidade no mercado de trabalho brasileiro?
+a) Excessiva regulamentação trabalhista e altos encargos sobre a folha de pagamento.
+b) Flexibilidade do mercado formal.
+c) Redução de empreendedores individuais.
+d) Política fiscal expansionista.
+Resposta correta: a) Excessiva regulamentação trabalhista e altos encargos sobre a folha de pagamento.
+Justificativa: O mercado de trabalho brasileiro possui elevados encargos trabalhistas e uma legislação rígida, o
+que leva muitos empregadores e trabalhadores a optarem pela informalidade para reduzir custos.
+26. Responda os itens em verdadeiro ou falso:
+a) A inflação, por si só, é algo necessariamente negativo para a economia, pois gera perda de poder de compra.
+Falso, a inflação não é necessariamente negativa para a economia, mas sim algo inevitável. Em relação à perda de
+poder de compra, nem sempre vai acontecer, pois a renda pode acompanhar o aumento no nível de preços.
+b) De acordo com os clássicos, a moeda é não-neutra, pois ela muda variáveis reais, como o desemprego.
+Falso, os clássicos acreditavam que a moeda é neutra, pois ela não muda variáveis reais.
+c) Sobre a história inflacionária do Brasil, 1980 foi conhecida como a década perdida, em que os países latinoamericanos em geral viveram crises econômicas, tendo estagnação econômica e inflação. No Brasil, teve hiperinflação
+e uma desorganização econômica completa que parou o país no tempo.
+Verdade.
+d) Os custos de menu são os custos associados a alterações frequentes nos preços em um ambiente de inflação.
+Verdade.
+e) O custo de sola de sapato se refere aos custos associados ao esforço extra que indivíduos e empresas precisam fazer
+para minimizar as perdas decorrentes da inflação, especialmente em contextos de hiperinflação.
+Verdade.
+27. Discorra sobre como o Banco Central age para controlar a inflação.
+Resposta esperada: O Banco Central controla a inflação principalmente por meio da política monetária, com o
+ajuste da taxa Selic. Quando a inflação está alta, o Banco Central eleva os juros para desestimular o consumo e
+reduzir a demanda na economia, o que ajuda a conter a alta generalizada dos preços. Por outro lado, se a inflação
+está abaixo da meta ou a economia enfrenta uma desaceleração, o Banco Central pode reduzir a taxa de juros,
+incentivando o consumo e o investimento. Além disso, a instituição utiliza outros instrumentos, como operações
+de mercado aberto, para controlar a liquidez no sistema financeiro.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+9
+
+Introdução à Economia - UnB
+
+LISTA 5B
+28. A inflação, normalmente, é vista e noticiada como algo necessariamente negativo para a economia de país. De
+modo frequente, são publicadas notícias sobre como um país está “imprimindo mais dinheiro que o normal”, ou
+melhor dizendo, aumentando a oferta de moeda.
+Por quais motivos o Banco Central pode aumentar a oferta da moeda na economia?
+Resposta esperada: Estímulo ao crescimento econômico em períodos de recessão econômica, financiamento de
+déficits públicos (imposto inflacionário), redução do desemprego (Curva de Phillips) ou necessidade de liquidez
+em caso de crise bancária.
+29. No país αληθής, está sendo feito um estudo sobre a dinamicidade da moeda do país (κέρμα) na economia,
+entretanto, todos os participantes não foram capazes de passar pelo curso introdutório de Economia. Utilizando a
+fórmula da teoria quantitativa da moeda, calcule a velocidade da moeda.
+Dados: PIB=500 (em bilhões de κέρμα), nível de preços=4, quantidade de moeda na economia=100 (em bilhões de
+κέρμα).
+Gabarito:
+M*V=P*Y
+100*V=500*4
+V=20
+30. Em relação aos tipos de inflação, escolha a alternativa correta:
+a) A inflação de demanda é uma consequência direta da falta de oferta de um produto.
+Falso: a inflação de demanda está mais relacionada ao aumento repentino na demanda por bens ou serviços, do
+que a falta de oferta.
+b) A espiral inflacionária de salários-preços é uma consequência da inflação de demanda
+Falso: A espiral inflacionária está vinculada à inflação de custos.
+c) A inflação inercial é a ideia de que haverá inflação porque ela ocorreu no passado. Está vinculada à ideia de
+reajustes constantes feitos pelos agentes econômicos de um país.
+d) A inflação de custos é resolvida com políticas monetárias de aumento de taxa de juros.
+Falso: A política monetária é mais eficaz no controle da inflação de demanda, pois desestimula o consumo e o
+investimento. Na inflação de custos, o problema está relacionado à oferta (custos mais altos), e o aumento dos
+juros pode não resolver a questão e, em alguns casos, agravar a situação econômica ao reduzir ainda mais a
+atividade produtiva.
+Alternativa Correta: c) A inflação inercial é a ideia de que haverá inflação porque ela ocorreu no passado. Está
+vinculada à ideia de reajustes constantes feitos pelos agentes econômicos de um país.
+Isso pode ser visto com o salário mínimo, que recebe reajustes anuais baseados na inflação do ano anterior,
+perpetuando o ciclo.
+
+Lista de Exercícios 5B - Introdução à Economia
+
+10
+
+

@@ -1,0 +1,734 @@
+Introdução à Economia - UnB
+LISTA 5A (GABARITO)
+Conceitos importantes:
+1
+
+Determinantes da produção e da produtividade de um país
+
+2
+
+Financiamento do investimento: poupança
+
+3
+
+Mercado de fundos de empréstimo
+
+4
+
+Poupança, crescimento econômico e sistema financeiro
+
+5
+
+CONTAS NACIONAIS
+
+6
+
+Mensuração de desigualdade: índice de Gini, taxa de pobreza e IDH.
+
+7
+
+FLUXO CIRCULAR DA RENDA
+
+Lista de Exercícios 5A - Introdução à Economia
+
+1
+
+Introdução à Economia - UnB
+
+LISTA 5A
+
+EXERCÍCIOS DE FIXAÇÃO
+1. Qual é o papel do sistema de intermediação financeira (bancos, financeiras, corretoras, etc.) no processo de
+crescimento econômico?
+Essas instituições atuam como intermediárias entre os que gastam menos do que ganham (ou seja, os poupadores) e os
+que querem gastar além de seus recursos próprios (também chamados de investidores). As empresas que pretendem
+investir em capital fixo geralmente se enquadram no segundo caso, mobilizando poupança alheia de várias formas:
+tomando empréstimos, lançando ações, etc. A intermediação, em princípio, reduz o risco dos poupadores, que podem
+diversificar suas aplicações em quotas de um fundo de ações, por exemplo, em lugar de comprar ações de uma só
+companhia. Nesse sentido, as instituições em questão podem estimular a poupança. A intermediação pode também
+elevar a eficiência de um dado montante de poupança, canalizando-a para investimentos mais produtivos. Nesse
+sentido, os intermediários financeiros podem fazer que um dado volume de poupança venha a gerar o máximo
+crescimento econômico possível.
+OBS: O uso comum dos termos “poupança” e “investimento” pode causar confusão (alguns bancos costumam
+oferecer poupança como uma opção de investimento, por exemplo). Poupança é uma renda não gasta. Investimento é
+acumulação de capital. Para um melhor entendimento do sistema financeiro, é importante lembrar que aqueles que
+emprestam capital financeiro são poupadores, pois ganham mais do que gastam, e aqueles que tomam o capital
+financeiro emprestado para torná-lo capital físico ou humano são investidores, pois necessitam gastar mais do que
+ganham.
+2. Em que consiste o mercado de fundos de empréstimos?
+
+O mercado de fundos de empréstimos consiste em um mercado em que aqueles que desejam poupar ofertam fundos e
+aqueles que desejam tomar empréstimos para investir demandam fundos. Funciona como qualquer mercado de
+concorrência perfeita. O produto (as unidades monetárias destinadas aos empréstimos) é homogêneo, há livre fluxo
+de informação e um elevado número de compradores e vendedores, de modo que nenhum deles exerça impacto
+considerável no preço. O preço que equilibra esse mercado é a taxa de juros real.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+2
+
+Introdução à Economia - UnB
+
+LISTA 5A
+3. Quais os determinantes da produtividade de um país?
+A produtividade, ou seja, a capacidade de produção de um determinado país em uma hora de trabalho, é determinada
+a partir de 4 fatores principais:
+Capital Físico: o capital físico compreende toda a infraestrutura empregada na produção de bens, serviços ou
+mesmo mais capital, desde o maquinário até aquela que dá suporte para o seu consumo, como estradas, portos e
+navios;
+Capital Humano: são todo o conhecimento e habilidades dominados pelos trabalhadores da economia em análise.
+Quanto maior o grau de especialização, ou seja, o seu tempo de estudo, de assimilação das técnicas de produção,
+maior é o capital humano. Juntamente com o capital físico, é um fator de produção produzido, um fator de
+produção que, anteriormente, era produto do emprego de outros fatores de produção;
+Recursos Naturais: insumos disponibilizados pela natureza, renováveis e não-renováveis. Influenciam a
+produtividade, mas não a restringem, uma vez que, como visto na Lista 1, as trocas permitem que desvantagens
+possam ser relevadas mediante trocas/comércio, ou por meio do conhecimento tecnológico, a ser explorado mais a
+frente;
+Conhecimento Tecnológico: compreende o domínio de técnicas que tornem a produção mais eficiente, domínio do
+“melhor jeito de produzir”. Não deve ser confundido com o capital humano, já que, enquanto refere-se à melhor
+maneira de produzir, este vai tratar do modo como este conhecimento está difundido entre os trabalhadores, dos
+recursos utilizados para sua disseminação.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+3
+
+Introdução à Economia - UnB
+
+LISTA 5A
+
+EXERCÍCIOS DE aplicação
+1. Em uma economia fechada e sem governo, o nível do produto encontra-se em equilíbrio quando:
+a) o consumo é igual à poupança.
+b) o consumo é menor que a poupança.
+c) a poupança é igual ao investimento.
+d) a poupança é menor que o investimento.
+e) a poupança é maior que o investimento.
+2. FGV (2016)
+Na análise de determinação da renda, uma redução da poupança resulta em:
+a) redução temporária dos juros, que elevam os investimentos.
+b) queda da taxa de investimentos, reduzindo os juros.
+c) redução dos investimentos, elevando os juros.
+d) aumento do endividamento das famílias e do consumo.
+e) aumento da renda e do crescimento no curto prazo.
+3. Julgue as seguintes afirmativas (V ou F), justificando sua resposta:
+( F ) Um país que apresente taxa de poupança (poupança global/PIB) superior a outro necessariamente
+apresentará crescimento econômico superior.
+F - Não necessariamente. Além do motivo exposto na questão anterior, um mesmo nível de poupança pode gerar mais
+ou menos crescimento, conforme a maior ou a menor eficiência do processo de intermediação financeira. Essa
+intermediação pode se dar tanto por meio do sistema bancário ou de fundos mútuos, quanto por meio do mercado de
+ações e títulos. Um mesmo montante de gastos de investimento pode acarretar, ainda, resultados diferentes em termos
+de crescimento quando os níveis tecnológicos do investimento são distintos (um equipamento obsoleto, pouco
+produtivo, pode custar o mesmo que outro, que incorpora tecnologia mais eficiente e permite maior produção).
+
+Lista de Exercícios 5A - Introdução à Economia
+
+4
+
+Introdução à Economia - UnB
+
+LISTA 5A
+( F ) Um acréscimo de capital de igual magnitude em dois países, sendo um deles bem mais rico do que outro,
+provoca um crescimento relativamente maior no país mais rico.
+F - Não. De fato, tudo o mais constante, o crescimento será proporcionalmente maior no país mais pobre, pois uma
+mesma magnitude de capital adicional representará uma proporção maior, para um valor inicial menor. Esse fato é
+conhecido como efeito de alcance.
+4. FGV (2010 – Adaptada)
+Com base no modelo do MFE, analise:
+I. Países com taxas de poupança mais elevadas sempre crescem mais do que países com taxas de poupança mais
+baixas.
+II. Acumulação de fatores de produção, como capital físico e capital humano elevam o nível do produto.
+III. Países mais pobres crescem em ritmo mais elevado do que países ricos.
+Está(ão) correta(s) apenas a(s) afirmativa(s):
+a) I
+b) II
+c) III
+d) I, II
+e) II, III
+
+Lista de Exercícios 5A - Introdução à Economia
+
+5
+
+Introdução à Economia - UnB
+
+LISTA 5A
+
+EXERCÍCIOS DE aprofundamento
+1. A poupança interna (ou seja, a soma da poupança privada com a poupança pública) necessariamente iguala o
+investimento quando se trata de uma economia que não mantém relações com o exterior. No caso de uma economia
+aberta, o acúmulo de poupança interna é condição necessária para o crescimento do PIB de um país?
+Não necessariamente, visto que o crescimento interno pode ser financiado pela poupança externa (investimento
+líquido do exterior).
+2. Considere as seguintes informações sobre Atlântida, um país que não realiza qualquer transação com o exterior,
+relativas ao ano de 2023 (os valores são expressos em bilhões de unidades monetárias).
+
+Considerando a identidade Y = C + I + G + (X - M), responda às questões seguintes:
+a) Qual é o valor do investimento bruto (I) em Atlântida em 2023?
+Da igualdade acima, tem-se que:
+6000 = 4000 + I + 1200
+I = 6000 – 4000 – 1200 = 800
+b) Como foi financiado esse investimento, ou seja, quais são os valores da poupança privada (Sp) e da poupança
+pública (Sg)?
+Define-se poupança privada como a parcela da renda pessoal não utilizada em gastos de consumo. A poupança do
+governo, por sua vez, corresponde à diferença entre o total de impostos arrecadados e os gastos efetuados. Além disso,
+quando se trata das Contas Nacionais (que se referem a eventos passados), o investimento é, necessariamente, igual à
+poupança. Então:
+S = I = 800
+Sg = T - G = 1000 - 1200 = -200
+
+Lista de Exercícios 5A - Introdução à Economia
+
+6
+
+Introdução à Economia - UnB
+
+LISTA 5A
+Nota-se, assim, que o governo apresentou poupança negativa, isto é, gastou mais do que arrecadou, tomando
+emprestada a diferença, por meio da venda de títulos da dívida pública. A poupança total corresponde à soma da
+poupança privada com a poupança governamental. Logo, tem-se que:
+S = Sp + Sg
+Sp = S - Sg = 800 - (-200) = 1000
+3. Julgue os seguintes itens abaixo:
+I - Quando há um aumento na taxa de juros, há um crescimento da poupança.
+II - Em países mais desenvolvidos, investimentos pequenos são suficientes para que haja uma grande taxa de
+crescimento.
+III - O efeito alcance, também denominado efeito catch-up, diz que economias pobres se desenvolvem mais rápido
+do que economias ricas, partindo da mesma taxa de investimento.
+IV - A presença de recursos naturais é fator determinante para a taxa de crescimento de uma economia.
+Marque a alternativa que possui todas os itens VERDADEIROS:
+a) I e II
+b) II e IV
+c) I, II, III e IV
+d) I e III
+4. Sobre os fatores que contribuem para a produtividade de um país marque a alternativa correta:
+a) O capital físico representa a estrutura utilizada na produção de um bem, como por exemplo o trabalhador.
+b) A presença de recursos naturais, apesar de ser um fator importante para a produtividade, não é determinante para
+o sucesso de uma economia.
+c) Conhecimento Tecnológico, ou Capital Humano, é o acúmulo de técnicas encontradas para a produção de um
+bem.
+d) Para uma técnica ser considerada Conhecimento Tecnológico é necessário que seja de domínio público.
+5. Sobre poupança, investimento e crescimento, assinale a alternativa CORRETA.
+a) Em uma economia fechada a longo prazo, é possível haver investimento mesmo sem poupança.
+b) Uma mesma taxa de investimento resulta em taxas de crescimento iguais, independente do grau de
+desenvolvimento dos países.
+c) Em uma economia fechada, a subtração da poupança pública pela poupança privada equivale ao investimento.
+d) Para os economistas, o investimento representa um aumento no estoque de capital ou um acréscimo de capacidade
+produtiva.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+7
+
+Introdução à Economia - UnB
+
+LISTA 5A
+6. Considere as seguintes afirmações sobre o mercado de fundos emprestáveis:
+I - A situação reconhecida na economia como “crowding out” resulta de um déficit governamental financiado
+com um endividamento do governo. Nesse caso, há uma diminuição da poupança total, uma vez que ocorre um
+deslocamento da poupança privada para financiar o déficit público.
+II - Quando existem incentivos fiscais aos investimentos, há um aumento na taxa de juros e um aumento na
+quantidade demandada de fundos de empréstimos.
+III - Quando existem incentivos à poupança, há uma redução na taxa de juros e um aumento na quantidade
+demandada de fundos de empréstimos.
+IV - Quando existe um déficit orçamentário governamental, há uma redução da taxa de juros e uma redução da
+quantidade demandada de fundos de empréstimos.
+Estão corretas as afirmações:
+a) I, III e IV
+b) I, II e III
+c) I e IV
+d) Todas as alternativas estão corretas.
+7. Sobre investimento e poupança, julgue (V ou F) as alternativas a seguir:
+( V ) Países que poupam grande parte de seus PIBs têm mais recursos para investir em capital, o que aumenta a
+produtividade e o padrão de vida no futuro.
+( V ) Os mercados financeiros são instituições por meio das quais uma pessoa que queira poupar pode oferecer
+fundos diretamente a alguém que deseje tomar empréstimo.
+( F ) Poupança e Investimento são determinantes importantes do crescimento econômico de curto prazo.
+( V ) A taxa de juros é o preço do empréstimo. Dessa forma, se a taxa de juros sobe, o empréstimo fica mais caro.
+( F ) Baixas taxas de juros incentivam a poupança, aumentando assim a oferta de recursos emprestáveis.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+8
+
+Introdução à Economia - UnB
+
+LISTA 5A
+
+EXERCÍCIOS IEMONIT
+1. Como o efeito alcance da oferta de microcrédito em regiões cacaueiras no interior da Bahia pode impactar a
+dinâmica socioeconômica local e as cadeias produtivas regionais?
+Resposta esperada: A oferta de microcrédito em regiões cacaueiras pode permitir o investimento em tecnologias,
+insumos e práticas agrícolas mais eficientes. Isso pode gerar um aumento na produtividade, melhorar a qualidade
+do cacau produzido e abrir oportunidades para agregar valor à produção, como na fabricação de chocolates
+artesanais. Além disso, o microcrédito pode estimular a formação de cooperativas, fortalecer redes de
+colaboração e fomentar o crescimento de negócios complementares no interior baiano, como transporte e
+armazenamento. Contudo, o efeito alcance pode ser limitado por fatores como falta de infraestrutura, baixa
+capacitação financeira dos beneficiários e acesso restrito a mercados consumidores.
+2. Considere um país em que a poupança das famílias é limitada. Qual estratégia poderia melhorar a relação entre
+poupança e investimento?
+a) Aumentar consideravelmente o consumo das famílias para estimular a economia.
+b) Facilitar o acesso a financiamentos externos e investimentos estrangeiros.
+c) Estabelecer políticas para reduzir a inflação, mesmo que impactem negativamente o crédito.
+d) Eliminar completamente subsídios governamentais para atividades econômicas.
+Gabarito: b) Facilitar o acesso a financiamentos externos e investimentos estrangeiros.
+Em países onde a poupança doméstica é baixa, atrair capital estrangeiro pode complementar os recursos
+disponíveis, possibilitando o financiamento de projetos de investimento. Isso pode ser alcançado por meio de
+políticas que garantam estabilidade macroeconômica e incentivos fiscais.
+
+3. Sobre os fatores que influenciam a produtividade, avalie as seguintes proposições:
+(V) Políticas públicas de educação no curto prazo não são suficientes para alavancar o capital humano.
+Verdadeiro. Os impactos de melhorias educacionais tendem a se manifestar em médio e longo prazos.
+(F) De todos os determinantes de uma produção, o fator tecnologia é o mais importante.
+Falso. Embora a tecnologia seja crucial, outros fatores, como infraestrutura e qualificação da força de trabalho,
+também são determinantes significativos.
+(F) A infraestrutura tem impacto limitado na produtividade de setores como a agricultura e o comércio.
+Falso. A infraestrutura desempenha um papel central na produtividade, especialmente em setores como
+agricultura e comércio, que dependem de transporte e logística eficiente.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+9
+
+Introdução à Economia - UnB
+
+LISTA 5A
+4. Assinale a alternativa correta:
+a) Os bancos garantem que todo o capital poupado pelos clientes seja convertido automaticamente em
+investimento produtivo.
+b) Os bancos atuam como intermediários ao captar recursos de poupadores, remunerando-os com juros, e
+oferecendo crédito a investidores por uma taxa superior.
+c) Os bancos utilizam diretamente os depósitos dos poupadores para adquirir ações no mercado de capitais.
+d) Os bancos limitam a intermediação financeira apenas a grandes investidores e poupadores institucionais.
+e) A intermediação bancária reduz o custo de transação, mas não desempenha papel relevante na alocação de
+recursos em uma economia.
+GABARITO: b) Os bancos atuam como intermediários ao captar recursos de poupadores, remunerando-os com
+juros, e oferecendo crédito a investidores por uma taxa superior.
+Esse é o papel clássico da intermediação bancária, que conecta poupadores e investidores, reduzindo custos de
+transação e promovendo a alocação eficiente de recursos.
+5. Analise graficamente o impacto de taxas de juros altas sobre a relação entre poupança e investimento em uma
+economia, e como essas variáveis se comportam no mercado de fundo de empréstimos.
+Resposta esperada: No mercado de fundos de empréstimos, taxas de juros altas aumentam o custo do crédito para
+os investidores, reduzindo a quantidade de investimentos viáveis. No gráfico de oferta e demanda por fundos de
+empréstimos:
+A curva de oferta de poupança (S) tende a se inclinar positivamente, pois taxas de juros mais altas incentivam
+os poupadores a economizar mais.
+A curva de demanda por investimento (I) é inclinada negativamente, pois taxas de juros mais altas
+desestimulam o investimento.
+O ponto de equilíbrio é onde a oferta de poupança e a demanda por investimento se encontram, definindo a
+taxa de juros de equilíbrio e a quantidade de fundos disponíveis no mercado.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+10
+
+Introdução à Economia - UnB
+
+LISTA 5A
+6. Sobre o mercado de fundos, a relação entre poupança e investimento e o papel das instituições financeiras, assinale
+a alternativa correta:
+a) O mercado de fundos é exclusivamente composto por bancos centrais, que captam poupança e direcionam os
+recursos para investimentos.
+b) As instituições financeiras atuam como intermediárias, conectando poupadores e investidores, facilitando o
+fluxo de recursos na economia.
+c) A poupança das famílias não tem impacto sobre o nível de investimento em uma economia.
+d) Os fundos de investimento são controlados diretamente pelos governos e não possuem gestão privada.
+e) A função principal das instituições financeiras é apenas armazenar dinheiro, sem interferir na alocação de
+recursos.
+Resposta: B
+Justificativa:
+a) Falsa: O mercado de fundos é composto por diversas instituições, como bancos comerciais, fundos de
+investimento e cooperativas de crédito, além dos bancos centrais.
+b) Verdadeira: As instituições financeiras conectam poupadores e investidores, alocando os recursos de forma
+eficiente, o que é essencial para o crescimento econômico.
+c) Falsa: A poupança é uma fonte essencial de recursos para o investimento, pois fornece capital para financiar
+projetos produtivos.
+d) Falsa: Os fundos de investimento geralmente possuem gestão privada, embora possam estar sujeitos a
+regulamentações governamentais.
+e) Falsa: As instituições financeiras têm um papel ativo na alocação de recursos, além de oferecerem serviços de
+armazenamento de dinheiro.
+
+7. Qual dos fatores abaixo NÃO é diretamente responsável pelo crescimento econômico?
+a) Investimentos em capital humano.
+b) Avanços tecnológicos.
+c) Crescimento populacional.
+d) Acumulação de capital físico.
+Resposta: C
+
+Lista de Exercícios 5A - Introdução à Economia
+
+11
+
+Introdução à Economia - UnB
+
+LISTA 5A
+8. Sobre a mensuração da desigualdade econômica, analise os itens abaixo e marque V (verdadeiro) ou F (falso):
+a) ( ) O Índice de Gini varia de 0 a 1, sendo 0 a completa igualdade e 1 a completa desigualdade.
+b) ( ) A Curva de Lorenz é usada para representar graficamente a distribuição de renda em uma população.
+c) ( ) Um Índice de Gini alto indica que a distribuição de renda é mais igualitária.
+d) ( ) A desigualdade pode ser mensurada apenas com base na renda monetária das pessoas.
+e) ( ) Indicadores como o Índice de Desenvolvimento Humano (IDH) ajudam a complementar a análise da
+desigualdade.
+Justificativas e respostas:
+a) Verdadeiro: O Índice de Gini é uma medida amplamente usada para avaliar desigualdade de renda. Ele varia de
+0 (igualdade perfeita) a 1 (desigualdade máxima), o que significa que quanto mais próximo de 1, maior a
+desigualdade.
+b) Verdadeiro: A Curva de Lorenz é um gráfico que ilustra a distribuição de renda em uma população. Quanto
+mais distante da linha de igualdade perfeita (linha diagonal), maior a desigualdade.
+c) Falso: Um Índice de Gini alto indica maior desigualdade, não uma distribuição mais igualitária. Por exemplo,
+um Gini de 0,8 reflete mais concentração de renda do que um Gini de 0,3.
+d) Falso: A desigualdade pode ser mensurada considerando outros aspectos além da renda monetária, como
+acesso à educação, saúde, oportunidades e qualidade de vida.
+e) Verdadeiro: O Índice de Desenvolvimento Humano (IDH) complementa a análise da desigualdade ao incluir
+indicadores de saúde, educação e renda, permitindo uma visão mais ampla do desenvolvimento e da equidade.
+9. Sobre Contabilidade Nacional, analise os itens abaixo e marque V (verdadeiro) ou F (falso):
+a) ( ) O Produto Interno Bruto (PIB) mede o valor de todos os bens e serviços finais produzidos dentro de um país
+em determinado período.
+b) ( ) O Produto Nacional Bruto (PNB) é igual ao PIB, mas descontando os impostos sobre a produção e
+importação.
+c) ( ) A Renda Nacional é obtida somando-se os rendimentos gerados por fatores de produção pertencentes a
+residentes de um país, independentemente de onde foram gerados.
+d) ( ) A despesa de consumo das famílias é um dos componentes que influenciam diretamente o cálculo do PIB
+pela ótica da demanda.
+e) ( ) O cálculo do PIB pode considerar atividades informais, desde que gerem renda.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+12
+
+Introdução à Economia - UnB
+
+LISTA 5A
+Justificativas e respostas:
+a) Verdadeiro: O PIB é a soma do valor monetário de todos os bens e serviços finais produzidos dentro das
+fronteiras de um país em determinado período, sendo um dos principais indicadores econômicos.
+b) Falso: O Produto Nacional Bruto (PNB) considera o PIB somado às rendas recebidas do exterior e subtraído
+das rendas enviadas ao exterior, não tem relação direta com os impostos sobre produção e importação
+c) Verdadeiro: A Renda Nacional inclui os rendimentos gerados pelos fatores de produção de residentes de um
+país, mesmo que esses rendimentos sejam obtidos fora das fronteiras nacionais.
+d) Verdadeiro: Pela ótica da demanda, o PIB é composto pela soma do consumo das famílias, investimento,
+gastos do governo e saldo da balança comercial (exportações menos importações).
+e) Falso: Atividades informais ou ilegais, mesmo que gerem renda, não são contabilizadas no PIB, pois não
+passam pelos registros oficiais. Isso pode levar a subestimativas do valor real da economia em alguns casos.
+10. Esquematize um fluxo circular de renda.
+Resposta:
+Famílias → fornecem fatores de produção → Empresas
+Empresas → produzem bens e serviços → Famílias
+Governo → recolhe impostos e oferece bens públicos ↔ Famílias/Empresas
+Instituições Financeiras → intermediam poupança ↔ Empresas/Famílias
+Explição:
+1. Famílias:
+Fornecem os fatores de produção (trabalho, terra, capital) para as empresas.
+Em troca, recebem renda na forma de salários, aluguéis, juros e lucros.
+2. Empresas:
+Utilizam os fatores de produção para gerar bens e serviços.
+Vendem esses bens e serviços às famílias, gerando receita.
+3. Mercado de Bens e Serviços:
+É onde as famílias gastam sua renda para adquirir bens e serviços produzidos pelas empresas.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+13
+
+Introdução à Economia - UnB
+
+LISTA 5A
+4. Mercado de Fatores de Produção:
+É onde as empresas pagam pelas contribuições das famílias (trabalho, terra e capital) para a produção.
+5. Governo:
+Coleta impostos das famílias e empresas.
+Reinveste esses recursos em bens públicos, serviços sociais e transferências.
+6. Instituições Financeiras:
+Intermediam a poupança das famílias e direcionam esses recursos para o investimento das empresas.
+Representação do fluxo com economia fechada, sem governo e instituições financeiras:
+
+Representação do fluxo numa economia fechada, com governo e mercado financeiro:
+
+Lista de Exercícios 5A - Introdução à Economia
+
+14
+
+Introdução à Economia - UnB
+
+LISTA 5A
+11. Analise as afirmativas abaixo sobre desigualdade econômica e marque (V) para verdadeiro e (F) para falso:
+( ) O Índice de Gini mede a distribuição de renda de um país e varia de 0 a 1, sendo 0 a completa igualdade, e 1 a
+completa desigualdade.
+( ) Um aumento no Índice de Desenvolvimento Humano(IDH) necessariamente indica uma redução da
+desigualdade econômica.
+( ) Países com alta desigualdade econômica geralmente apresentam um índice de Gini próximo de 0,5 ou
+superior.
+( ) A desigualdade de renda pode ser reduzida por políticas públicas como a progressividade tributária e
+investimentos em educação.
+( ) O IDH considera apenas a renda per capita de uma população para mensurar o desenvolvimento humano.
+Gabarito:
+(V) O Índice de Gini mede a distribuição de renda de um país, variando de 0 (igualdade perfeita) a 1
+(desigualdade máxima).
+(F) Um aumento no IDH não necessariamente reduz a desigualdade econômica, pois o IDH mede
+desenvolvimento humano com base em saúde, educação e renda, e esses fatores podem melhorar sem alterar
+significativamente a distribuição de renda.
+(V) Países com alta desigualdade econômica apresentam índices de Gini elevados, geralmente acima de 0,5.
+(V) Políticas como a progressividade tributária e investimentos em educação e saúde pública são reconhecidas
+como eficazes na redução da desigualdade de renda.
+(F) O IDH não considera apenas a renda; ele também avalia indicadores de saúde (expectativa de vida) e
+educação (anos de escolaridade).
+12. Explique como o Produto Interno Bruto (PIB) é utilizado para medir o desempenho econômico de um país e
+disserte sobre suas limitações como indicador.
+Resposta esperada: O PIB é utilizado como um dos principais indicadores para medir o desempenho econômico
+de um país, pois representa o valor total de bens e serviços finais produzidos em um determinado período,
+geralmente um ano. Ele é calculado por meio de três abordagens principais: ótica da produção, ótica da renda e
+ótica da despesa. Porém esse indicador possui limitações mensurando bem-estar social e desenvolvimento
+econômico, por exemplo, o PIB poderia aumentar mesmo com o aumento da desigualdade, além disso não mede
+sustentabilidade nem possui indicadores sociais, como saúde, educação… Assim, embora útil para comparar o
+desempenho econômico entre países ou ao longo do tempo, o PIB precisa ser complementado com outros
+indicadores, como o Índice de Desenvolvimento Humano (IDH) e índices de desigualdade, para oferecer uma
+visão mais ampla do desenvolvimento e bem-estar social.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+15
+
+Introdução à Economia - UnB
+
+LISTA 5A
+13. A produtividade é um conceito fundamental para a economia, pois está diretamente relacionada à eficiência com
+que os recursos são utilizados para gerar bens e serviços. Sobre o tema, marque a alternativa correta:
+a) ( ) A produtividade só pode ser aumentada por meio de maior utilização de recursos naturais disponíveis.
+b) ( ) A produtividade é calculada apenas com base no número de trabalhadores empregados em um setor da
+economia.
+c) ( ) O aumento da produtividade depende exclusivamente da redução de custos de produção pelas empresas.
+d) ( ) A produtividade pode ser aumentada por meio de investimentos em tecnologia, capacitação da força de
+trabalho e inovação nos processos produtivos.
+Resposta correta: d) A produtividade pode ser aumentada por meio de investimentos em tecnologia, capacitação da
+força de trabalho e inovação nos processos produtivos.
+Justificativa: A produtividade é um conceito essencial na economia, representando a eficiência com que os
+recursos, capital físico (k), capital humano (h), recursos naturais (n) e tecnologia (t), são utilizados para gerar
+bens e serviços. Seu aumento pode ser alcançado por meio de investimentos em tecnologia, que permitem maior
+produção com os mesmos recursos, da capacitação da força de trabalho, elevando sua habilidade e eficiência, e da
+inovação nos processos produtivos, reduzindo desperdícios e otimizando processos.
+14. O Produto Interno Bruto (PIB) e o Produto Nacional Bruto (PNB) são dois indicadores importantes para
+mensurar a atividade econômica de um país, mas possuem diferenças conceituais. Com base nisso, marque a
+alternativa correta:
+a) ( ) O PIB considera toda a produção realizada por cidadãos de um país, independentemente de estarem dentro
+ou fora do território nacional.
+b) ( ) O PNB inclui apenas a produção realizada dentro das fronteiras do país, independentemente da
+nacionalidade dos produtores.
+c) ( ) O PIB mede a produção total realizada dentro do território nacional, enquanto o PNB inclui a renda
+recebida pelos cidadãos no exterior e exclui a renda enviada ao exterior por estrangeiros.
+d) ( ) O PNB e o PIB são sempre iguais, pois ambos medem a produção total de bens e serviços em um país.
+Resposta correta: c) O PIB mede a produção total realizada dentro do território nacional, enquanto o PNB inclui
+a renda recebida pelos cidadãos no exterior e exclui a renda enviada ao exterior por estrangeiros.
+Justificativa: O Produto Interno Bruto (PIB) é o valor total de bens e serviços finais produzidos dentro das
+fronteiras de um país em determinado período, independentemente da nacionalidade de quem realiza a produção.
+Já o Produto Nacional Bruto (PNB) considera a produção com base na nacionalidade, ou seja, soma o PIB e
+adiciona a renda recebida por cidadãos do país no exterior (renda líquida de fatores externos), ao mesmo tempo
+que subtrai a renda enviada ao exterior por estrangeiros que operam dentro do país.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+16
+
+Introdução à Economia - UnB
+
+LISTA 5A
+15. A respeito do fluxo circular de renda marque a alternativa correta:
+a) ( ) No fluxo circular de renda, as famílias são os principais compradores de bens e serviços, enquanto as empresas
+são as únicas responsáveis pela produção de bens e serviços.
+b) ( ) As famílias fornecem trabalho e recursos às empresas, enquanto as empresas oferecem bens e serviços às
+famílias no fluxo circular de renda, mas não há troca de dinheiro entre elas.
+c) ( ) O fluxo circular de renda mostra como o dinheiro circula entre os setores da economia, envolvendo a troca entre
+as famílias e as empresas, sendo essencial para o entendimento da produção e do consumo.
+d) ( ) O modelo de fluxo circular de renda só considera as transações dentro das empresas, sem a participação do
+governo ou do setor externo.
+Resposta correta: c) O fluxo circular de renda mostra como o dinheiro circula entre os setores da economia,
+envolvendo a troca entre as famílias e as empresas, sendo essencial para o entendimento da produção e do
+consumo.
+a) Incorreto: Embora as famílias sejam de fato os principais consumidores, o modelo não sugere que as empresas
+sejam as únicas responsáveis pela produção. Além disso, as empresas vendem bens e serviços para as famílias,
+mas também para o governo e o setor externo, se houver.
+b) Incorreto: O fluxo circular de renda envolve uma troca de dinheiro, com as empresas pagando pelas forças de
+trabalho e as famílias gastando sua renda para adquirir bens e serviços.
+d) Incorreto: O modelo de fluxo circular de renda geralmente inclui a participação do governo (por meio de
+impostos e transferências) e, em uma versão mais ampla, o setor externo (por meio de exportações e importações),
+para uma visão mais completa da economia.
+16. O Índice de Gini é uma métrica amplamente utilizada para medir a desigualdade econômica. Sobre ele, é correto
+afirmar:
+a) Ele mede o nível de desenvolvimento humano em uma escala de 0 a 1.
+b) Um índice de Gini próximo de 0 indica alta desigualdade, enquanto um índice próximo de 1 indica baixa
+desigualdade.
+c) Ele é representado graficamente pela Curva de Lorenz e varia entre 0 e 1, sendo que valores próximos de 0
+indicam menor desigualdade.
+d) Um índice de Gini maior que 1 indica alta desigualdade social.
+Gabarito: c) Ele é representado graficamente pela Curva de Lorenz e varia entre 0 e 1, sendo que valores próximos
+de 0 indicam menor desigualdade.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+17
+
+Introdução à Economia - UnB
+
+LISTA 5A
+17. Analise as afirmativas a seguir e assinale V (verdadeiro) ou F (falso):
+1. ( ) O Índice de Gini pode ser maior que 1, representando níveis extremos de desigualdade.
+Gabarito: F – O Índice de Gini varia entre 0 e 1, não podendo ultrapassar esse limite.
+2. ( ) A taxa de pobreza mede o percentual da população com renda abaixo de um nível considerado básico para
+subsistência.
+Gabarito: V
+3. ( ) Investir em educação e saúde é uma forma eficiente de combater a desigualdade a longo prazo.
+Gabarito: V
+4. ( ) Segundo Mankiw, políticas de transferência de renda, como o Bolsa Família, podem equilibrar eficiência
+econômica e equidade.
+Gabarito: V
+5. ( ) A globalização e os avanços tecnológicos não contribuem para a desigualdade econômica.
+Gabarito: F – Mankiw argumenta que esses fatores ampliam as lacunas salariais entre trabalhadores qualificados e
+não qualificados.
+18. Explique como o Índice de Gini e a Curva de Lorenz estão relacionados na mensuração da desigualdade
+econômica.
+Resposta esperada: O Índice de Gini é derivado da Curva de Lorenz, que ilustra a distribuição acumulada da
+renda de uma população. A curva compara a proporção acumulada da renda com a proporção acumulada da
+população. Quanto mais distante a Curva de Lorenz estiver da linha de perfeita igualdade (diagonal de 45 graus),
+maior será a desigualdade. O Índice de Gini quantifica essa distância, sendo 0 para igualdade perfeita e 1 para
+desigualdade máxima.
+19. Quais desafios o Brasil enfrenta para reduzir a desigualdade econômica de forma sustentável? Relacione sua
+resposta aos fatores apontados por Mankiw, como investimentos em capital humano e tributação progressiva.
+Resposta esperada: O Brasil enfrenta desafios relacionados à melhoria da educação e saúde, essenciais para o
+desenvolvimento do capital humano. Além disso, há dificuldades em implementar uma tributação progressiva
+eficiente, devido à alta informalidade no mercado de trabalho e à complexidade do sistema tributário. Mankiw
+aponta que o investimento em políticas públicas, como programas de transferência de renda bem estruturados,
+pode reduzir a pobreza sem criar desincentivos ao trabalho.
+20. Relacione os conceitos de mobilidade social e desigualdade econômica, destacando os impactos da mobilidade
+social limitada no crescimento econômico.
+Resposta esperada: A mobilidade social é a capacidade de um indivíduo melhorar sua posição socioeconômica,
+enquanto a desigualdade econômica refere-se à disparidade na distribuição de renda. Quando a mobilidade social
+é limitada, as pessoas têm menos acesso a oportunidades como educação e crédito, perpetuando a desigualdade.
+Isso reduz o potencial de crescimento econômico, pois limita o desenvolvimento do capital humano e restringe o
+consumo, enfraquecendo os mercados internos.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+18
+
+Introdução à Economia - UnB
+
+LISTA 5A
+21. Durante uma aula de contabilidade nacional, um aluno de Introdução à Economia escreveu em seu caderno alguns
+exemplos para os conceitos discutidos em sala. No entanto, ao revisar, percebeu algumas inconsistências. Avalie as
+afirmativas abaixo como verdadeiras (V) ou falsas (F), corrigindo os itens incorretos.
+I. O PIB nominal utiliza valores reais, ou seja, ajustados para retirar o efeito da inflação. Assim, um aumento do
+PIB nominal entre 2020 e 2021, indica necessariamente um aumento na produção.
+II. Pela ótica da produção, calcula-se o PIB somando os valores adicionados em cada etapa de produção e o valor
+do bem final. Por exemplo, ao produzir um carro, seriam somados os valores das peças individuais e o valor do
+carro ao ser vendido ao consumidor.
+III. As medidas de fluxo e estoque referem-se a variáveis avaliadas por unidade de tempo e em determinado ponto
+do tempo, respectivamente. Por exemplo, a quantidade de alunos que frequentaram a UnB durante o semestre e a
+quantidade de alunos no último dia de aula.
+IV. A ótica da despesa é calculada pela fórmula: C + I + G + (X – M). Assim, quando as importações superam as
+exportações, isso contribui para o aumento do PIB de um país.
+GABARITO: I. F - O PIB nominal utiliza os preços correntes do período, ou seja, inclui o efeito da inflação.
+Portanto, um aumento no PIB nominal pode indicar tanto um aumento da produção quanto um aumento nos
+preços. Para retirar o efeito da inflação e analisar a variação na produção, utiliza-se o PIB real.
+II. F - Pela ótica da produção, o PIB é calculado pela soma dos valores adicionados em cada etapa da produção
+ou o valor do bem final, para evitar dupla contagem. No exemplo do carro, deve-se considerar apenas o valor que
+cada etapa do processo produtivo agrega ao produto, excluindo o valor das peças já contabilizado.
+III. V
+IV. F - Quando as importações (M) são maiores que as exportações (X), o saldo líquido (X – M) será negativo,
+reduzindo o PIB, e não aumentando.
+22. Sobre o tema desigualdade social e seus indicadores, escolha a alternativa correta.
+a) O Índice de Desenvolvimento Humano (IDH) é calculado com base na média geométrica de três dimensões:
+renda, medida pelo Produto Nacional Bruto (PNB) per capita; educação, que considera indicadores como média
+de anos de escolaridade e expectativa de anos de estudo; e saúde, avaliada pela expectativa de vida ao nascer.
+b) A Curva de Lorenz é um instrumento gráfico que representa a distribuição de renda em uma sociedade.
+Quando há perfeita igualdade, o Índice de Gini é igual a 1, já em situações de desigualdade máxima, o Índice de
+Gini atinge o valor 0.
+c) O PIB per capita é um indicador de bem-estar econômico muito utilizado para medir dados como a qualidade
+de vida da população e a distribuição de renda.
+d) Entre dois países com mesma renda per capita, o bem-estar social será maior naquele com menor desigualdade.
+Por exemplo, considere os países A e B, ambos com uma renda per capita de R$1000 e 10 habitantes. No país A,
+todos ganham R$1000, enquanto no país B, 9 pessoas ganham R$100 cada e 1 habitante ganha R$9100. Assim, o
+bem-estar será maior no país B.
+GABARITO:
+a) CORRETA.
+b) A descrição está invertida, em perfeita igualdade, o Índice de Gini é 0; em desigualdade máxima, é 1.
+c) O PIB per capita não mede diretamente a qualidade de vida nem a distribuição de renda. É um indicador da
+produção média por habitante.
+d) O bem-estar da população será maior no país B, já que possui menor desigualdade.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+19
+
+Introdução à Economia - UnB
+
+LISTA 5A
+23. Sobre seus conhecimentos acerca de desenvolvimento econômico e crescimento econômico, marque a alternativa
+incorreta.
+a) Enquanto o crescimento econômico se refere a aspectos quantitativos, como o aumento do PIB, o
+desenvolvimento econômico está associado a melhorias qualitativas, como a elevação na qualidade de vida e na
+redução das desigualdades sociais.
+b) Nem sempre há uma relação direta entre crescimento econômico e a redução das desigualdades sociais.
+Existem países com elevados níveis de riqueza e alta desigualdade, assim como países com menor riqueza e maior
+igualdade na distribuição de renda.
+c) A produtividade é um fator importante para explicar diferentes crescimentos econômicos entre países. Entre os
+fatores que influenciam a produtividade estão o capital físico, que corresponde aos recursos naturais disponíveis,
+como terra, rios e minérios, e o capital humano, que corresponde à quantidade de pessoas disponíveis para
+trabalhar.
+d) A produção por trabalhador geralmente apresenta retornos decrescentes em relação aos fatores de produção.
+Isso significa que, em determinado ponto, o aumento no estoque de capital por trabalhador pode não gerar
+ganhos proporcionais na produtividade.
+GABARITO:
+c) O capital físico refere-se a bens como máquinas, equipamentos, utilizados para produzir bens e serviços. Já o
+capital humano está relacionado à qualidade do trabalho, como os conhecimentos e habilidades adquiridos por
+meio da educação.
+24. Com base em seus conhecimentos de contabilidade nacional, julgue os itens a seguir como verdadeiros (V) ou
+falsos (F):
+( ) O produto líquido é sempre menor, ou igual que o produto bruto.
+( ) Nos países em desenvolvimento, o produto nacional é geralmente maior que o produto interno, pois há maior
+produção realizada por empresas nacionais ocorrendo dentro do país do que no exterior.
+( ) A soma das remunerações pagas aos fatores de produção é uma maneira de avaliar o produto, refletindo o
+valor gerado pela produção. A essa ótica, se dá o nome de ótica da despesa, já que alguém gera uma despesa ao
+pagar por isso.
+( ) No fluxo circular da renda, as famílias possuem dois papeis: como consumidoras de bens e serviços e
+fornecedoras de fatores de produção, como trabalho e capital.
+GABARITO:
+V - O produto líquido é menor do que o produto bruto pois desconsidera a depreciação.
+F – Nos países em desenvolvimento, o produto nacional tende a ser menor que o produto interno, pois
+geralmente há mais remessas de lucros e juros para o exterior (de empresas estrangeiras operando no país) do que
+rendimentos recebidos do exterior por residentes.
+F – A soma das remunerações pagas aos fatores de produção reflete a ótica da renda, e não da despesa.
+V - No fluxo circular da renda, as famílias desempenham o papel de fornecedoras de fatores de produção (como
+trabalho e capital) para as empresas e, simultaneamente, o de consumidoras de bens e serviços gerados pelas
+empresas.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+20
+
+Introdução à Economia - UnB
+
+LISTA 5A
+25. A tabela abaixo apresenta os valores do Produto Interno Bruto (PIB) de um país no ano de 2001, calculados de
+duas maneiras distintas:
+
+Com base na tabela, responda:
+a) Explique a diferença entre os valores apresentados e relacione-os ao conceito de PIB real e PIB nominal.
+b) Utilizando a tabela, calcule o deflator implícito do PIB e explique o que significa o seu valor.
+GABARITO:
+a) O PIB calculado em valores constantes (1.200.000) reflete o PIB real, ou seja, utiliza o valor ajustado para
+eliminar os efeitos da inflação. O cálculo do PIB em valores constantes utiliza os preços de um ano-base fixo,
+permitindo medir o crescimento econômico em termos de quantidade de bens e serviços produzidos, sem que as
+variações nos preços interfiram no resultado. O PIB em valores correntes (1.440.000) representa o PIB nominal,
+que é calculado com os preços vigentes no ano analisado (no caso, 2001) e inclui tanto o volume de bens e
+serviços produzidos quanto o efeito das variações nos preços. Assim, o PIB nominal pode mostrar um valor total
+da produção maior em determinado ano, porém sem distinguir se houve realmente um aumento no preço ou nas
+quantidades produzidas.
+b) O deflator implícito do PIB é uma medida que reflete a variação geral de preços na economia. Deflator do PIB
+= (PIB Nominal / PIB Real) × 100 Deflator do PIB = (1.440.000 / 1.200.000) ×100 = 120 O deflator do PIB de
+120 indica que, em 2001, os preços da economia estavam, em média, 20% acima dos preços utilizados como base
+para o cálculo do PIB real.
+
+Lista de Exercícios 5A - Introdução à Economia
+
+21
+
+
