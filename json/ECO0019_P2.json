@@ -1730,7 +1730,2934 @@
       "id": "lista-5B",
       "title": "Lista 5B - IEMONIT (Adaptado)",
       "questions": [
-        
+        {
+          "id": "q001",
+          "type": "multiple_correct",
+          "command": "Explique brevemente como a moeda evoluiu desde o escambo até os dias atuais e por que essa evolução foi importante para o comércio. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a moeda evoluiu a partir do escambo, em que as pessoas trocavam bens diretamente."
+            },
+            {
+              "id": "b",
+              "text": "a moeda-mercadoria, como sal ou metais, tornou as trocas mais práticas em relação ao escambo."
+            },
+            {
+              "id": "c",
+              "text": "as moedas de metal e papel padronizadas e garantidas pelo governo facilitaram as transações comerciais."
+            },
+            {
+              "id": "d",
+              "text": "bancos digitais, Pix e criptomoedas representam formas contemporâneas de transações digitais."
+            },
+            {
+              "id": "e",
+              "text": "a evolução da moeda tornou o comércio menos eficiente, pois aumentou a necessidade de coincidência de desejos."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas, pois retomam a evolução descrita no texto: escambo, moeda-mercadoria, moedas metálicas e papel-moeda, além de formas digitais contemporâneas. A alternativa E é incorreta porque a evolução da moeda reduziu a dificuldade da coincidência de desejos e tornou o comércio mais eficiente, prático e moderno."
+        },
+        {
+          "id": "q002",
+          "type": "single_correct",
+          "command": "Qual das alternativas abaixo descreve corretamente uma das funções da moeda?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "A moeda serve como unidade de troca, facilitando o comércio de bens e serviços sem a necessidade de um sistema bancário."
+            },
+            {
+              "id": "b",
+              "text": "A moeda é utilizada como reserva de valor, permitindo que riqueza seja armazenada e utilizada no futuro."
+            },
+            {
+              "id": "c",
+              "text": "A moeda tem como função principal a regulação da oferta de crédito na economia."
+            },
+            {
+              "id": "d",
+              "text": "A moeda é usada exclusivamente como meio de pagamento, não sendo aceita como padrão de valor."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Uma das funções da moeda é atuar como reserva de valor, permitindo que a riqueza seja guardada para uso posterior."
+        },
+        {
+          "id": "q003",
+          "type": "true_false",
+          "command": "O principal objetivo de um banco central é garantir a lucratividade dos bancos comerciais.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O objetivo principal do banco central é garantir a estabilidade econômica do país. Ele regula o sistema financeiro para promover segurança e eficiência, mas não atua diretamente para beneficiar os bancos comerciais."
+        },
+        {
+          "id": "q004",
+          "type": "true_false",
+          "command": "Uma das funções do banco central é emitir a moeda nacional e controlar a base monetária.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O banco central é a instituição responsável pela emissão da moeda nacional e pelo controle da quantidade de dinheiro em circulação, ajustando a base monetária conforme necessário para atender às demandas da economia."
+        },
+        {
+          "id": "q005",
+          "type": "true_false",
+          "command": "Bancos centrais buscam manter a estabilidade de preços e controlar a inflação.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Um dos principais objetivos do banco central é assegurar a estabilidade de preços, evitando inflação ou deflação descontroladas e preservando o poder de compra da moeda ao longo do tempo."
+        },
+        {
+          "id": "q006",
+          "type": "true_false",
+          "command": "O banco central regula e supervisiona as instituições financeiras do país.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O banco central desempenha papel de regulação e supervisão do sistema financeiro, estabelecendo regras para bancos e outras instituições financeiras e monitorando sua saúde e conformidade."
+        },
+        {
+          "id": "q007",
+          "type": "true_false",
+          "command": "Bancos centrais têm como função principal decidir as políticas fiscais, como arrecadação de impostos e gastos públicos.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. As políticas fiscais são responsabilidade do governo, geralmente sob a alçada do Ministério da Fazenda ou equivalente. O banco central lida com política monetária, enquanto decisões fiscais envolvem impostos e gastos públicos."
+        },
+        {
+          "id": "q008",
+          "type": "single_correct",
+          "command": "Assinale a alternativa correta sobre operações do Banco Central.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O Banco Central define a taxa de câmbio utilizada em todas as transações comerciais no país."
+            },
+            {
+              "id": "b",
+              "text": "O Banco Central emite títulos públicos para financiar os gastos do governo."
+            },
+            {
+              "id": "c",
+              "text": "O Banco Central fixa diretamente as taxas de juros cobradas pelos bancos comerciais aos seus clientes."
+            },
+            {
+              "id": "d",
+              "text": "O Banco Central realiza operações de redesconto, emprestando dinheiro a bancos comerciais em situações de necessidade de liquidez."
+            },
+            {
+              "id": "e",
+              "text": "O Banco Central não interfere diretamente na economia, apenas monitora os bancos comerciais."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. Uma das operações do Banco Central é o redesconto, que fornece liquidez aos bancos comerciais em situações de necessidade, contribuindo para a estabilidade do sistema financeiro."
+        },
+        {
+          "id": "q009",
+          "type": "single_correct",
+          "command": "Um banco central estabelece uma taxa de reserva obrigatória de 20%. Suponha que um cliente deposite R$5.000 em um banco. Com base no conceito de multiplicador bancário, calcule o valor total que pode ser criado no sistema bancário a partir desse depósito inicial, considerando que todo o dinheiro emprestado volte ao sistema como novos depósitos.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "R$10.000"
+            },
+            {
+              "id": "b",
+              "text": "R$20.000"
+            },
+            {
+              "id": "c",
+              "text": "R$25.000"
+            },
+            {
+              "id": "d",
+              "text": "R$50.000"
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. Com taxa de reserva de 20%, tem-se r = 0,2 e o multiplicador bancário é M = 1/r = 1/0,2 = 5. Assim, o total criado é 5.000 × 5 = R$25.000."
+        },
+        {
+          "id": "q010",
+          "type": "single_correct",
+          "command": "Um banco central estabelece uma taxa de reserva obrigatória de 20%. Suponha que um cliente deposite R$5.000 em um banco. Com base no conceito de multiplicador bancário, qual seria o impacto de uma redução na taxa de reserva obrigatória para 10%?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o multiplicador cairia para 2,5 e o total criado seria R$12.500."
+            },
+            {
+              "id": "b",
+              "text": "o multiplicador permaneceria igual a 5 e o total criado seguiria em R$25.000."
+            },
+            {
+              "id": "c",
+              "text": "o multiplicador subiria para 10 e o total criado poderia chegar a R$50.000."
+            },
+            {
+              "id": "d",
+              "text": "o multiplicador deixaria de existir, pois reservas menores impedem novos depósitos."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. Com r = 0,1, o multiplicador bancário passa a ser M = 1/0,1 = 10. Assim, o depósito inicial de R$5.000 poderia gerar até R$50.000 no sistema bancário, dobrando o montante criado em relação à taxa de reserva de 20%."
+        },
+        {
+          "id": "q011",
+          "type": "true_false",
+          "command": "O preço do produto final contribui para o deslocamento da curva de demanda do trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O preço do produto final afeta o valor do produto marginal do trabalho e, portanto, pode deslocar a curva de demanda por trabalho."
+        },
+        {
+          "id": "q012",
+          "type": "true_false",
+          "command": "Mudança tecnológica na cadeia de produção contribui para o deslocamento da curva de demanda do trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Mudanças tecnológicas podem alterar a produtividade do trabalho e, com isso, deslocar a curva de demanda por mão de obra."
+        },
+        {
+          "id": "q013",
+          "type": "true_false",
+          "command": "A quantidade dos estudantes na UnB contribui para o deslocamento da curva de demanda do trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A quantidade dos estudantes na UnB não é apresentada como fator que afeta a demanda por trabalho no mercado analisado."
+        },
+        {
+          "id": "q014",
+          "type": "true_false",
+          "command": "A oferta de outro fator de produção contribui para o deslocamento da curva de demanda do trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A oferta de outro fator de produção pode afetar a produtividade do trabalho e, por consequência, deslocar a curva de demanda por trabalho."
+        },
+        {
+          "id": "q015",
+          "type": "single_correct",
+          "command": "Considerando o mercado de trabalho, marque a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O produto marginal do trabalho é a quantidade total de bens que os trabalhadores produzem."
+            },
+            {
+              "id": "b",
+              "text": "O valor do produto marginal do trabalho é o produto marginal do trabalho multiplicado pelo preço do bem produzido."
+            },
+            {
+              "id": "c",
+              "text": "A curva do valor do produto marginal é a curva de oferta da mão de obra."
+            },
+            {
+              "id": "d",
+              "text": "A oferta de mão de obra é determinada pelo trade-off entre o estudo e o trabalho."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. O valor do produto marginal do trabalho corresponde ao produto marginal do trabalho multiplicado pelo preço do bem produzido. A alternativa A confunde produto marginal com produção total; C confunde curva de demanda com curva de oferta; D confunde o trade-off relevante, que é entre lazer e trabalho."
+        },
+        {
+          "id": "q016",
+          "type": "multiple_correct",
+          "command": "Explique o que são Diferenciais Compensatórios e dê um exemplo nacional sobre. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "diferenciais compensatórios são valores adicionais nos salários para compensar características não monetárias de diferentes empregos."
+            },
+            {
+              "id": "b",
+              "text": "diferenciais compensatórios podem estar relacionados a condições de trabalho insalubres ou mais arriscadas."
+            },
+            {
+              "id": "c",
+              "text": "um exemplo nacional citado é o salário dos mineradores, associado também à proteção legal pela condição insalubre de trabalho."
+            },
+            {
+              "id": "d",
+              "text": "diferenciais compensatórios significam que todos os trabalhadores recebem exatamente o mesmo salário independentemente das condições de trabalho."
+            },
+            {
+              "id": "e",
+              "text": "diferenciais compensatórios tratam de componentes salariais que compensam aspectos não monetários do emprego."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "e"
+          ],
+          "justification": "As alternativas A, B, C e E estão corretas porque os diferenciais compensatórios são adicionais salariais associados a características não monetárias dos empregos, como risco ou insalubridade. A alternativa D é incorreta porque nega justamente a diferenciação salarial compensatória."
+        },
+        {
+          "id": "q017",
+          "type": "single_incorrect",
+          "command": "Sobre o desemprego de acordo com a classificação do IBGE, marque a alternativa errada.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Uma pessoa é considerada desempregada se está sem trabalhar, quer trabalhar e está buscando ativamente trabalho."
+            },
+            {
+              "id": "b",
+              "text": "Uma pessoa economicamente ativa é composta pelas pessoas empregadas, ou seja, remuneradas."
+            },
+            {
+              "id": "c",
+              "text": "A população que compõem a força de trabalho é o número total de pessoas empregadas e desempregadas."
+            },
+            {
+              "id": "d",
+              "text": "A população que está fora da força de trabalho são os estudantes, aposentados e pessoas que fazem trabalho doméstico não remunerado."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é a errada. A população economicamente ativa inclui pessoas empregadas e também pessoas desempregadas que procuram trabalho. As alternativas A, C e D estão de acordo com a classificação apresentada."
+        },
+        {
+          "id": "q018",
+          "type": "multiple_correct",
+          "command": "Explique sobre a diferença entre o desemprego friccional e o desemprego estrutural. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o desemprego friccional está relacionado ao tempo que demora para capacitar uma geração em relação à próxima."
+            },
+            {
+              "id": "b",
+              "text": "o desemprego estrutural está relacionado à disponibilidade de empregos."
+            },
+            {
+              "id": "c",
+              "text": "o desemprego estrutural está associado à produtividade econômica."
+            },
+            {
+              "id": "d",
+              "text": "o desemprego friccional e o estrutural são conceitos idênticos e não apresentam diferença analítica."
+            },
+            {
+              "id": "e",
+              "text": "o desemprego estrutural depende exclusivamente da decisão individual de procurar trabalho por mais tempo."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c"
+          ],
+          "justification": "As alternativas A, B e C estão corretas conforme a resposta esperada: o desemprego friccional está ligado ao tempo de capacitação entre gerações, enquanto o desemprego estrutural se relaciona à disponibilidade de empregos e à produtividade econômica. As alternativas D e E são incorretas porque eliminam ou distorcem a distinção apresentada."
+        },
+        {
+          "id": "q019",
+          "type": "multiple_correct",
+          "command": "Explique as principais funções da moeda na economia, destacando como cada uma delas contribui para o funcionamento eficiente do mercado e para a estabilidade econômica. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "como meio de troca, a moeda facilita as transações e elimina a necessidade de escambo."
+            },
+            {
+              "id": "b",
+              "text": "como unidade de conta, a moeda permite comparar valores, precificar bens e serviços e realizar registros contábeis."
+            },
+            {
+              "id": "c",
+              "text": "como reserva de valor, a moeda permite armazenar poder de compra ao longo do tempo."
+            },
+            {
+              "id": "d",
+              "text": "como meio de troca, a moeda torna indispensável que cada agente deseje exatamente o bem oferecido pelo outro."
+            },
+            {
+              "id": "e",
+              "text": "para funcionar bem como reserva de valor, a moeda deve manter seu poder de compra ao longo do tempo."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "e"
+          ],
+          "justification": "As alternativas A, B, C e E estão corretas porque correspondem às três funções da moeda: meio de troca, unidade de conta e reserva de valor. A alternativa D é incorreta porque a moeda reduz a necessidade de coincidência de desejos típica do escambo."
+        },
+        {
+          "id": "q020",
+          "type": "true_false",
+          "command": "Uma inflação baixa e estável pode ser considerada benéfica para a economia, pois sinaliza crescimento econômico sustentável.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Uma inflação controlada, em níveis baixos e estáveis, é considerada positiva porque reflete equilíbrio entre oferta e demanda, contribui para a previsibilidade econômica e incentiva investimentos."
+        },
+        {
+          "id": "q021",
+          "type": "true_false",
+          "command": "Quando o índice de preços cai em um determinado período, ocorre uma inflação negativa.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A queda generalizada e contínua no nível de preços é denominada deflação, e não inflação negativa. Esse fenômeno pode ser prejudicial à economia por desestimular consumo e investimentos."
+        },
+        {
+          "id": "q022",
+          "type": "true_false",
+          "command": "O principal indicador utilizado para medir a inflação no Brasil é o Índice Nacional de Preços ao Consumidor Amplo (IPCA).",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O IPCA, calculado pelo IBGE, é o índice oficial usado como referência para medir a inflação no Brasil, abrangendo famílias com rendimentos entre 1 e 40 salários mínimos em diversas regiões metropolitanas."
+        },
+        {
+          "id": "q023",
+          "type": "true_false",
+          "command": "Reduzir a taxa de juros é uma medida comum para conter a inflação de demanda.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A redução da taxa de juros tende a aumentar a demanda ao baratear o crédito e incentivar consumo. Para conter inflação de demanda, o Banco Central geralmente aumenta a taxa de juros, encarecendo o crédito e reduzindo consumo e investimentos."
+        },
+        {
+          "id": "q024",
+          "type": "true_false",
+          "command": "A inflação inercial refere-se à tendência de os preços continuarem subindo devido a reajustes automáticos baseados na inflação passada.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A inflação inercial ocorre quando reajustes de preços e salários são indexados à inflação passada, criando persistência nos aumentos de preços mesmo sem pressões imediatas de demanda ou custo."
+        },
+        {
+          "id": "q025",
+          "type": "multiple_correct",
+          "command": "Explique como o Banco Central do Brasil atua para controlar a inflação e quais são os principais instrumentos utilizados nesse processo. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o Banco Central do Brasil controla a inflação por meio do regime de metas de inflação."
+            },
+            {
+              "id": "b",
+              "text": "o regime de metas de inflação define uma meta anual estabelecida pelo Conselho Monetário Nacional."
+            },
+            {
+              "id": "c",
+              "text": "o principal instrumento utilizado é a política monetária, por meio da administração da taxa básica de juros, a Selic."
+            },
+            {
+              "id": "d",
+              "text": "quando a inflação está acima da meta, o Banco Central tende a aumentar a Selic para encarecer o crédito e reduzir pressões sobre os preços."
+            },
+            {
+              "id": "e",
+              "text": "quando a inflação está acima da meta, o Banco Central reduz a Selic para estimular consumo e investimentos como forma de conter os preços."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme o gabarito: o Banco Central atua por meio do regime de metas e utiliza a Selic como principal instrumento de política monetária. A alternativa E é incorreta porque, diante de inflação acima da meta, a Selic tende a ser elevada, não reduzida."
+        },
+        {
+          "id": "q026",
+          "type": "single_correct",
+          "command": "De acordo com o livro do Mankiw, sobre a criação da moeda, qual das alternativas a seguir melhor descreve o processo de emissão de moeda em uma economia?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O Banco Central de um país emite moeda física sem nenhum controle, deixando a economia funcionar sem interferências."
+            },
+            {
+              "id": "b",
+              "text": "A criação de moeda é realizada exclusivamente pelo governo, que define o valor e a quantidade de moeda a ser emitida."
+            },
+            {
+              "id": "c",
+              "text": "O Banco Central emite moeda para financiar o déficit público, sem considerar os efeitos sobre a inflação."
+            },
+            {
+              "id": "d",
+              "text": "A moeda é emitida pelo Banco Central, mas sua quantidade deve ser gerida com base na política monetária, visando a estabilidade de preços e o controle da inflação."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. De acordo com Mankiw, a criação de moeda é controlada pelo Banco Central e está ligada à política monetária. A emissão deve ser cuidadosa para evitar inflação excessiva e garantir estabilidade econômica."
+        },
+        {
+          "id": "q027",
+          "type": "true_false",
+          "command": "A inflação é definida como o aumento contínuo e generalizado do nível de preços de bens e serviços em uma economia.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A inflação é caracterizada pelo aumento generalizado e contínuo dos preços de bens e serviços em determinado período, impactando o poder de compra da moeda."
+        },
+        {
+          "id": "q028",
+          "type": "true_false",
+          "command": "A inflação de custos ocorre devido ao aumento nos custos de produção, como salários e matérias-primas, que acabam sendo repassados aos preços finais.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A inflação de custos ocorre quando os custos de produção aumentam, como energia, matérias-primas ou salários, e as empresas repassam esses custos aos consumidores, elevando o nível geral de preços."
+        },
+        {
+          "id": "q029",
+          "type": "true_false",
+          "command": "Uma elevação no preço do petróleo pode gerar inflação de custos em diversos setores da economia.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O aumento no preço do petróleo pode gerar inflação de custos, pois o petróleo é matéria-prima crucial para setores como transporte, energia e produtos químicos, afetando custos de produção e preços finais."
+        },
+        {
+          "id": "q030",
+          "type": "true_false",
+          "command": "Mecanismos de indexação, como o reajuste de salários e aluguéis, podem contribuir para a perpetuação da inflação inercial.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A inflação inercial ocorre quando reajustes automáticos baseados na inflação passada, como salários e aluguéis, criam expectativa de aumento contínuo dos preços, perpetuando a inflação independentemente das condições econômicas atuais."
+        },
+        {
+          "id": "q031",
+          "type": "true_false",
+          "command": "No Brasil, a inflação inercial foi combatida de forma efetiva com o Plano Real em 1994.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O Plano Real de 1994 foi crucial para controlar a inflação inercial no Brasil, ao desindexar a economia, introduzir uma nova moeda e implementar políticas fiscais e monetárias rigorosas para estabilizar a economia."
+        },
+        {
+          "id": "q032",
+          "type": "single_incorrect",
+          "command": "Sobre a moeda nas economias e para os agentes, assinale qual das opções não representa uma de suas funções:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Unidade de conta"
+            },
+            {
+              "id": "b",
+              "text": "Meio de troca"
+            },
+            {
+              "id": "c",
+              "text": "Geração de riqueza"
+            },
+            {
+              "id": "d",
+              "text": "Reserva de valor"
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é a resposta correta porque geração de riqueza não é apresentada como uma função da moeda. As funções da moeda destacadas no material são unidade de conta, meio de troca e reserva de valor."
+        },
+        {
+          "id": "q033",
+          "type": "true_false",
+          "command": "A principal função do Banco Central é garantir a estabilidade da moeda e do sistema financeiro, o que inclui o controle da inflação e a regulação do setor bancário.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O Banco Central atua para garantir a estabilidade da moeda e do sistema financeiro, incluindo o controle da inflação e a regulação do setor bancário."
+        },
+        {
+          "id": "q034",
+          "type": "true_false",
+          "command": "O Banco Central pode influenciar a liquidez da economia por meio de operações de mercado aberto, comprando títulos para reduzir a inflação e vendendo títulos para estimular a atividade econômica.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A lógica está invertida: ao comprar títulos, o Banco Central injeta liquidez na economia, estimulando a atividade; ao vender títulos, retira liquidez, o que pode ajudar a conter pressões inflacionárias."
+        },
+        {
+          "id": "q035",
+          "type": "true_false",
+          "command": "A taxa de redesconto é um instrumento de política monetária que permite ao Banco Central regular a oferta de moeda ao alterar o custo do crédito para os bancos comerciais.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A taxa de redesconto influencia o custo do crédito para os bancos comerciais e, por isso, pode afetar a oferta de moeda e a liquidez da economia."
+        },
+        {
+          "id": "q036",
+          "type": "true_false",
+          "command": "As reservas compulsórias são as reservas de riqueza que o Banco Central mantém em seus cofres para garantir o real valor da moeda, sendo uma quantia fixa que delimita quanta moeda pode circular na economia sem que se gere inflação.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Reservas compulsórias são parcelas dos depósitos que os bancos comerciais devem manter retidas, não reservas de riqueza do Banco Central em seus cofres. Elas servem para influenciar a capacidade de concessão de crédito e a criação de moeda bancária."
+        },
+        {
+          "id": "q037",
+          "type": "single_correct",
+          "command": "Numa situação em que a taxa de reservas compulsórias estabelecida pelo BC é de 25%, e um banco recebe, em um mês, R$ 5 bilhões em depósitos, qual a moeda total em circulação gerada a partir dessas movimentações, seguindo a ideia do Multiplicador Bancário?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "R$ 10 bilhões"
+            },
+            {
+              "id": "b",
+              "text": "R$ 15 bilhões"
+            },
+            {
+              "id": "c",
+              "text": "R$ 20 bilhões"
+            },
+            {
+              "id": "d",
+              "text": "R$ 25 bilhões"
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. Com taxa de reservas compulsórias de 25%, o multiplicador bancário é 1/0,25 = 4. Assim, R$ 5 bilhões × 4 = R$ 20 bilhões."
+        },
+        {
+          "id": "q038",
+          "type": "single_correct",
+          "command": "Sobre a evolução da moeda, assinale a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "A transição da moeda mercadoria para a moeda de custo forçado ocorreu quando o ouro e a prata deixaram de ser usados como lastro físico, e os governos passaram a emitir moedas fiduciárias baseadas exclusivamente na confiança da sociedade e no controle estatal."
+            },
+            {
+              "id": "b",
+              "text": "A moeda mercadoria foi amplamente substituída pela moeda de custo forçado durante a Idade Média, quando as trocas comerciais começaram a exigir um sistema monetário mais prático e baseado em papel-moeda."
+            },
+            {
+              "id": "c",
+              "text": "A moeda de custo forçado sempre foi uma alternativa ao uso de metais preciosos, sendo usada mesmo nas sociedades antigas em função de sua maior eficiência em trocas comerciais."
+            },
+            {
+              "id": "d",
+              "text": "A principal característica da moeda mercadoria é sua dependência de decretos governamentais para circular, enquanto a moeda de custo forçado é valorizada pelo conteúdo intrínseco do material com que é feita."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. A transição descrita ocorre quando metais como ouro e prata deixam de servir como lastro físico e governos passam a emitir moeda fiduciária baseada na confiança social e no controle estatal. As demais alternativas distorcem a sequência histórica ou invertem as características da moeda mercadoria e da moeda fiduciária."
+        },
+        {
+          "id": "q039",
+          "type": "multiple_correct",
+          "command": "Explique o conceito de liquidez e sua relevância no sistema financeiro, destacando de que forma o Banco Central influencia a liquidez da economia por meio de seus instrumentos de política monetária. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "liquidez é a facilidade com que um ativo pode ser convertido em meio de pagamento sem perda significativa de valor."
+            },
+            {
+              "id": "b",
+              "text": "o Banco Central regula a liquidez por meio de operações de mercado aberto, comprando ou vendendo títulos públicos."
+            },
+            {
+              "id": "c",
+              "text": "a taxa de redesconto influencia o custo do crédito para os bancos."
+            },
+            {
+              "id": "d",
+              "text": "o depósito compulsório controla a quantidade de recursos que podem ser emprestados."
+            },
+            {
+              "id": "e",
+              "text": "liquidez significa a impossibilidade de converter ativos em meios de pagamento sem autorização fiscal direta."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme o material: liquidez é a facilidade de conversão de ativos em meios de pagamento, e o Banco Central a influencia por operações de mercado aberto, taxa de redesconto e depósito compulsório. A alternativa E é incorreta porque contraria a definição apresentada."
+        },
+        {
+          "id": "q040",
+          "type": "single_correct",
+          "command": "Qual dos fatores abaixo pode causar um aumento do desemprego, segundo as teorias econômicas?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Expansão da negociação coletiva."
+            },
+            {
+              "id": "b",
+              "text": "Aumento do salário-mínimo acima da produtividade média."
+            },
+            {
+              "id": "c",
+              "text": "Redução da população economicamente ativa (PEA)."
+            },
+            {
+              "id": "d",
+              "text": "Adoção de políticas de busca ativa de emprego."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Quando o salário-mínimo é elevado acima da produtividade, empresas podem optar por reduzir o quadro de funcionários para minimizar custos, causando aumento do desemprego."
+        },
+        {
+          "id": "q041",
+          "type": "true_false",
+          "command": "O equilíbrio no mercado de trabalho é alcançado quando a oferta de trabalho é igual à demanda por trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O equilíbrio no mercado de trabalho ocorre quando a quantidade ofertada de trabalho se iguala à quantidade demandada."
+        },
+        {
+          "id": "q042",
+          "type": "true_false",
+          "command": "O emprego informal não contribui para a arrecadação de impostos no Brasil.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Trabalhadores informais ainda podem contribuir para a arrecadação por meio de impostos indiretos, como impostos sobre consumo, a exemplo do ICMS."
+        },
+        {
+          "id": "q043",
+          "type": "true_false",
+          "command": "A negociação coletiva sempre reduz a desigualdade de ganhos no mercado de trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A negociação coletiva pode, em alguns casos, gerar desigualdade se os acordos beneficiam setores ou categorias específicas."
+        },
+        {
+          "id": "q044",
+          "type": "true_false",
+          "command": "A PEA inclui todas as pessoas ocupadas e desempregadas que estão em idade ativa e buscando trabalho.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A População Economicamente Ativa inclui pessoas ocupadas e desempregadas que estão em idade ativa e procuram trabalho."
+        },
+        {
+          "id": "q045",
+          "type": "true_false",
+          "command": "A teoria do salário eficiência sugere que o aumento dos salários pode aumentar a produtividade dos trabalhadores.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A teoria do salário eficiência sustenta que salários mais altos podem elevar produtividade, comprometimento e reduzir custos associados à rotatividade."
+        },
+        {
+          "id": "q046",
+          "type": "multiple_correct",
+          "command": "Explique como a teoria do salário eficiência pode impactar a taxa de desemprego em um país. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "salários mais altos podem incentivar maior produtividade dos trabalhadores."
+            },
+            {
+              "id": "b",
+              "text": "salários mais altos podem aumentar o comprometimento dos trabalhadores."
+            },
+            {
+              "id": "c",
+              "text": "salários mais altos podem reduzir custos associados ao turnover."
+            },
+            {
+              "id": "d",
+              "text": "salários elevados podem aumentar custos das empresas e reduzir o número de trabalhadores contratados."
+            },
+            {
+              "id": "e",
+              "text": "a teoria do salário eficiência afirma que salários altos sempre eliminam o desemprego estrutural."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A teoria do salário eficiência sugere que salários mais altos podem elevar produtividade, comprometimento e reduzir turnover, mas também podem elevar custos e reduzir contratações, contribuindo para desemprego estrutural. A alternativa E é incorreta porque generaliza indevidamente o efeito dos salários altos."
+        },
+        {
+          "id": "q047",
+          "type": "multiple_correct",
+          "command": "Quais são as principais características do emprego informal no Brasil, e quais fatores levam os trabalhadores a optarem por ele? Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o emprego informal é caracterizado pela ausência de vínculo empregatício formal."
+            },
+            {
+              "id": "b",
+              "text": "trabalhadores informais não possuem acesso a direitos como FGTS, previdência social e seguro-desemprego."
+            },
+            {
+              "id": "c",
+              "text": "fatores como alta carga tributária sobre empregos formais e flexibilidade de horários podem levar à informalidade."
+            },
+            {
+              "id": "d",
+              "text": "falta de oportunidades formais, necessidade de renda imediata, crises econômicas e rigidez das leis trabalhistas podem contribuir para o emprego informal."
+            },
+            {
+              "id": "e",
+              "text": "o emprego informal garante automaticamente maior proteção previdenciária e estabilidade trabalhista do que o emprego formal."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a resposta esperada: o emprego informal envolve ausência de vínculo formal, perda de direitos e pode decorrer de carga tributária, flexibilidade, falta de oportunidades, necessidade de renda, crises e rigidez trabalhista. A alternativa E é incorreta porque afirma o oposto da caracterização apresentada."
+        },
+        {
+          "id": "q048",
+          "type": "single_correct",
+          "command": "O que pode explicar a alta informalidade no mercado de trabalho brasileiro?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Excessiva regulamentação trabalhista e altos encargos sobre a folha de pagamento."
+            },
+            {
+              "id": "b",
+              "text": "Flexibilidade do mercado formal."
+            },
+            {
+              "id": "c",
+              "text": "Redução de empreendedores individuais."
+            },
+            {
+              "id": "d",
+              "text": "Política fiscal expansionista."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. O mercado de trabalho brasileiro possui elevados encargos trabalhistas e legislação rígida, o que leva muitos empregadores e trabalhadores a optarem pela informalidade para reduzir custos."
+        },
+        {
+          "id": "q049",
+          "type": "true_false",
+          "command": "A inflação, por si só, é algo necessariamente negativo para a economia, pois gera perda de poder de compra.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A inflação não é necessariamente negativa para a economia, sendo tratada como algo inevitável em certos contextos. A perda de poder de compra nem sempre ocorre, pois a renda pode acompanhar o aumento no nível de preços."
+        },
+        {
+          "id": "q050",
+          "type": "true_false",
+          "command": "De acordo com os clássicos, a moeda é não-neutra, pois ela muda variáveis reais, como o desemprego.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Os clássicos acreditavam que a moeda é neutra, isto é, ela não altera variáveis reais como o desemprego."
+        },
+        {
+          "id": "q051",
+          "type": "true_false",
+          "command": "Sobre a história inflacionária do Brasil, 1980 foi conhecida como a década perdida, em que os países latino-americanos em geral viveram crises econômicas, tendo estagnação econômica e inflação. No Brasil, teve hiperinflação e uma desorganização econômica completa que parou o país no tempo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O material caracteriza os anos 1980 como a década perdida, marcada por crise, estagnação econômica, inflação e, no Brasil, hiperinflação e forte desorganização econômica."
+        },
+        {
+          "id": "q052",
+          "type": "true_false",
+          "command": "Os custos de menu são os custos associados a alterações frequentes nos preços em um ambiente de inflação.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Custos de menu são os custos associados a alterações frequentes de preços em contexto inflacionário."
+        },
+        {
+          "id": "q053",
+          "type": "true_false",
+          "command": "O custo de sola de sapato se refere aos custos associados ao esforço extra que indivíduos e empresas precisam fazer para minimizar as perdas decorrentes da inflação, especialmente em contextos de hiperinflação.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O custo de sola de sapato designa os custos do esforço extra para reduzir perdas causadas pela inflação, especialmente em ambientes de hiperinflação."
+        },
+        {
+          "id": "q054",
+          "type": "multiple_correct",
+          "command": "Discorra sobre como o Banco Central age para controlar a inflação. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o Banco Central controla a inflação principalmente por meio da política monetária."
+            },
+            {
+              "id": "b",
+              "text": "quando a inflação está alta, o Banco Central eleva os juros para desestimular o consumo e reduzir a demanda."
+            },
+            {
+              "id": "c",
+              "text": "quando a inflação está abaixo da meta ou a economia desacelera, o Banco Central pode reduzir a taxa de juros para incentivar consumo e investimento."
+            },
+            {
+              "id": "d",
+              "text": "o Banco Central também pode usar operações de mercado aberto para controlar a liquidez no sistema financeiro."
+            },
+            {
+              "id": "e",
+              "text": "o Banco Central controla a inflação exclusivamente por política fiscal, aumentando impostos e gastos públicos."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. O Banco Central controla a inflação por política monetária, especialmente pela Selic, e também usa instrumentos como operações de mercado aberto. A alternativa E é incorreta porque atribui ao Banco Central uma atuação exclusivamente fiscal, que não corresponde ao material."
+        },
+        {
+          "id": "q055",
+          "type": "multiple_correct",
+          "command": "A inflação, normalmente, é vista e noticiada como algo necessariamente negativo para a economia de país. De modo frequente, são publicadas notícias sobre como um país está “imprimindo mais dinheiro que o normal”, ou melhor dizendo, aumentando a oferta de moeda. Por quais motivos o Banco Central pode aumentar a oferta da moeda na economia? Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "estimular o crescimento econômico em períodos de recessão econômica."
+            },
+            {
+              "id": "b",
+              "text": "financiar déficits públicos por meio do chamado imposto inflacionário."
+            },
+            {
+              "id": "c",
+              "text": "reduzir o desemprego, conforme a lógica da Curva de Phillips."
+            },
+            {
+              "id": "d",
+              "text": "fornecer liquidez em caso de crise bancária."
+            },
+            {
+              "id": "e",
+              "text": "eliminar permanentemente a inflação por meio do aumento contínuo da quantidade de moeda."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a resposta esperada: o Banco Central pode aumentar a oferta de moeda para estimular a economia, financiar déficits, reduzir desemprego ou prover liquidez em crises bancárias. A alternativa E é incorreta porque aumento contínuo da oferta de moeda não elimina permanentemente a inflação."
+        },
+        {
+          "id": "q056",
+          "type": "single_correct",
+          "command": "No país αληθής, está sendo feito um estudo sobre a dinamicidade da moeda do país (κέρμα) na economia. Utilizando a fórmula da teoria quantitativa da moeda, calcule a velocidade da moeda.\n\nDados: PIB = 500 (em bilhões de κέρμα), nível de preços = 4, quantidade de moeda na economia = 100 (em bilhões de κέρμα).",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "5"
+            },
+            {
+              "id": "b",
+              "text": "10"
+            },
+            {
+              "id": "c",
+              "text": "20"
+            },
+            {
+              "id": "d",
+              "text": "40"
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. Pela teoria quantitativa da moeda, M × V = P × Y. Assim, 100 × V = 500 × 4, logo V = 2000 / 100 = 20."
+        },
+        {
+          "id": "q057",
+          "type": "single_correct",
+          "command": "Em relação aos tipos de inflação, escolha a alternativa correta:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "A inflação de demanda é uma consequência direta da falta de oferta de um produto."
+            },
+            {
+              "id": "b",
+              "text": "A espiral inflacionária de salários-preços é uma consequência da inflação de demanda."
+            },
+            {
+              "id": "c",
+              "text": "A inflação inercial é a ideia de que haverá inflação porque ela ocorreu no passado. Está vinculada à ideia de reajustes constantes feitos pelos agentes econômicos de um país."
+            },
+            {
+              "id": "d",
+              "text": "A inflação de custos é resolvida com políticas monetárias de aumento de taxa de juros."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. A inflação inercial está ligada à expectativa de continuidade da inflação com base na inflação passada e a reajustes constantes feitos pelos agentes econômicos. A alternativa A confunde inflação de demanda com falta de oferta; B associa incorretamente a espiral salários-preços à inflação de demanda; D superestima a eficácia do aumento de juros para resolver inflação de custos."
+        }
+      ]
+    },
+    {
+      "id": "lista-6",
+      "title": "Lista 6 - IEMONIT (Adaptado)",
+      "questions": [
+        {
+          "id": "q001",
+          "type": "multiple_correct",
+          "command": "Com respeito ao balanço de pagamentos, assinale todas as alternativas corretas sobre o que ele registra e sobre seus principais grupos de contas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "registra todas as transações comerciais e financeiras de um país com o resto do mundo durante determinado período."
+            },
+            {
+              "id": "b",
+              "text": "transações associadas à entrada de dólares no país são registradas com sinal positivo."
+            },
+            {
+              "id": "c",
+              "text": "transações associadas à saída de dólares do país são registradas com sinal negativo."
+            },
+            {
+              "id": "d",
+              "text": "inclui transações correntes, conta capital, conta financeira e erros e omissões."
+            },
+            {
+              "id": "e",
+              "text": "registra apenas transações internas entre famílias, empresas e governo, sem considerar o resto do mundo."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. O balanço de pagamentos registra transações comerciais e financeiras de um país com o exterior, usando sinal positivo para entradas de dólares e negativo para saídas. Sua estrutura inclui transações correntes, conta capital, conta financeira e erros e omissões. A alternativa E é incorreta porque exclui justamente a dimensão internacional do balanço de pagamentos."
+        },
+        {
+          "id": "q002",
+          "type": "multiple_correct",
+          "command": "Assinale todas as alternativas corretas sobre os componentes das Transações Correntes no balanço de pagamentos.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a balança comercial registra exportações e importações de mercadorias."
+            },
+            {
+              "id": "b",
+              "text": "a balança de serviços e rendas inclui itens como transportes, viagens internacionais, seguros, serviços financeiros, royalties e serviços empresariais."
+            },
+            {
+              "id": "c",
+              "text": "a renda primária inclui lucros, dividendos, juros e salários."
+            },
+            {
+              "id": "d",
+              "text": "a renda secundária envolve movimentações financeiras sem contrapartida."
+            },
+            {
+              "id": "e",
+              "text": "a conta financeira é uma subdivisão da balança comercial de mercadorias."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas porque correspondem aos componentes descritos das Transações Correntes. A alternativa E é incorreta, pois a conta financeira é um grupo próprio do balanço de pagamentos, não uma subdivisão da balança comercial."
+        },
+        {
+          "id": "q003",
+          "type": "multiple_correct",
+          "command": "Explique por que pode ser problemático para um país ter déficits substanciais e crescentes, por anos seguidos, em Transações Correntes. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "déficits em transações correntes precisam ser compensados por superávits na conta capital e financeira."
+            },
+            {
+              "id": "b",
+              "text": "pode ser difícil financiar déficits substanciais e crescentes por longo período."
+            },
+            {
+              "id": "c",
+              "text": "o fluxo de capitais depende, entre outros aspectos, das expectativas dos investidores estrangeiros."
+            },
+            {
+              "id": "d",
+              "text": "uma alteração nas expectativas dos investidores pode reduzir consideravelmente o fluxo de capitais para o país."
+            },
+            {
+              "id": "e",
+              "text": "déficits em transações correntes são sempre irrelevantes, pois não têm relação com financiamento externo."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. O texto explica que déficits substanciais e crescentes em transações correntes exigem compensação por entradas de capital e podem se tornar difíceis de financiar, especialmente quando mudam as expectativas dos investidores. A alternativa E é incorreta porque nega o problema de financiamento externo mencionado."
+        },
+        {
+          "id": "q004",
+          "type": "multiple_correct",
+          "command": "Considerando a determinação da taxa de câmbio em regimes de câmbio fixo e flutuante, assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "no regime de câmbio fixo, o preço da moeda estrangeira em moeda local não se altera."
+            },
+            {
+              "id": "b",
+              "text": "no regime de câmbio flutuante, o preço da moeda estrangeira é estabelecido no mercado de câmbio."
+            },
+            {
+              "id": "c",
+              "text": "o regime de bandas cambiais estabelece limites formais de variação permissível para a taxa de câmbio."
+            },
+            {
+              "id": "d",
+              "text": "mesmo em regimes flutuantes, a autoridade governamental pode intervir comprando ou vendendo divisas para evitar oscilações excessivas."
+            },
+            {
+              "id": "e",
+              "text": "no regime de câmbio fixo, a taxa é sempre determinada livremente pelo mercado, sem atuação da autoridade monetária."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a explicação sobre regimes cambiais. A alternativa E é incorreta porque, no câmbio fixo, a autoridade monetária determina ou sustenta a taxa, não deixando seu valor livremente definido pelo mercado."
+        },
+        {
+          "id": "q005",
+          "type": "single_correct",
+          "command": "Qual alternativa descreve corretamente o papel das reservas internacionais nos regimes cambiais apresentados no texto?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "no câmbio fixo, as reservas internacionais são usadas pelo Banco Central para intervir no mercado de câmbio quando a moeda sofre pressões de desvalorização."
+            },
+            {
+              "id": "b",
+              "text": "no câmbio flutuante, as reservas internacionais são sempre usadas para manter uma taxa nominal imutável."
+            },
+            {
+              "id": "c",
+              "text": "no câmbio fixo, as reservas internacionais não têm qualquer função, pois o mercado sempre se ajusta sozinho."
+            },
+            {
+              "id": "d",
+              "text": "no câmbio flutuante, as reservas internacionais aumentam automaticamente sempre que há déficit comercial."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. No regime de câmbio fixo, as reservas internacionais são usadas pelo Banco Central para comprar ou vender moeda no mercado de câmbio, sustentando a taxa. No regime flutuante, conforme o texto, as reservas internacionais não são alteradas automaticamente para fixar a taxa."
+        },
+        {
+          "id": "q006",
+          "type": "true_false",
+          "command": "Uma desvalorização da taxa de câmbio nominal sempre altera o saldo da balança comercial.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A desvalorização precisa ser real para alterar o saldo da balança comercial. Se a desvalorização nominal apenas repõe a inflação, o saldo da balança comercial pode permanecer inalterado."
+        },
+        {
+          "id": "q007",
+          "type": "true_false",
+          "command": "Em regime de câmbio fixo, um aumento dos gastos dos turistas estrangeiros no Brasil levará a uma redução do estoque de moeda estrangeira no Banco Central.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Em regime de câmbio fixo, o Banco Central vende divisas quando há excesso de demanda e compra divisas quando há excesso de oferta. O aumento dos gastos de turistas estrangeiros amplia a oferta de divisas e tende a aumentar as reservas, tudo o mais constante."
+        },
+        {
+          "id": "q008",
+          "type": "true_false",
+          "command": "No balanço de pagamentos brasileiro, os gastos com viagens internacionais dos brasileiros e os empréstimos concedidos pelo Banco Mundial são registrados, respectivamente, na balança de serviços e renda e na rubrica outros investimentos da conta financeira.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Conforme o gabarito, os gastos com viagens internacionais são registrados na balança de serviços e renda, enquanto os empréstimos do Banco Mundial entram como outros investimentos na conta financeira."
+        },
+        {
+          "id": "q009",
+          "type": "true_false",
+          "command": "Em regime de câmbio fixo, o mercado define o valor da taxa de câmbio, e a autoridade monetária determina o nível das reservas internacionais do país.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. No regime de câmbio fixo, a autoridade monetária determina a taxa de câmbio, enquanto o mercado influencia o nível das reservas por meio de pressões de oferta e demanda por divisas."
+        },
+        {
+          "id": "q010",
+          "type": "single_correct",
+          "command": "A valorização da taxa de câmbio, no Brasil:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "favorece a entrada de capitais externos."
+            },
+            {
+              "id": "b",
+              "text": "eleva os termos de troca."
+            },
+            {
+              "id": "c",
+              "text": "torna as importações mais baratas."
+            },
+            {
+              "id": "d",
+              "text": "diminui a dívida externa em dólar."
+            },
+            {
+              "id": "e",
+              "text": "é neutra em relação à taxa de inflação."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. A valorização cambial torna a moeda nacional mais forte frente à moeda estrangeira, reduzindo o custo das importações em moeda local."
+        },
+        {
+          "id": "q011",
+          "type": "multiple_correct",
+          "command": "Descreva o possível efeito da desvalorização do real em relação ao dólar sobre as exportações. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "as exportações nacionais ficam mais baratas em moeda estrangeira."
+            },
+            {
+              "id": "b",
+              "text": "com a mesma quantia em dólar, compradores estrangeiros passam a adquirir maior valor em bens brasileiros medidos em reais."
+            },
+            {
+              "id": "c",
+              "text": "a desvalorização tende a aumentar as exportações nacionais."
+            },
+            {
+              "id": "d",
+              "text": "em mercadorias com preços fixados em dólar, exportadores podem conceder descontos, pois passam a receber mais reais por dólar."
+            },
+            {
+              "id": "e",
+              "text": "a desvalorização torna os produtos nacionais mais caros em moeda estrangeira e reduz necessariamente as exportações."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A desvalorização da moeda nacional torna os bens exportáveis mais baratos em moeda estrangeira e pode estimular as exportações. A alternativa E é incorreta porque descreve o efeito oposto ao apresentado."
+        },
+        {
+          "id": "q012",
+          "type": "multiple_correct",
+          "command": "Descreva o possível efeito da desvalorização do real em relação ao dólar sobre as importações. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "as importações ficam mais caras para os residentes do país."
+            },
+            {
+              "id": "b",
+              "text": "passa a ser necessário gastar mais reais para comprar o mesmo produto cotado em dólares."
+            },
+            {
+              "id": "c",
+              "text": "a desvalorização tende a reduzir as importações."
+            },
+            {
+              "id": "d",
+              "text": "a desvalorização torna todos os produtos importados automaticamente mais baratos em moeda nacional."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c"
+          ],
+          "justification": "As alternativas A, B e C estão corretas. Quando o real se desvaloriza frente ao dólar, os produtos importados ficam mais caros em reais, o que tende a reduzir as importações. A alternativa D é incorreta porque afirma o oposto do efeito descrito."
+        },
+        {
+          "id": "q013",
+          "type": "multiple_correct",
+          "command": "Descreva o possível efeito da desvalorização do real em relação ao dólar sobre o nível de preços internos. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o aumento do preço dos produtos importados tende a elevar os índices de preços internos."
+            },
+            {
+              "id": "b",
+              "text": "a redução das importações pode aumentar a procura por bens nacionais substitutos."
+            },
+            {
+              "id": "c",
+              "text": "se a produção nacional não puder ser aumentada rapidamente, pode haver pressão de alta sobre os preços dos substitutos nacionais."
+            },
+            {
+              "id": "d",
+              "text": "em situação de capacidade ociosa, o efeito de pressão sobre preços de bens nacionais substitutos pode ser pouco importante."
+            },
+            {
+              "id": "e",
+              "text": "a desvalorização cambial sempre reduz os índices de preços internos, pois elimina a demanda por bens nacionais."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A desvalorização encarece importados, pode deslocar a demanda para substitutos nacionais e pressionar preços quando a oferta interna é pouco elástica. A alternativa E é incorreta porque contradiz os efeitos inflacionários possíveis da desvalorização."
+        },
+        {
+          "id": "q014",
+          "type": "true_false",
+          "command": "Um aumento das reservas internacionais de um país, ano após ano, indica que esse país tem apresentado sucessivos superávits em suas Transações Correntes com o resto do mundo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O aumento das reservas indica superávits no resultado do balanço de pagamentos, mas pode ocorrer mesmo com déficit em transações correntes, desde que a conta capital e financeira tenha saldo positivo suficiente para compensá-lo."
+        },
+        {
+          "id": "q015",
+          "type": "true_false",
+          "command": "Do ponto de vista contábil, o Balanço de Pagamentos de um país está sempre em equilíbrio.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Formalmente, o Balanço de Pagamentos sempre apresenta resultado final nulo, pois a contrapartida do déficit ou superávit, isto é, a variação das reservas, é registrada com sinal contrário, seguindo o princípio contábil das partidas dobradas."
+        },
+        {
+          "id": "q016",
+          "type": "multiple_correct",
+          "command": "Compare o processo de ajustes exigido para eliminar um déficit na Balança Comercial sob o regime de taxas de câmbio fixas. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "um déficit comercial significa importações maiores que exportações."
+            },
+            {
+              "id": "b",
+              "text": "sob câmbio fixo, a tendência de elevação da taxa de câmbio é contida pela autoridade monetária."
+            },
+            {
+              "id": "c",
+              "text": "a autoridade monetária pode ofertar divisas para conter a depreciação da moeda."
+            },
+            {
+              "id": "d",
+              "text": "o uso de reservas internacionais pode reduzir seu estoque."
+            },
+            {
+              "id": "e",
+              "text": "sob câmbio fixo, o ajuste ocorre sempre sem uso de reservas e sem atuação da autoridade monetária."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. Em câmbio fixo, a autoridade monetária intervém para conter a pressão de depreciação, podendo vender divisas e reduzir reservas. A alternativa E é incorreta porque nega a intervenção característica do regime fixo."
+        },
+        {
+          "id": "q017",
+          "type": "multiple_correct",
+          "command": "Compare o processo de ajustes exigido para eliminar um déficit na Balança Comercial quando as taxas de câmbio são flutuantes. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a tendência de elevação da taxa de câmbio se materializa e a moeda é depreciada."
+            },
+            {
+              "id": "b",
+              "text": "o ajuste ocorre pelo próprio mercado, sem intervenção direta da autoridade monetária."
+            },
+            {
+              "id": "c",
+              "text": "a moeda nacional desvalorizada torna as exportações mais competitivas internacionalmente."
+            },
+            {
+              "id": "d",
+              "text": "a moeda nacional desvalorizada torna as importações menos acessíveis."
+            },
+            {
+              "id": "e",
+              "text": "o regime flutuante impede qualquer possibilidade de inflação associada à desvalorização da moeda."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. No câmbio flutuante, a depreciação ocorre pelo mercado, estimulando exportações e desestimulando importações. A alternativa E é incorreta porque o texto reconhece que desvalorizações constantes podem elevar custos de importações e gerar inflação."
+        },
+        {
+          "id": "q018",
+          "type": "multiple_correct",
+          "command": "Como uma desvalorização cambial pode ajustar a balança comercial em um país com taxa de câmbio fixa? Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a desvalorização encarece as importações."
+            },
+            {
+              "id": "b",
+              "text": "a desvalorização aumenta a competitividade dos produtos domésticos."
+            },
+            {
+              "id": "c",
+              "text": "a desvalorização diminui a demanda por itens importados."
+            },
+            {
+              "id": "d",
+              "text": "a desvalorização torna o produto nacional mais competitivo no mercado externo."
+            },
+            {
+              "id": "e",
+              "text": "a desvalorização reduz necessariamente as exportações por tornar a moeda nacional mais forte."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A desvalorização encarece importações, aumenta a competitividade de produtos domésticos e estimula exportações. A alternativa E é incorreta porque confunde desvalorização com valorização da moeda nacional."
+        },
+        {
+          "id": "q019",
+          "type": "multiple_correct",
+          "command": "Como uma desvalorização cambial pode ajustar a balança comercial em um país com taxas de câmbio flexíveis? Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a desvalorização provoca queda na demanda por importações."
+            },
+            {
+              "id": "b",
+              "text": "a desvalorização aumenta a demanda por exportações."
+            },
+            {
+              "id": "c",
+              "text": "em um primeiro momento, pode haver criação de superávit comercial."
+            },
+            {
+              "id": "d",
+              "text": "o aumento das exportações amplia a oferta de divisas, o que pode provocar valorização posterior da moeda nacional."
+            },
+            {
+              "id": "e",
+              "text": "uma vez criado o superávit comercial, ele se mantém permanentemente sem qualquer força de ajuste."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. No regime flexível, a desvalorização reduz importações, eleva exportações e pode gerar superávit inicial; contudo, o aumento da oferta de divisas pode valorizar posteriormente a moeda nacional. A alternativa E é incorreta porque ignora o mecanismo de ajuste descrito."
+        },
+        {
+          "id": "q020",
+          "type": "single_correct",
+          "command": "Belíndia e Atlântida são economias exatamente iguais, exceto pelo fato de que em Atlântida as exportações totais e as importações totais são duas vezes maiores do que em Belíndia como proporção do PIB. Em qual desses países uma desvalorização cambial seria mais eficaz para aumentar a demanda agregada?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "em Belíndia, porque menor participação do comércio exterior torna a desvalorização proporcionalmente mais forte."
+            },
+            {
+              "id": "b",
+              "text": "em Atlântida, porque exportações e importações têm maior participação no PIB."
+            },
+            {
+              "id": "c",
+              "text": "em ambos, necessariamente com o mesmo efeito, pois a participação do comércio exterior é irrelevante."
+            },
+            {
+              "id": "d",
+              "text": "em nenhum dos dois países, pois a desvalorização cambial nunca afeta demanda agregada."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. A desvalorização afeta diretamente a balança comercial, estimulando exportações e desestimulando importações. Esse efeito é maior onde exportações e importações têm maior participação no PIB, ou seja, em Atlântida."
+        },
+        {
+          "id": "q021",
+          "type": "single_correct",
+          "command": "Sobre as interpretações das contas e subcontas do Balanço de Pagamentos, assinale a alternativa CORRETA:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "As reservas internacionais, que correspondem ao resultado do balanço de pagamentos, não podem ser usadas como instrumento de política fiscal e cambial com a finalidade de, por exemplo, realizar o pagamento da dívida externa ou regular o câmbio em situações de forte desequilíbrio."
+            },
+            {
+              "id": "b",
+              "text": "Um déficit nas transações correntes, ou seja, quando o volume de importações supera o de exportações, não é um fenômeno necessariamente ruim para a economia, pois pode ser compensado pela entrada de recursos estrangeiros que se manifesta por meio de um saldo positivo nas contas de capital e financeira."
+            },
+            {
+              "id": "c",
+              "text": "Tanto o investimento direto quanto o investimento em carteira correspondem a recursos estrangeiros de natureza volátil, isto é, sua entrada e saída do país são determinadas por variáveis de curto prazo, tais como as decisões políticas."
+            },
+            {
+              "id": "d",
+              "text": "A conta financeira é representada sempre com sinal positivo, o que significa entrada líquida de recursos externos no país."
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Um déficit em transações correntes não é necessariamente ruim, pois pode ser financiado por entrada de capitais registrada nas contas de capital e financeira. As demais alternativas são incorretas porque restringem indevidamente o uso das reservas, confundem investimento direto com investimento volátil e afirmam que a conta financeira sempre teria sinal positivo."
+        },
+        {
+          "id": "q022",
+          "type": "single_incorrect",
+          "command": "Sobre o mercado cambial, assinale a alternativa INCORRETA:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "A taxa de câmbio real difere da nominal pelo fato de incorporar o valor real da moeda nos dois países cujas moedas estão sendo comparadas, ou seja, inclui no seu cálculo os índices de preços de ambos os países."
+            },
+            {
+              "id": "b",
+              "text": "A volatilidade cambial em regimes de taxas flexíveis fornece argumentos favoráveis à intervenções estatais no sentido de atenuar as variações no câmbio a fim de mitigar riscos aos investimentos internos e reduzir a inflação de custos."
+            },
+            {
+              "id": "c",
+              "text": "A inflação doméstica torna as exportações menos competitivas."
+            },
+            {
+              "id": "d",
+              "text": "Os regimes cambiais mistos que são adotados em alguns países não são capazes de combinar as estratégias dos regimes de taxas fixas e flexíveis, tendo em vista que esses regimes são mutuamente excludentes."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é incorreta. Regimes cambiais mistos ou intermediários justamente combinam características dos regimes fixo e flexível, permitindo alguma atuação das autoridades monetárias quando há variações julgadas excessivas. As alternativas A, B e C estão de acordo com os conceitos de câmbio real, volatilidade cambial e competitividade externa."
+        },
+        {
+          "id": "q023",
+          "type": "single_correct",
+          "command": "Assinale a alternativa CORRETA quanto ao mercado cambial e à paridade do poder de compra:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Taxa de câmbio e inflação doméstica não possuem uma relação direta entre elas."
+            },
+            {
+              "id": "b",
+              "text": "Em qualquer situação, a taxa nominal de câmbio é aquela que mantém constante a taxa real de câmbio no longo prazo."
+            },
+            {
+              "id": "c",
+              "text": "A teoria da paridade do poder de compra não é um indicador exato da trajetória da taxa de câmbio nominal, tendo em vista os obstáculos naturais ao comércio exterior, como custos e distâncias de transporte e impostos, o peso das transações financeiras de curto prazo sobre o aporte de moeda estrangeira no mercado nacional e a introdução de inovações tecnológicas, que alteram os fluxos de importação e exportação."
+            },
+            {
+              "id": "d",
+              "text": "A “taxa de câmbio Big Mac”, criada pela revista The Economist, não reflete distorções no poder de compra das moedas dos diferentes países, pois o produto utilizado como base para o cálculo do índice, o Big Mac, é bastante padronizado e homogêneo, estando sujeito a baixas variações nos custos de produção."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. A paridade do poder de compra é uma referência útil, mas não prevê exatamente a trajetória da taxa nominal de câmbio, pois há custos de transporte, impostos, fluxos financeiros de curto prazo e mudanças tecnológicas que afetam importações, exportações e oferta de divisas. As demais alternativas simplificam ou distorcem a relação entre câmbio, inflação e poder de compra."
+        },
+        {
+          "id": "q024",
+          "type": "true_false",
+          "command": "O Balanço de Pagamentos contabiliza apenas transações realizadas por governos e empresas nacionais com o exterior.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O Balanço de Pagamentos registra as transações de residentes de um país com o resto do mundo, não apenas aquelas realizadas por governos e empresas nacionais."
+        },
+        {
+          "id": "q025",
+          "type": "true_false",
+          "command": "Os investimentos diretos tendem a ser mais estáveis, por estarem relacionados a decisões de longo prazo e à constituição de instalações produtivas no país.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Investimentos diretos tendem a ser mais estáveis porque envolvem decisões de longo prazo, como implantação de unidades produtivas e participação duradoura na economia receptora."
+        },
+        {
+          "id": "q026",
+          "type": "true_false",
+          "command": "Um resultado positivo no balanço de pagamentos baseado em investimentos em carteira pode ser considerado frágil, já que esse tipo de investimento é volátil e instável, sujeito a maiores oscilações conforme as expectativas dos investidores.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Investimentos em carteira são mais voláteis e sensíveis às expectativas dos investidores, de modo que um resultado positivo sustentado por esse tipo de fluxo pode ser considerado frágil."
+        },
+        {
+          "id": "q027",
+          "type": "true_false",
+          "command": "O Produto Nacional Bruto (PNB) é igual ao Produto Interno Bruto (PIB) acrescido da Renda Líquida Enviada ao Exterior (RLEEX).",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O PNB considera a renda líquida recebida do exterior, e não a renda líquida enviada ao exterior. Quando há renda líquida enviada ao exterior, ela reduz a renda nacional em relação ao PIB."
+        },
+        {
+          "id": "q028",
+          "type": "true_false",
+          "command": "No regime cambial de taxas fixas, a fixação da taxa de câmbio é administrada pelas autoridades monetárias, enquanto que no regime de taxas flexíveis, o preço da moeda é determinado pelo mercado.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. No câmbio fixo, a autoridade monetária administra a taxa de câmbio; no câmbio flexível, o preço da moeda é determinado pelas forças de oferta e demanda no mercado cambial."
+        },
+        {
+          "id": "q029",
+          "type": "true_false",
+          "command": "Exportadores de mercadorias demandam divisas no mercado cambial e importadores de mercadorias ofertam divisas.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Exportadores recebem moeda estrangeira e, portanto, ofertam divisas no mercado cambial. Importadores precisam de moeda estrangeira para pagar compras externas, logo demandam divisas."
+        },
+        {
+          "id": "q030",
+          "type": "true_false",
+          "command": "No regime de câmbio flexível, a livre flutuação da relação entre moedas pode causar muita volatilidade no nível da taxa de câmbio, fornecendo um motivo em favor da intervenção das autoridades monetárias no mercado de câmbio.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A volatilidade cambial em regimes flexíveis pode criar riscos e pressões sobre preços, o que pode justificar intervenções pontuais das autoridades monetárias para suavizar oscilações excessivas."
+        },
+        {
+          "id": "q031",
+          "type": "true_false",
+          "command": "No regime de câmbio fixo, um aumento dos gastos dos turistas estrangeiros no Brasil levará a um aumento das reservas do Banco Central, tudo o mais constante.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. O aumento dos gastos de turistas estrangeiros amplia a oferta de divisas. Em regime de câmbio fixo, o Banco Central tende a comprar esse excesso de divisas, elevando suas reservas internacionais."
+        },
+        {
+          "id": "q032",
+          "type": "single_correct",
+          "command": "Sobre a taxa de câmbio e mercado cambial, assinale a alternativa CORRETA:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "No regime de câmbio flexível, a determinação da taxa de câmbio é em princípio fixada pelas autoridades monetárias e depois determinada pelas interações no mercado."
+            },
+            {
+              "id": "b",
+              "text": "Em regime de câmbio fixo, o mercado define o valor da taxa de câmbio e a autoridade monetária determina o nível das reservas internacionais do país."
+            },
+            {
+              "id": "c",
+              "text": "No Brasil, o regime cambial adotado é o regime de câmbio fixo."
+            },
+            {
+              "id": "d",
+              "text": "No regime intermediário, o preço da moeda é em princípio fixado pelo mercado, mas se ocorrem variações na taxa cambial que forem julgadas excessivas, as autoridades monetárias intervêm."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. Em regimes intermediários ou administrados, a taxa é em princípio determinada pelo mercado, mas a autoridade monetária pode intervir quando julga as oscilações excessivas. As demais alternativas confundem os regimes fixo, flexível e o caso brasileiro."
+        },
+        {
+          "id": "q033",
+          "type": "single_correct",
+          "command": "Os regimes cambiais são um conjunto de regras, acordos e instituições que determinam as transações financeiras entre diferentes países. Sendo assim, eles possuem um papel importante na economia dos países quando se trata da taxa de câmbio. Escolha a opção correta em relação aos regimes cambiais.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "O regime cambial fixo é aquele que o mercado define a taxa de câmbio e o banco central é a instituição responsável por analisar como o mercado está reagindo em relação a uma queda ou crescimento de oferta e demanda."
+            },
+            {
+              "id": "b",
+              "text": "O aspecto mais positivo que leva um país a adotar o regime cambial fixo é o fato de que nele não há uma previsibilidade em relação a cotação da taxa de câmbio no futuro e isso é bom para que haja investimentos por parte de empresas, haja vista que elas podem investir com uma taxa baixa e posteriormente terem um grande lucro com a elevação da taxa de câmbio."
+            },
+            {
+              "id": "c",
+              "text": "Em relação ao regime cambial flexível, tem-se que o fato dele não afetar as reservas internacionais e ser autorregulado são pontos positivos para os países que o adotam. Em contrapartida, a imprevisibilidade é um fator que não é positivo."
+            },
+            {
+              "id": "d",
+              "text": "O regime de câmbio misto apresenta características tanto do flexível quanto do fixo. Ou seja, a taxa de câmbio no regime misto é definida pelo banco central ao mesmo tempo que as taxas de juros são delimitadas pelo mercado, ou seja, pela oferta e demanda."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. O regime cambial flexível tem como vantagens a autorregulação e a menor necessidade de uso de reservas internacionais, mas apresenta como desvantagem a imprevisibilidade cambial. As demais alternativas descrevem incorretamente os regimes fixo ou misto."
+        },
+        {
+          "id": "q034",
+          "type": "single_correct",
+          "command": "De acordo com seus estudos e as aulas ministradas ao longo do semestre, sobre a taxa de câmbio, escolha a opção correta abaixo.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Um recuo da taxa de câmbio significa que o real está ainda mais desvalorizado em relação ao dólar."
+            },
+            {
+              "id": "b",
+              "text": "Em um cenário onde o Real está desvalorizado, tem-se que isso é positivo para as importações tendo em vista que é possível realizar a troca de uma quantidade maior de unidade monetária de real por unidade monetária de dólar."
+            },
+            {
+              "id": "c",
+              "text": "Se o dólar continuar em recuo em relação ao real, isso será desvantajoso para os exportadores tendo em vista que as transações econômicas futuras que eles realizarem terão um lucro menor."
+            },
+            {
+              "id": "d",
+              "text": "Com o recuo da taxa de câmbio do dólar, tem-se que há uma diminuição das importações por parte dos brasileiros tendo em vista que a troca de 1 real em relação a um dólar está mais elevada."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. Um recuo do dólar frente ao real indica valorização do real, o que tende a reduzir a receita em reais dos exportadores para uma mesma venda em dólar. As demais alternativas invertem os efeitos da valorização e da desvalorização cambial sobre importações e exportações."
+        },
+        {
+          "id": "q035",
+          "type": "multiple_correct",
+          "command": "Em 1999, houve uma grande crise cambial no Brasil, com abandono da âncora cambial implantada no Plano Real. Tendo em vista a medida econômica tomada pelo governo para refrear a perda de valor do real, assinale todas as alternativas corretas sobre por que o governo aumentou a taxa de juros visando conter a rápida desvalorização do real.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "ao aumentar a taxa de juros, o governo tende a elevar a poupança nacional, tudo o mais constante."
+            },
+            {
+              "id": "b",
+              "text": "juros mais altos aumentam a oferta de fundos no mercado de fundos de empréstimo."
+            },
+            {
+              "id": "c",
+              "text": "juros mais altos tendem a reduzir investimentos internos e externos, diminuindo a demanda por fundos de empréstimo."
+            },
+            {
+              "id": "d",
+              "text": "a nova taxa de juros de equilíbrio, maior que a anterior, pode reduzir o investimento externo líquido e afetar o mercado cambial."
+            },
+            {
+              "id": "e",
+              "text": "o aumento dos juros foi usado para acelerar a desvalorização do real e reduzir a demanda por moeda nacional."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a resposta esperada. O aumento dos juros eleva a poupança, afeta oferta e demanda de fundos, reduz o investimento externo líquido e altera o equilíbrio cambial, contribuindo para conter a desvalorização. A alternativa E é incorreta porque afirma o objetivo oposto."
+        },
+        {
+          "id": "q036",
+          "type": "single_correct",
+          "command": "Em 1999, houve uma grande crise cambial no Brasil, com abandono da âncora cambial implantada no Plano Real. Represente graficamente o que irá acontecer nessa economia.",
+          "command_image": "img/ECO0019/L6-ExIE-Q1-b.png",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "o aumento da taxa de juros desloca a economia para um novo equilíbrio, com efeitos sobre o mercado de fundos de empréstimo, investimento externo líquido e mercado cambial."
+            },
+            {
+              "id": "b",
+              "text": "a redução da taxa de juros aumenta a demanda por fundos e desvaloriza ainda mais a moeda nacional."
+            },
+            {
+              "id": "c",
+              "text": "o gráfico mostra que o mercado cambial deixa de existir quando há aumento de juros."
+            },
+            {
+              "id": "d",
+              "text": "o gráfico mostra que a taxa de juros não afeta o investimento externo líquido nem a taxa de câmbio."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. O exercício solicita a representação dos efeitos do aumento da taxa de juros sobre o mercado de fundos de empréstimo, o investimento externo líquido e o mercado cambial, conforme a lógica da macroeconomia aberta."
+        },
+        {
+          "id": "q037",
+          "type": "single_correct",
+          "command": "Imagine que o país ‘’Quéteris Pharybws’’ esteja passando por uma delicada situação econômica. O país promoveu uma grande reforma tributária, diminuindo os impostos em vários setores da economia, sem, no entanto, diminuir seus gastos públicos. Qual consequência essa situação pode trazer à Quéteris Pharybws num primeiro momento?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Diminuição da taxa de juros real"
+            },
+            {
+              "id": "b",
+              "text": "Aumento nas exportações nacionais"
+            },
+            {
+              "id": "c",
+              "text": "Redução da taxa de câmbio real"
+            },
+            {
+              "id": "d",
+              "text": "Maior exportação líquida"
+            },
+            {
+              "id": "e",
+              "text": "Decréscimo na poupança nacional"
+            }
+          ],
+          "answer": [
+            "e"
+          ],
+          "justification": "A alternativa E é correta. A redução de impostos sem redução dos gastos públicos diminui a poupança pública e, consequentemente, tende a reduzir a poupança nacional."
+        },
+        {
+          "id": "q038",
+          "type": "true_false",
+          "command": "O mercado de fundos de empréstimo é regido pela taxa de juros nominal.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O mercado de fundos de empréstimo é regido pela taxa de juros real, pois ela expressa o custo efetivo dos empréstimos descontada a inflação."
+        },
+        {
+          "id": "q039",
+          "type": "true_false",
+          "command": "Em um cenário de fuga de capital, as Exportações Líquidas (EL) de um país tendem a aumentar.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A fuga de capital tende a desvalorizar a moeda local, o que torna exportações mais competitivas e importações mais caras, favorecendo aumento das exportações líquidas."
+        },
+        {
+          "id": "q040",
+          "type": "true_false",
+          "command": "Políticas comerciais não afetam as Exportações Líquidas (EL) de uma economia.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. No modelo apresentado, políticas comerciais podem alterar exportações e importações individualmente, mas o ajuste da taxa de câmbio real anula seu efeito líquido sobre as exportações líquidas."
+        },
+        {
+          "id": "q041",
+          "type": "true_false",
+          "command": "A taxa de câmbio real possui influência direta na quantidade de Investimento Externo Líquido (IEL) de um país.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. No modelo de macroeconomia aberta, o investimento externo líquido é diretamente influenciado pela taxa de juros real, enquanto a taxa de câmbio real ajusta o mercado de câmbio e as exportações líquidas."
+        },
+        {
+          "id": "q042",
+          "type": "true_false",
+          "command": "Se o Investimento Externo Líquido (IEL) de um país for negativo, mais estrangeiros estão investindo no país do que residentes do país investindo no exterior, caracterizando uma situação de Investimento Interno Líquido.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Um IEL negativo indica que a entrada de investimentos estrangeiros no país supera os investimentos dos residentes no exterior, caracterizando captação líquida de recursos externos."
+        },
+        {
+          "id": "q043",
+          "type": "true_false",
+          "command": "Um aumento na poupança nacional (S) irá causar um aumento na oferta de fundos de empréstimo, fazendo com que a taxa de juros real perceba um aumento.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Um aumento na poupança nacional eleva a oferta de fundos de empréstimo, mas tende a reduzir, e não aumentar, a taxa de juros real de equilíbrio."
+        },
+        {
+          "id": "q044",
+          "type": "single_correct",
+          "command": "Políticas comerciais são recorrentes na economia internacional. Entre elas, as mais conhecidas são medidas conhecidas popularmente como ‘’protecionistas’’, como cotas e tarifas de importação. Sobre políticas comerciais como as citadas no trecho, assinale a alternativa correta.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Políticas comerciais alteram as Exportações Líquidas de um país."
+            },
+            {
+              "id": "b",
+              "text": "A demanda por moeda nacional diminui com a implementação de tais medidas."
+            },
+            {
+              "id": "c",
+              "text": "Políticas comerciais são defendidas por economistas que advogam a favor do liberalismo econômico."
+            },
+            {
+              "id": "d",
+              "text": "O aumento da taxa de câmbio real anula o efeito que tais políticas podem ter sobre exportações e importações."
+            },
+            {
+              "id": "e",
+              "text": "A oferta de divisas nacionais aumenta em decorrência de tarifas de importação."
+            }
+          ],
+          "answer": [
+            "d"
+          ],
+          "justification": "A alternativa D é correta. No modelo apresentado, políticas comerciais podem alterar importações e exportações no curto prazo, mas o ajuste da taxa de câmbio real tende a anular seus efeitos sobre as exportações líquidas."
+        },
+        {
+          "id": "q045",
+          "type": "multiple_correct",
+          "command": "Em 1994, o México viveu uma de suas mais graves crises econômicas, conhecida como Efeito Tequila. Explique os efeitos no mercado de fundos de empréstimo e no mercado cambial que a fuga de capital causou na economia mexicana. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a saída de capital estrangeiro fez com que o Investimento Externo Líquido mexicano tivesse aumento brusco."
+            },
+            {
+              "id": "b",
+              "text": "o aumento do Investimento Externo Líquido elevou a demanda por fundos de empréstimo."
+            },
+            {
+              "id": "c",
+              "text": "mesmo com aumento da taxa de juros, houve maior oferta de divisas nacionais no mercado cambial."
+            },
+            {
+              "id": "d",
+              "text": "a maior oferta de divisas nacionais diminuiu a taxa de câmbio real de equilíbrio, fazendo o peso mexicano perder valor."
+            },
+            {
+              "id": "e",
+              "text": "a fuga de capitais valorizou fortemente o peso mexicano e eliminou o déficit da balança de pagamentos."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas conforme a resposta esperada. A fuga de capitais aumenta o investimento externo líquido, pressiona a demanda por fundos, amplia a oferta de divisas nacionais e desvaloriza a moeda local. A alternativa E é incorreta porque afirma o efeito oposto."
+        },
+        {
+          "id": "q046",
+          "type": "multiple_correct",
+          "command": "A entrada de capital nos Estados Unidos, advindo sobretudo do mercado mexicano, não causou grandes efeitos no mercado estadunidense, haja vista a magnitude e estabilidade da economia norte-americana. Ainda assim, assinale todas as alternativas corretas sobre possíveis consequências de uma súbita entrada de capital em uma economia regular.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a entrada de capital pode reduzir o Investimento Externo Líquido."
+            },
+            {
+              "id": "b",
+              "text": "a redução do Investimento Externo Líquido diminui a demanda por fundos."
+            },
+            {
+              "id": "c",
+              "text": "a menor demanda por fundos tende a diminuir a taxa de juros."
+            },
+            {
+              "id": "d",
+              "text": "a menor oferta de divisas nacionais no mercado cambial pode aumentar a taxa de câmbio real."
+            },
+            {
+              "id": "e",
+              "text": "a entrada súbita de capital sempre aumenta as exportações líquidas e elimina déficits comerciais."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A entrada de capital reduz o investimento externo líquido, diminui a demanda por fundos, reduz a taxa de juros e pode elevar a taxa de câmbio real, reduzindo exportações líquidas. A alternativa E é incorreta porque a resposta esperada aponta possível redução das exportações líquidas e déficit comercial."
+        },
+        {
+          "id": "q047",
+          "type": "single_correct",
+          "command": "A balança comercial de um país registra:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Apenas as exportações de bens e serviços."
+            },
+            {
+              "id": "b",
+              "text": "Apenas as importações de bens e serviços."
+            },
+            {
+              "id": "c",
+              "text": "A diferença entre exportações e importações de bens e serviços."
+            },
+            {
+              "id": "d",
+              "text": "O total de transações financeiras e comerciais do país."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. A balança comercial registra a diferença entre exportações e importações de bens e serviços, indicando superávit quando exportações superam importações e déficit no caso contrário."
+        },
+        {
+          "id": "q048",
+          "type": "true_false",
+          "command": "O superávit comercial ocorre quando as exportações são maiores que as importações.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. Há superávit comercial quando o valor das exportações supera o valor das importações."
+        },
+        {
+          "id": "q049",
+          "type": "true_false",
+          "command": "O câmbio flutuante significa que a taxa de câmbio é fixada pelo governo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. No câmbio flutuante, a taxa de câmbio é determinada pelo mercado, embora o Banco Central possa intervir ocasionalmente para evitar flutuações excessivas."
+        },
+        {
+          "id": "q050",
+          "type": "true_false",
+          "command": "A saída de capital do país tende a enfraquecer a moeda local.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. A saída de capital aumenta a pressão de venda da moeda local e pode provocar sua desvalorização no mercado cambial."
+        },
+        {
+          "id": "q051",
+          "type": "true_false",
+          "command": "O Investimento Estrangeiro Direto (IED) ocorre quando investidores compram ações na bolsa de valores de outro país.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. A compra de ações em bolsa caracteriza investimento em carteira. O investimento estrangeiro direto envolve participação produtiva ou controle mais duradouro em empresas e instalações no país receptor."
+        },
+        {
+          "id": "q052",
+          "type": "true_false",
+          "command": "Um real desvalorizado torna os produtos brasileiros mais caros para os estrangeiros.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. Um real desvalorizado torna os produtos brasileiros mais baratos em moeda estrangeira, favorecendo as exportações."
+        },
+        {
+          "id": "q053",
+          "type": "multiple_correct",
+          "command": "Explique a relação entre taxa de câmbio e balança comercial. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a taxa de câmbio afeta diretamente a balança comercial de um país."
+            },
+            {
+              "id": "b",
+              "text": "quando a moeda local se desvaloriza, as exportações tornam-se mais baratas para estrangeiros."
+            },
+            {
+              "id": "c",
+              "text": "quando a moeda local se desvaloriza, as importações ficam mais caras, reduzindo a demanda por produtos estrangeiros."
+            },
+            {
+              "id": "d",
+              "text": "quando a moeda local se valoriza, as exportações perdem competitividade e as importações tornam-se mais acessíveis."
+            },
+            {
+              "id": "e",
+              "text": "a valorização da moeda local sempre aumenta exportações e reduz importações, gerando superávit comercial."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A desvalorização favorece exportações e encarece importações, enquanto a valorização reduz competitividade externa e barateia importações. A alternativa E é incorreta porque inverte os efeitos da valorização."
+        },
+        {
+          "id": "q054",
+          "type": "single_correct",
+          "command": "Complete as lacunas com as palavras corretas:\n\nA equação da poupança nacional é representada por S = I + EL, onde S é a poupança nacional, I representa o investimento interno e EL refere-se às ________________. Se um país poupa mais do que investe, ele terá um __________ comercial e pode financiar outros países. Se poupa menos do que investe, ele precisará de financiamento externo e poderá apresentar um ____________ comercial.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "exportações líquidas, superávit, déficit"
+            },
+            {
+              "id": "b",
+              "text": "importações líquidas, déficit, superávit"
+            },
+            {
+              "id": "c",
+              "text": "reservas internacionais, superávit, superávit"
+            },
+            {
+              "id": "d",
+              "text": "transações financeiras, déficit, déficit"
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. Na identidade S = I + EL, EL representa exportações líquidas. Se a poupança excede o investimento, há superávit comercial; se a poupança é menor que o investimento, há necessidade de financiamento externo e possibilidade de déficit comercial."
+        },
+        {
+          "id": "q055",
+          "type": "single_correct",
+          "command": "Se um país apresenta os seguintes dados econômicos:\n\n| Indicador | Valor |\n| :---: | :---: |\n| Exportações | R$ 15 bilhões |\n| Importações | R$ 10 bilhões |\n\nCalcule as exportações líquidas e determine se há superávit ou déficit comercial.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "R$ 5 bilhões de exportações líquidas e superávit comercial."
+            },
+            {
+              "id": "b",
+              "text": "R$ 5 bilhões de exportações líquidas e déficit comercial."
+            },
+            {
+              "id": "c",
+              "text": "R$ 25 bilhões de exportações líquidas e superávit comercial."
+            },
+            {
+              "id": "d",
+              "text": "R$ -5 bilhões de exportações líquidas e déficit comercial."
+            }
+          ],
+          "answer": [
+            "a"
+          ],
+          "justification": "A alternativa A é correta. Exportações líquidas = exportações - importações = 15 - 10 = R$ 5 bilhões. Como o resultado é positivo, há superávit comercial."
+        },
+        {
+          "id": "q056",
+          "type": "multiple_correct",
+          "command": "Defina taxa de câmbio real e nominal. Assinale todas as alternativas corretas.",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "a taxa de câmbio nominal é o preço de uma moeda em relação a outra."
+            },
+            {
+              "id": "b",
+              "text": "a taxa de câmbio nominal indica quantas unidades de uma moeda são necessárias para comprar uma unidade de outra."
+            },
+            {
+              "id": "c",
+              "text": "a taxa de câmbio real mostra o poder de compra entre dois países, considerando diferenças de preços."
+            },
+            {
+              "id": "d",
+              "text": "a taxa de câmbio real ajuda a medir a competitividade dos produtos no mercado internacional."
+            },
+            {
+              "id": "e",
+              "text": "a taxa de câmbio nominal sempre considera diretamente os níveis de preços dos dois países."
+            }
+          ],
+          "answer": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "justification": "As alternativas A, B, C e D estão corretas. A taxa nominal expressa o preço relativo entre moedas, enquanto a taxa real considera os níveis de preços e indica poder de compra e competitividade internacional. A alternativa E é incorreta porque atribui à taxa nominal uma característica da taxa real."
+        },
+        {
+          "id": "q057",
+          "type": "single_incorrect",
+          "command": "Qual desses itens NÃO é um índice de paridade de poder de compra?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "Índice Big Mac"
+            },
+            {
+              "id": "b",
+              "text": "Índice de Paridade do Poder de Compra do PIB"
+            },
+            {
+              "id": "c",
+              "text": "Índice Nacional de Preços ao Consumidor Amplo"
+            },
+            {
+              "id": "d",
+              "text": "Índice de Preços Relativos"
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é a resposta correta. O IPCA é um índice de inflação ao consumidor no Brasil, não um índice de paridade de poder de compra. Os demais itens estão associados à comparação de poder de compra ou preços relativos."
+        },
+        {
+          "id": "q058",
+          "type": "true_false",
+          "command": "No regime de câmbio fixo, o valor da moeda é determinado exclusivamente pela oferta e demanda no mercado, sem intervenção do governo.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. No regime de câmbio fixo, a taxa é administrada pela autoridade monetária, e não determinada exclusivamente pela oferta e demanda no mercado."
+        },
+        {
+          "id": "q059",
+          "type": "true_false",
+          "command": "O regime de câmbio flutuante permite que o valor da moeda varie livremente, mas o banco central pode intervir ocasionalmente para evitar flutuações excessivas.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "true"
+          ],
+          "justification": "Verdadeiro. No câmbio flutuante, a taxa é determinada pelo mercado, mas o Banco Central pode intervir ocasionalmente para suavizar oscilações consideradas excessivas."
+        },
+        {
+          "id": "q060",
+          "type": "true_false",
+          "command": "O regime de câmbio flutuante sujo ou administrado é aquele em que o governo fixa o valor da moeda e não permite qualquer variação cambial.",
+          "alternatives": [
+            {
+              "id": "true",
+              "text": "Verdadeiro"
+            },
+            {
+              "id": "false",
+              "text": "Falso"
+            }
+          ],
+          "answer": [
+            "false"
+          ],
+          "justification": "Falso. O câmbio flutuante sujo ou administrado permite variação cambial, mas com intervenções ocasionais da autoridade monetária para evitar oscilações excessivas."
+        },
+        {
+          "id": "q061",
+          "type": "single_correct",
+          "command": "Assinale a alternativa correta sobre taxa de câmbio nominal e real:",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "A taxa de câmbio nominal considera o custo de vida e o nível de preços entre dois países para medir o poder de compra das moedas."
+            },
+            {
+              "id": "b",
+              "text": "A taxa de câmbio real é usada apenas para calcular o valor das moedas no mercado financeiro, sem levar em conta a competitividade internacional."
+            },
+            {
+              "id": "c",
+              "text": "Quando a taxa de câmbio real se desvaloriza, os produtos de um país tendem a ficar mais baratos para o exterior, favorecendo as exportações."
+            },
+            {
+              "id": "d",
+              "text": "A taxa de câmbio nominal é sempre fixa e controlada pelo governo, enquanto a real flutua livremente de acordo com o mercado."
+            },
+            {
+              "id": "e",
+              "text": "A taxa de câmbio real representa apenas a relação direta entre duas moedas, sem considerar o impacto da inflação."
+            }
+          ],
+          "answer": [
+            "c"
+          ],
+          "justification": "A alternativa C é correta. A desvalorização da taxa de câmbio real torna os produtos do país relativamente mais baratos para o exterior, favorecendo as exportações. As demais alternativas confundem taxa nominal e real ou atribuem características incorretas a esses conceitos."
+        },
+        {
+          "id": "q062",
+          "type": "single_correct",
+          "command": "Considerando o Índice Big Mac, que é utilizado para calcular a paridade do poder de compra entre diferentes países, se o preço de um Big Mac nos Estados Unidos é US$ 5,50 e no Brasil é R$ 25,00, qual seria a taxa de câmbio nominal justa entre o real e o dólar?",
+          "alternatives": [
+            {
+              "id": "a",
+              "text": "R$ 2,20 por US$ 1"
+            },
+            {
+              "id": "b",
+              "text": "R$ 4,55 por US$ 1"
+            },
+            {
+              "id": "c",
+              "text": "R$ 5,50 por US$ 1"
+            },
+            {
+              "id": "d",
+              "text": "R$ 25,00 por US$ 1"
+            }
+          ],
+          "answer": [
+            "b"
+          ],
+          "justification": "A alternativa B é correta. Pela paridade do poder de compra do Big Mac, divide-se o preço no Brasil pelo preço nos Estados Unidos: 25 / 5,50 = 4,55. Assim, a taxa nominal justa seria aproximadamente R$ 4,55 por US$ 1."
+        }
       ]
     }
   ]
