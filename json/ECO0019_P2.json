@@ -2731,7 +2731,7 @@
         {
           "id": "q044",
           "type": "true_false",
-          "command": "A PEA inclui todas as pessoas ocupadas e desempregadas que estão em idade ativa e buscando trabalho.",
+          "command": "A PEA (População Economicamente Ativa) inclui todas as pessoas ocupadas e desempregadas que estão em idade ativa e buscando trabalho.",
           "alternatives": [
             {
               "id": "true",
